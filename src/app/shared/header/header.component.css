@@ -1,53 +1,61 @@
 header {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: space-between; /* Espacia los elementos uniformemente */
-    padding: 10px 50px;
-    background: linear-gradient(to right, #abdee6, #25a9bd);
-  }
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos uniformemente */
+  padding: 10px 50px;
+  background: linear-gradient(to right, #abdee6, #25a9bd);
+}
 
-  .menu button {
-    color: #2e3a69;
-    font-size: 18px;
+.menu button {
+  color: #2e3a69;
+  font-size: 18px;
 
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin-right: 50px;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-container input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
-  }
+}
 
-  .search-icon {
+span a {
+  text-decoration: none; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 50px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  width: auto;
+  height: 15px;
+}
+
+.itec-icon {
     width: auto;
-    height: 15px;
-  }
+    height: 50px;
+}
 
-  .itec-icon {
-      width: auto;
-      height: 50px;
-  }
-  
-  .user-icon {
-    width: 50px; 
-    height: auto;
-  }
+.user-icon {
+  transform: scale(2);
+}
 
+.mat-icon.notranslate.user-login.material-icons.mat-ligature-font.mat-icon-no-color {
+  color: white;
+}
 
-
+.mat-icon.notranslate.icon-login.material-icons.mat-ligature-font.mat-icon-no-color {
+  color: #25a9bd; 
+}

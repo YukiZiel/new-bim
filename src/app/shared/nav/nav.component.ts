@@ -60,86 +60,38 @@ export class NavComponent {
   }
 
 
-  // disableOptions(selectedValue: string) {
-  //   debugger;
-  //   if (selectedValue === 'Equipamiento y mobiliario') {
-  //     this.subsistemaOptions[7].disabled = false;
-  //     this.subsistemaOptions[12].disabled = false;
-  //   } else if (selectedValue === 'Infraestructura') {
-  //     this.subsistemaOptions[4].disabled = false;
-  //     this.subsistemaOptions[9].disabled = false;
-  //     this.subsistemaOptions[15].disabled = false;
-  //   } else {
-  //     this.subsistemaOptions.forEach(option => option.disabled = true);
-  //   }
-  // };
+  disableOptions(sistemaOptions:{} ) {
+    this.subsistemaOptions.forEach(option => option.disabled = true);
+    switch (sistemaOptions) {
+      case 'Equipamiento y mobiliario':
+        this.subsistemaOptions[6].disabled = false;
+        this.subsistemaOptions[11].disabled = false;
+        break;
+      case 'Infraestructura':
+        this.subsistemaOptions[4].disabled = false;
+        this.subsistemaOptions[8].disabled = false;
+        this.subsistemaOptions[14].disabled = false;
+        break;
+      case 'Instalaciones':
+        this.subsistemaOptions[0].disabled = false;
+        this.subsistemaOptions[5].disabled = false;
+        this.subsistemaOptions[9].disabled = false;
+        this.subsistemaOptions[12].disabled = false;
+        this.subsistemaOptions[15].disabled = false;
+        break;
+      case 'Sistema estructural y envolventes':
+        this.subsistemaOptions[1].disabled = false;
+        this.subsistemaOptions[2].disabled = false;
+        this.subsistemaOptions[7].disabled = false;
+        break;
+      case 'Sistemas de compartimentación':
+        this.subsistemaOptions[3].disabled = false;
+        this.subsistemaOptions[13].disabled = false;
+        break;
+      case 'Terreno y entorno':
+        this.subsistemaOptions[10].disabled = false;
+        break;
+    }
+  };
 
-  // objectBimList: ObjectBIM[] = [
-  //   {
-  //     id: 3567,
-  //     idemp: "1639958",
-  //     image: "Flor_300x300.jpg",
-  //     description: "ITeC - Acera 8 cm - Loseta mortero Flor",
-  //     llicencia: "No",
-  //     dataEmissio: "31/01/2020",
-  //     ecob: true,
-  //   },   {
-  //     id: 3567,
-  //     idemp: "1639958",
-  //     image: "Flor_300x300.jpg",
-  //     description: "ITeC - Acera 8 cm - Loseta mortero Flor",
-  //     llicencia: "No",
-  //     dataEmissio: "31/01/2020",
-  //     ecob: true,
-  //   },
-  //   {
-  //     id: 3567,
-  //     idemp: "1639958",
-  //     image: "Flor_300x300.jpg",
-  //     description: "ITeC - Acera 8 cm - Loseta mortero Flor",
-  //     llicencia: "No",
-  //     dataEmissio: "31/01/2020",
-  //     ecob: true,
-  //   },   {
-  //     id: 3567,
-  //     idemp: "1639958",
-  //     image: "Flor_300x300.jpg",
-  //     description: "ITeC - Acera 8 cm - Loseta mortero Flor",
-  //     llicencia: "No",
-  //     dataEmissio: "31/01/2020",
-  //     ecob: true,
-  //   },
-  //   {
-  //     id: 3567,
-  //     idemp: "1639958",
-  //     image: "Flor_300x300.jpg",
-  //     description: "ITeC - Acera 8 cm - Loseta mortero Flor",
-  //     llicencia: "No",
-  //     dataEmissio: "31/01/2020",
-  //     ecob: true,
-  //   },   {
-  //     id: 3567,
-  //     idemp: "1639958",
-  //     image: "Flor_300x300.jpg",
-  //     description: "ITeC - Acera 8 cm - Loseta mortero Flor",
-  //     llicencia: "No",
-  //     dataEmissio: "31/01/2020",
-  //     ecob: true,
-  //   },
-  // ]
-
-
-
-
-
-  // selectedOption!: string ;
-
-  // disableOption(option: { value: string, disabled: boolean }) {
-  //   this.selectedOption = option.value;
-  //   this.formatoOptions.forEach((opt) => {
-  //     if (opt !== option) {
-  //       opt.disabled = opt.value !== option.value;
-  //     }
-  //   })
-  // }
 }

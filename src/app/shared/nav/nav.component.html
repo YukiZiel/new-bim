@@ -114,7 +114,7 @@
               </mat-panel-title>
             </mat-expansion-panel-header>
               <mat-selection-list [multiple]="false">
-                <mat-list-option *ngFor="let option of sistemaOptions" [value]="option.value" color="primary">
+                <mat-list-option *ngFor="let option of sistemaOptions" [value]="option.value" color="primary" (click)="disableOptions( option.value )">
                   {{ option.value }}
                 </mat-list-option>
               </mat-selection-list>
@@ -127,7 +127,7 @@
               </mat-panel-title>
             </mat-expansion-panel-header>
               <mat-selection-list [multiple]="false" >
-                <mat-list-option *ngFor="let option of subsistemaOptions" [value]="option.value" color="primary">
+                <mat-list-option *ngFor="let option of subsistemaOptions" [value]="option.value" [disabled]="option.disabled" color="primary">
                   {{ option.value }}
                 </mat-list-option>
               </mat-selection-list>
