@@ -1,0 +1,184 @@
+{
+    "bims": [
+        {
+            "id": "3567",
+            "idemp": "1639958",
+            "image": "Flor_300x300.jpg",
+            "description": "ITeC - Acera 8 cm - Loseta mortero Flor",
+            "llicencia": "No",
+            "dataEmissio": "31/01/2020",
+            "ecob": "Si"
+        },
+        {
+            "id": "3578",
+            "idemp": "1639958",
+            "image": "ReixaBarcelona_PAS51_300x300.jpg",
+            "description": "ITeC - Reixa Barcelona PAS 51 - Fundición dúctil",
+            "llicencia": "No",
+            "dataEmissio": "31/01/2020",
+            "ecob": "Si"
+        },
+        {
+            "id": "1540",
+            "idemp": "1639958",
+            "image": "1540_MurosFachadaVentilada_Generico.jpg",
+            "description": "ITeC - Muros con cámara de aire y revestimiento discontínuo - Placas cerámicas + AT Genérico",
+            "llicencia": "No",
+            "dataEmissio": "25/04/2018",
+            "ecob": "Si"
+        },
+        {
+            "id": "1567",
+            "idemp": "1639958",
+            "image": "1567_VentanasDobleHojaBatiente_Madera_G.jpg",
+            "description": "ITeC - Ventana de dos hojas batientes - Madera",
+            "llicencia": "No",
+            "dataEmissio": "25/04/2018",
+            "ecob": "Si"
+        },
+        {
+            "id": "3940",
+            "idemp": "1639958",
+            "image": "ITeC_CunetaTriangular_HM.jpg",
+            "description": "ITeC - Cuneta triangular - Hormigón en masa",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3822",
+            "idemp": "1639958",
+            "image": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.jpg",
+            "description": "ITeC - Intercambiador de calor de placas - Acero inoxidable",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3776",
+            "idemp": "1639958",
+            "image": "ITeC_BarreraBionda_Acero.jpg",
+            "description": "ITeC - Barrera bionda - Acero",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3758",
+            "idemp": "1639958",
+            "image": "ITeC_TuboProteccionCables_PVCCorrugado.jpg",
+            "description": "ITeC - Tubo flexible corrugado para protección de cables - PVC",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3742",
+            "idemp": "1639958",
+            "image": "ITeC_CajaDerivacion_Policarbonato.jpg",
+            "description": "ITeC - Caja de derivación - Policarbonat",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3741",
+            "idemp": "1639958",
+            "image": "ITeC_ConductoVentilacionAdicionalCocina_ChapaAcero.jpg",
+            "description": "ITeC - Conducto ventilación adicional cocina - Acero galvanizado",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3840",
+            "idemp": "1639958",
+            "image": "ITeC_CentralizacionContadoresAgua_PPR.jpg",
+            "description": "ITeC - Centralizacion de contadores de agua - PPR",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3846",
+            "idemp": "1639958",
+            "image": "ITeC_CentralizacionContadoresElectricosModular_PRFV.jpg",
+            "description": "ITeC - Centralización de contadores eléctricos modular - PRFV",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3848",
+            "idemp": "1639958",
+            "image": "ITeC_RecintoInstalacionesTelecomunicacionesModular_ChapaAcero.jpg",
+            "description": "ITeC - Recinto de instalaciones de telecomunicaciones modular - Chapa de acero",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3761",
+            "idemp": "1639958",
+            "image": "ITeC_CuadroProteccionManiobra_Policarbonato.jpg",
+            "description": "ITeC - Cuadro de mando y protección de vivienda - Policarbonat",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3814",
+            "idemp": "1639958",
+            "image": "ITeC_SumideroSifonicoInterior40mm_AceroInox.jpg",
+            "description": "ITeC - Sumidero sifónico interior 40 mm - Acero inoxidable",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3795",
+            "idemp": "1639958",
+            "image": "ITeC_BanyeraRectangular_PlanxaAcer.jpg",
+            "description": "ITeC - Bañera rectangular - Plancha de acero",
+            "llicencia": "BEDEC",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3938",
+            "idemp": "1639958",
+            "image": "ITeC_Desmunt_NoClassificat.jpg",
+            "description": "ITeC - Desmonte - Terreno no clasificado",
+            "llicencia": "BEDEC",
+            "dataEmissio": "31/08/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3936",
+            "idemp": "1639958",
+            "image": "ITeC_Terraple_SolAdequat.jpg",
+            "description": "ITeC - Terraplén - Suelo adecuado",
+            "llicencia": "BEDEC",
+            "dataEmissio": "31/08/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3933",
+            "idemp": "1639958",
+            "image": "ITeC_FirmeSemirigido_MBC.jpg",
+            "description": "ITeC - Firme semirrígido - Mezcla bituminosa en caliente",
+            "llicencia": "BEDEC",
+            "dataEmissio": "31/08/2021",
+            "ecob": "Si"
+        },
+        {
+            "id": "3931",
+            "idemp": "1639958",
+            "image": "ITeC_Pavimento_MBC.jpg",
+            "description": "ITeC - Pavimento - Mezcla bituminosa en caliente",
+            "llicencia": "BEDEC",
+            "dataEmissio": "31/08/2021",
+            "ecob": "Si"
+        }
+    ]
+}

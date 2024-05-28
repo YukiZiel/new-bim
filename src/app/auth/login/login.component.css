@@ -1,0 +1,11 @@
+.ng-valid:not(form).ng-touched {
+    border-left: 5px solid green;
+}
+
+.ng-invalid:not(form).ng-touched {
+    border-left: 5px solid red;
+}
+
+.send-button {
+    color: red;
+}

@@ -1,0 +1,30 @@
+<form [formGroup]="loginForm">
+    <mat-form-field>
+        <mat-label for="InputEmail">Correo electrónico</mat-label>
+        <input matInput placeholder="Email" formControlName="email" type="email"/>
+            <div *ngIf="email.invalid && (email.dirty || email.touched)">
+                <div *ngIf="email.errors?.['required']">
+                    Se requiere el email
+                </div>
+                <div *ngIf="email.errors?.['email']">
+                    El email debe tener un formato válido.
+                </div>
+            </div>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label for="InputPassword">Contraseña</mat-label>
+        <input formControlName="password" type="password"/>
+        <div *ngIf="password.invalid && (password.dirty || password.touched)">
+            <div *ngIf="password.errors?.['required']">
+                Se requiere la contraseña
+            </div>
+        </div>
+    </mat-form-field>
+
+    <section>
+        <mat-checkbox for="check"><a href="https://itec.es/itec/aviso-legal/">Acepto los términos del aviso legal</a></mat-checkbox>
+    </section>
+    <button class="send-button" type="submit" (click)="login()">Enviar</button>
+</form>
+  

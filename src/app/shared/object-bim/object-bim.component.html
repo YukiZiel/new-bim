@@ -1,0 +1,24 @@
+<!-- <section class="listing">
+    <img
+        class="listing-image"
+        [src]="'https://bedec.itec.cat/img/1639958/' + objectBim.image"
+        alt="{{ objectBim.description }}"
+    />
+    <h3 class="listing-heading">{{ objectBim.description }}</h3>
+    <p class="listing-date">{{ objectBim.dataEmissio }}</p>
+</section> -->
+<mat-card class="listing">
+    <mat-card-actions>
+        <button mat-icon-button matTooltip="Añadir a favorito" [style.color]="heartColor ? newColor : baseColor" (click)="addFavorite()" color="">
+            <mat-icon>favorite</mat-icon>
+        </button>
+    </mat-card-actions>
+    <img mat-card-image
+        class="listing-image"
+        [src]="'https://bedec.itec.cat/img/1639958/' + objectBim.image"
+        alt="{{ objectBim.description }}"
+    />
+    <mat-card-content>
+        <p class="listing-heading">{{ objectBim.description }}</p>
+    </mat-card-content>
+</mat-card>

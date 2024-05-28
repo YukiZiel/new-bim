@@ -1,0 +1,140 @@
+   <!-- <mat-sidenav-container class="container">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <mat-sidenav #sidenav mode="side" class="sidenav">
+      <div class="example-action-buttons">
+        <button mat-button (click)="accordion.openAll()">Expand All</button>
+        <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+      </div>
+      <mat-accordion class="example-headers-align" multi>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Estándar eCOB
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list>
+                <mat-list-option color="primary">
+                  Sí
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Formato
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list>
+                <mat-list-option *ngFor="let option of formatoOptions" [value]="option.value" color="primary">
+                  {{ option.value }}
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Sistema
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list [multiple]="false">
+                <mat-list-option *ngFor="let option of sistemaOptions" [value]="option.value" color="primary">
+                  {{ option.value }}
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel class="sub-option">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Subsistema
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list [multiple]="false" >
+                <mat-list-option *ngFor="let option of subsistemaOptions" [value]="option.value" [disabled]="option.disabled" color="primary">
+                  {{ option.value }}
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+      </mat-accordion>
+      </mat-sidenav>
+  </mat-sidenav-container>
+
+  
+   -->
+
+   <mat-drawer-container class="container">
+    <mat-drawer-content class="content">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <section class="results">
+        <!-- <app-object-bim *ngFor="let objectBim of objectBimList" [objectBim]="objectBim" /> -->
+        <app-object-bim *ngFor="let bim of bims" [objectBim]="bim" />
+      </section>
+    </mat-drawer-content>
+    <mat-drawer #drawer mode="side" class="sidenav">
+      <div class="example-action-buttons">
+        <!-- <button mat-button (click)="accordion.openAll()">Desplegar</button> -->
+        <button mat-button (click)="accordion.closeAll()">Cerrar todo</button>
+      </div>
+      <mat-accordion class="example-headers-align" multi>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Estándar eCOB
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list>
+                <mat-list-option color="primary">
+                  Sí
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Formato
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list>
+                <mat-list-option *ngFor="let option of formatoOptions" [value]="option.value" color="primary">
+                  {{ option.value }}
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Sistema
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list [multiple]="false">
+                <mat-list-option *ngFor="let option of sistemaOptions" [value]="option.value" color="primary">
+                  {{ option.value }}
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel class="sub-option">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Subsistema
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+              <mat-selection-list [multiple]="false" >
+                <mat-list-option *ngFor="let option of subsistemaOptions" [value]="option.value" color="primary">
+                  {{ option.value }}
+                </mat-list-option>
+              </mat-selection-list>
+          </mat-expansion-panel>
+      </mat-accordion>
+      </mat-drawer>
+  </mat-drawer-container>
+
+  
+  
