@@ -1,1 +1,15 @@
-<app-nav />
+
+<mat-button-toggle-group #group="matButtonToggleGroup" value="Ascendiente">
+  <mat-button-toggle (click)="sortbimsAsc()" value="Ascendiente" aria-label="Object BIM order asc" >
+    <mat-icon>arrow_upward</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle (click)="sortbimsDesc()" value="Descendiente" aria-label="Object BIM order desc">
+    <mat-icon>arrow_downward</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<div class="example-selected-value">Orden: {{group.value}}</div>
+
+<section class="results">
+    <!-- <app-object-bim *ngFor="let objectBim of objectBimList" [objectBim]="objectBim" /> -->
+    <app-object-bim *ngFor="let bim of bims" [objectBim]="bim" />
+</section>

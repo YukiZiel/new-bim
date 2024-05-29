@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatAccordion } from '@angular/material/expansion';
-import { ObjectBIM } from '../../object-bim';
-import { BimService } from '../../services/bim.service';
+// import { ObjectBIM } from '../../object-bim';
+// import { BimService } from '../../services/bim.service';
 
 @Component({
   selector: 'app-nav',
@@ -47,17 +47,17 @@ export class NavComponent {
     {value:'Telecomunicaciones', disabled:false}
   ]
 
+  
 
+  // bims: ObjectBIM[] = [];
 
-  bims: ObjectBIM[] = [];
+  // constructor(private bimService:BimService) {}
 
-  constructor(private bimService:BimService) {}
-
-  ngOnInit() {
-    this.bimService.getBims().subscribe(data => {
-      this.bims = data.bims;
-    })
-  }
+  // ngOnInit() {
+  //   this.bimService.getBims().subscribe(data => {
+  //     this.bims = data.bims;
+  //   })
+  // }
 
 
   disableOptions(sistemaOptions:{} ) {
@@ -66,6 +66,16 @@ export class NavComponent {
       case 'Equipamiento y mobiliario':
         this.subsistemaOptions[6].disabled = false;
         this.subsistemaOptions[11].disabled = false;
+      //   this.bims = [ {
+      //     "id": "3578",
+      //     "idemp": "1639958",
+      //     "image": "ReixaBarcelona_PAS51_300x300.jpg",
+      //     "description": "ITeC - Reixa Barcelona PAS 51 - Fundición dúctil",
+      //     "llicencia": "No",
+      //     "dataEmissio": "31/01/2020",
+      //     "ecob": "Si"
+      // }];
+
         break;
       case 'Infraestructura':
         this.subsistemaOptions[4].disabled = false;

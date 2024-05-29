@@ -11,7 +11,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -45,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatCheckboxModule,
     MatFormFieldModule,
     HttpClientModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonToggleModule
   ],
   providers: [
     provideAnimationsAsync(), 

@@ -1,5 +1,5 @@
 export interface ObjectBIM {
-    id: number;
+    id: string;
     idemp: string;
     image: string;
     description: string;
