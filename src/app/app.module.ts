@@ -22,6 +22,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { ObjectBimComponent } from './shared/object-bim/object-bim.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './auth/user/user.component';
+import { NewAccountComponent } from './auth/new-account/new-account.component';
+import { AccountsService } from './auth/accounts.service';
+import { LoginService } from './auth/login.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     DashboardComponent,
     NavComponent,
-    ObjectBimComponent
+    ObjectBimComponent,
+    UserComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -51,8 +57,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     provideAnimationsAsync(), 
-    
-
+    AccountsService,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm">
+<!-- <form [formGroup]="loginForm">
     <mat-form-field>
         <mat-label for="InputEmail">Correo electrónico</mat-label>
         <input matInput placeholder="Email" formControlName="email" type="email"/>
@@ -26,5 +26,12 @@
         <mat-checkbox for="check"><a href="https://itec.es/itec/aviso-legal/">Acepto los términos del aviso legal</a></mat-checkbox>
     </section>
     <button class="send-button" type="submit" (click)="login()">Enviar</button>
-</form>
+</form> -->
+<div class="row">
+    <div>
+        <app-new-account/>
+        <hr>
+        <app-user *ngFor="let acc of accounts; let i = index" [account]="acc" [id]="i" />
+    </div>
+</div>
   
