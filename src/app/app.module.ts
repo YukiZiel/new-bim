@@ -13,7 +13,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -54,8 +53,7 @@ import { LoginService } from './auth/login.service';
     MatFormFieldModule,
     HttpClientModule,
     MatMenuModule,
-    MatButtonToggleModule,
-    FormsModule
+    MatButtonToggleModule
   ],
   providers: [
     provideAnimationsAsync(), 

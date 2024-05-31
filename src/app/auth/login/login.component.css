@@ -6,6 +6,6 @@
     border-left: 5px solid red;
 }
 
-/* .send-button {
-    color: red;
-} */
+input.ng-invalid.ng-touched {
+    border-left: 5px solid red;
+}
