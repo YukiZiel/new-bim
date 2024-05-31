@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { Component, ElementRef, OnInit, ViewChild, viewChild } from '@angular/core';
+import { FormBuilder, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from '../../services/auth/login.service';
 import { LoginRequest } from '../../services/auth/login-request';
@@ -18,13 +18,19 @@ export class LoginComponent implements OnInit{
   // })
 
   // constructor(private formBuilder:FormBuilder, private router: Router, private loginService: LoginService) {}
-  accounts: {name: string, status: string}[] = [];
 
-  constructor(private accountsService: AccountsService) {}
 
+
+  // accounts: {name: string, status: string}[] = [];
+
+  // constructor(private accountsService: AccountsService) {}
+  @ViewChild('f') upForm!: NgForm;
   ngOnInit(){
-    this.accounts = this.accountsService.accounts;
+    // this.accounts = this.accountsService.accounts;
   }
+
+
+
   // get email(){
   //   return this.loginForm.controls.email;
   // }
@@ -50,4 +56,12 @@ export class LoginComponent implements OnInit{
   //     this.loginForm.markAllAsTouched();
   //   }
   // }
+
+  // onSubmit(form:NgForm) {
+  //   console.log(form);
+  // }
+
+  onSubmit() {
+    console.log(this.upForm);
+  }
 }
