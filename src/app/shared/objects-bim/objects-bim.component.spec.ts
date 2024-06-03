@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ObjectBimComponent } from './object-bim.component';
+import { ObjectsBimComponent } from './objects-bim.component';
 
-describe('ObjectBimComponent', () => {
-  let component: ObjectBimComponent;
-  let fixture: ComponentFixture<ObjectBimComponent>;
+describe('ObjectsBimComponent', () => {
+  let component: ObjectsBimComponent;
+  let fixture: ComponentFixture<ObjectsBimComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ObjectBimComponent]
+      declarations: [ObjectsBimComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ObjectBimComponent);
+    fixture = TestBed.createComponent(ObjectsBimComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

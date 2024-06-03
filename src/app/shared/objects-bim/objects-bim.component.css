@@ -31,9 +31,6 @@ mat-card-actions {
     color: #bdbdbd;
 } */
 
-/* .heart-color {
-    color:red;
-} */
 
 .listing mat-icon:cli {
     color: #bdbdbd;
@@ -54,4 +51,8 @@ mat-card {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.active {
+    color: red;
 }

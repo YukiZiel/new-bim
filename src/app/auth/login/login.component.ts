@@ -5,6 +5,7 @@ import { LoginService } from '../../services/auth/login.service';
 import { LoginRequest } from '../../services/auth/login-request';
 import { UserComponent } from '../user/user.component';
 import { AccountsService } from '../accounts.service';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
   selector: 'app-login',
@@ -12,13 +13,21 @@ import { AccountsService } from '../accounts.service';
   styleUrl: './login.component.css',
 })
 export class LoginComponent implements OnInit{
+
+  // userFormControl = new FormControl('', Validators.required);
+  // emailFormControl = new FormControl('',  [Validators.required, Validators.email]);
+
   upForm!: FormGroup;
+
+  constructor(private formBuilder: FormBuilder){}
+
   ngOnInit() {
     this.upForm = new FormGroup({
-      'username' : new FormControl(null, Validators.required),
-      'email' : new FormControl(null,  [Validators.required, Validators.email])
+      'username' : new FormControl('', Validators.required),
+      'email' : new FormControl('',  [Validators.required, Validators.email])
     });
   }
+
   onSubmit() {
     console.log(this.upForm);
   }

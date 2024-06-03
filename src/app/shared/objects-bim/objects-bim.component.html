@@ -9,7 +9,7 @@
 </section> -->
 <mat-card class="listing">
     <mat-card-actions>
-        <button mat-icon-button matTooltip="Añadir a favorito" [style.color]="heartColor ? newColor : baseColor" (click)="addFavorite()" color="">
+        <button mat-icon-button matTooltip="Añadir a favorito" [ngClass]="{'active': inFavList(objectBim)}" (click)="toggleFavList(objectBim)">
             <mat-icon>favorite</mat-icon>
         </button>
     </mat-card-actions>

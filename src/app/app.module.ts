@@ -20,12 +20,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NavComponent } from './shared/nav/nav.component';
-import { ObjectBimComponent } from './shared/object-bim/object-bim.component';
+import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
 import { NewAccountComponent } from './auth/new-account/new-account.component';
 import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './auth/login.service';
+import { AddFavService } from './services/add-fav.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { LoginService } from './auth/login.service';
     LoginComponent,
     DashboardComponent,
     NavComponent,
-    ObjectBimComponent,
+    ObjectsBimComponent,
     UserComponent,
     NewAccountComponent
   ],
@@ -58,7 +59,8 @@ import { LoginService } from './auth/login.service';
   providers: [
     provideAnimationsAsync(), 
     AccountsService,
-    LoginService
+    LoginService,
+    AddFavService
   ],
   bootstrap: [AppComponent]
 })

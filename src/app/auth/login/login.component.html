@@ -67,31 +67,33 @@
    <div class="container">
     <div class="row">
       <div>
-        <form [formGroup]="upForm" (ngSubmit)="onSubmit()">
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input
-              type="text"
-              id="username"
-              formControlName="username"
-              class="form-control">
+        <form [formGroup]="upForm" (ngSubmit)="onSubmit()" class="form">
+          <mat-form-field class="full-width">
+            <mat-label for="username">Nombre de usuario</mat-label>
+            <input type="text" matInput id="username" formControlName="username" class="form-control">
+              <!-- @if (emailFormControl.hasError('required')) {
+                <mat-error>El nombre de usuario es <strong>requerido</strong></mat-error>
+              } -->
               <!-- <span *ngIf="!upForm.get('username').valid && upForm.get('username').touched" class="help-ms">
                 Introduce un nombre de usuario válido
               </span> -->
-          </div>
-          <div class="form-group">
-            <label for="email">email</label>
-            <input
-              type="text"
-              id="email"
-              formControlName="email"
-              class="form-control">
+          </mat-form-field>
+          <mat-form-field class="full-width">
+            <mat-label for="email">email</mat-label>
+            <input type="email" matInput id="email" formControlName="email" class="form-control">
+              <!-- @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                <mat-error>Introduce un correo electrónico válido</mat-error>
+              }
+              @if (emailFormControl.hasError('required')) {
+                <mat-error>El correo electrónico es <strong>requerido</strong></mat-error>
+              } -->
             <!-- <span *ngIf="!upForm.get('email').valid && upForm.get('email').touched" class="help-ms">
               Introduce un correo electrónico válido
             </span> -->
-          </div>
+          </mat-form-field>
           <button class="btn btn-primary" type="submit">Submit</button>
         </form>
       </div>
     </div>
   </div>
+  
