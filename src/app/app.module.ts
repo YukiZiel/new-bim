@@ -11,17 +11,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-
+import { NgArrayPipesModule } from 'ngx-pipes';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { NavComponent } from './shared/nav/nav.component';
+import { NavComponent } from './auth/navGenerics/nav.component';
 import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
@@ -58,7 +59,9 @@ import { BimService } from './services/bim.service';
     HttpClientModule,
     MatMenuModule,
     MatButtonToggleModule,
-    MatInput
+    MatInput,
+    NgArrayPipesModule,
+    FormsModule 
   ],
   providers: [
     provideAnimationsAsync(), 

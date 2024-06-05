@@ -8,7 +8,7 @@ import { BimService } from '../../services/bim.service';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  
+  searchTerm = "";
   bims: ObjectBIM[] = [];
 
   constructor(private bimService:BimService) {}

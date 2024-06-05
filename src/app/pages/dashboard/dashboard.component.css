@@ -58,3 +58,7 @@
   right: 10px;
   color: #2e3a69;
 }
+
+.search {
+  float: inline-end;
+}

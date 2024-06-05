@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
-import { NavComponent } from './shared/nav/nav.component';
+import { NavComponent } from './auth/navGenerics/nav.component';
 import { NewAccountComponent } from './auth/new-account/new-account.component';
 
 

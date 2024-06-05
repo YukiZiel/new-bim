@@ -9,7 +9,11 @@
 </mat-button-toggle-group>
 <div class="selected-value">Orden: {{group.value}}</div>
 
+  <mat-form-field class="search">
+    <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Buscar" />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
 <section class="results">
-    <!-- <app-object-bim *ngFor="let objectBim of objectBimList" [objectBim]="objectBim" /> -->
-    <app-object-bim *ngFor="let bim of bims" [objectBim]="bim" />
+    <app-object-bim *ngFor="let bim of bims | filterBy: ['description']: this.searchTerm" [objectBim]="bim" />
 </section>
