@@ -1,0 +1,698 @@
+{
+    "elementosBimITeCG": [
+        {
+            "id": 30036,
+            "idpare": 74,
+            "label": "Aceras",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 34414,
+            "idpare": 81,
+            "label": "Alcorques",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40467,
+            "idpare": 76,
+            "label": "Aletas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40482,
+            "idpare": 86,
+            "label": "Antenas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40464,
+            "idpare": 40428,
+            "label": "Apoyos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 339,
+            "idpare": 140,
+            "label": "Arquetas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 34415,
+            "idpare": 81,
+            "label": "Bancos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 328,
+            "idpare": 138,
+            "label": "Bañeras",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 183,
+            "idpare": 69,
+            "label": "Barandillas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40473,
+            "idpare": 69,
+            "label": "Barreras",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 329,
+            "idpare": 138,
+            "label": "Bidés",
+            "ordre": "0",
+            "active": "0"
+        },
+        {
+            "id": 28362,
+            "idpare": 131,
+            "label": "Bocas incendio equipadas (BIE)",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 261,
+            "idpare": 101,
+            "label": "Bombas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 307,
+            "idpare": 128,
+            "label": "Bombas de calor",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 34416,
+            "idpare": 74,
+            "label": "Bordillos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 231,
+            "idpare": 85,
+            "label": "Cables",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40488,
+            "idpare": 93,
+            "label": "Cajas de derivación",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 241,
+            "idpare": 93,
+            "label": "Cajas de derivación",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40491,
+            "idpare": 99,
+            "label": "Cajas generales de protección",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 277,
+            "idpare": 110,
+            "label": "Calderas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 278,
+            "idpare": 110,
+            "label": "Calentadores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 30039,
+            "idpare": 74,
+            "label": "Calzadas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 262,
+            "idpare": 102,
+            "label": "Captadores solares",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 28356,
+            "idpare": 28314,
+            "label": "Centrales de incendio",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 154,
+            "idpare": 61,
+            "label": "Chimeneas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 344,
+            "idpare": 141,
+            "label": "Cimientos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 214,
+            "idpare": 77,
+            "label": "Claraboyas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 319,
+            "idpare": 136,
+            "label": "Codos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40479,
+            "idpare": 40431,
+            "label": "Colectores de suelo radiante",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 281,
+            "idpare": 113,
+            "label": "Condensadores de aire acondicionado",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 292,
+            "idpare": 119,
+            "label": "Conductos de extracción",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 267,
+            "idpare": 104,
+            "label": "Conmutadores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 28359,
+            "idpare": 28314,
+            "label": "Controles",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 235,
+            "idpare": 88,
+            "label": "Cuadros de distribución eléctrica",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 189,
+            "idpare": 72,
+            "label": "Cubiertas baja pendiente",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 190,
+            "idpare": 72,
+            "label": "Cubiertas inclinadas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 188,
+            "idpare": 72,
+            "label": "Cubiertas planas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 300,
+            "idpare": 126,
+            "label": "Depósitos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 342,
+            "idpare": 140,
+            "label": "Desagües",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 28374,
+            "idpare": 28332,
+            "label": "Detectores de incendio",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 211,
+            "idpare": 76,
+            "label": "Divisorias",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 226,
+            "idpare": 81,
+            "label": "Electrodomésticos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 198,
+            "idpare": 74,
+            "label": "Encepados",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 225,
+            "idpare": 81,
+            "label": "Encimeras",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 34418,
+            "idpare": 67,
+            "label": "Entrevigados",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 304,
+            "idpare": 128,
+            "label": "Equipos de climatización",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 202,
+            "idpare": 75,
+            "label": "Escaleras",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 26975,
+            "idpare": 131,
+            "label": "Extintores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 160,
+            "idpare": 63,
+            "label": "Falsos techos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 199,
+            "idpare": 74,
+            "label": "Forjados",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 332,
+            "idpare": 138,
+            "label": "Inodoros",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 265,
+            "idpare": 104,
+            "label": "Interruptores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 331,
+            "idpare": 138,
+            "label": "Lavabos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 246,
+            "idpare": 95,
+            "label": "Luminarias",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 216,
+            "idpare": 78,
+            "label": "Mezcladores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 223,
+            "idpare": 81,
+            "label": "Muebles",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 167,
+            "idpare": 64,
+            "label": "Muros cortina",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 208,
+            "idpare": 76,
+            "label": "Muros de contención",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 210,
+            "idpare": 76,
+            "label": "Muros de fachada",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 209,
+            "idpare": 76,
+            "label": "Muros exteriores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 204,
+            "idpare": 76,
+            "label": "Muros pantalla",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 200,
+            "idpare": 74,
+            "label": "Pavimentos exteriores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 165,
+            "idpare": 63,
+            "label": "Pavimentos interiores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 193,
+            "idpare": 73,
+            "label": "Persianas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 156,
+            "idpare": 62,
+            "label": "Pilares",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 2962,
+            "idpare": 65,
+            "label": "Puertas exteriores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 169,
+            "idpare": 65,
+            "label": "Puertas interiores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 266,
+            "idpare": 104,
+            "label": "Pulsadores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 28380,
+            "idpare": 104,
+            "label": "Pulsadores de incendio",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 263,
+            "idpare": 103,
+            "label": "Radiadores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 274,
+            "idpare": 108,
+            "label": "Recuperador de calor",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 286,
+            "idpare": 117,
+            "label": "Reguladores del caudal de aire",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 336,
+            "idpare": 139,
+            "label": "Rejas de ventilación",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 159,
+            "idpare": 63,
+            "label": "Revestimientos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 311,
+            "idpare": 131,
+            "label": "Rociadores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 28368,
+            "idpare": 81,
+            "label": "Señalizacion de seguridad",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 317,
+            "idpare": 135,
+            "label": "Separadores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 28347,
+            "idpare": 28311,
+            "label": "Sirenas de incendio",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 34412,
+            "idpare": 34411,
+            "label": "Sistemas de forjados",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 197,
+            "idpare": 74,
+            "label": "Soleras",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 341,
+            "idpare": 140,
+            "label": "Sumideros",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 40470,
+            "idpare": 74,
+            "label": "Tableros de puentes",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 335,
+            "idpare": 139,
+            "label": "Terminales de ventilación",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 320,
+            "idpare": 136,
+            "label": "Tes",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 253,
+            "idpare": 98,
+            "label": "Tomas audiovisuales",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 252,
+            "idpare": 98,
+            "label": "Tomas de corriente",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 254,
+            "idpare": 98,
+            "label": "Tomas de datos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 325,
+            "idpare": 137,
+            "label": "Tubos",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 34417,
+            "idpare": 74,
+            "label": "Vados peatonales",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 309,
+            "idpare": 129,
+            "label": "Válvulas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 213,
+            "idpare": 77,
+            "label": "Ventanas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 298,
+            "idpare": 124,
+            "label": "Ventiladores",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 147,
+            "idpare": 59,
+            "label": "Vigas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 150,
+            "idpare": 59,
+            "label": "Vigas coronación",
+            "ordre": "0",
+            "active": "0"
+        },
+        {
+            "id": 149,
+            "idpare": 59,
+            "label": "Vigas riostra",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 151,
+            "idpare": 59,
+            "label": "Viguetas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 347,
+            "idpare": 141,
+            "label": "Zanjas y pozos",
+            "ordre": "0",
+            "active": "0"
+        },
+        {
+            "id": 345,
+            "idpare": 141,
+            "label": "Zapatas aisladas",
+            "ordre": "0",
+            "active": "1"
+        },
+        {
+            "id": 346,
+            "idpare": 141,
+            "label": "Zapatas corridas",
+            "ordre": "0",
+            "active": "1"
+        }
+    ]
+
+}

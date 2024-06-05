@@ -1,0 +1,361 @@
+{
+    "IfcBuildingElementsG": [
+        {
+            "id": 28311,
+            "idpare": 0,
+            "label": "Alarma",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 87,
+            "idpare": 0,
+            "label": "Aparatos eléctricos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 40428,
+            "idpare": 0,
+            "label": "Apoyos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 69,
+            "idpare": 0,
+            "label": "Barandillas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 101,
+            "idpare": 0,
+            "label": "Bombas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 85,
+            "idpare": 0,
+            "label": "Cables",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 93,
+            "idpare": 0,
+            "label": "Cajas de derivación",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 110,
+            "idpare": 0,
+            "label": "Calderas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 102,
+            "idpare": 0,
+            "label": "Captadores solares",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 61,
+            "idpare": 0,
+            "label": "Chimeneas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 141,
+            "idpare": 0,
+            "label": "Cimientos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 113,
+            "idpare": 0,
+            "label": "Condensadores de aire acondicionado",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 119,
+            "idpare": 0,
+            "label": "Conductos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 28314,
+            "idpare": 0,
+            "label": "Control",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 88,
+            "idpare": 0,
+            "label": "Cuadros de distribución eléctrica",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 72,
+            "idpare": 0,
+            "label": "Cubiertas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 126,
+            "idpare": 0,
+            "label": "Depósitos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 86,
+            "idpare": 0,
+            "label": "Dispositivos de comunicación electrónica o digital",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 40431,
+            "idpare": 0,
+            "label": "Elementos de regulación",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 128,
+            "idpare": 0,
+            "label": "Equipos de climatización",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 75,
+            "idpare": 0,
+            "label": "Escaleras",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 74,
+            "idpare": 0,
+            "label": "Forjados o losas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 104,
+            "idpare": 0,
+            "label": "Interruptores",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 95,
+            "idpare": 0,
+            "label": "Luminarias",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 67,
+            "idpare": 0,
+            "label": "Miembros",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 81,
+            "idpare": 0,
+            "label": "Mobiliario",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 76,
+            "idpare": 0,
+            "label": "Muros",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 64,
+            "idpare": 0,
+            "label": "Muros cortina",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 62,
+            "idpare": 0,
+            "label": "Pilares",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 73,
+            "idpare": 0,
+            "label": "Protecciones solares",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 99,
+            "idpare": 0,
+            "label": "Protectores eléctricos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 65,
+            "idpare": 0,
+            "label": "Puertas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 103,
+            "idpare": 0,
+            "label": "Radiadores",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 108,
+            "idpare": 0,
+            "label": "Recuperadores de calor",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 117,
+            "idpare": 0,
+            "label": "Reguladores del caudal de aire",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 63,
+            "idpare": 0,
+            "label": "Revestimientos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 28332,
+            "idpare": 0,
+            "label": "Sensor",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 135,
+            "idpare": 0,
+            "label": "Separadores",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 34411,
+            "idpare": 0,
+            "label": "Sistemas constructivos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 78,
+            "idpare": 0,
+            "label": "Terminal de fluidos",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 140,
+            "idpare": 0,
+            "label": "Terminales de desagüe",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 131,
+            "idpare": 0,
+            "label": "Terminales de extinción de incendio",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 139,
+            "idpare": 0,
+            "label": "Terminales de ventilación",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 138,
+            "idpare": 0,
+            "label": "Terminales sanitarios",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 98,
+            "idpare": 0,
+            "label": "Tomas de corriente",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 137,
+            "idpare": 0,
+            "label": "Tuberías",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 136,
+            "idpare": 0,
+            "label": "Uniones",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 129,
+            "idpare": 0,
+            "label": "Válvulas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 77,
+            "idpare": 0,
+            "label": "Ventanas",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 124,
+            "idpare": 0,
+            "label": "Ventiladores",
+            "ordre": "0"
+            
+        },
+        {
+            "id": 59,
+            "idpare": 0,
+            "label": "Vigas",
+            "ordre": "0"
+            
+        }
+    ]
+}

@@ -11,8 +11,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -27,6 +29,7 @@ import { NewAccountComponent } from './auth/new-account/new-account.component';
 import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './auth/login.service';
 import { AddFavService } from './services/add-fav.service';
+import { BimService } from './services/bim.service';
 
 @NgModule({
   declarations: [
@@ -54,13 +57,15 @@ import { AddFavService } from './services/add-fav.service';
     MatFormFieldModule,
     HttpClientModule,
     MatMenuModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatInput
   ],
   providers: [
     provideAnimationsAsync(), 
     AccountsService,
     LoginService,
-    AddFavService
+    AddFavService,
+    BimService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,53 @@
+{
+	"sistemasF": [
+		{
+			"id": 27,
+			"idpare": 0,
+			"label": "Equipamiento y mobiliario",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 23,
+			"idpare": 0,
+			"label": "Infraestructura",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 26,
+			"idpare": 0,
+			"label": "Instalaciones",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 24,
+			"idpare": 0,
+			"label": "Sistema estructural y envolventes",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 25,
+			"idpare": 0,
+			"label": "Sistemas de compartimentación",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 29,
+			"idpare": 0,
+			"label": "Terreno y entorno",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 28,
+			"idpare": 0,
+			"label": "Trabajos especiales y derribos",
+			"ordre": "0",
+			"active": "1"
+		}
+	]
+}

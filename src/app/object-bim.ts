@@ -6,4 +6,10 @@ export interface ObjectBIM {
     llicencia: string;
     dataEmissio: string;
     ecob: string;
+    sistema: string,
+    subsistema: string,
+    patrocinat: string,
+    patrocinatTxt: string,
+    patrocinatLogo: string,
+    patrocinatUrl: string,
 }

@@ -1,0 +1,452 @@
+{
+	"elementosBimITeCF": [
+		{
+			"id": 8713,
+			"idpare": 81,
+			"label": "Accesorios para baño",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 2764,
+			"idpare": 2740,
+			"label": "Aislantes: MW",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2767,
+			"idpare": 2740,
+			"label": "Aislantes: XPS/EPS",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 219,
+			"idpare": 79,
+			"label": "Anclajes",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 228,
+			"idpare": 83,
+			"label": "Bandeja de cableado eléctrico",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 328,
+			"idpare": 138,
+			"label": "Bañeras",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 329,
+			"idpare": 138,
+			"label": "Bidés",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 2782,
+			"idpare": 2740,
+			"label": "Bituminosos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 261,
+			"idpare": 101,
+			"label": "Bombas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2776,
+			"idpare": 2740,
+			"label": "Cauchos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 344,
+			"idpare": 141,
+			"label": "Cimientos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 217,
+			"idpare": 78,
+			"label": "Cisternas",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 290,
+			"idpare": 119,
+			"label": "Conductos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 189,
+			"idpare": 72,
+			"label": "Cubiertas baja pendiente",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 190,
+			"idpare": 72,
+			"label": "Cubiertas inclinadas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 188,
+			"idpare": 72,
+			"label": "Cubiertas planas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 300,
+			"idpare": 126,
+			"label": "Depósitos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 2824,
+			"idpare": 2740,
+			"label": "Diversos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 211,
+			"idpare": 76,
+			"label": "Divisorias",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 198,
+			"idpare": 74,
+			"label": "Encepados",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 304,
+			"idpare": 128,
+			"label": "Equipos de climatización",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 224,
+			"idpare": 81,
+			"label": "Espejos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 176,
+			"idpare": 67,
+			"label": "Estructura secundaria",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2815,
+			"idpare": 2740,
+			"label": "Fábricas de hormigón celular",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 160,
+			"idpare": 63,
+			"label": "Falsos techos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 199,
+			"idpare": 74,
+			"label": "Forjados",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 215,
+			"idpare": 78,
+			"label": "Grifos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 2755,
+			"idpare": 2740,
+			"label": "Hormigones",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 332,
+			"idpare": 138,
+			"label": "Inodoros",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 265,
+			"idpare": 104,
+			"label": "Interruptores",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2875,
+			"idpare": 60,
+			"label": "Juntas de trabajo",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 331,
+			"idpare": 138,
+			"label": "Lavabos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 196,
+			"idpare": 74,
+			"label": "Losas de cimentación",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 245,
+			"idpare": 95,
+			"label": "Luminarias",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 246,
+			"idpare": 95,
+			"label": "Luminarias",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 352,
+			"idpare": 144,
+			"label": "Mallas de armado",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 216,
+			"idpare": 78,
+			"label": "Mezcladores",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 2758,
+			"idpare": 2740,
+			"label": "Morteros",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 223,
+			"idpare": 81,
+			"label": "Muebles",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 208,
+			"idpare": 76,
+			"label": "Muros de contención",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 210,
+			"idpare": 76,
+			"label": "Muros de fachada",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 209,
+			"idpare": 76,
+			"label": "Muros exteriores",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 165,
+			"idpare": 63,
+			"label": "Pavimentos interiores",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 173,
+			"idpare": 67,
+			"label": "Perfiles",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2743,
+			"idpare": 2740,
+			"label": "Piedras",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2821,
+			"idpare": 2740,
+			"label": "Pinturas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 330,
+			"idpare": 138,
+			"label": "Platos de ducha",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 271,
+			"idpare": 107,
+			"label": "Rejillas de impulsión",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 201,
+			"idpare": 74,
+			"label": "Rellanos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 159,
+			"idpare": 63,
+			"label": "Revestimientos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 164,
+			"idpare": 63,
+			"label": "Revestimientos verticales",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 2779,
+			"idpare": 2740,
+			"label": "Sellantes",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 197,
+			"idpare": 74,
+			"label": "Soleras",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2746,
+			"idpare": 2740,
+			"label": "Suelos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 252,
+			"idpare": 98,
+			"label": "Tomas de corriente",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 161,
+			"idpare": 63,
+			"label": "Trasdosados",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 325,
+			"idpare": 137,
+			"label": "Tubos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 28383,
+			"idpare": 28338,
+			"label": "Unitat de control de elementos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 333,
+			"idpare": 138,
+			"label": "Urinarios",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 309,
+			"idpare": 129,
+			"label": "Válvulas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 213,
+			"idpare": 77,
+			"label": "Ventanas",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 347,
+			"idpare": 141,
+			"label": "Zanjas y pozos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 345,
+			"idpare": 141,
+			"label": "Zapatas aisladas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 346,
+			"idpare": 141,
+			"label": "Zapatas corridas",
+			"ordre": "0",
+			"active": "1"
+		}
+	]
+}

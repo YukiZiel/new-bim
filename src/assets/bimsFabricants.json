@@ -1,0 +1,52 @@
+{
+    "bimsF": 
+    [
+        {
+            "id": 36,
+            "image":"hardrock_391_bigpanel.png",
+            "descrip": "ROCKWOOL - Cubiertas planas - Cubierta Deck Ajardinada - Hardrock 391/ Bigpanel",
+            "empresa": "ROCKWOOL PENINSULAR SAU",
+            "sistema": "Equipamiento y mobiliario",
+            "subsistema": "Cerramientos exteriores horizontales",
+            "IfcBuildingElement": "Cubiertas",
+            "elementosBimITeC": "Cubiertas planas",
+            "llicencia": "No",
+            "patrocinat": "No",
+            "patrocinatTxt": null,
+            "patrocinatLogo": null,
+            "patrocinatUrl": null,
+            "dataEmissio": "01/01/2000",
+            "ecob": "No",
+            "downloads": [
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "2014_cubierta_rockwool_deckrock_ajardinada_hardrock_391_bigpanel.rvt",
+                            "ext": "RVT",
+                            "url": "",
+                            "size": "784.00 kB",
+                            "version": "",
+                            "format": "Revit",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "2014_cubierta_rockwool_deckrock_ajardinada_hardrock_391_bigpanel.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "237.57 kB",
+                            "version": "",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

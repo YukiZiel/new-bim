@@ -69,29 +69,20 @@
       <div>
         <form [formGroup]="upForm" (ngSubmit)="onSubmit()" class="form">
           <mat-form-field class="full-width">
-            <mat-label for="username">Nombre de usuario</mat-label>
-            <input type="text" matInput id="username" formControlName="username" class="form-control">
-              <!-- @if (emailFormControl.hasError('required')) {
-                <mat-error>El nombre de usuario es <strong>requerido</strong></mat-error>
-              } -->
-              <!-- <span *ngIf="!upForm.get('username').valid && upForm.get('username').touched" class="help-ms">
-                Introduce un nombre de usuario válido
-              </span> -->
+            <mat-label for="email">Correo electrónico</mat-label>
+            <input type="email" matInput id="email" formControlName="email" class="form-control" required>
+            @if (emailFormControl.hasError('required')) {
+              <mat-error>El correo electrónico es <strong>requerido</strong></mat-error>
+            } 
           </mat-form-field>
           <mat-form-field class="full-width">
-            <mat-label for="email">email</mat-label>
-            <input type="email" matInput id="email" formControlName="email" class="form-control">
-              <!-- @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
-                <mat-error>Introduce un correo electrónico válido</mat-error>
+            <mat-label for="password">Contraseña</mat-label>
+            <input type="password" matInput id="password" formControlName="password" class="form-control" required>
+              @if (passwordFormControl.hasError('required')) {
+                <mat-error>La contraseña es <strong>requerida</strong></mat-error>
               }
-              @if (emailFormControl.hasError('required')) {
-                <mat-error>El correo electrónico es <strong>requerido</strong></mat-error>
-              } -->
-            <!-- <span *ngIf="!upForm.get('email').valid && upForm.get('email').touched" class="help-ms">
-              Introduce un correo electrónico válido
-            </span> -->
           </mat-form-field>
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button mat-raised-button type="submit" [disabled]="!upForm.valid">Submit</button>
         </form>
       </div>
     </div>

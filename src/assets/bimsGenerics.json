@@ -1,0 +1,561 @@
+{
+    "bims": [
+        {
+            "id": "3578",
+            "idemp": "1639958",
+            "image": "ReixaBarcelona_PAS51_300x300.jpg",
+            "description": "ITeC - Reixa Barcelona PAS 51 - Fundición dúctil",
+            "sistema": "Infraestructura",
+            "subsistema": "Saneamiento de agua y gas",
+            "IfcBuildingElement": "Separadores",
+            "elementosBimITeC": "Separadores",
+            "llicencia": "No",
+            "patrocinat": "Sí",
+            "patrocinatTxt": "Ayuntamiento de Barcelona",
+            "patrocinatLogo": "bcnlogo.png",
+            "patrocinatUrl": "https://ajuntament.barcelona.cat/es/",
+            "dataEmissio": "31/01/2020",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_RejaBarcelona_PAS51.rfa",
+                        "ext": "RFA",
+                        "url": "",
+                        "size": "748.00 kB",
+                        "version": "2015",
+                        "format": "Revit",
+                        "download":	true
+                        },
+                        {
+                            "id": "1",
+                            "fitxer": "ITeC_RejaBarcelona_PAS51.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.03 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download":	true
+                            }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_RejaBarcelona_PAS51.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "41.83 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1540",
+            "idemp": "1639958",
+            "image": "1540_MurosFachadaVentilada_Generico.jpg",
+            "description": "ITeC - Muros con cámara de aire y revestimiento discontínuo - Placas cerámicas + AT Genérico",
+            "sistema": "Sistema estructural y envolventes",
+            "subsistema": "Cerramientos exteriores verticales",
+            "IfcBuildingElement": "Muros",
+            "elementosBimITeC": "Muros de fachada",
+            "llicencia": "No",
+            "patrocinat": "Sí",
+            "patrocinatTxt": "Cedinsa Concessionària S.A",
+            "patrocinatLogo": "logo-empr-cedinsa.jpg",
+            "patrocinatUrl": "http://www.cedinsa.net/es/index.php",
+            "dataEmissio": "25/04/2018",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.rvt",
+                        "ext": "RVT",
+                        "url": "",
+                        "size": "1.09 MB",
+                        "version": "",
+                        "format": "Revit",
+                        "download":	true
+                        },
+                        {
+                            "id": "1",
+                            "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.57 MB",
+                            "version": "",
+                            "format": "ArchiCAD",
+                            "download":	true
+                        }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "29.04 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3822",
+            "idemp": "1639958",
+            "image": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.jpg",
+            "description": "ITeC - Intercambiador de calor de placas - Acero inoxidable",
+            "sistema": "Instalaciones",
+            "subsistema": "Calefacción, Ventilación y Aire Acondicionado",
+            "IfcBuildingElement": "",
+            "elementosBimITeC": "",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "396.00 kB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download":	true
+                        },
+                        {
+                            "id": "1",
+                            "fitxer": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.29 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download":	true
+                            }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "22.10 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3776",
+            "idemp": "1639958",
+            "image": "ITeC_BarreraBionda_Acero.jpg",
+            "description": "ITeC - Barrera bionda - Acero",
+            "sistema": "Instalaciones",
+            "subsistema": "Seguridad",
+            "IfcBuildingElement": "Barandillas",
+            "classeBimITeC": "Barreras",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_BarreraBionda_Acer.rvt",
+                            "ext": "RVT",
+                            "url": "",
+                            "size": "1.80 MB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download":	true
+                        }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_BarreraBionda_Acer.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "4.29 MB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3758",
+            "idemp": "1639958",
+            "image": "ITeC_TuboProteccionCables_PVCCorrugado.jpg",
+            "description": "ITeC - Tubo flexible corrugado para protección de cables - PVC",
+            "sistema": "Instalaciones",
+            "subsistema": "Electricidad",
+            "IfcBuildingElement": "Cables",
+            "classeBimITeC": "Cables",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_TuboFlexibleCorrugadoProteccionCables_PVC.rvt",
+                        "ext": "RVT",
+                        "url": "",
+                        "size": "2.82 MB",
+                        "version": "2015",
+                        "format": "Revit",
+                        "download":	true
+                        },
+                        {
+                            "id": "1",
+                            "fitxer": "ITeC_TuboFlexibleCorrugadoProteccionCables_PVC.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.29 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download":	true
+                            }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_TuboFlexibleCorrugadoProteccionCables_PVC.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "11.28 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3840",
+            "idemp": "1639958",
+            "image": "ITeC_CentralizacionContadoresAgua_PPR.jpg",
+            "description": "ITeC - Centralizacion de contadores de agua - PPR",
+            "sistema": "Instalaciones",
+            "subsistema": "Lampistería",
+            "IfcBuildingElement": "Barandillas",
+            "elementosBimITeC": "Barreras",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_CentralizacionContadoresAgua_PPR.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "536.00 kB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download":	true
+                        },
+                        {
+                            "fitxer": "ITeC_CentralizacionContadoresAgua_PPR.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "5.11 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download":	true
+                            }
+                    ]
+                },
+                {   
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_CentralizacionContadoresAgua_PPR.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "1.32 MB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3795",
+            "idemp": "1639958",
+            "image": "ITeC_BanyeraRectangular_PlanxaAcer.jpg",
+            "description": "ITeC - Bañera rectangular - Plancha de acero",
+            "sistema": "Equipamiento y mobiliario",
+            "subsistema": "Equipos",
+            "IfcBuildingElement": "Terminales sanitarios",
+            "elementosBimITeC": "Bañeras",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "29/10/2021",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_BaneraRectangular_PlanchaAcero.ifc",
+                        "ext": "IFC",
+                        "url": "",
+                        "size": "1.08 MB",
+                        "version": "2x3",
+                        "format": "IFC",
+                        "download":	true
+                        }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_BaneraRectangular_PlanchaAcero.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "1.61 kB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download":	true
+                        },
+                        {
+                            "id": "1",
+                            "fitxer": "ITeC_BaneraRectangular_PlanchaAcero.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.38 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3727",
+            "idemp": "1639958",
+            "image": "3727_ITeC_CimentacionEstriboPuente_HA_P.jpg",
+            "description": "ITeC - Cimentación para estribo de puente - Hormigón armado",
+            "sistema": "Infraestructura",
+            "subsistema": "Cimentación",
+            "IfcBuildingElement": "Cimientos",
+            "elementosBimITeC": "Cimientos",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "11/12/2020",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_CimentacionEstriboPuente_HA.rfa",
+                        "ext": "RFA",
+                        "url": "",
+                        "size": "364.00 kB",
+                        "version": "2015",
+                        "format": "Revit",
+                        "download":	true
+                        }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_CimentacionEstriboPuente_HA.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "13.01 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3353",
+            "idemp": "1639958",
+            "image": "ITeC_ForjadosSanitarios.jpg",
+            "description": "ITeC - Forjados sanitarios - Casetones no recuperables",
+            "sistema": "Infraestructura",
+            "subsistema": "Forjados sanitarios y soleras",
+            "IfcBuildingElement": "Forjados o losas",
+            "elementosBimITeC": "Soleras",
+            "llicencia": "BEDEC",
+            "patrocinat": "No",
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "28/09/2018",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_ForjadosSanitarios400+60mm_HA.pln",
+                        "ext": "PLN",
+                        "url": "",
+                        "size": "3.37 MB",
+                        "version": "",
+                        "format": "ArchiCAD",
+                        "download":	true
+                        }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_ForjadosSanitarios400+60mm_HA.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "18.12 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3783",
+            "idemp": "1639958",
+            "image": "3783_ITeC_Encimera_AridosCuarzo.jpg",
+            "description": "ITeC - Encimera - Piedra aglomerada con áridos de cuarzo",
+            "sistema": "Equipamiento y mobiliario",
+            "subsistema": "Mobiliario",
+            "IfcBuildingElement": "Mobiliario",
+            "elementosBimITeC": "Encimeras",
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",
+            "patrocinatLogo": null,
+            "patrocinatUrl": "",
+            "dataEmissio": "30/04/2021",
+            "ecob": "Si",
+            "downloads": [
+                {
+                    "id": "0",
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                        "id": "0",
+                        "fitxer": "ITeC_HitoVertice_MDPE.rfa",
+                        "ext": "RFA",
+                        "url": "",
+                        "size": "460.00 kB",
+                        "version": "2015",
+                        "format": "Revit",
+                        "download":	true
+                        }
+                    ]
+                },
+                {   "id": "1",
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "id": "0",
+                            "fitxer": "ITeC_HitoVertice_MDPE.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "350.83 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download":	true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

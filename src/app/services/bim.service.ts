@@ -7,7 +7,7 @@ import { ObjectBIM } from '../object-bim';
   providedIn: 'root'
 })
 export class BimService {
-  private jsonUrl = '../assets/bims.json';
+  private jsonUrl = '../assets/bimsGenerics.json';
 
   constructor(private http:HttpClient) { }
 

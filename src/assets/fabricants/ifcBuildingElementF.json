@@ -1,0 +1,186 @@
+{
+	"IfcBuildingElementsF": [
+		{
+			"id": 79,
+			"idpare": 0,
+			"label": "Anclajes",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 83,
+			"idpare": 0,
+			"label": "Bandeja de cableado eléctrico",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 101,
+			"idpare": 0,
+			"label": "Bombas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 141,
+			"idpare": 0,
+			"label": "Cimientos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 119,
+			"idpare": 0,
+			"label": "Conductos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 72,
+			"idpare": 0,
+			"label": "Cubiertas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 126,
+			"idpare": 0,
+			"label": "Depósitos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 60,
+			"idpare": 0,
+			"label": "Elementos constructivos indeterminados (Proxy)",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 128,
+			"idpare": 0,
+			"label": "Equipos de climatización",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 74,
+			"idpare": 0,
+			"label": "Forjados o losas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 104,
+			"idpare": 0,
+			"label": "Interruptores",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 95,
+			"idpare": 0,
+			"label": "Luminarias",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 144,
+			"idpare": 0,
+			"label": "Mallas de armado",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2740,
+			"idpare": 0,
+			"label": "Material BIM",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 67,
+			"idpare": 0,
+			"label": "Miembros",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 81,
+			"idpare": 0,
+			"label": "Mobiliario",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 76,
+			"idpare": 0,
+			"label": "Muros",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 63,
+			"idpare": 0,
+			"label": "Revestimientos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 107,
+			"idpare": 0,
+			"label": "Salidas de aire",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 78,
+			"idpare": 0,
+			"label": "Terminal de fluidos",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 138,
+			"idpare": 0,
+			"label": "Terminales sanitarios",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 98,
+			"idpare": 0,
+			"label": "Tomas de corriente",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 137,
+			"idpare": 0,
+			"label": "Tuberías",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 28338,
+			"idpare": 0,
+			"label": "Unitat de control de elementos",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 129,
+			"idpare": 0,
+			"label": "Válvulas",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 77,
+			"idpare": 0,
+			"label": "Ventanas",
+			"ordre": "0",
+			"active": "0"
+		}
+	]
+}

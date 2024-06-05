@@ -1,19 +1,50 @@
-<div>
-    <div>
-      <div>
-        <label>Account Name</label>
-        <input type="text" #accountName>
-      </div>
-      <div>
-        <select #status>
-          <option value="active">Active</option>
-          <option value="inactive">Inactive</option>
-          <option value="hidden">Hidden</option>
-        </select>
-      </div>
-      <button (click)="onCreateAccount(accountName.value, status.value)"> 
-        Add Account
+<div class="container">
+  <div class="row">
+    <form [formGroup]="upForm" (ngSubmit)="onSubmit()" class="form">
+  <!-- <div>
+    <label>Nombre</label>
+    <input type="text" #accountName>
+  </div> -->
+      <mat-form-field class="full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" id="name" ngModel [formControl]="name" (blur)="ErrorMessage()" required>
+        @if (name.invalid) {
+          <mat-error>Introduce el nombre</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Apellido</mat-label>
+        <input matInput type="text" id="lastname" ngModel [formControl]="lastname" (blur)="ErrorMessage()" required>
+        @if (lastname.invalid) {
+          <mat-error>Introduce el apellido</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Empresa</mat-label>
+        <input matInput type="text" id="company">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label for="email">Correo electrónico</mat-label>
+        <input matInput type="email" id="email" ngModel name="email" [formControl]="email" (blur)="ErrorMessage()" required>
+        @if (email.invalid) {
+          <mat-error>{{errorMessage}}</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <span *ngIf="!upForm.valid && upForm.touched" class="help-ms">Por favor introduzca datos válidos</span>
+      <mat-checkbox class="full-width"><a href="https://itec.es/itec/privacidad/">Acepto la política de privacidad</a></mat-checkbox>
+      <!-- <button (click)="onCreateAccount(accountName.value, password.value)">  -->
+      <button mat-raised-button type="submit" [disabled]="!upForm.valid">
+        Crear cuenta
       </button>
-    </div>
+      </form>
   </div>
+</div>
+
   

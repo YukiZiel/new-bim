@@ -1,0 +1,312 @@
+{
+	"empresasF": [
+		{
+			"id": 35048,
+			"idpare": 0,
+			"label": "",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 39361,
+			"idpare": 0,
+			"label": "AIRZONE CLIMA SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 27921,
+			"idpare": 0,
+			"label": "APOLO FIJACIONES Y HERRAMIENTAS SL",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 24262,
+			"idpare": 0,
+			"label": "ARMACELL IBERIA SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 10901,
+			"idpare": 0,
+			"label": "ARTIGO IBÉRICA SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 590,
+			"idpare": 0,
+			"label": "CERÀMICA BELIANES SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 12203,
+			"idpare": 0,
+			"label": "CERÀMICA FUSTÉ SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 22761,
+			"idpare": 0,
+			"label": "CERÁMICA MAYOR SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 2263,
+			"idpare": 0,
+			"label": "CERAMICAS GALA SA",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 24546,
+			"idpare": 0,
+			"label": "DANOSA DERIVADOS ASFÁLTICOS NORMALIZADOS SA",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 588,
+			"idpare": 0,
+			"label": "DBBLOK",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 28846,
+			"idpare": 0,
+			"label": "EBARA PUMPS IBERIA SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 22872,
+			"idpare": 0,
+			"label": "EGOIN SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 12237,
+			"idpare": 0,
+			"label": "EUROPERFIL SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 28814,
+			"idpare": 0,
+			"label": "FACHADAS DEL NORTE SL",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 26204,
+			"idpare": 0,
+			"label": "FIRESTONE BUILDING PRODUCTS / ROLLGUM CORP.",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 22772,
+			"idpare": 0,
+			"label": "FORJADOS SANITARIOS CÁVITI SLU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 12941,
+			"idpare": 0,
+			"label": "GROHE ESPAÑA SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 37650,
+			"idpare": 0,
+			"label": "HUMIDHEI SL (BIODRY)",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 28827,
+			"idpare": 0,
+			"label": "INDUSTRIAS REHAU SA",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 29218,
+			"idpare": 0,
+			"label": "INDUSTRIAS TITÁN SA",
+			"ordre": "0",
+			"active": "0"
+		},
+		{
+			"id": 10771,
+			"idpare": 0,
+			"label": "ISOVER",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 12836,
+			"idpare": 0,
+			"label": "KME SPAIN SAU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 25471,
+			"idpare": 0,
+			"label": "LAFARGE ÁRIDOS Y HORMIGONES SAU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 39379,
+			"idpare": 0,
+			"label": "LLEDÓ ILUMINACIÓN SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 30283,
+			"idpare": 0,
+			"label": "LOUVELIA FAÇADE SOLUTIONS SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 595,
+			"idpare": 0,
+			"label": "MAPEI SPAIN SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 12259,
+			"idpare": 0,
+			"label": "MAX FRANK TECNOLOGÍAS PARA LA CONSTRUCCIÓN SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 25912,
+			"idpare": 0,
+			"label": "MECALIA, METALURGICA Y CALDEDERIA SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 12219,
+			"idpare": 0,
+			"label": "PALAU CERÁMICA DE ALPICAT SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 22782,
+			"idpare": 0,
+			"label": "POLIURETANOS SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 26498,
+			"idpare": 0,
+			"label": "PROPAMSA SAU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 596,
+			"idpare": 0,
+			"label": "Q-RAILING EUROPA HOLDING GMBH",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 26514,
+			"idpare": 0,
+			"label": "RECTICEL INSULATION",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 24463,
+			"idpare": 0,
+			"label": "RENOLIT IBÉRICA SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 587,
+			"idpare": 0,
+			"label": "ROCKWOOL PENINSULAR SAU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 39345,
+			"idpare": 0,
+			"label": "SAINT-GOBAIN PLACO IBÉRICA SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 592,
+			"idpare": 0,
+			"label": "SAINT-GOBAIN WEBER CEMARKSA SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 8229,
+			"idpare": 0,
+			"label": "SIMON SA",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 29234,
+			"idpare": 0,
+			"label": "STANDARD HIDRAULICA SAU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 23988,
+			"idpare": 0,
+			"label": "TERREAL ESPAÑA DE CERÁMICAS SAU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 39692,
+			"idpare": 0,
+			"label": "THERMOCHIP SLU",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 589,
+			"idpare": 0,
+			"label": "TRESPA IBERIA SL",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 591,
+			"idpare": 0,
+			"label": "UNEX APARELLAJE ELÉCTRICO SL",
+			"ordre": "0",
+			"active": "1"
+		}
+	]
+}

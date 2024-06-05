@@ -44,6 +44,7 @@ export class NavComponent {
     {value:'Protección contra incendios', disabled:false},
     {value:'Revestimientos y acabados interiores', disabled:false},
     {value:'Saneamiento de agua y gas', disabled:false},
+    {value:'Seguridad', disabled:false},
     {value:'Telecomunicaciones', disabled:false}
   ]
 
