@@ -4,7 +4,25 @@ header {
   justify-content: space-between; /* Espacia los elementos uniformemente */
   padding: 10px 50px;
   background: linear-gradient(to right, #abdee6, #25a9bd);
+
+  /* display: grid; */
+  /* column-gap: 50px; */
+/* 
+  grid-template-columns: repeat(auto-fill, minmax(500px, 500px)); */
 }
+
+/* @media (min-width: 500px) and (max-width: 768px) {
+  header {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+  }
+}
+@media (max-width: 499px) {
+  header {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }    
+} */
 
 .menu button {
   color: #2e3a69;

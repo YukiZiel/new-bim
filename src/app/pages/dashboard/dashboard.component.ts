@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ObjectBIM } from '../../object-bim';
-import { BimService } from '../../services/bim.service';
+import { FilterService } from '../../services/filter.service';
+import { Filters } from '../../filter';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,15 +10,32 @@ import { BimService } from '../../services/bim.service';
 })
 export class DashboardComponent {
   searchTerm = "";
+  selectedSistemaG = "";
   bims: ObjectBIM[] = [];
+  sistemasG: Filters[] = [];
+  subsistemasG: Filters[] = [];
 
-  constructor(private bimService:BimService) {}
+  constructor(private filterService:FilterService) {}
 
   ngOnInit() {
-    this.bimService.getBims().subscribe(data => {
+    this.filterService.getBims().subscribe(data => {
       this.bims = data.bims;
       this.sortbimsAsc();
-    })
+      this.filterSitemas();
+    });
+
+    // this.filterService.getSistemas().subscribe(data => {
+    //   this.sistemasG = data.sistemasG;
+    // });
+    // this.filterService.getSubsistemas().subscribe(data => {
+    //   this.subsistemasG = data.subsistemasG;
+    // })
+  }
+
+  public filterSitemas() {
+    this.filterService.getSistemas().subscribe(data => {
+      this.sistemasG = data.sistemasG;
+    });
   }
 
   public sortbimsDesc(): void {

@@ -1,0 +1,32 @@
+{
+	"formatos": [
+		{
+			"id": 16,
+			"idpare": 0,
+			"label": "ArchiCAD",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 30240,
+			"idpare": 0,
+			"label": "FIEBDC - BC3",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 941,
+			"idpare": 0,
+			"label": "IFC",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 17,
+			"idpare": 0,
+			"label": "Revit",
+			"ordre": "0",
+			"active": "1"
+		}
+	]
+}

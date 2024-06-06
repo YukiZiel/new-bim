@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BimService } from './bim.service';
+import { FilterService } from './filter.service';
 
-describe('BimService', () => {
-  let service: BimService;
+describe('FilterService', () => {
+  let service: FilterService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(BimService);
+    service = TestBed.inject(FilterService);
   });
 
   it('should be created', () => {

@@ -16,36 +16,16 @@ width: 100%;
 object-fit: cover;
 border-radius: 30px 30px 0 0;
 }
-/* .listing-date {
-padding: 10px 20px 20px 20px;
-}
-.listing-date::before {
-content: url("/assets/images/calendar.png") / "";
-} */
 
 mat-card-actions {
     padding: 0px;
 }
 
-/* .listing mat-icon {
+
+/* .listing mat-icon:cli {
     color: #bdbdbd;
 } */
 
-
-.listing mat-icon:cli {
-    color: #bdbdbd;
-}
-
-section.listing a {
-padding-left: 20px;
-text-decoration: none;
-color: var(--primary-color);
-}
-
-section.listing a::after {
-content: "\203A";
-margin-left: 5px;
-}
 
 mat-card {
     display: flex;

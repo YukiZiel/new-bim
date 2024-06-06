@@ -4,128 +4,127 @@
             "id": 42,
             "idpare": 26,
             "label": "Calefacción, Ventilación y Aire Acondicionado",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 37,
             "idpare": 24,
             "label": "Cerramientos exteriores horizontales",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 36,
             "idpare": 24,
             "label": "Cerramientos exteriores verticales",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 38,
             "idpare": 25,
             "label": "Cerramientos interiores",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 30,
             "idpare": 23,
             "label": "Cimentación",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 47,
             "idpare": 26,
             "label": "Domótica",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 44,
             "idpare": 26,
             "label": "Electricidad",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 48,
             "idpare": 27,
             "label": "Equipos",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 35,
             "idpare": 24,
             "label": "Estructura",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 32,
             "idpare": 23,
             "label": "Forjados sanitarios y soleras",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 41,
             "idpare": 26,
             "label": "Lampistería",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 54,
             "idpare": 29,
             "label": "Mejoras del terreno y entorno",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 49,
             "idpare": 27,
             "label": "Mobiliario",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 43,
             "idpare": 26,
             "label": "Protección contra incendios",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 39,
             "idpare": 25,
             "label": "Revestimientos y acabados interiores",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 33,
             "idpare": 23,
             "label": "Saneamiento de agua y gas",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 46,
             "idpare": 26,
             "label": "Seguridad",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         },
         {
             "id": 45,
             "idpare": 26,
             "label": "Telecomunicaciones",
-            "ordre": "0"
-            
+            "ordre": "0",
+            "active": "1"
         }
-
     ]
 }

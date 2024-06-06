@@ -12,4 +12,20 @@ export interface ObjectBIM {
     patrocinatTxt: string,
     patrocinatLogo: string,
     patrocinatUrl: string,
+    downloads: Download[]
+}
+
+export interface Download {
+    format: string,
+    formatdown: FormatDown[]
+}
+
+export interface FormatDown {
+    fitxer: string,
+    ext: string,
+    url: string,
+    size: string,
+    version: string,
+    format: string,
+    download: boolean
 }

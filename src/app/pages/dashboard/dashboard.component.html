@@ -9,11 +9,29 @@
 </mat-button-toggle-group>
 <div class="selected-value">Orden: {{group.value}}</div>
 
-  <mat-form-field class="search">
-    <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Buscar" />
-    <mat-icon matSuffix>search</mat-icon>
-  </mat-form-field>
+<mat-form-field id="search">
+  <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Buscar" />
+  <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+<!-- <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Sistema
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+    <mat-selection-list [multiple]="false">
+      <mat-list-option *ngFor="let sistemaG of sistemasG" [value]="sistemaG.label" color="primary">
+        {{ sistemaG.label }}
+      </mat-list-option>
+    </mat-selection-list>
+</mat-expansion-panel> -->
+<mat-form-field id="filterSis">
+  <mat-label>Sistema</mat-label>
+  <mat-select [(ngModel)]="selectedSistemaG">
+    <mat-option *ngFor="let sistemaG of sistemasG" [value]="sistemaG.label" color="primary">{{ sistemaG.label }}</mat-option>
+  </mat-select>
+</mat-form-field>
 
 <section class="results">
-    <app-object-bim *ngFor="let bim of bims | filterBy: ['description']: this.searchTerm" [objectBim]="bim" />
+    <app-object-bim *ngFor="let bim of bims | filterBy: ['description']: this.searchTerm | filterBy: ['sistema']: this.selectedSistemaG" [objectBim]="bim" />
 </section>

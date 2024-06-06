@@ -18,21 +18,18 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
                     "format": "Nativos",
                     "formatdown": [
                         {
-                        "id": "0",
-                        "fitxer": "ITeC_RejaBarcelona_PAS51.rfa",
-                        "ext": "RFA",
-                        "url": "",
-                        "size": "748.00 kB",
-                        "version": "2015",
-                        "format": "Revit",
-                        "download":	true
+                            "fitxer": "ITeC_RejaBarcelona_PAS51.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "748.00 kB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download":	true
                         },
                         {
-                            "id": "1",
                             "fitxer": "ITeC_RejaBarcelona_PAS51.pln",
                             "ext": "PLN",
                             "url": "",
@@ -40,14 +37,14 @@
                             "version": "2015",
                             "format": "ArchiCAD",
                             "download":	true
-                            }
+                        }
                     ]
                 },
-                {   "id": "1",
+                { 
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_RejaBarcelona_PAS51.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -78,21 +75,18 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
                     "format": "Nativos",
                     "formatdown": [
                         {
-                        "id": "0",
-                        "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.rvt",
-                        "ext": "RVT",
-                        "url": "",
-                        "size": "1.09 MB",
-                        "version": "",
-                        "format": "Revit",
-                        "download":	true
+                            "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.rvt",
+                            "ext": "RVT",
+                            "url": "",
+                            "size": "1.09 MB",
+                            "version": "",
+                            "format": "Revit",
+                            "download":	true
                         },
                         {
-                            "id": "1",
                             "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.pln",
                             "ext": "PLN",
                             "url": "",
@@ -103,11 +97,10 @@
                         }
                     ]
                 },
-                {   "id": "1",
+                { 
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
                             "fitxer": "ITeC_MurosFachadaVentilada_PlacasCeramicas+ATGenerico.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -138,11 +131,9 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
                     "format": "Nativos",
                     "formatdown": [
                         {
-                            "id": "0",
                             "fitxer": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.rfa",
                             "ext": "RFA",
                             "url": "",
@@ -152,7 +143,6 @@
                             "download":	true
                         },
                         {
-                            "id": "1",
                             "fitxer": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.pln",
                             "ext": "PLN",
                             "url": "",
@@ -163,11 +153,10 @@
                             }
                     ]
                 },
-                {   "id": "1",
+                { 
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
                             "fitxer": "ITeC_IntercambiadorCalorPlacas_AceroInoxidable.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -198,11 +187,9 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
                     "format": "Nativos",
                     "formatdown": [
                         {
-                            "id": "0",
                             "fitxer": "ITeC_BarreraBionda_Acer.rvt",
                             "ext": "RVT",
                             "url": "",
@@ -213,11 +200,10 @@
                         }
                     ]
                 },
-                {   "id": "1",
+                {   
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
                             "fitxer": "ITeC_BarreraBionda_Acer.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -248,11 +234,11 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
+                    
                     "format": "Nativos",
                     "formatdown": [
                         {
-                        "id": "0",
+                        
                         "fitxer": "ITeC_TuboFlexibleCorrugadoProteccionCables_PVC.rvt",
                         "ext": "RVT",
                         "url": "",
@@ -262,7 +248,7 @@
                         "download":	true
                         },
                         {
-                            "id": "1",
+                            
                             "fitxer": "ITeC_TuboFlexibleCorrugadoProteccionCables_PVC.pln",
                             "ext": "PLN",
                             "url": "",
@@ -273,11 +259,11 @@
                             }
                     ]
                 },
-                {   "id": "1",
+                {   
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_TuboFlexibleCorrugadoProteccionCables_PVC.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -334,7 +320,7 @@
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_CentralizacionContadoresAgua_PPR.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -365,11 +351,11 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
+                    
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                        "id": "0",
+                        
                         "fitxer": "ITeC_BaneraRectangular_PlanchaAcero.ifc",
                         "ext": "IFC",
                         "url": "",
@@ -380,11 +366,11 @@
                         }
                     ]
                 },
-                {   "id": "1",
+                {   
                     "format": "Nativos",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_BaneraRectangular_PlanchaAcero.rfa",
                             "ext": "RFA",
                             "url": "",
@@ -394,7 +380,7 @@
                             "download":	true
                         },
                         {
-                            "id": "1",
+                            
                             "fitxer": "ITeC_BaneraRectangular_PlanchaAcero.pln",
                             "ext": "PLN",
                             "url": "",
@@ -425,11 +411,11 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
+                    
                     "format": "Nativos",
                     "formatdown": [
                         {
-                        "id": "0",
+                        
                         "fitxer": "ITeC_CimentacionEstriboPuente_HA.rfa",
                         "ext": "RFA",
                         "url": "",
@@ -440,11 +426,11 @@
                         }
                     ]
                 },
-                {   "id": "1",
+                {   
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_CimentacionEstriboPuente_HA.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -475,11 +461,11 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
+                    
                     "format": "Nativos",
                     "formatdown": [
                         {
-                        "id": "0",
+                        
                         "fitxer": "ITeC_ForjadosSanitarios400+60mm_HA.pln",
                         "ext": "PLN",
                         "url": "",
@@ -490,11 +476,11 @@
                         }
                     ]
                 },
-                {   "id": "1",
+                {   
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_ForjadosSanitarios400+60mm_HA.ifc",
                             "ext": "IFC",
                             "url": "",
@@ -525,11 +511,11 @@
             "ecob": "Si",
             "downloads": [
                 {
-                    "id": "0",
+                    
                     "format": "Nativos",
                     "formatdown": [
                         {
-                        "id": "0",
+                        
                         "fitxer": "ITeC_HitoVertice_MDPE.rfa",
                         "ext": "RFA",
                         "url": "",
@@ -540,11 +526,11 @@
                         }
                     ]
                 },
-                {   "id": "1",
+                {   
                     "format": "OPENBIM",
                     "formatdown": [
                         {
-                            "id": "0",
+                            
                             "fitxer": "ITeC_HitoVertice_MDPE.ifc",
                             "ext": "IFC",
                             "url": "",

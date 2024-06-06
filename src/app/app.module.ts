@@ -16,6 +16,8 @@ import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgArrayPipesModule } from 'ngx-pipes';
+import { MatSelectModule } from '@angular/material/select';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -30,7 +32,7 @@ import { NewAccountComponent } from './auth/new-account/new-account.component';
 import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './auth/login.service';
 import { AddFavService } from './services/add-fav.service';
-import { BimService } from './services/bim.service';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { BimService } from './services/bim.service';
     NavComponent,
     ObjectsBimComponent,
     UserComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -61,14 +64,14 @@ import { BimService } from './services/bim.service';
     MatButtonToggleModule,
     MatInput,
     NgArrayPipesModule,
-    FormsModule 
+    FormsModule,
+    MatSelectModule 
   ],
   providers: [
     provideAnimationsAsync(), 
     AccountsService,
     LoginService,
-    AddFavService,
-    BimService
+    AddFavService
   ],
   bootstrap: [AppComponent]
 })
