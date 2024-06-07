@@ -27,23 +27,10 @@ header {
 .menu button {
   color: #2e3a69;
   font-size: 18px;
-
 }
 
 span a {
   text-decoration: none; 
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  margin-right: 50px;
 }
 
 .search-container {

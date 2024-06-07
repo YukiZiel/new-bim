@@ -3,15 +3,18 @@ export interface ObjectBIM {
     idemp: string;
     image: string;
     description: string;
-    llicencia: string;
-    dataEmissio: string;
-    ecob: string;
+    empresa: string;
     sistema: string,
     subsistema: string,
+    IfcBuildingElement: string,
+    classeBimITeC: string,
+    llicencia: string;
     patrocinat: string,
     patrocinatTxt: string,
     patrocinatLogo: string,
     patrocinatUrl: string,
+    dataEmissio: string;
+    ecob: string;
     downloads: Download[]
 }
 

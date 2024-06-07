@@ -1,0 +1,18 @@
+{
+	"ecobF": [
+		{
+			"id": 27650,
+			"idpare": 0,
+			"label": "No",
+			"ordre": "0",
+			"active": "1"
+		},
+		{
+			"id": 27653,
+			"idpare": 0,
+			"label": "Sí",
+			"ordre": "0",
+			"active": "1"
+		}
+	]
+}

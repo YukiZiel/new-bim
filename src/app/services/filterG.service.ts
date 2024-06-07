@@ -7,18 +7,23 @@ import { ObjectBIM } from '../object-bim';
 @Injectable({
   providedIn: 'root'
 })
-export class FilterService {
+export class FilterGService {
   private jsonUrl = '../assets/bimsGenerics.json';
+  private ecob = '../assets/generics/ecobG.json';
+  private formatos = '../assets/formatos.json';
   private sistemas = '../assets/generics/sistemaG.json';
   private subsistemas = '../assets/generics/subsistemaG.json';
-  private formatos = '../assets/formatos.json';
-  private ifcBuildingElementsG = '../assets/generics/ifcBuildingElementG.json';
-  private elementosBimItecG = '../assets/generics/elementosBimItecG.json';
+  private ifcBuildingElements = '../assets/generics/ifcBuildingElementG.json';
+  private elementosBimItec = '../assets/generics/elementosBimItecG.json';
   
   constructor(private http:HttpClient) { }
 
   getBims(): Observable<{bims:ObjectBIM[]}> {
     return this.http.get<{bims:ObjectBIM[]}>(this.jsonUrl);
+  }
+
+  getEcob(): Observable<{ecob:Filters[]}> {
+    return this.http.get<{ecob:Filters[]}>(this.ecob);
   }
 
   getSistemas(): Observable<{sistemasG:Filters[]}> {
@@ -34,10 +39,10 @@ export class FilterService {
   }
 
   getIfcBuildingElements(): Observable<{ifcBuildingElementsG:Filters[]}> {
-    return this.http.get<{ifcBuildingElementsG:Filters[]}>(this.ifcBuildingElementsG);
+    return this.http.get<{ifcBuildingElementsG:Filters[]}>(this.ifcBuildingElements);
   }
 
   getElementosBimITeCG(): Observable<{elementosBimItecG:Filters[]}> {
-    return this.http.get<{elementosBimItecG:Filters[]}>(this.elementosBimItecG);
+    return this.http.get<{elementosBimItecG:Filters[]}>(this.elementosBimItec);
   }
 }

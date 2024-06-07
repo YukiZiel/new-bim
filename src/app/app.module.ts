@@ -23,8 +23,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './auth/login/login.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { NavComponent } from './auth/navGenerics/nav.component';
+import { DashboardGComponent } from './pages/dashboardGenerics/dashboardG.component';
+import { DashboardFComponent } from './pages/dashboardFabricants/dashboardF.component';
 import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
@@ -32,19 +32,17 @@ import { NewAccountComponent } from './auth/new-account/new-account.component';
 import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './auth/login.service';
 import { AddFavService } from './services/add-fav.service';
-import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    DashboardComponent,
-    NavComponent,
+    DashboardGComponent,
     ObjectsBimComponent,
     UserComponent,
     NewAccountComponent,
-    FilterComponent
+    DashboardFComponent
   ],
   imports: [
     BrowserModule,

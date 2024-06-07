@@ -1,22 +1,20 @@
 <header class="menu">
-  <nav>
-    <ul>
-      <li><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon"/></li>
-      <li><button mat-button>Genéricos eCOB&reg;</button></li>
-      <li><button mat-button>Fabricantes</button></li>
-    </ul>
-  </nav>
-  <!-- <section class="search-container">
-    <form>
-      <input type="text" placeholder="Buscar" />
-      <button class="primary" type="button"><img alt="Search icon" src="assets/images/lupa.png" class="search-icon"/></button>
-    </form>
-  </section> -->
-  <!-- <a routerLink="/iniciar-sesion" target="_blank"><img alt="Perfil" src="assets/images/usuario.png" class="user-icon"/></a> -->
+
+  <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon"/></a>
+
+  <button mat-button>
+    <span><a routerLink="/inicio" target="_blank">Genéricos eCOB&reg;</a></span>
+  </button>
+
+  <button mat-button>
+    <span><a routerLink="/fabricantes" target="_blank">Fabricantes</a></span>
+  </button>
+
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User icon with a menu"  class="user-icon">
     <!-- <img alt="Perfil" src="assets/images/usuario.png" class="user-icon"/> -->
     <mat-icon class="user-login">account_circle</mat-icon>
   </button>
+  
   <mat-menu #menu="matMenu" class="icon-menu">
     <button mat-menu-item>
       <mat-icon class="icon-login">login</mat-icon>

@@ -1,0 +1,118 @@
+<mat-drawer-container class="container">
+    <mat-drawer-content class="content">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-button-toggle-group #group="matButtonToggleGroup" value="Asc" id="order">
+        <mat-button-toggle (click)="sortbimsAsc()" value="Asc" aria-label="Object BIM order asc" >
+          <mat-icon>arrow_upward</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle (click)="sortbimsDesc()" value="Desc" aria-label="Object BIM order desc">
+          <mat-icon>arrow_downward</mat-icon>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <div class="selected-value">Orden: {{group.value}}</div>
+  
+      <mat-form-field id="search">
+        <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Buscar" />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+  
+      <section class="results">
+          <app-object-bim *ngFor="let bim of bimsF | filterBy: ['description']: this.searchTerm | filterBy: ['ecob']: this.selectedEcob | filterBy: ['downloads.format']: this.selectedFormato | filterBy: ['empresa']: this.selectedEmpresa | filterBy: ['sistema']: this.selectedSistema | filterBy: ['subsistema']: this.selectedSubsistema | filterBy: ['IfcBuildingElement']: this.selectedIfcBuildingElement | filterBy: ['classeBimITeC']: this.selectedElementosBimItec"  [objectBim]="bim" />
+      </section>
+    </mat-drawer-content>
+    <mat-drawer #drawer mode="side" class="sidenav">
+      <div>
+        <button mat-button (click)="accordion.closeAll()">Cerrar todo</button>
+      </div>
+      <mat-accordion multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Estándar eCOB
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedEcob">
+              <mat-list-option *ngFor="let ecob of ecobF" [value]="ecob.label" color="primary">
+                {{ ecob.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Formato
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedFormato">
+              <mat-list-option *ngFor="let formato of formatos" [value]="formato.label" color="primary">
+                {{ formato.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Empresas
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedEmpresa">
+              <mat-list-option *ngFor="let empresa of empresas" [value]="empresa.label" color="primary">
+                {{ empresa.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>  
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Sistema
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedSistema">
+              <mat-list-option *ngFor="let sistemaF of sistemasF" [value]="sistemaF.label" color="primary">
+                {{ sistemaF.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+  
+        <mat-expansion-panel class="sub-option">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Subsistema
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedSubsistema">
+              <mat-list-option *ngFor="let subsistemaF of subsistemasF" [value]="subsistemaF.label" color="primary">
+                {{ subsistemaF.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              IfcBuildingElement
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedIfcBuildingElement">
+              <mat-list-option *ngFor="let ifcBuildingElementF of ifcBuildingElementsF" [value]="ifcBuildingElementF.label" color="primary">
+                {{ ifcBuildingElementF.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel class="sub-option">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Elementos Bim ITeC
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-selection-list [(ngModel)]="selectedElementosBimItec">
+              <mat-list-option *ngFor="let elementoBimItecF of elementosBimItecF" [value]="elementoBimItecF.label" color="primary">
+                {{ elementoBimItecF.label }}
+              </mat-list-option>
+            </mat-selection-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-drawer>
+  </mat-drawer-container>
+  

@@ -8,14 +8,14 @@
             "sistema": "Infraestructura",
             "subsistema": "Saneamiento de agua y gas",
             "IfcBuildingElement": "Separadores",
-            "elementosBimITeC": "Separadores",
+            "classeBimITeC": "Separadores",
             "llicencia": "No",
             "patrocinat": "Sí",
             "patrocinatTxt": "Ayuntamiento de Barcelona",
             "patrocinatLogo": "bcnlogo.png",
             "patrocinatUrl": "https://ajuntament.barcelona.cat/es/",
             "dataEmissio": "31/01/2020",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     "format": "Nativos",
@@ -56,7 +56,7 @@
                     ]
                 }
             ]
-        },
+        }, 
         {
             "id": "1540",
             "idemp": "1639958",
@@ -65,14 +65,14 @@
             "sistema": "Sistema estructural y envolventes",
             "subsistema": "Cerramientos exteriores verticales",
             "IfcBuildingElement": "Muros",
-            "elementosBimITeC": "Muros de fachada",
+            "classeBimITeC": "Muros de fachada",
             "llicencia": "No",
             "patrocinat": "Sí",
             "patrocinatTxt": "Cedinsa Concessionària S.A",
             "patrocinatLogo": "logo-empr-cedinsa.jpg",
             "patrocinatUrl": "http://www.cedinsa.net/es/index.php",
             "dataEmissio": "25/04/2018",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     "format": "Nativos",
@@ -121,14 +121,14 @@
             "sistema": "Instalaciones",
             "subsistema": "Calefacción, Ventilación y Aire Acondicionado",
             "IfcBuildingElement": "",
-            "elementosBimITeC": "",
+            "classeBimITeC": "",
             "llicencia": "BEDEC",
             "patrocinat": null,
             "patrocinatTxt": "",
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "29/10/2021",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     "format": "Nativos",
@@ -184,7 +184,7 @@
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "29/10/2021",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     "format": "Nativos",
@@ -231,7 +231,7 @@
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "29/10/2021",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     
@@ -284,14 +284,14 @@
             "sistema": "Instalaciones",
             "subsistema": "Lampistería",
             "IfcBuildingElement": "Barandillas",
-            "elementosBimITeC": "Barreras",
+            "classeBimITeC": "Barreras",
             "llicencia": "BEDEC",
             "patrocinat": null,
             "patrocinatTxt": "",
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "29/10/2021",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     "format": "Nativos",
@@ -341,14 +341,14 @@
             "sistema": "Equipamiento y mobiliario",
             "subsistema": "Equipos",
             "IfcBuildingElement": "Terminales sanitarios",
-            "elementosBimITeC": "Bañeras",
+            "classeBimITeC": "Bañeras",
             "llicencia": "BEDEC",
             "patrocinat": null,
             "patrocinatTxt": "",
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "29/10/2021",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     
@@ -401,14 +401,14 @@
             "sistema": "Infraestructura",
             "subsistema": "Cimentación",
             "IfcBuildingElement": "Cimientos",
-            "elementosBimITeC": "Cimientos",
+            "classeBimITeC": "Cimientos",
             "llicencia": "BEDEC",
             "patrocinat": null,
             "patrocinatTxt": "",
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "11/12/2020",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     
@@ -444,6 +444,119 @@
             ]
         },
         {
+            "id": "3386",
+            "idemp": "1639958",
+            "image": "ITeC_PuertasCortafuegos2Hoja.jpg",
+            "description": "ITeC - Puertas cortafuegos doble hoja con ventanilla 140/160/180/200cm - Acero",
+            "sistema": "Sistemas de compartimentación",
+            "subsistema": "Cerramientos interiores",    
+            "IfcBuildingElement": "Puertas",    
+            "classeBimITeC": "Puertas interiores", 
+            "llicencia": "BEDEC",
+            "patrocinat": "No",
+            "patrocinatTxt": "",    
+            "patrocinatLogo": null,    
+            "patrocinatUrl": "",       
+            "dataEmissio": "09/11/2018",
+            "ecob": "Sí",
+            "downloads": [
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_PuertasCortafuegos2HojaAntipanicoVentRetElectromag_Acero.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "3.61 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_PuertasCortafuegos2HojasAntipanicoVentRetElectromag_Acero.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "700.00 kB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_PuertasCortafuegos2HojaAntipanicoVentRetElectromag_Acero.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "161.73 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3440",
+            "idemp": "1639958",
+            "image": "3440 ITeC_GrupoPresionContraIncendios_FundicionAcero.jpg",
+            "description": "ITeC - Grupo de presión contra incendios - Fundición de acero",   
+            "sistema": "Instalaciones",    
+            "subsistema": "Protección contra incendios",
+            "IfcBuildingElement": "Bombas",    
+            "classeBimITeC": "Bombas",      
+            "llicencia": "BEDEC",
+            "patrocinat": null,    
+            "patrocinatTxt": "",    
+            "patrocinatLogo": null,    
+            "patrocinatUrl": "",    
+            "dataEmissio": "08/03/2019",
+            "ecob": "Sí",
+            "downloads": [
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_GrupoPresionContraIncendios_FundicionAcero.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "1.03 MB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_GrupoPresionContraIncendios_FundicionAcero.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "6.43 MB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_GrupoPresionContraIncendios_FundicionAcero.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.61 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download": true
+                        }
+                    ]
+                }
+            ]
+    
+        },    
+        {
             "id": "3353",
             "idemp": "1639958",
             "image": "ITeC_ForjadosSanitarios.jpg",
@@ -451,14 +564,14 @@
             "sistema": "Infraestructura",
             "subsistema": "Forjados sanitarios y soleras",
             "IfcBuildingElement": "Forjados o losas",
-            "elementosBimITeC": "Soleras",
+            "classeBimITeC": "Soleras",
             "llicencia": "BEDEC",
             "patrocinat": "No",
             "patrocinatTxt": "",
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "28/09/2018",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
                     
@@ -494,6 +607,193 @@
             ]
         },
         {
+            "id": "3567",
+            "idemp": "1639958",
+            "image": "Flor_300x300.jpg",    
+            "description":	"ITeC - Acera 8 cm - Loseta mortero Flor",
+            "sistema": "Terreno y entorno",    
+            "subsistema": "Mejoras del terreno y entorno",    
+            "IfcBuildingElement": "Forjados o losas",    
+            "classeBimITeC": "Aceras",       
+            "llicencia": "No",    
+            "patrocinat": "Sí",    
+            "patrocinatTxt": "Ayuntamiento de Barcelona",    
+            "patrocinatLogo": "bcnlogo.png",    
+            "patrocinatUrl": "https://ajuntament.barcelona.cat/es/",    
+            "dataEmissio": "31/01/2020",    
+            "ecob": "Sí",
+            "downloads": [
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_Pavimento_LosetaMorteroFlor.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.01 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_Pavimento_LosetaMortero_Flor.rvt",
+                            "ext": "RVT",
+                            "url": "",
+                            "size": "1.41 MB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_Pavimentos_Loseta_20200220.BC3",
+                            "ext": "BC3",
+                            "url": "",
+                            "size": "84.20 kB",
+                            "version": "2015",
+                            "format": "FIEBDC - BC3",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_Pavimento_LosetaMorteroFlor.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "18.21 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3594",
+            "idemp": "1639958",
+            "image": "3594_ITeC_Pavimento_MosaicoHidraulico2.jpg",  
+            "description": "ITeC - Pavimento interior - Mosaico hidráulico",
+            "sistema": "Sistemas de compartimentación",    
+            "subsistema": "Revestimientos y acabados interiores",    
+            "IfcBuildingElement": "Revestimientos",    
+            "classeBimITeC": "Pavimentos interiores",
+            "llicencia": "BEDEC",
+            "patrocinat": null,   
+            "patrocinatTxt": "",   
+            "patrocinatLogo": null,    
+            "patrocinatUrl": "",   
+            "dataEmissio": "20/12/2019",
+            "ecob": "Sí",
+            "downloads": [
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_Pavimento_MosaicoHidraulico.zip",
+                            "ext": "ZIP",
+                            "url": "",
+                            "size": "1.79 MB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_SistForjadoRehab_BovCeramica+VigHP.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.36 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_Pavimento_MosaicoHidraulico.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "22.41 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                }
+            ]
+    
+        },
+        {
+            "id": "3644",
+            "idemp": "1639958",
+            "image": "3644_ITeC_VadoPeatonal_Granito.jpg",  
+            "description": "ITeC - Vado de peatones - Granito",
+            "sistema": "Sistema estructural y envolventes",
+            "subsistema": "Cerramientos exteriores horizontales",   
+            "IfcBuildingElement": "Forjados o losas",    
+            "classeBimITeC": "Vados peatonales",
+            "llicencia": "BEDEC",
+            "patrocinat": "Sí",
+            "patrocinatTxt": "Ajuntament de Barcelona",    
+            "patrocinatLogo": "bcnlogo.png",    
+            "patrocinatUrl": "https://www.barcelona.cat/es/",   
+            "dataEmissio": "30/04/2020",
+            "ecob": "Sí",
+            "downloads": [
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_VadoPeatonal_Granito.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "980.00 kB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_Vados_20200326.BC3",
+                            "ext": "BC3",
+                            "url": "",
+                            "size": "33.79 kB",
+                            "version": "2015",
+                            "format": "FIEBDC - BC3",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_VadoPeatonal_Granito.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.03 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_VadoPeatonal_Granito.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "22.88 kB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "3783",
             "idemp": "1639958",
             "image": "3783_ITeC_Encimera_AridosCuarzo.jpg",
@@ -501,17 +801,16 @@
             "sistema": "Equipamiento y mobiliario",
             "subsistema": "Mobiliario",
             "IfcBuildingElement": "Mobiliario",
-            "elementosBimITeC": "Encimeras",
+            "classeBimITeC": "Encimeras",
             "llicencia": "BEDEC",
             "patrocinat": null,
             "patrocinatTxt": "",
             "patrocinatLogo": null,
             "patrocinatUrl": "",
             "dataEmissio": "30/04/2021",
-            "ecob": "Si",
+            "ecob": "Sí",
             "downloads": [
                 {
-                    
                     "format": "Nativos",
                     "formatdown": [
                         {
@@ -538,6 +837,62 @@
                             "version": "2x3",
                             "format": "IFC",
                             "download":	true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3844",
+            "idemp": "1639958",
+            "image": "ITeC_AntenaColectivaICT_Aluminio.jpg",  
+            "description": "ITeC - Antena colectiva TDT - Aluminio",
+            "sistema": "Instalaciones",
+            "subsistema": "Telecomunicaciones",    
+            "IfcBuildingElement": "Dispositivos de comunicación electrónica o digital",    
+            "classeBimITeC": "Antenas",    
+            "llicencia": "BEDEC",
+            "patrocinat": null,
+            "patrocinatTxt": "",    
+            "patrocinatLogo": null,   
+            "patrocinatUrl": "",       
+            "dataEmissio": "30/04/2021",
+            "ecob": "Sí",
+            "downloads": [
+                {
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_AntenaColectivaICT_Aluminio.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "1.39 MB",
+                            "version": "2x3",
+                            "format": "IFC",
+                            "download": true
+                        }
+                    ]
+                },
+                {
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_AntenaColectivaICT_Aluminio.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "3.75 MB",
+                            "version": "2015",
+                            "format": "Revit",
+                            "download": true
+                        },
+                        {
+                            "fitxer": "ITeC_AntenaUHF_Aluminio.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "5.14 MB",
+                            "version": "2015",
+                            "format": "ArchiCAD",
+                            "download": true
                         }
                     ]
                 }
