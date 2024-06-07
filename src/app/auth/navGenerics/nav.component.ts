@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angu
 import { MatAccordion } from '@angular/material/expansion';
 import { Filters } from '../../filter';
 import { FilterService } from '../../services/filter.service';
+import { ObjectBIM } from '../../object-bim';
 // import { ObjectBIM } from '../../object-bim';
 // import { BimService } from '../../services/bim.service';
 
@@ -19,10 +20,18 @@ export class NavComponent implements OnInit{
   formatos: Filters[] = [];
   ifcBuildingElementsG: Filters[] = [];
   elementosBimItecG: Filters[] = [];
-
+  searchTerm = "";
+  selectedSistemaG = "";
+  bims: ObjectBIM[] = [];
   constructor(private filterService: FilterService) {}
 
   ngOnInit() {
+    this.filterService.getBims().subscribe(data => {
+      this.bims = data.bims;
+      this.sortbimsAsc();
+      this.filterSitemas();
+    });
+
     this.filterService.getSistemas().subscribe(data => {
       this.sistemasG = data.sistemasG;
     });
@@ -42,10 +51,25 @@ export class NavComponent implements OnInit{
     this.filterService.getElementosBimITeCG().subscribe(data => {
       this.elementosBimItecG = data.elementosBimItecG;
     });
+
   }
 
   onFilterChange(filterType: string, filterValue: any) {
     this.filterChange.emit({ type: filterType, value: filterValue });
+  }
+
+  public filterSitemas() {
+    this.filterService.getSistemas().subscribe(data => {
+      this.sistemasG = data.sistemasG;
+    });
+  }
+
+  public sortbimsDesc(): void {
+    this.bims = this.bims.sort((a, b) => b.description.localeCompare(a.description));
+  }
+
+  public sortbimsAsc() {
+    this.bims = this.bims.sort((a, b) => a.description.localeCompare(b.description));
   }
 }
 

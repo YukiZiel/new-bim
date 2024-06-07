@@ -3,7 +3,31 @@
     <button mat-icon-button (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <app-dashboard />
+    <mat-button-toggle-group #group="matButtonToggleGroup" value="Asc" id="order">
+      <mat-button-toggle (click)="sortbimsAsc()" value="Asc" aria-label="Object BIM order asc" >
+        <mat-icon>arrow_upward</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle (click)="sortbimsDesc()" value="Desc" aria-label="Object BIM order desc">
+        <mat-icon>arrow_downward</mat-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+    <div class="selected-value">Orden: {{group.value}}</div>
+
+    <mat-form-field id="search">
+      <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Buscar" />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <!-- <mat-form-field id="filterSis">
+      <mat-label>Sistema</mat-label>
+      <mat-select [(ngModel)]="selectedSistemaG">
+        <mat-option *ngFor="let sistemaG of sistemasG" [value]="sistemaG.label" color="primary">{{ sistemaG.label }}</mat-option>
+      </mat-select>
+    </mat-form-field> -->
+
+    <section class="results">
+        <app-object-bim *ngFor="let bim of bims | filterBy: ['description']: this.searchTerm | filterBy: ['sistema']: this.selectedSistemaG" [objectBim]="bim" />
+    </section>
   </mat-drawer-content>
   <mat-drawer #drawer mode="side" class="sidenav">
     <div>
@@ -41,7 +65,7 @@
             Sistema
           </mat-panel-title>
         </mat-expansion-panel-header>
-          <mat-selection-list [multiple]="false">
+          <mat-selection-list [(ngModel)]="selectedSistemaG">
             <mat-list-option *ngFor="let sistemaG of sistemasG" [value]="sistemaG.label" color="primary">
               {{ sistemaG.label }}
             </mat-list-option>
