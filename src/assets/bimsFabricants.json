@@ -1,6 +1,5 @@
 {
-    "bimsF": 
-    [
+    "bimsF": [
         {
             "id": 36,
             "idemp": "1640144",
@@ -10,7 +9,7 @@
             "sistema": "Equipamiento y mobiliario",
             "subsistema": "Cerramientos exteriores horizontales",
             "IfcBuildingElement": "Cubiertas",
-            "elementosBimITeC": "Cubiertas planas",
+            "classeBimITeC": "Cubiertas planas",
             "llicencia": "No",
             "patrocinat": "No",
             "patrocinatTxt": null,

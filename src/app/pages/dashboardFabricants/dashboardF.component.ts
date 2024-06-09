@@ -34,6 +34,7 @@ export class DashboardFComponent implements OnInit{
     this.filterService.getBims().subscribe(data => {
       this.bimsF = data.bimsF;
       this.sortbimsAsc();
+      this.filterEcob();
       this.filterFormatos();
       this.filterEmpresas();
       this.filterSistemas();

@@ -35,10 +35,9 @@ export class DashboardGComponent implements OnInit{
       this.bims = data.bims;
       // this.filteredBims = this.bims.slice();
       this.sortbimsAsc();
-
+      this.filterFormatos();
       this.filterSistemas();
       this.filterSubsistemas();
-      this.filterFormatos();
       this.filterIfcBuildingElements();
       this.filterElementosBimITec();
     });

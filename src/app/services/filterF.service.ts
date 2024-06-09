@@ -14,7 +14,7 @@ export class FilterFService {
   private formatos = '../assets/formatos.json';
   private empresas = '../assets/fabricants/empresas.json';
   private sistemas = '../assets/fabricants/sistemaF.json';
-  private subsistemas = '../assets/fabricants/subsistemaF.json';
+  private subsistemas = '../assets/fabricants/subsistemasF.json';
   private ifcBuildingElements = '../assets/fabricants/ifcBuildingElementF.json';
   private elementosBimItec = '../assets/fabricants/elementosBimItecF.json';
   

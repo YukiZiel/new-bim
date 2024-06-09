@@ -8,6 +8,7 @@ import { ObjectBIM } from '../object-bim';
   providedIn: 'root'
 })
 export class FilterGService {
+
   private jsonUrl = '../assets/bimsGenerics.json';
   private ecob = '../assets/generics/ecobG.json';
   private formatos = '../assets/formatos.json';
@@ -25,6 +26,10 @@ export class FilterGService {
   getEcob(): Observable<{ecob:Filters[]}> {
     return this.http.get<{ecob:Filters[]}>(this.ecob);
   }
+  
+  getFormatos(): Observable<{formatos:Filters[]}> {
+    return this.http.get<{formatos:Filters[]}>(this.formatos);
+  }
 
   getSistemas(): Observable<{sistemasG:Filters[]}> {
     return this.http.get<{sistemasG:Filters[]}>(this.sistemas);
@@ -32,10 +37,6 @@ export class FilterGService {
 
   getSubsistemas(): Observable<{subsistemasG:Filters[]}> {
     return this.http.get<{subsistemasG:Filters[]}>(this.subsistemas);
-  }
-
-  getFormatos(): Observable<{formatos:Filters[]}> {
-    return this.http.get<{formatos:Filters[]}>(this.formatos);
   }
 
   getIfcBuildingElements(): Observable<{ifcBuildingElementsG:Filters[]}> {
