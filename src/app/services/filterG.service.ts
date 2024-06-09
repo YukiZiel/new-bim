@@ -10,7 +10,7 @@ import { ObjectBIM } from '../object-bim';
 export class FilterGService {
 
   private jsonUrl = '../assets/bimsGenerics.json';
-  private ecob = '../assets/generics/ecobG.json';
+  private ecobs = '../assets/ecobs.json';
   private formatos = '../assets/formatos.json';
   private sistemas = '../assets/generics/sistemaG.json';
   private subsistemas = '../assets/generics/subsistemaG.json';
@@ -23,8 +23,8 @@ export class FilterGService {
     return this.http.get<{bims:ObjectBIM[]}>(this.jsonUrl);
   }
 
-  getEcob(): Observable<{ecob:Filters[]}> {
-    return this.http.get<{ecob:Filters[]}>(this.ecob);
+  getEcobs(): Observable<{ecobs:Filters[]}> {
+    return this.http.get<{ecobs:Filters[]}>(this.ecobs);
   }
   
   getFormatos(): Observable<{formatos:Filters[]}> {

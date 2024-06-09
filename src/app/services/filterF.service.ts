@@ -10,7 +10,7 @@ import { ObjectBIM } from '../object-bim';
 export class FilterFService {
 
   private jsonUrl = '../assets/bimsFabricants.json';
-  private ecob = '../assets/fabricants/ecobF.json';
+  private ecobs = '../assets/ecobs.json';
   private formatos = '../assets/formatos.json';
   private empresas = '../assets/fabricants/empresas.json';
   private sistemas = '../assets/fabricants/sistemaF.json';
@@ -24,8 +24,8 @@ export class FilterFService {
     return this.http.get<{bimsF:ObjectBIM[]}>(this.jsonUrl);
   }
 
-  getEcob(): Observable<{ecobF:Filters[]}> {
-    return this.http.get<{ecobF:Filters[]}>(this.ecob);
+  getEcobs(): Observable<{ecobs:Filters[]}> {
+    return this.http.get<{ecobs:Filters[]}>(this.ecobs);
   }
   
   getEmpresas(): Observable<{empresas:Filters[]}> {

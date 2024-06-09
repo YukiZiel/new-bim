@@ -12,14 +12,14 @@ import { MatAccordion } from '@angular/material/expansion';
 export class DashboardGComponent implements OnInit{
   @ViewChild( MatAccordion ) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
-  // ecob:  Filters[] = [];
+  ecobs:  Filters[] = [];
   formatos: Filters[] = [];
   sistemasG: Filters[] = [];
   subsistemasG: Filters[] = [];
   ifcBuildingElementsG: Filters[] = [];
   elementosBimItecG: Filters[] = [];
   searchTerm = "";
-  // selectedEcob = "";
+  selectedEcob = "";
   selectedFormato = "";
   selectedSistema = "";
   selectedSubsistema = "";
@@ -35,6 +35,7 @@ export class DashboardGComponent implements OnInit{
       this.bims = data.bims;
       // this.filteredBims = this.bims.slice();
       this.sortbimsAsc();
+      this.filterEcobs();
       this.filterFormatos();
       this.filterSistemas();
       this.filterSubsistemas();
@@ -53,11 +54,11 @@ export class DashboardGComponent implements OnInit{
     // this.applyFilters();
   }
 
-  // public filterEcob() {
-  //   this.filterService.getEcob().subscribe(data => {
-  //     this.ecob = data.ecob;
-  //   });
-  // }
+  public filterEcobs() {
+    this.filterService.getEcobs().subscribe(data => {
+      this.ecobs = data.ecobs;
+    });
+  }
 
   public filterFormatos() {
     this.filterService.getFormatos().subscribe(data => {

@@ -12,7 +12,7 @@ import { MatAccordion } from '@angular/material/expansion';
 export class DashboardFComponent implements OnInit{
   @ViewChild( MatAccordion ) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
-  ecobF:  Filters[] = [];
+  ecobs:  Filters[] = [];
   formatos: Filters[] = [];
   empresas: Filters[] = [];
   sistemasF: Filters[] = [];
@@ -34,7 +34,7 @@ export class DashboardFComponent implements OnInit{
     this.filterService.getBims().subscribe(data => {
       this.bimsF = data.bimsF;
       this.sortbimsAsc();
-      this.filterEcob();
+      this.filterEcobs();
       this.filterFormatos();
       this.filterEmpresas();
       this.filterSistemas();
@@ -48,9 +48,9 @@ export class DashboardFComponent implements OnInit{
     this.filterChange.emit({ type: filterType, value: filterValue });
   }
 
-  public filterEcob() {
-    this.filterService.getEcob().subscribe(data => {
-      this.ecobF = data.ecobF;
+  public filterEcobs() {
+    this.filterService.getEcobs().subscribe(data => {
+      this.ecobs = data.ecobs;
     });
   }
 

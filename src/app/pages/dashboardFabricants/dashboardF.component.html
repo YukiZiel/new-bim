@@ -34,7 +34,7 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
             <mat-selection-list [(ngModel)]="selectedEcob">
-              <mat-list-option *ngFor="let ecob of ecobF" [value]="ecob.label" color="primary">
+              <mat-list-option *ngFor="let ecob of ecobs" [value]="ecob.label" color="primary">
                 {{ ecob.label }}
               </mat-list-option>
             </mat-selection-list>
