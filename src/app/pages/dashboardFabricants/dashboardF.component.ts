@@ -68,19 +68,34 @@ export class DashboardFComponent implements OnInit{
 
   public filterSistemas() {
     this.filterService.getSistemas().subscribe(data => {
-      this.sistemasF = data.sistemasF;
+      // this.sistemasF = data.sistemasF;
+      this.sistemasF = data.sistemasF.filter(sistema =>
+        this.bimsF.some(bim =>
+          bim.sistema.toLowerCase().includes(sistema.label.toLowerCase())
+        )
+      );
     });
   }
 
   public filterSubsistemas() {
     this.filterService.getSubsistemas().subscribe(data => {
-      this.subsistemasF = data.subsistemasF;
+      // this.subsistemasF = data.subsistemasF;
+      this.subsistemasF = data.subsistemasF.filter(subsistema =>
+        this.bimsF.some(bim =>
+          bim.subsistema.toLowerCase().includes(subsistema.label.toLowerCase())
+        )
+      );
     });
   }
 
   public filterIfcBuildingElements() {
     this.filterService.getIfcBuildingElements().subscribe(data => {
       this.ifcBuildingElementsF = data.ifcBuildingElementsF;
+      // this.ifcBuildingElementsF = data.ifcBuildingElementsF.filter(ifcBuildingElement =>
+      //   this.bimsF.some(bim =>
+      //     bim.IfcBuildingElement.toLowerCase().includes(ifcBuildingElement.label.toLowerCase())
+      //   )
+      // );
     });
   }
 

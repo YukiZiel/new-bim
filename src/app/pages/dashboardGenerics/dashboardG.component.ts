@@ -56,7 +56,12 @@ export class DashboardGComponent implements OnInit{
 
   public filterEcobs() {
     this.filterService.getEcobs().subscribe(data => {
-      this.ecobs = data.ecobs;
+      // this.ecobs = data.ecobs;
+      this.ecobs = data.ecobs.filter(ecob =>
+        this.bims.some(bim =>
+          bim.ecob.toLowerCase().includes(ecob.label.toLowerCase())
+        )
+      );
     });
   }
 
@@ -68,25 +73,45 @@ export class DashboardGComponent implements OnInit{
 
   public filterSistemas() {
     this.filterService.getSistemas().subscribe(data => {
-      this.sistemasG = data.sistemasG;
+      // this.sistemasG = data.sistemasG;
+      this.sistemasG = data.sistemasG.filter(sistema =>
+        this.bims.some(bim =>
+          bim.sistema.toLowerCase().includes(sistema.label.toLowerCase())
+        )
+      );
     });
   }
 
   public filterSubsistemas() {
     this.filterService.getSubsistemas().subscribe(data => {
-      this.subsistemasG = data.subsistemasG;
+      // this.subsistemasG = data.subsistemasG;
+      this.subsistemasG = data.subsistemasG.filter(subsistema =>
+        this.bims.some(bim =>
+          bim.subsistema.toLowerCase().includes(subsistema.label.toLowerCase())
+        )
+      );
     });
   }
 
   public filterIfcBuildingElements() {
     this.filterService.getIfcBuildingElements().subscribe(data => {
-      this.ifcBuildingElementsG = data.ifcBuildingElementsG;
+      // this.ifcBuildingElementsG = data.ifcBuildingElementsG;
+      this.ifcBuildingElementsG = data.ifcBuildingElementsG.filter(ifcBuildingElement =>
+        this.bims.some(bim =>
+          bim.IfcBuildingElement.toLowerCase().includes(ifcBuildingElement.label.toLowerCase())
+        )
+      );
     });
   }
 
   public filterElementosBimITec() {
     this.filterService.getElementosBimITeCG().subscribe(data => {
-      this.elementosBimItecG = data.elementosBimItecG;
+      // this.elementosBimItecG = data.elementosBimItecG;
+      this.elementosBimItecG = data.elementosBimItecG.filter(elementosBimItec =>
+        this.bims.some(bim =>
+          bim.classeBimITeC.toLowerCase().includes(elementosBimItec.label.toLowerCase())
+        )
+      );
     });
   } 
 

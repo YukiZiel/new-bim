@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardComponentG } from './dashboardG.component';
+import { DashboardGComponent } from './dashboardG.component';
 
 describe('DashboardComponent', () => {
-  let component: DashboardComponentG;
-  let fixture: ComponentFixture<DashboardComponentG>;
+  let component: DashboardGComponent;
+  let fixture: ComponentFixture<DashboardGComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DashboardComponentG]
+      declarations: [DashboardGComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DashboardComponentG);
+    fixture = TestBed.createComponent(DashboardGComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
