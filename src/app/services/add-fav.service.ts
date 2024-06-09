@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ObjectBIM } from '../object-bim';
+import { ObjectBIM } from '../interfaces/object-bim';
 
 @Injectable({
   providedIn: 'root'

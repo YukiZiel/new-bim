@@ -1,8 +1,9 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { ObjectBIM } from '../../object-bim';
+import { ObjectBIM } from '../../interfaces/object-bim';
 import { FilterGService } from '../../services/filterG.service';
-import { Filters } from '../../filter';
+import { Filters } from '../../interfaces/filter';
 import { MatAccordion } from '@angular/material/expansion';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboardG',
@@ -27,7 +28,7 @@ export class DashboardGComponent implements OnInit{
   selectedElementosBimItec ="";
   bims: ObjectBIM[] = [];
   // filteredBims: ObjectBIM[] = [];
-  constructor(private filterService: FilterGService
+  constructor(private router: Router, private filterService: FilterGService
   ) {}
 
   ngOnInit() {
@@ -114,6 +115,10 @@ export class DashboardGComponent implements OnInit{
       );
     });
   } 
+
+  onBimClicked(id: string) {
+    this.router.navigate(['/bim', id]);
+  }
 
   public sortbimsDesc(): void {
     this.bims = this.bims.sort((a, b) => b.description.localeCompare(a.description));

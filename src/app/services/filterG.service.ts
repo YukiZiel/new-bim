@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Filters } from '../filter';
-import { ObjectBIM } from '../object-bim';
+import { Filters } from '../interfaces/filter';
+import { ObjectBIM } from '../interfaces/object-bim';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class FilterGService {
   private subsistemas = '../assets/generics/subsistemaG.json';
   private ifcBuildingElements = '../assets/generics/ifcBuildingElementG.json';
   private elementosBimItec = '../assets/generics/elementosBimItecG.json';
-  
+  // bims: ObjectBIM[] = [];
   constructor(private http:HttpClient) { }
 
   getBims(): Observable<{bims:ObjectBIM[]}> {
@@ -45,5 +46,9 @@ export class FilterGService {
 
   getElementosBimITeCG(): Observable<{elementosBimItecG:Filters[]}> {
     return this.http.get<{elementosBimItecG:Filters[]}>(this.elementosBimItec);
+  }
+
+  getDetail(id: string): Observable<ObjectBIM | undefined> {
+    return this.getBims().pipe(map(response => response.bims.find(bim => bim.id === id)))
   }
 }

@@ -17,7 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgArrayPipesModule } from 'ngx-pipes';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -32,6 +32,8 @@ import { NewAccountComponent } from './auth/new-account/new-account.component';
 import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './auth/login.service';
 import { AddFavService } from './services/add-fav.service';
+import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
+import { DashboardDetailComponent } from './pages/dashboard-detail/dashboard-detail.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { AddFavService } from './services/add-fav.service';
     ObjectsBimComponent,
     UserComponent,
     NewAccountComponent,
-    DashboardFComponent
+    DashboardFComponent,
+    ObjectDetailComponent,
+    DashboardDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +67,8 @@ import { AddFavService } from './services/add-fav.service';
     MatInput,
     NgArrayPipesModule,
     FormsModule,
-    MatSelectModule 
+    MatSelectModule,
+    MatTableModule 
   ],
   providers: [
     provideAnimationsAsync(), 

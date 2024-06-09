@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { ObjectBIM } from '../../object-bim';
+import { ObjectBIM } from '../../interfaces/object-bim';
 import { FilterFService } from '../../services/filterF.service';
-import { Filters } from '../../filter';
+import { Filters } from '../../interfaces/filter';
 import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
@@ -91,11 +91,6 @@ export class DashboardFComponent implements OnInit{
   public filterIfcBuildingElements() {
     this.filterService.getIfcBuildingElements().subscribe(data => {
       this.ifcBuildingElementsF = data.ifcBuildingElementsF;
-      // this.ifcBuildingElementsF = data.ifcBuildingElementsF.filter(ifcBuildingElement =>
-      //   this.bimsF.some(bim =>
-      //     bim.IfcBuildingElement.toLowerCase().includes(ifcBuildingElement.label.toLowerCase())
-      //   )
-      // );
     });
   }
 

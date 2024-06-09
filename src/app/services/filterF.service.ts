@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Filters } from '../filter';
-import { ObjectBIM } from '../object-bim';
+import { Filters } from '../interfaces/filter';
+import { ObjectBIM } from '../interfaces/object-bim';
 
 @Injectable({
   providedIn: 'root'

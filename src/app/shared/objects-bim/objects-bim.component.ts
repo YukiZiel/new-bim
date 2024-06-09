@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { ObjectBIM } from '../../object-bim';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ObjectBIM } from '../../interfaces/object-bim';
 import { AddFavService } from '../../services/add-fav.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { AddFavService } from '../../services/add-fav.service';
 })
 export class ObjectsBimComponent {
   @Input() objectBim!: ObjectBIM;
-
+  // @Output() bimClicked = new EventEmitter<string>();
   constructor(private addFavService: AddFavService) {}
 
   // addFavorite() {
@@ -26,4 +26,8 @@ export class ObjectsBimComponent {
   inFavList(objectBim: ObjectBIM) : boolean {
     return this.addFavService.inFavList(objectBim);
   }
+
+  // onClick() {
+  //   this.bimClicked.emit(this.objectBim.id);
+  // }
 }
