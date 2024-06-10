@@ -1,4 +1,4 @@
-<mat-card class="listing">
+<mat-card class="listing" (click)="navigateToDetail(objectBim.id)">
     <mat-card-actions>
         <button mat-icon-button matTooltip="Añadir a favorito" [ngClass]="{'active': inFavList(objectBim)}" (click)="toggleFavList(objectBim)">
             <mat-icon>favorite</mat-icon>

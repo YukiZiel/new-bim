@@ -3,11 +3,11 @@
   <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon"/></a>
 
   <button mat-button>
-    <span><a routerLink="/inicio" target="_blank">Genéricos eCOB&reg;</a></span>
+    <span><a routerLink="/inicio">Genéricos eCOB&reg;</a></span>
   </button>
 
   <button mat-button>
-    <span><a routerLink="/fabricantes" target="_blank">Fabricantes</a></span>
+    <span><a routerLink="/fabricantes">Fabricantes</a></span>
   </button>
 
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User icon with a menu"  class="user-icon">
@@ -18,11 +18,11 @@
   <mat-menu #menu="matMenu" class="icon-menu">
     <button mat-menu-item>
       <mat-icon class="icon-login">login</mat-icon>
-      <span><a routerLink="/iniciar-sesion" target="_blank">Iniciar sesión</a></span>
+      <span><a routerLink="/iniciar-sesion">Iniciar sesión</a></span>
     </button>
     <button mat-menu-item>
       <mat-icon class="icon-login">logout</mat-icon>
-      <span> <a routerLink="/registrarse" target="_blank">Cerrar sesión</a></span>
+      <span> <a routerLink="/registrarse">Cerrar sesión</a></span>
     </button>
   </mat-menu>
 </header>

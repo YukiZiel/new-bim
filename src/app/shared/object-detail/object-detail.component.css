@@ -1,7 +1,32 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    justify-content: left;
+    align-items: left; */
     height: 100%;
-    margin-top: 5%;
+    margin-block: 30px;
+    margin-inline: 50px;
+    font-weight: 500;
+    color: #2e3a69;
+  }
+
+  .detail-title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .detail-downloads p {
+    font-size: 18px;
+  }
+
+  .detail-downloads ul {
+    padding-left: 0px;
+    font-size: 14px;
+    list-style: none;
+  }
+
+  .download-archive {
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-grid;
+    font-weight: 400;
+    text-align: center;
   }

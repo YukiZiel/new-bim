@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ObjectBIM } from '../../interfaces/object-bim';
 import { AddFavService } from '../../services/add-fav.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-object-bim',
@@ -10,10 +11,11 @@ import { AddFavService } from '../../services/add-fav.service';
 export class ObjectsBimComponent {
   @Input() objectBim!: ObjectBIM;
   // @Output() bimClicked = new EventEmitter<string>();
-  constructor(private addFavService: AddFavService) {}
+  constructor(private router: Router, private addFavService: AddFavService) {}
 
-  // addFavorite() {
-  // }
+  navigateToDetail(id:string): void {
+    this.router.navigate(['/bim', id])
+  }
 
   toggleFavList(objectBim:ObjectBIM) {
     if (this.inFavList(objectBim)) {

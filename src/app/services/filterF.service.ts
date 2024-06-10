@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Filters } from '../interfaces/filter';
 import { ObjectBIM } from '../interfaces/object-bim';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -50,5 +51,9 @@ export class FilterFService {
 
   getElementosBimITeCF(): Observable<{elementosBimItecF:Filters[]}> {
     return this.http.get<{elementosBimItecF:Filters[]}>(this.elementosBimItec);
+  }
+
+  getDetail(id: string): Observable<ObjectBIM | undefined> {
+    return this.getBims().pipe(map(response => response.bimsF.find(bim => bim.id === id)))
   }
 }

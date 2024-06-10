@@ -28,7 +28,7 @@ export class DashboardFComponent implements OnInit{
   selectedIfcBuildingElement = "";
   selectedElementosBimItec ="";
   bimsF: ObjectBIM[] = [];
-  constructor(private filterService: FilterFService) {}
+  constructor( private filterService: FilterFService ) {}
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {
