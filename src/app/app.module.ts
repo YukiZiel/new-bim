@@ -33,7 +33,6 @@ import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './auth/login.service';
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
-import { DashboardDetailComponent } from './pages/dashboard-detail/dashboard-detail.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +44,7 @@ import { DashboardDetailComponent } from './pages/dashboard-detail/dashboard-det
     UserComponent,
     NewAccountComponent,
     DashboardFComponent,
-    ObjectDetailComponent,
-    DashboardDetailComponent
+    ObjectDetailComponent
   ],
   imports: [
     BrowserModule,

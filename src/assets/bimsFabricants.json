@@ -1,7 +1,7 @@
 {
     "bimsF": [
         {
-            "id": 36,
+            "id": "36",
             "idemp": "1640144",
             "image":"hardrock_391_bigpanel.png",
             "description": "ROCKWOOL - Cubiertas planas - Cubierta Deck Ajardinada - Hardrock 391/ Bigpanel",
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "id": 1341,
+            "id": "1341",
             "idemp": "1640196",
             "image":"isofex_sate_2.png",
             "description": "ISOVER - isofex_sate_2",
@@ -83,7 +83,7 @@
             ]
         },
         {
-            "id": 3068,
+            "id": "3068",
             "idemp": "1640960",
             "image":"007_csm_ArmaprotectFire_26715b1d4d.png",
             "description": "ARMACELL - Conductos - Armaflex Protect",
@@ -126,7 +126,7 @@
             ]
         },
         {
-            "id": 3079,
+            "id": "3079",
             "idemp": "1640960",
             "image":"Armaflex_Ultima.png",
             "description": "ARMACELL - Conductos - Armaflex Ultima",
@@ -169,7 +169,7 @@
             ]
         },
         {
-            "id": 3272,
+            "id": "3272",
             "idemp": "1640047",
             "image":"artevia_300x150.png",
             "description": "LAFARGE - Artevia Arena",
@@ -217,7 +217,7 @@
             ]
         },
         {
-            "id": 3291,
+            "id": "3291",
             "idemp": "1640047",
             "image":"agilia_300x150.png",
             "description": "LAFARGE - Hormigones - Agilia Metal",
@@ -265,7 +265,7 @@
             ]
         },
         {
-            "id": 3828,
+            "id": "3828",
             "idemp": "1711005",
             "image":"SaintGobain_Divisorias120mm55dBA300x300.jpg",
             "description": "PLACO - Divisorias 120 mm - 55 dBA - Placo Habito Híbrido + LM Isover",
@@ -313,7 +313,7 @@
             ]
         },
         {
-            "id": 3829,
+            "id": "3829",
             "idemp": "1653792",
             "image":"Airzone_Thermostat_AirzoneBlueface300.jpg",
             "description": "AIRZONE - Termostato con interfaz a color - Airzone Blueface",
@@ -361,7 +361,7 @@
             ]
         },
         {
-            "id": 3832,
+            "id": "3832",
             "idemp": "1640725",
             "image":"Lledo_LuminariaLinealEmpotrada2800lm_Line50R_300.jpg",
             "description": "LLEDÓ - Luminaria Lineal Empotrada 2800 lm - Line 50R",
@@ -409,7 +409,7 @@
             ]
         },
         {
-            "id": 3878,
+            "id": "3878",
             "idemp": "1709268",
             "image":"Thermochip_CubInclinada_TAH_2_300.jpg",
             "description": "THERMOCHIP - Cubierta inclinada - TAH",
@@ -457,7 +457,7 @@
             ]
         },
         {
-            "id": 3887,
+            "id": "3887",
             "idemp": "1709268",
             "image":"Thermochip_FachadaSateCoat_TFbcY-YRF_300_2.jpg",
             "description": "THERMOCHIP - Fachada SATE Coat - TFbcY-TYY-RF",

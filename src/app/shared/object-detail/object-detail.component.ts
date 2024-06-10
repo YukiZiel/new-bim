@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { ObjectBIM } from '../../interfaces/object-bim';
-import { AddFavService } from '../../services/add-fav.service';
 import { FilterGService } from '../../services/filterG.service';
 import { ActivatedRoute } from '@angular/router';
 import { FilterFService } from '../../services/filterF.service';
+
 
 @Component({
   selector: 'app-object-detail',
@@ -26,18 +25,19 @@ export class ObjectDetailComponent {
   //   return this.addFavService.inFavList(objectBim);
   // }
   detail: any = '';
-  constructor( private route:ActivatedRoute, private filterGService: FilterGService,  private filterFService: FilterFService)
+  constructor( private route:ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService)
   {
       this.route.params.subscribe(data => {
+
+        this.filterFService.getDetail( data['id']).subscribe(response => {
+          this.detail = response;
+
+        });
+        
         this.filterGService.getDetail( data['id']).subscribe(response => {
           this.detail = response;
-          // console.log(this.detail);
-        });
 
-        // this.filterFService.getDetail( data['id']).subscribe(response => {
-        //   this.detail = response;
-        //   // console.log(this.detail);
-        // });
+        });
       });
   }
 
