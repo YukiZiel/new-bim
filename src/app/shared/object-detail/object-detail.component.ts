@@ -2,6 +2,8 @@ import { Component, Input } from '@angular/core';
 import { FilterGService } from '../../services/filterG.service';
 import { ActivatedRoute } from '@angular/router';
 import { FilterFService } from '../../services/filterF.service';
+import { FilterPropService } from '../../services/filter-prop.service';
+import { Properties } from '../../interfaces/properties';
 
 
 @Component({
@@ -9,8 +11,10 @@ import { FilterFService } from '../../services/filterF.service';
   templateUrl: './object-detail.component.html',
   styleUrl: './object-detail.component.css'
 })
-export class ObjectDetailComponent {
 
+
+export class ObjectDetailComponent {
+  @Input() prop!: Properties;
   // constructor(private addFavService: AddFavService) {}
 
   // toggleFavList(objectBim:ObjectBIM) {
@@ -24,6 +28,7 @@ export class ObjectDetailComponent {
   // inFavList(objectBim: ObjectBIM) : boolean {
   //   return this.addFavService.inFavList(objectBim);
   // }
+
   detail: any = '';
   constructor( private route:ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService)
   {

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { LoginService } from '../../services/auth/login.service';
+
 import { AccountsService } from '../accounts.service';
+import { LoginService } from '../../services/auth/login.service';
 
 @Component({
   selector: 'app-user',
@@ -14,10 +15,10 @@ export class UserComponent {
 
   constructor(private loginService:LoginService, private accountsService: AccountsService) {}
 
-  onSetTo(status: string) {
-    // this.statusChanged.emit({id: this.id, newStatus: status});
-    this.accountsService.updateStatus(this.id, status);
-    // this.loginService.logStatus(status);
-    this.accountsService.statusUpdated.emit(status);
-  }
+  // onSetTo(status: string) {
+  //   // this.statusChanged.emit({id: this.id, newStatus: status});
+  //   this.accountsService.updateStatus(this.id, status);
+  //   // this.loginService.logStatus(status);
+  //   this.accountsService.statusUpdated.emit(status);
+  // }
 }

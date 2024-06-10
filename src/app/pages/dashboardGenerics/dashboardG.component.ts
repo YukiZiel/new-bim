@@ -88,7 +88,7 @@ export class DashboardGComponent implements OnInit{
       // this.subsistemasG = data.subsistemasG;
       this.subsistemasG = data.subsistemasG.filter(subsistema =>
         this.bims.some(bim =>
-          bim.subsistema.toLowerCase().includes(subsistema.label.toLowerCase())
+          bim.subsistema.includes(subsistema.label)
         )
       );
     });
@@ -99,7 +99,7 @@ export class DashboardGComponent implements OnInit{
       // this.ifcBuildingElementsG = data.ifcBuildingElementsG;
       this.ifcBuildingElementsG = data.ifcBuildingElementsG.filter(ifcBuildingElement =>
         this.bims.some(bim =>
-          bim.IfcBuildingElement.toLowerCase().includes(ifcBuildingElement.label.toLowerCase())
+          bim.IfcBuildingElement.includes(ifcBuildingElement.label)
         )
       );
     });
@@ -110,15 +110,15 @@ export class DashboardGComponent implements OnInit{
       // this.elementosBimItecG = data.elementosBimItecG;
       this.elementosBimItecG = data.elementosBimItecG.filter(elementosBimItec =>
         this.bims.some(bim =>
-          bim.classeBimITeC.toLowerCase().includes(elementosBimItec.label.toLowerCase())
+          bim.classeBimITeC.includes(elementosBimItec.label)
         )
       );
     });
   } 
 
-  onBimClicked(id: string) {
-    this.router.navigate(['/bim', id]);
-  }
+  // onBimClicked(id: string) {
+  //   this.router.navigate(['/bim', id]);
+  // }
 
   public sortbimsDesc(): void {
     this.bims = this.bims.sort((a, b) => b.description.localeCompare(a.description));

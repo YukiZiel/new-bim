@@ -1,5 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
-import { LoginService } from './login.service';
+import { LoginService } from '../services/auth/login.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -29,15 +30,15 @@ export class AccountsService {
   // }
   statusUpdated = new EventEmitter<string>();
 
-  addAccount(name: string, status: string) {
-    this.accounts.push({name: name, status: status});
-    this.loginService.logStatus(status);
-  }
+  // addAccount(name: string, status: string) {
+  //   this.accounts.push({name: name, status: status});
+  //   this.loginService.logStatus(status);
+  // }
 
-  updateStatus(id: number, status: string) {
-    this.accounts[id].status = status;
-    this.loginService.logStatus(status);
-  }
+  // updateStatus(id: number, status: string) {
+  //   this.accounts[id].status = status;
+  //   this.loginService.logStatus(status);
+  // }
 
   constructor(private loginService:LoginService) { }
 }

@@ -1,46 +1,44 @@
 <div class="container">
   <div class="row">
-    <form [formGroup]="upForm" (ngSubmit)="onSubmit()" class="form">
-  <!-- <div>
-    <label>Nombre</label>
-    <input type="text" #accountName>
-  </div> -->
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form">
       <mat-form-field class="full-width">
         <mat-label>Nombre</mat-label>
-        <input matInput type="text" id="name" ngModel [formControl]="name" (blur)="ErrorMessage()" required>
-        @if (name.invalid) {
-          <mat-error>Introduce el nombre</mat-error>
-        }
+        <input matInput type="text" id="username" formControlName="username" required>
+        @if (username.hasError('required')) {
+          <mat-error>El nombre es <strong>requerido</strong></mat-error>
+        } 
       </mat-form-field>
       <mat-form-field class="full-width">
         <mat-label>Apellido</mat-label>
-        <input matInput type="text" id="lastname" ngModel [formControl]="lastname" (blur)="ErrorMessage()" required>
-        @if (lastname.invalid) {
-          <mat-error>Introduce el apellido</mat-error>
-        }
+        <input matInput type="text" id="lastname" formControlName="lastname" required>
+        @if (lastname.hasError('required')) {
+          <mat-error>El apellido es <strong>requerido</strong></mat-error>
+        } 
       </mat-form-field>
       <mat-form-field class="full-width">
         <mat-label>Empresa</mat-label>
-        <input matInput type="text" id="company">
+        <input matInput type="text" id="company" formControlName="company">
       </mat-form-field>
       <mat-form-field class="full-width">
         <mat-label for="email">Correo electrónico</mat-label>
-        <input matInput type="email" id="email" ngModel name="email" [formControl]="email" (blur)="ErrorMessage()" required>
-        @if (email.invalid) {
-          <mat-error>{{errorMessage}}</mat-error>
-        }
+        <input matInput type="email" id="email" name="email" formControlName="email" required>
+        @if (email.hasError('required')) {
+          <mat-error>El correo electrónico es <strong>requerido</strong></mat-error>
+        } 
       </mat-form-field>
       <mat-form-field class="full-width">
         <mat-label>Contraseña</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'">
+        <input matInput [type]="hide ? 'password' : 'text'" id="password" formControlName="password" required>
+        @if (password.hasError('required')) {
+          <mat-error>La contraseña es <strong>requerido</strong></mat-error>
+        } 
         <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
       </mat-form-field>
-      <span *ngIf="!upForm.valid && upForm.touched" class="help-ms">Por favor introduzca datos válidos</span>
-      <mat-checkbox class="full-width"><a href="https://itec.es/itec/privacidad/">Acepto la política de privacidad</a></mat-checkbox>
-      <!-- <button (click)="onCreateAccount(accountName.value, password.value)">  -->
-      <button mat-raised-button type="submit" [disabled]="!upForm.valid">
+      <!-- <span *ngIf="!registerForm.valid && registerForm.touched" class="help-ms">Por favor introduzca datos válidos</span> -->
+      <mat-checkbox class="full-width" required><a href="https://itec.es/itec/privacidad/">Acepto la política de privacidad</a></mat-checkbox>
+      <button mat-raised-button type="submit" [disabled]="!registerForm.valid">
         Crear cuenta
       </button>
       </form>

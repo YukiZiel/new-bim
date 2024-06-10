@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
 import { NewAccountComponent } from './auth/new-account/new-account.component';
 import { AccountsService } from './auth/accounts.service';
-import { LoginService } from './auth/login.service';
+import { LoginService } from './services/auth/login.service'; 
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
 
@@ -70,7 +70,6 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
   ],
   providers: [
     provideAnimationsAsync(), 
-    AccountsService,
     LoginService,
     AddFavService
   ],

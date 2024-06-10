@@ -3,6 +3,7 @@
 		{
 			"id": 39361,
 			"idpare": 0,
+			"idemp": "1653792",
 			"label": "AIRZONE CLIMA SL",
 			"ordre": "0",
 			"active": "1"
@@ -10,6 +11,7 @@
 		{
 			"id": 27921,
 			"idpare": 0,
+			"idemp": "0000000",
 			"label": "APOLO FIJACIONES Y HERRAMIENTAS SL",
 			"ordre": "0",
 			"active": "0"
@@ -17,6 +19,7 @@
 		{
 			"id": 24262,
 			"idpare": 0,
+			"idemp": "1640960",
 			"label": "ARMACELL IBERIA SL",
 			"ordre": "0",
 			"active": "1"
@@ -24,6 +27,7 @@
 		{
 			"id": 10901,
 			"idpare": 0,
+			"idemp": "1640726",
 			"label": "ARTIGO IBÉRICA SL",
 			"ordre": "0",
 			"active": "1"
@@ -31,6 +35,7 @@
 		{
 			"id": 590,
 			"idpare": 0,
+			"idemp": "1671215",
 			"label": "CERÀMICA BELIANES SL",
 			"ordre": "0",
 			"active": "1"
@@ -38,6 +43,7 @@
 		{
 			"id": 12203,
 			"idpare": 0,
+			"idemp": "1640548",
 			"label": "CERÀMICA FUSTÉ SA",
 			"ordre": "0",
 			"active": "1"
@@ -45,6 +51,7 @@
 		{
 			"id": 22761,
 			"idpare": 0,
+			"idemp": "1914621",
 			"label": "CERÁMICA MAYOR SA",
 			"ordre": "0",
 			"active": "1"
@@ -52,6 +59,7 @@
 		{
 			"id": 2263,
 			"idpare": 0,
+			"idemp": "0000000",
 			"label": "CERAMICAS GALA SA",
 			"ordre": "0",
 			"active": "0"
@@ -59,6 +67,7 @@
 		{
 			"id": 24546,
 			"idpare": 0,
+			"idemp": "0000000",
 			"label": "DANOSA DERIVADOS ASFÁLTICOS NORMALIZADOS SA",
 			"ordre": "0",
 			"active": "0"
@@ -66,6 +75,7 @@
 		{
 			"id": 588,
 			"idpare": 0,
+			"idemp": "1710382",
 			"label": "DBBLOK",
 			"ordre": "0",
 			"active": "1"
@@ -73,6 +83,7 @@
 		{
 			"id": 28846,
 			"idpare": 0,
+			"idemp": "1727410",
 			"label": "EBARA PUMPS IBERIA SA",
 			"ordre": "0",
 			"active": "1"
@@ -80,6 +91,7 @@
 		{
 			"id": 22872,
 			"idpare": 0,
+			"idemp": "1891102",
 			"label": "EGOIN SA",
 			"ordre": "0",
 			"active": "1"
@@ -87,6 +99,7 @@
 		{
 			"id": 12237,
 			"idpare": 0,
+			"idemp": "1640204",
 			"label": "EUROPERFIL SA",
 			"ordre": "0",
 			"active": "1"
@@ -94,6 +107,7 @@
 		{
 			"id": 28814,
 			"idpare": 0,
+			"idemp": "0000000",
 			"label": "FACHADAS DEL NORTE SL",
 			"ordre": "0",
 			"active": "0"
@@ -101,6 +115,7 @@
 		{
 			"id": 26204,
 			"idpare": 0,
+			"idemp": "1993817",
 			"label": "FIRESTONE BUILDING PRODUCTS / ROLLGUM CORP.",
 			"ordre": "0",
 			"active": "1"
@@ -108,6 +123,7 @@
 		{
 			"id": 22772,
 			"idpare": 0,
+			"idemp": "1918797",
 			"label": "FORJADOS SANITARIOS CÁVITI SLU",
 			"ordre": "0",
 			"active": "1"
@@ -115,6 +131,7 @@
 		{
 			"id": 12941,
 			"idpare": 0,
+			"idemp": "1640330",
 			"label": "GROHE ESPAÑA SA",
 			"ordre": "0",
 			"active": "1"
@@ -122,6 +139,7 @@
 		{
 			"id": 37650,
 			"idpare": 0,
+			"idemp": "2011526",
 			"label": "HUMIDHEI SL (BIODRY)",
 			"ordre": "0",
 			"active": "1"
@@ -129,6 +147,7 @@
 		{
 			"id": 28827,
 			"idpare": 0,
+			"idemp": "0000000",
 			"label": "INDUSTRIAS REHAU SA",
 			"ordre": "0",
 			"active": "0"
@@ -136,6 +155,7 @@
 		{
 			"id": 29218,
 			"idpare": 0,
+			"idemp": "0000000",
 			"label": "INDUSTRIAS TITÁN SA",
 			"ordre": "0",
 			"active": "0"
@@ -143,6 +163,7 @@
 		{
 			"id": 10771,
 			"idpare": 0,
+			"idemp": "1640196",
 			"label": "ISOVER",
 			"ordre": "0",
 			"active": "1"
@@ -150,6 +171,7 @@
 		{
 			"id": 12836,
 			"idpare": 0,
+			"idemp": "1671626",
 			"label": "KME SPAIN SAU",
 			"ordre": "0",
 			"active": "1"
@@ -157,6 +179,7 @@
 		{
 			"id": 25471,
 			"idpare": 0,
+			"idemp": "1640047",
 			"label": "LAFARGE ÁRIDOS Y HORMIGONES SAU",
 			"ordre": "0",
 			"active": "1"
@@ -164,6 +187,7 @@
 		{
 			"id": 39379,
 			"idpare": 0,
+			"idemp": "1640725",
 			"label": "LLEDÓ ILUMINACIÓN SA",
 			"ordre": "0",
 			"active": "1"
@@ -171,6 +195,7 @@
 		{
 			"id": 30283,
 			"idpare": 0,
+			"idemp": "2006980",
 			"label": "LOUVELIA FAÇADE SOLUTIONS SL",
 			"ordre": "0",
 			"active": "1"
@@ -178,6 +203,7 @@
 		{
 			"id": 595,
 			"idpare": 0,
+			"idemp": "1671552",
 			"label": "MAPEI SPAIN SA",
 			"ordre": "0",
 			"active": "1"
@@ -185,6 +211,7 @@
 		{
 			"id": 12259,
 			"idpare": 0,
+			"idemp": "1989952",
 			"label": "MAX FRANK TECNOLOGÍAS PARA LA CONSTRUCCIÓN SL",
 			"ordre": "0",
 			"active": "1"
@@ -192,6 +219,7 @@
 		{
 			"id": 25912,
 			"idpare": 0,
+			"idemp": "1707112",
 			"label": "MECALIA, METALURGICA Y CALDEDERIA SL",
 			"ordre": "0",
 			"active": "1"
@@ -199,6 +227,7 @@
 		{
 			"id": 12219,
 			"idpare": 0,
+			"idemp": "1640079",
 			"label": "PALAU CERÁMICA DE ALPICAT SA",
 			"ordre": "0",
 			"active": "1"
@@ -206,6 +235,7 @@
 		{
 			"id": 22782,
 			"idpare": 0,
+			"idemp": "1640111",
 			"label": "POLIURETANOS SA",
 			"ordre": "0",
 			"active": "1"
@@ -213,6 +243,7 @@
 		{
 			"id": 26498,
 			"idpare": 0,
+			"idemp": "1671846",
 			"label": "PROPAMSA SAU",
 			"ordre": "0",
 			"active": "1"
@@ -220,6 +251,7 @@
 		{
 			"id": 596,
 			"idpare": 0,
+			"idemp": "1986468",
 			"label": "Q-RAILING EUROPA HOLDING GMBH",
 			"ordre": "0",
 			"active": "1"
@@ -227,6 +259,7 @@
 		{
 			"id": 26514,
 			"idpare": 0,
+			"idemp": "1640112",
 			"label": "RECTICEL INSULATION",
 			"ordre": "0",
 			"active": "1"
@@ -234,6 +267,7 @@
 		{
 			"id": 24463,
 			"idpare": 0,
+			"idemp": "1640102",
 			"label": "RENOLIT IBÉRICA SA",
 			"ordre": "0",
 			"active": "1"
@@ -241,6 +275,7 @@
 		{
 			"id": 587,
 			"idpare": 0,
+			"idemp": "1640144",
 			"label": "ROCKWOOL PENINSULAR SAU",
 			"ordre": "0",
 			"active": "1"
@@ -248,6 +283,7 @@
 		{
 			"id": 39345,
 			"idpare": 0,
+			"idemp": "1711005",
 			"label": "SAINT-GOBAIN PLACO IBÉRICA SA",
 			"ordre": "0",
 			"active": "1"
@@ -255,6 +291,7 @@
 		{
 			"id": 592,
 			"idpare": 0,
+			"idemp": "1640103",
 			"label": "SAINT-GOBAIN WEBER CEMARKSA SA",
 			"ordre": "0",
 			"active": "1"
@@ -262,6 +299,7 @@
 		{
 			"id": 8229,
 			"idpare": 0,
+			"idemp": "1640193",
 			"label": "SIMON SA",
 			"ordre": "0",
 			"active": "1"
@@ -269,6 +307,7 @@
 		{
 			"id": 29234,
 			"idpare": 0,
+			"idemp": "1671964",
 			"label": "STANDARD HIDRAULICA SAU",
 			"ordre": "0",
 			"active": "1"
@@ -276,6 +315,7 @@
 		{
 			"id": 23988,
 			"idpare": 0,
+			"idemp": "1642873",
 			"label": "TERREAL ESPAÑA DE CERÁMICAS SAU",
 			"ordre": "0",
 			"active": "1"
@@ -283,6 +323,7 @@
 		{
 			"id": 39692,
 			"idpare": 0,
+			"idemp": "1709268",
 			"label": "THERMOCHIP SLU",
 			"ordre": "0",
 			"active": "1"
@@ -290,6 +331,7 @@
 		{
 			"id": 589,
 			"idpare": 0,
+			"idemp": "1640157",
 			"label": "TRESPA IBERIA SL",
 			"ordre": "0",
 			"active": "1"
@@ -297,6 +339,7 @@
 		{
 			"id": 591,
 			"idpare": 0,
+			"idemp": "1640243",
 			"label": "UNEX APARELLAJE ELÉCTRICO SL",
 			"ordre": "0",
 			"active": "1"

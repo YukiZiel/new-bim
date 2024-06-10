@@ -63,6 +63,11 @@ export class DashboardFComponent implements OnInit{
   public filterEmpresas() {
     this.filterService.getEmpresas().subscribe(data => {
       this.empresas = data.empresas;
+      // this.empresas = data.empresas.filter(empresa =>
+      //   this.bimsF.some(bim =>
+      //     bim.empresa.includes(empresa.idemp)
+      //   )
+      // );
     });
   }
 
@@ -71,7 +76,7 @@ export class DashboardFComponent implements OnInit{
       // this.sistemasF = data.sistemasF;
       this.sistemasF = data.sistemasF.filter(sistema =>
         this.bimsF.some(bim =>
-          bim.sistema.toLowerCase().includes(sistema.label.toLowerCase())
+          bim.sistema.includes(sistema.label)
         )
       );
     });
@@ -82,7 +87,7 @@ export class DashboardFComponent implements OnInit{
       // this.subsistemasF = data.subsistemasF;
       this.subsistemasF = data.subsistemasF.filter(subsistema =>
         this.bimsF.some(bim =>
-          bim.subsistema.toLowerCase().includes(subsistema.label.toLowerCase())
+          bim.subsistema.includes(subsistema.label)
         )
       );
     });
@@ -90,7 +95,11 @@ export class DashboardFComponent implements OnInit{
 
   public filterIfcBuildingElements() {
     this.filterService.getIfcBuildingElements().subscribe(data => {
-      this.ifcBuildingElementsF = data.ifcBuildingElementsF;
+      this.ifcBuildingElementsF = data.ifcBuildingElementsF.filter(ifcBuildingElement =>
+        this.bimsF.some(bim =>
+          bim.IfcBuildingElement.includes(ifcBuildingElement.label)
+        )
+      );
     });
   }
 

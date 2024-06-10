@@ -19,7 +19,7 @@
       </mat-form-field>
   
       <section class="results">
-          <app-object-bim *ngFor="let bim of bimsF | filterBy: ['description']: this.searchTerm | filterBy: ['ecob']: this.selectedEcob | filterBy: ['downloads.format']: this.selectedFormato | filterBy: ['empresa']: this.selectedEmpresa | filterBy: ['sistema']: this.selectedSistema | filterBy: ['subsistema']: this.selectedSubsistema | filterBy: ['IfcBuildingElement']: this.selectedIfcBuildingElement | filterBy: ['classeBimITeC']: this.selectedElementosBimItec"  [objectBim]="bim" />
+          <app-object-bim *ngFor="let bim of bimsF | filterBy: ['description']: this.searchTerm | filterBy: ['ecob']: this.selectedEcob | filterBy: ['downloads.format']: this.selectedFormato | filterBy: ['idemp']: this.selectedEmpresa | filterBy: ['sistema']: this.selectedSistema | filterBy: ['subsistema']: this.selectedSubsistema | filterBy: ['IfcBuildingElement']: this.selectedIfcBuildingElement | filterBy: ['classeBimITeC']: this.selectedElementosBimItec"  [objectBim]="bim" />
       </section>
     </mat-drawer-content>
     <mat-drawer #drawer mode="side" class="sidenav">
@@ -58,7 +58,7 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
             <mat-selection-list [(ngModel)]="selectedEmpresa">
-              <mat-list-option *ngFor="let empresa of empresas" [value]="empresa.label" color="primary">
+              <mat-list-option *ngFor="let empresa of empresas" [value]="empresa.idemp" color="primary">
                 {{ empresa.label }}
               </mat-list-option>
             </mat-selection-list>

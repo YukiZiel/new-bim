@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private apiUrl = 'http://localhost/php/api.php'; // Cambia esta URL a la ruta correcta de tu API
+  private apiUrl = 'http://localhost/php/api.php'; // URL a la ruta de la API
 
   constructor(private http: HttpClient) { }
 
