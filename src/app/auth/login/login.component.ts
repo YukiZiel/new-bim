@@ -29,8 +29,8 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     if (this.upForm.valid) {
       // Hacer la solicitud HTTP al servidor PHP
-      // this.http.post<any>('https://new-bim.000webhostapp.com/php/login.php', this.upForm.value).subscribe(
-      this.http.post<any>('http://localhost/new-bim/php/login.php', this.upForm.value).subscribe(
+      this.http.post<any>('https://new-bim.000webhostapp.com/php/login.php', this.upForm.value).subscribe(
+      // this.http.post<any>('http://localhost/new-bim/php/login.php', this.upForm.value).subscribe(
         response => {
           if (response && response.success) { // Suponiendo que la respuesta tenga un campo 'success'
             console.log(response); 
