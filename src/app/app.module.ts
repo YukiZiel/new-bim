@@ -28,7 +28,7 @@ import { DashboardFComponent } from './pages/dashboardFabricants/dashboardF.comp
 import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
-import { NewAccountComponent } from './auth/new-account/new-account.component';
+import { NewAccountComponent } from './auth/register/new-account.component';
 import { AccountsService } from './auth/accounts.service';
 import { LoginService } from './services/auth/login.service'; 
 import { AddFavService } from './services/add-fav.service';

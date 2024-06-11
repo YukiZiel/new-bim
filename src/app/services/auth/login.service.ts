@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class LoginService {
 
-  private apiUrl = 'http://localhost/new-bim/php/login.php';
+  private apiUrl = 'https://new-bim.000webhostapp.com/login.php';
   private currentUserSubject: BehaviorSubject<any>;
   public currentUser: Observable<any>;
   

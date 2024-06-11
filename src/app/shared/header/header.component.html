@@ -16,15 +16,18 @@
   </button>
   
   <mat-menu #menu="matMenu" class="icon-menu">
-    <button mat-menu-item *ngIf="!isLoggedIn">
+    <!-- <button mat-menu-item *ngIf="!isLoggedIn"> -->
+    <button mat-menu-item>
       <mat-icon class="icon-login">login</mat-icon>
       <span><a routerLink="/iniciar-sesion">Iniciar sesión</a></span>
     </button>
-    <button mat-menu-item *ngIf="!isLoggedIn">
+    <!-- <button mat-menu-item *ngIf="!isLoggedIn"> -->
+      <button mat-menu-item>
       <mat-icon class="icon-login">edit</mat-icon>
       <span>Registrarse</span>
     </button>
-    <button mat-menu-item *ngIf="isLoggedIn" (click)="logout()">
+    <!-- <button mat-menu-item *ngIf="isLoggedIn" (click)="logout()"> -->
+      <button mat-menu-item>
       <mat-icon class="icon-login">logout</mat-icon>
       <span> <a routerLink="/registrarse">Cerrar sesión</a></span>
     </button>
