@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
 
     if (this.upForm.valid) {
       // Hacer la solicitud HTTP al servidor PHP
-      this.http.post<any>('http://localhost/new-bim/php/login.php', this.upForm.value).subscribe( // Cambiar la URL por la dirección de tu servidor
+      this.http.post<any>('https://new-bim.000webhostapp.com/login.php', this.upForm.value).subscribe( // Cambiar la URL por la dirección de tu servidor
         response => {
           console.log(response); // Solo imprimo el contenido de la respuesta, que es la linea de la tabla de la base de datos
         },
