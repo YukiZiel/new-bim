@@ -1,10 +1,41 @@
 <div class="row">
-    <div>
-      <h5>{{ account.name }}</h5>
-      <hr>
-      <p>This account is {{ account.status }}</p>
-      <!-- <button class="btn btn-default" (click)="onSetTo('active')">Set to 'active'</button>
-      <button class="btn btn-default" (click)="onSetTo('inactive')">Set to 'inactive'</button>
-      <button class="btn btn-default" (click)="onSetTo('unknown')">Set to 'unknown'</button> -->
+    <!-- <div *ngIf="userData">
+      <h2>{{ userData.username }}</h2>
+    </div> -->
+    <div class="personal-info" *ngIf="userData">
+      <h2>Datos personales:</h2>
+      <ul>
+        <li>Nombre: <b>{{ userData.username }}</b></li>
+        <li>Apellido: <b>{{ userData.lastname }}</b></li>
+        <li>Empresa: <b>{{ userData.company }}</b></li>
+        <li>Correo electrónic: <b>{{ userData.email }}</b></li>
+        <li>Contraseña: <b>{{ userData.userpassword }}</b></li>
+      </ul>
+    </div>  
+    <div class="user-favorite">
+      <h2>Favoritos:</h2>
+      <ul>
+        <li>Nombre Objeto BIM con enlace</li>
+        <li>Nombre Objeto BIM con enlace</li>
+        <li>Nombre Objeto BIM con enlace</li>
+        <li>Nombre Objeto BIM con enlace</li>
+        <li>Nombre Objeto BIM con enlace</li>
+        <li>Nombre Objeto BIM con enlace</li>
+      </ul>
+      <!-- <mat-card class="listing">
+        <mat-card-actions>
+            <button mat-icon-button matTooltip="Añadir a favorito">
+                <mat-icon>favorite</mat-icon>
+            </button>
+        </mat-card-actions>
+        <img mat-card-image
+            class="listing-image"
+            [src]="'https://bedec.itec.cat/img/' + objectBim.idemp + '/' + objectBim.image"
+            alt="{{ objectBim.description }}"
+        />
+        <mat-card-content>
+            <li class="listing-heading">{{ objectBim.description }}</li>
+        </mat-card-content>
+      </mat-card> -->
     </div>
-  </div>
+</div>

@@ -1,5 +1,4 @@
 import { Component, OnInit, EventEmitter, Output, ViewChild } from '@angular/core';
-import { AccountsService } from '../accounts.service';
 import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { merge } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -18,6 +17,8 @@ export class NewAccountComponent implements OnInit{
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', Validators.required);
   registerForm!: FormGroup;
+  errorMessage: string | undefined;
+  successMessage: string | undefined;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
     // merge(this.email.statusChanges, this.email.valueChanges)
@@ -38,17 +39,22 @@ export class NewAccountComponent implements OnInit{
   onSubmit() {
     if (this.registerForm.valid) {
       // Hacer la solicitud HTTP al servidor PHP para el registro
-      // this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
-      this.http.post<any>('https://new-bim.000webhostapp.com/register.php', this.registerForm.value).subscribe(
+      this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
+      // this.http.post<any>('https://new-bim.000webhostapp.com/php/register.php', this.registerForm.value).subscribe(
         response => {
-          console.log(response); // Maneja la respuesta del servidor aquí
+          if (response && response.success) {
+            console.log(response); // Maneja la respuesta del servidor aquí
+            this.successMessage = 'Se ha creado el usuario correctamente!';
+          } else {
+            this.errorMessage = 'No se ha podido crear el usuario';
+          }
         },
         error => {
-          console.error(error);
+          this.errorMessage = 'Error de registro:' + error.statusText; 
         }
       );
     } else {
-      console.log('Formulario inválido');
+      this.errorMessage = 'Formulario inválido';
     }
   }
 

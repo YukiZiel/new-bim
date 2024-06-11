@@ -5,6 +5,7 @@ import { NewAccountComponent } from './auth/register/new-account.component';
 import { DashboardGComponent } from './pages/dashboardGenerics/dashboardG.component';
 import { DashboardFComponent } from './pages/dashboardFabricants/dashboardF.component';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
+import { UserComponent } from './auth/user/user.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'fabricantes', component: DashboardFComponent},
   { path: 'bim/:id', component: ObjectDetailComponent},
   { path: 'iniciar-sesion', component: LoginComponent },
-  { path: 'registrarse', component: NewAccountComponent }
+  { path: 'registrarse', component: NewAccountComponent },
+  { path: 'perfil', component: UserComponent }
 ];
 
 @NgModule({

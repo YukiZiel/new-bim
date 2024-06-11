@@ -19,3 +19,8 @@
 .full-width {
     width: 100%;
 }
+
+.error-message {
+    margin-bottom: 20px;
+    color: red;
+}

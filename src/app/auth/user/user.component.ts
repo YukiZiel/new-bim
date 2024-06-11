@@ -1,20 +1,25 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-
-import { AccountsService } from '../accounts.service';
-import { LoginService } from '../../services/auth/login.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { UserService } from '../../services/user.service';
+import { ObjectBIM } from '../../interfaces/object-bim';
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
 })
-export class UserComponent {
-  @Input() account!: {name: string, status: string};
-  @Input() id!: number;
+export class UserComponent implements OnInit{
+  @Input() objectBim!: ObjectBIM;
+  // @Input() account!: {name: string, status: string};
+  // @Input() id!: number;
   // @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
+  userData: any;
 
-  constructor(private loginService:LoginService, private accountsService: AccountsService) {}
+  constructor( private userService: UserService ) {}
 
+  ngOnInit() {
+    this.userData = this.userService.getUserData();
+  }
   // onSetTo(status: string) {
   //   // this.statusChanged.emit({id: this.id, newStatus: status});
   //   this.accountsService.updateStatus(this.id, status);

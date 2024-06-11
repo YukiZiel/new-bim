@@ -24,3 +24,17 @@ input.example-right-align::-webkit-inner-spin-button {
 .full-width {
     width: 100%;
 }
+
+.error-message {
+    margin-bottom: 20px;
+    color: red;
+}
+.success-message {
+    margin-bottom: 20px;
+    padding-block: 20px;
+    background-color: #abdee6;
+    border-radius: 40px;
+    color: #2e3a69;
+    text-align: center;
+    font-size: 20px;
+}
