@@ -39,7 +39,7 @@ export class NewAccountComponent implements OnInit{
     if (this.registerForm.valid) {
       // Hacer la solicitud HTTP al servidor PHP para el registro
       // this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
-      this.http.post<any>('http://new-bim.000webhostapp.com/register.php', this.registerForm.value).subscribe(
+      this.http.post<any>('https://new-bim.000webhostapp.com/register.php', this.registerForm.value).subscribe(
         response => {
           console.log(response); // Maneja la respuesta del servidor aquí
         },
