@@ -19,6 +19,9 @@ export class UserComponent implements OnInit{
 
   ngOnInit() {
     this.userData = this.userService.getUserData();
+    // this.userService.getUserData().subscribe(userData => {
+    //   this.userData = userData;
+    // });
   }
   // onSetTo(status: string) {
   //   // this.statusChanged.emit({id: this.id, newStatus: status});
