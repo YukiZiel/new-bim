@@ -7,7 +7,8 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'http://localhost/new-bim/php/login.php'; // URL a la ruta de la API
+  // private apiUrl = 'http://localhost/new-bim/php/login.php'; // URL a la ruta de la API
+  private apiUrl = 'https://new-bim.000webhostapp.com/php/login.php';
   private loggedIn = new BehaviorSubject<boolean>(false);
 
   constructor(private http: HttpClient) { }
