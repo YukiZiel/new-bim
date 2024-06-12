@@ -331,6 +331,506 @@
                         }
                     ]
                 }
+            ],
+            "props": [
+                {
+                    "id": "21257",
+                    "propgroup": "Ecob_Pset_5D",
+                    "toggle": true,
+                    "values": [
+                        {
+                            "id": "21257",
+                            "prop": "Part01_BancoOrigen",
+                            "valor": "Banco_ITeC",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21258",
+                            "prop": "Part01_Codigo",
+                            "valor": "EJ5232F3",
+                            "obs": "Código de una partida de obra relacionada con el elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21259",
+                            "prop": "Part01_Funcion",
+                            "valor": "Centralización contadores de agua",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21260",
+                            "prop": "Part01_MedicionUnidad",
+                            "valor": "u",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21281",
+                            "prop": "Part01_Url",
+                            "valor": "https://metabase.itec.cat/vide/es/items/EJ5232F3",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "21248",
+                    "propgroup": "Ecob_Pset_General",
+                    "toggle": true,
+                    "values": [
+                        {
+                            "id": "21248",
+                            "prop": "DescripcionUniformat2010",
+                            "valor": "Suministro de agua y gas",
+                            "obs": "Descripción Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21251",
+                            "prop": "EstandarObjeto",
+                            "valor": "ECOB_v1_2018",
+                            "obs": "Referencia al estándar de objeto BIM",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21255",
+                            "prop": "ObjetoAutor",
+                            "valor": "ITeC",
+                            "obs": "Autor del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21256",
+                            "prop": "ObjetoTitular",
+                            "valor": "ITeC",
+                            "obs": "Titular del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21263",
+                            "prop": "TipoBimEcob",
+                            "valor": "ITeC_CentralizacionContadoresAgua_PPR",
+                            "obs": "Nombre del Tipo BIM Ecob.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21280",
+                            "prop": "Version",
+                            "valor": "RVT_2017 / AC_21",
+                            "obs": "Versión de la plataforma de modelado (ALL / AC / RVT ...) del objeto BIM. Si el objeto se ha modelado en más de una plataforma indicar por ejemplo: AC19 / RVT2015",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21282",
+                            "prop": "UrlTipoBim",
+                            "valor": "https://metabase.itec.cat/empresa/es/1639958/bim/3840",
+                            "obs": "Url del Tipo BIM Ecob.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21234",
+                            "prop": "FechaEmision",
+                            "valor": "29/10/2021",
+                            "obs": "Fecha de creación del objeto BIM.",
+                            "format": "Fecha",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21236",
+                            "prop": "CategoriaCobie",
+                            "valor": "21-04 20 Plumbing",
+                            "obs": "Categoria COBie.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21237",
+                            "prop": "ClaseBimEcob",
+                            "valor": "Batería contadores agua",
+                            "obs": "Clase BIM eCOB del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21239",
+                            "prop": "CodigoGubimclass",
+                            "valor": "50.10.20.30",
+                            "obs": "Código Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21240",
+                            "prop": "CodigoOmniclass",
+                            "valor": "21-07 30",
+                            "obs": "Código Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21241",
+                            "prop": "CodigoUniclass2015",
+                            "valor": "EF_55_70",
+                            "obs": "Código Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21242",
+                            "prop": "CodigoUniformat2010",
+                            "valor": "G30",
+                            "obs": "Código Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21245",
+                            "prop": "DescripcionGubimclass",
+                            "valor": "Canalizaciones de agua sanitaria",
+                            "obs": "Descripción Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21246",
+                            "prop": "DescripcionOmniclass",
+                            "valor": "Suministro de agua y gas",
+                            "obs": "Descripción Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21247",
+                            "prop": "DescripcionUniclass2015",
+                            "valor": "Water supply",
+                            "obs": "Descripción Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "21254",
+                    "propgroup": "Ecob_Pset_PipeSegment",
+                    "toggle": true,
+                    "values": [
+                        {
+                            "id": "21254",
+                            "prop": "Montaje",
+                            "valor": "Montaje superficial",
+                            "obs": "Indica el tipo de montaje de la batería de contadores.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21262",
+                            "prop": "SistemaUnion",
+                            "valor": "Unión electrosoldada",
+                            "obs": "Indica el sistema de unión de para el que está preparado el sistema de tubería y accesorios que componen la bateria.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21238",
+                            "prop": "ClasificacionSistemaTuberia",
+                            "valor": "AFS",
+                            "obs": "Clasificación del sistema al que pertenece la instalación según el fluido que circula por sus elementos (AFS - Agua fría,  ACS - Agua caliente sanitaria, Aguas grises, Aguas pluviales, Aguas residuales, etc). En unidades enfriadoras se define el fluído de refrigeración. Equivalente a la propiedad \"System classification\" en RVT.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "21252",
+                    "propgroup": "Ifc_Export",
+                    "toggle": true,
+                    "values": [
+                        {
+                            "id": "21252",
+                            "prop": "IfcExportAs",
+                            "valor": "IfcPipeSegment",
+                            "obs": "Clase Ifc que corresponde al objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21253",
+                            "prop": "IfcExportType",
+                            "valor": "RIGIDSEGMENT",
+                            "obs": "Tipo Ifc que corresponde al objeto BIM. Propiedad opcional hasta que se definan tipos para todas las clases IFC.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "21249",
+                    "propgroup": "Pset_PipeSegmentTypeCommon",
+                    "toggle": true,
+                    "values": [
+                        {
+                            "id": "21249",
+                            "prop": "DiametroNominal",
+                            "valor": "75",
+                            "obs": "Designación numérica de la dimensión de un componente, que es un número entero convenientemente redondeado, aproximadamente igual a las dimensiones de fabricación en milímetros. Sirve de referencia y forma parte de la identificación de los diversos elementos que se acoplan entre sí en una instalación. En las tuberías plásticas este número coincide con el diámetro exterior.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21250",
+                            "prop": "Estado",
+                            "valor": "SP",
+                            "obs": "Estado del elemento en la fase de proyecto definido como Nuevo, Preexistente, A derribar, Temporal (como una estructura de soporte).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21283",
+                            "prop": "Referencia",
+                            "valor": "ITeC_CentralizacionContadoresAgua_PPR",
+                            "obs": "Identificador del tipo de elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21229",
+                            "prop": "RangoTemperatura_(°C)",
+                            "valor": "De 0 a 60",
+                            "obs": "Rango de temperatura mínima y máxima del fluido contenido por el elemento, en °C.  Valor según proyecto (SP).",
+                            "format": "Número/Texto",
+                            "unitats": "°C"
+                        },
+                        {
+                            "id": "21230",
+                            "prop": "PresionServicio_(bar)",
+                            "valor": "≤ 20",
+                            "obs": "Presión de servicio del elemento, en bar. Valor según proyecto (SP).",
+                            "format": "Número/Texto",
+                            "unitats": "bar"
+                        },
+                        {
+                            "id": "21231",
+                            "prop": "RangoPresion_(bar)",
+                            "valor": "De 25 a 12,3",
+                            "obs": "Rango de presión mínima y máxima en el interior del elemento en función de la presión ambiente.  Valor según proyecto (SP).",
+                            "format": "Número/Texto",
+                            "unitats": "bar"
+                        },
+                        {
+                            "id": "21232",
+                            "prop": "DiametroExterior_(mm)",
+                            "valor": "75",
+                            "obs": "Diámetro exterior del tubo. Equivalente a la propiedad \"Outside Diameter\" en RVT.",
+                            "format": "Número/ Texto",
+                            "unitats": "mm"
+                        },
+                        {
+                            "id": "21233",
+                            "prop": "DiametroInterior_(mm)",
+                            "valor": "58,2",
+                            "obs": "Diámetro interior del tubo. Se indica el diámetro interior correspondiente al espesor mínimo de la paret del tubo que permite la norma. Un fabricante pude trabajar con espesores mayores por lo que el diámetro interior será más pequeño, siendo éste el que se debe indicar.  Equivalente a la propiedad \"Inside Diameter\" en RVT.",
+                            "format": "Número/ Texto",
+                            "unitats": "mm"
+                        }
+                    ]
+                },
+                {
+                    "id": "21261",
+                    "propgroup": "Pset_Pset_PipeSegmentWaterMeterManifold",
+                    "toggle": true,
+                    "values": [
+                        {
+                            "id": "21261",
+                            "prop": "PosicionAlimentacion",
+                            "valor": "Vertical inferior",
+                            "obs": "Indicación de la posición normalizada de la alimentación de agua de la bateria de contadores.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21264",
+                            "prop": "TipoContador",
+                            "valor": "Contador divisionario DN15 o DN20",
+                            "obs": "Indica el tipo de contadores que se pueden montar en la batería.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21265",
+                            "prop": "TuboOut01",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 01",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21266",
+                            "prop": "TuboOut02",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 02",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21267",
+                            "prop": "TuboOut03",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 03",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21268",
+                            "prop": "TuboOut04",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 04",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21269",
+                            "prop": "TuboOut05",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 05",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21270",
+                            "prop": "TuboOut06",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 06",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21271",
+                            "prop": "TuboOut07",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 07",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21272",
+                            "prop": "TuboOut08",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 08",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21273",
+                            "prop": "TuboOut09",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 09",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21274",
+                            "prop": "TuboOut10",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 10",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21275",
+                            "prop": "TuboOut11",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 11",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21276",
+                            "prop": "TuboOut12",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 12",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21277",
+                            "prop": "TuboOut13",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 13",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21278",
+                            "prop": "TuboOut14",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 14",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21279",
+                            "prop": "TuboOut15",
+                            "valor": "SP",
+                            "obs": "Punto de salida de la batería de contadores hacia el montante 15",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21284",
+                            "prop": "NumeroContadores_(u)",
+                            "valor": "15",
+                            "obs": "Número máximo de contadores que se pueden montar en la bateria.",
+                            "format": "Número",
+                            "unitats": "u"
+                        },
+                        {
+                            "id": "21285",
+                            "prop": "NumeroHileras_(u)",
+                            "valor": "3",
+                            "obs": "Número de hileras en que se disponen los contadores de la batería.",
+                            "format": "Número",
+                            "unitats": "u"
+                        },
+                        {
+                            "id": "21235",
+                            "prop": "AlimentacionIn",
+                            "valor": "SP",
+                            "obs": "Punto de entrada de la tubería de alimentación de agua procedente de la red de distribución.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21243",
+                            "prop": "ConexionAlimentacion",
+                            "valor": "Unión embridada DN80, PN16",
+                            "obs": "Sistema de conexión de la batería al tubo de alimentación de agua.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "21244",
+                            "prop": "ConexionContadores",
+                            "valor": "Conexión mediante pletina móvil",
+                            "obs": "Sistema de conexión de los contadores a la batería. Puede ser mediante pletinas móviles o bien roscada.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                }
             ]
         },
         {

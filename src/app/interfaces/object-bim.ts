@@ -15,7 +15,8 @@ export interface ObjectBIM {
     patrocinatUrl: string,
     dataEmissio: string;
     ecob: string;
-    downloads: Download[]
+    downloads: Download[];
+    props: Props[]
 }
 
 export interface Download {
@@ -31,4 +32,20 @@ export interface FormatDown {
     version: string,
     format: string,
     download: boolean
+}
+
+export interface Props {
+    id: string,
+    propgroup: string,
+    toggle: boolean,
+    values: Values[]
+}
+
+export interface Values {
+    id: string,
+    prop: string,
+    valor: string,
+    obs: string,
+    format: string,
+    unitats: string
 }

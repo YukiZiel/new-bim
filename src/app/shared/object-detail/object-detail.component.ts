@@ -3,7 +3,6 @@ import { FilterGService } from '../../services/filterG.service';
 import { ActivatedRoute } from '@angular/router';
 import { FilterFService } from '../../services/filterF.service';
 import { FilterPropService } from '../../services/filter-prop.service';
-import { Properties } from '../../interfaces/properties';
 
 
 @Component({
@@ -14,7 +13,7 @@ import { Properties } from '../../interfaces/properties';
 
 
 export class ObjectDetailComponent {
-  @Input() prop!: Properties;
+  // @Input() prop!: Properties;
   // constructor(private addFavService: AddFavService) {}
 
   // toggleFavList(objectBim:ObjectBIM) {
