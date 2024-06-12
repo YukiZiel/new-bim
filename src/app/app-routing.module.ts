@@ -6,6 +6,7 @@ import { DashboardGComponent } from './pages/dashboardGenerics/dashboardG.compon
 import { DashboardFComponent } from './pages/dashboardFabricants/dashboardF.component';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
 import { UserComponent } from './auth/user/user.component';
+import { AuthGuard } from './auth/auth.guard';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
   { path: 'bim/:id', component: ObjectDetailComponent},
   { path: 'iniciar-sesion', component: LoginComponent },
   { path: 'registrarse', component: NewAccountComponent },
-  { path: 'perfil', component: UserComponent }
+  { path: 'perfil', component: UserComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

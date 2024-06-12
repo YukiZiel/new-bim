@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../../services/user.service';
 import { ObjectBIM } from '../../interfaces/object-bim';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-user',
@@ -15,10 +16,10 @@ export class UserComponent implements OnInit{
   // @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
   userData: any;
 
-  constructor( private userService: UserService ) {}
+  constructor( private authService: AuthService ) {}
 
   ngOnInit() {
-    this.userData = this.userService.getUserData();
+    this.userData = this.authService.getUserData();
     // this.userService.getUserData().subscribe(userData => {
     //   this.userData = userData;
     // });

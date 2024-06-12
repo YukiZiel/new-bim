@@ -9,19 +9,22 @@ import { AuthService } from '../../services/auth.service';
 })
 export class HeaderComponent implements OnInit{
 
-  isLoggedIn = false;
-
   constructor(private authService: AuthService) { }
 
-  ngOnInit(): void {
-    this.authService.isLoggedIn.subscribe(loggedIn => {
-      this.isLoggedIn = loggedIn;
-    });
+  ngOnInit() {
+    // this.authService.isLoggedIn.subscribe(loggedIn => {
+    //   this.isLoggedIn = loggedIn;
+    // });
     // Verificar el estado de inicio de sesión al cargar el componente
   //  this.authService.checkLoginStatus();
   }
 
-  logout() {
+  isAuthenticated(): boolean {
+    return this.authService.isAuthenticated();
+  }
+  logout(): void {
+    this.authService.logout();
+    console.log('Se ha cerrado la sesión');
   //  this.authService.logout().subscribe(() => {
       // El estado de loggedIn se actualizará automáticamente a través de BehaviorSubject
   //  });

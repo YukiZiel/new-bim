@@ -1,15 +1,15 @@
-<mat-card class="listing" (click)="navigateToDetail(objectBim.id)">
+<mat-card class="listing" >
     <mat-card-actions>
         <button mat-icon-button matTooltip="Añadir a favorito" [ngClass]="{'active': inFavList(objectBim)}" (click)="toggleFavList(objectBim)">
             <mat-icon>favorite</mat-icon>
         </button>
     </mat-card-actions>
+    <mat-card-content (click)="navigateToDetail(objectBim.id)">
     <img mat-card-image
         class="listing-image"
         [src]="'https://bedec.itec.cat/img/' + objectBim.idemp + '/' + objectBim.image"
         alt="{{ objectBim.description }}"
     />
-    <mat-card-content>
         <p class="listing-heading">{{ objectBim.description }}</p>
     </mat-card-content>
 </mat-card>

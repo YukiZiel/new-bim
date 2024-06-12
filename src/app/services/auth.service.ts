@@ -7,52 +7,29 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'http://localhost/new-bim/php/login.php'; // URL a la ruta de la API
-  // private apiUrl = 'https://new-bim.000webhostapp.com/php/login.php';
-  private loggedIn = new BehaviorSubject<boolean>(false);
+  private userKey = 'currentUser';
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
-  get isLoggedIn() {
-    return this.loggedIn.asObservable();
+  // Guarda los datos del usuario en el localStorage
+  login(userData: any): void {
+    localStorage.setItem(this.userKey, JSON.stringify(userData));
   }
 
-  login(email: string, password: string) {
-    return this.http.post<any>(this.apiUrl, { email, password })
-    .pipe(
-      tap(response => {
-        if (response.success) {
-          this.loggedIn.next(true);
-          localStorage.setItem('user', JSON.stringify(response.user));  // Guardar información del usuario en localStorage
-          console.log('Usuario guardado');
-        }
-      })
-    );
+  // Elimina los datos del usuario del localStorage
+  logout(): void {
+    localStorage.removeItem(this.userKey);
   }
 
-  logout() {
-    return this.http.post<any>(this.apiUrl, { action: 'logout' })
-      .pipe(
-        tap(response => {
-          if (response.success) {
-            this.loggedIn.next(false);
-            localStorage.removeItem('user'); // Remover información del usuario de localStorage
-            console.log('Usario borrado del localStorage');
-          }
-        })
-      );
+  // Obtiene los datos del usuario del localStorage
+  getUserData(): any {
+    const userData = localStorage.getItem(this.userKey);
+    return userData ? JSON.parse(userData) : null;
   }
 
-  checkLoginStatus() {
-    this.http.get<any>(`${this.apiUrl}?action=check-session`).subscribe(response => {
-      if (response.isLoggedIn) {
-        this.loggedIn.next(true);
-        localStorage.setItem('user', JSON.stringify(response.user)); // Actualizar información del usuario en localStorage
-      } else {
-        this.loggedIn.next(false);
-        localStorage.removeItem('user'); // Remover información del usuario de localStorage
-      }
-    });
+  // Verifica si hay un usuario autenticado
+  isAuthenticated(): boolean {
+    return localStorage.getItem(this.userKey) !== null;
   }
 }
 
