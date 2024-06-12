@@ -9,7 +9,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class HeaderComponent implements OnInit{
 
-  constructor(private authService: AuthService) { }
+  constructor( private authService: AuthService ) { }
 
   ngOnInit() {
     // this.authService.isLoggedIn.subscribe(loggedIn => {

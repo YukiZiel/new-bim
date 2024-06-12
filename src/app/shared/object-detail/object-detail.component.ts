@@ -3,6 +3,7 @@ import { FilterGService } from '../../services/filterG.service';
 import { ActivatedRoute } from '@angular/router';
 import { FilterFService } from '../../services/filterF.service';
 import { FilterPropService } from '../../services/filter-prop.service';
+import { AuthService } from '../../services/auth.service';
 
 
 @Component({
@@ -29,22 +30,28 @@ export class ObjectDetailComponent {
   // }
 
   detail: any = '';
-  constructor( private route:ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService)
-  {
-      this.route.params.subscribe(data => {
+  constructor( private route:ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService, private authService: AuthService ) {
+    this.route.params.subscribe(data => {
 
-        this.filterFService.getDetail( data['id']).subscribe(response => {
-          this.detail = response;
+      this.filterFService.getDetail( data['id']).subscribe(response => {
+        this.detail = response;
 
-        });
-        
-        this.filterGService.getDetail( data['id']).subscribe(response => {
-          this.detail = response;
-
-        });
       });
+      
+      this.filterGService.getDetail( data['id']).subscribe(response => {
+        this.detail = response;
+
+      });
+    });
   }
 
+  isAuthenticated(): boolean {
+    return this.authService.isAuthenticated();
+  }
+
+  showErrorMessage(): void {
+    alert('Por favor, inicia sesión para descargar'); // Muestra un mensaje de error al hacer clic en el enlace
+  }
   // toggleFavList(detail:ObjectBIM) {
   //   if (this.inFavList(detail)) {
   //     this.addFavService.removeFromFavList(detail);

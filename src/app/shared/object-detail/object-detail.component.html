@@ -10,8 +10,10 @@
                 <li>{{download.format}}
                     <ul>     
                         <li *ngFor="let formatItem of download.formatdown" class="download-archive">
-                          <a [href]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + formatItem.fitxer"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>
-                            {{formatItem.format}}
+                          <a *ngIf="isAuthenticated()" [href]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + formatItem.fitxer"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>
+                          <a *ngIf="!isAuthenticated()" href="javascript:void(0)" (click)="showErrorMessage()"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>  
+                          <!-- Esto asegura que no se realice ninguna acción al hacer clic en el enlace y en su lugar se llame a la función showErrorMessage(), que muestra un mensaje de error utilizando alert() -->
+                          {{formatItem.format}}
                         </li>
                     </ul>
                 </li>
