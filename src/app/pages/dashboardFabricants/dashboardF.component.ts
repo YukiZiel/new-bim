@@ -95,11 +95,12 @@ export class DashboardFComponent implements OnInit{
 
   public filterIfcBuildingElements() {
     this.filterService.getIfcBuildingElements().subscribe(data => {
-      this.ifcBuildingElementsF = data.ifcBuildingElementsF.filter(ifcBuildingElement =>
-        this.bimsF.some(bim =>
-          bim.IfcBuildingElement.includes(ifcBuildingElement.label)
-        )
-      );
+      // this.ifcBuildingElementsF = data.ifcBuildingElementsF.filter(ifcBuildingElement =>
+      //   this.bimsF.some(bim =>
+      //     bim.IfcBuildingElement.includes(ifcBuildingElement.label)
+      //   )
+      // );
+      this.ifcBuildingElementsF = data.ifcBuildingElementsF;
     });
   }
 

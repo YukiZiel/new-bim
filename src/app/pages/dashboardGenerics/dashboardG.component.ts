@@ -28,8 +28,7 @@ export class DashboardGComponent implements OnInit{
   selectedElementosBimItec ="";
   bims: ObjectBIM[] = [];
   // filteredBims: ObjectBIM[] = [];
-  constructor(private router: Router, private filterService: FilterGService
-  ) {}
+  constructor( private filterService: FilterGService ) {}
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {
@@ -60,7 +59,7 @@ export class DashboardGComponent implements OnInit{
       // this.ecobs = data.ecobs;
       this.ecobs = data.ecobs.filter(ecob =>
         this.bims.some(bim =>
-          bim.ecob.toLowerCase().includes(ecob.label.toLowerCase())
+          bim.ecob.includes(ecob.label)
         )
       );
     });

@@ -46,7 +46,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "props": []
         },
         {
             "id": "1341",
@@ -80,7 +81,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "props": []
         },
         {
             "id": "3068",
@@ -123,7 +125,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "props": []
         },
         {
             "id": "3079",
@@ -166,7 +169,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "props": []
         },
         {
             "id": "3272",
@@ -214,7 +218,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "props": []
         },
         {
             "id": "3291",
@@ -262,7 +267,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "props": []
         },
         {
             "id": "3828",
@@ -307,6 +313,874 @@
                             "version": "2015",
                             "format": "Revit",
                             "download": true
+                        }
+                    ]
+                }
+            ],
+            "props": [
+                {
+                    "id": "18019",
+                    "propgroup": "Ecob_Pset_5D",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18019",
+                            "prop": "Part01_BancoOrigen",
+                            "valor": "Banco_ITeC",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18020",
+                            "prop": "Part01_Codigo",
+                            "valor": "E898J2A0",
+                            "obs": "Código de partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18021",
+                            "prop": "Part01_Funcion",
+                            "valor": "Acabado",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18022",
+                            "prop": "Part01_MedicionUnidad",
+                            "valor": "m2",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18023",
+                            "prop": "Part01_Url",
+                            "valor": "https:\/\/metabase.itec.cat\/vide\/es\/items\/E898J2A0",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18024",
+                            "prop": "Part02_BancoOrigen",
+                            "valor": "Banco PLACO 2020 (diciembre)",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18025",
+                            "prop": "Part02_Codigo",
+                            "valor": "No dispone",
+                            "obs": "Código de partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18026",
+                            "prop": "Part02_Funcion",
+                            "valor": "Sistema de tabiquería de yeso laminado",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18027",
+                            "prop": "Part02_MedicionUnidad",
+                            "valor": "m2",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18028",
+                            "prop": "Part02_Url",
+                            "valor": "https:\/\/metabase.itec.cat\/empresa\/es\/1711005\/fies",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18029",
+                            "prop": "Part03_BancoOrigen",
+                            "valor": "Banco_ITeC",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18030",
+                            "prop": "Part03_Codigo",
+                            "valor": "P7C45-5O27",
+                            "obs": "Código de partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18031",
+                            "prop": "Part03_Funcion",
+                            "valor": "Aislamiento",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18032",
+                            "prop": "Part03_MedicionUnidad",
+                            "valor": "M2",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18033",
+                            "prop": "Part03_Url",
+                            "valor": "https:\/\/metabase.itec.cat\/vide\/es\/items\/P7C45-5O27",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "17988",
+                    "propgroup": "Ecob_Pset_General",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "17988",
+                            "prop": "CategoriaCobie",
+                            "valor": "21-03 10 10 10 Interior Fixed Partitions",
+                            "obs": "Categoria COBie.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17989",
+                            "prop": "ClaseBimEcob",
+                            "valor": "Divisorias",
+                            "obs": "Clase BIM eCOB del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17990",
+                            "prop": "CodigoGubimclass",
+                            "valor": "40.10.10.10",
+                            "obs": "Código Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17991",
+                            "prop": "CodigoOmniclass",
+                            "valor": "23.15.11.11.11",
+                            "obs": "Código Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17992",
+                            "prop": "CodigoUniclass2015",
+                            "valor": "EF_25_10",
+                            "obs": "Código Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17993",
+                            "prop": "CodigoUniformat2010",
+                            "valor": "C10",
+                            "obs": "Código Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17997",
+                            "prop": "Descripcion",
+                            "valor": "Sistema formado por una placa de yeso laminado Placo® Habito® 13 (HBT13), y una placa Placo® BA13, ambas de 12,5 mm de espesor, atornilladas a cada lado externo de una estructura metálica de acero galvanizado a base de raíles horizontales y montantes verticales de 70 mm, modulados a 600 mm, resultando un ancho total del tabique terminado de 120 mm con lana de mineral Isover Arena APTA de 65 mm.",
+                            "obs": "Descripción técnica del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17998",
+                            "prop": "DescripcionGubimclass",
+                            "valor": "Tabiques",
+                            "obs": "Descripción Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17999",
+                            "prop": "DescripcionOmniclass",
+                            "valor": "Gypsum Board Fixed Partitions",
+                            "obs": "Descripción Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18000",
+                            "prop": "DescripcionUniclass2015",
+                            "valor": "Walls",
+                            "obs": "Descripción Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18001",
+                            "prop": "DescripcionUniformat2010",
+                            "valor": "Cerramientos interiores",
+                            "obs": "Descripción Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18006",
+                            "prop": "EstandarObjeto",
+                            "valor": "ECOB_v1_2020",
+                            "obs": "Referencia al estándar de objeto BIM",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18008",
+                            "prop": "FechaEmision",
+                            "valor": "05\/03\/2021",
+                            "obs": "Fecha de creación del objeto BIM.",
+                            "format": "Fecha",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18017",
+                            "prop": "ObjetoAutor",
+                            "valor": "Bimetica + ITeC",
+                            "obs": "Autor del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18018",
+                            "prop": "ObjetoTitular",
+                            "valor": "Saint-Gobain Placo Ibérica, S.A. \/ Saint-Gobain Isover Ibérica S.L.U.",
+                            "obs": "Titular del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18086",
+                            "prop": "TipoBimEcob",
+                            "valor": "SaintGobain_Divisorias120mm55dBA_PlacoHabitoHibrido+LmIsover",
+                            "obs": "Nombre del Tipo BIM Ecob.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18088",
+                            "prop": "UrlTipoBim",
+                            "valor": "https:\/\/metabase.itec.cat\/empresa\/es\/1711005\/bim\/3828",
+                            "obs": "Url del Tipo BIM Ecob.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18089",
+                            "prop": "Version",
+                            "valor": "RVT2017",
+                            "obs": "Versión del objeto BIM.",
+                            "format": "Entero",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18035",
+                    "propgroup": "Ecob_Pset_Products",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18035",
+                            "prop": "Producto01_AutodeclaracionAmbiental",
+                            "valor": "Véase la DAP",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18036",
+                            "prop": "Producto01_CertificadoConformidad",
+                            "valor": "No aplica",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18037",
+                            "prop": "Producto01_DAP",
+                            "valor": "Declaración EPD Verified núm. S-P 01337",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18038",
+                            "prop": "Producto01_DdP",
+                            "valor": "DdP_PYL_HBT_001",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18039",
+                            "prop": "Producto01_Descripcion",
+                            "valor": "Placa de Yeso Laminado con cartón a doble cara y alma de yeso de origen natural, que en su proceso de fabricación es aditivada convenientemente para dotarla de unas mejores prestaciones de resistencia a los impactos, capacidad de carga y aislamiento acústico.",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18040",
+                            "prop": "Producto01_Ecoetiqueta",
+                            "valor": "Véase la DAP",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18041",
+                            "prop": "Producto01_Fabricante",
+                            "valor": "Saint Gobain Placo Iberica SA, c. Príncipe de Vergara 132,  28002 MADRID (España)",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18042",
+                            "prop": "Producto01_FaseUsoDAP",
+                            "valor": "B1 - B7",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18043",
+                            "prop": "Producto01_Modelo",
+                            "valor": "Habito 13 (HBT 13)",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18044",
+                            "prop": "Producto01_Nombre",
+                            "valor": "Placo Habito® Hibrido",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18045",
+                            "prop": "Producto01_ReferenciaMarcadoCE",
+                            "valor": "UNE EN 520",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18046",
+                            "prop": "Producto01_UrlCertificadoConformidad",
+                            "valor": "No aplica",
+                            "obs": "Enlace web a la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18047",
+                            "prop": "Producto01_UrlDAP",
+                            "valor": "https:\/\/www.placo.es\/products\/placa-habito\/habitor",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18048",
+                            "prop": "Producto01_UrlDdP",
+                            "valor": "https:\/\/www.placo.es\/products\/placa-habito\/habitor",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18049",
+                            "prop": "Producto01_UrlProducto",
+                            "valor": "https:\/\/www.placo.es\/products\/placa-habito\/habitor",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18050",
+                            "prop": "Producto02_AutodeclaracionAmbiental",
+                            "valor": "Véase la DAP",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18051",
+                            "prop": "Producto02_CertificadoConformidad",
+                            "valor": "Certificado AENOR de producto 035\/001831 y otros, véase la URL de descarga.",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18052",
+                            "prop": "Producto02_DAP",
+                            "valor": "Declaración EPD Verified núm. S-P-01597",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18053",
+                            "prop": "Producto02_DdP",
+                            "valor": "DdP_PYL_EST_001",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18054",
+                            "prop": "Producto02_Descripcion",
+                            "valor": "Placa de Yeso Laminado fabricada en continuo con los bordes longitudinales afinados.",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18055",
+                            "prop": "Producto02_Ecoetiqueta",
+                            "valor": "Véase la DAP",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18056",
+                            "prop": "Producto02_Fabricante",
+                            "valor": "Saint Gobain Placo Iberica SA, c. Príncipe de Vergara 132,  28002 MADRID (España)",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18057",
+                            "prop": "Producto02_FaseUsoDAP",
+                            "valor": "B1 - B7",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18058",
+                            "prop": "Producto02_Modelo",
+                            "valor": "Placo BA13",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18059",
+                            "prop": "Producto02_Nombre",
+                            "valor": "Placo BA",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18060",
+                            "prop": "Producto02_ReferenciaMarcadoCE",
+                            "valor": "UNE-EN 520:2005 Placas de yeso laminado. Definiciones, especificaciones y métodos de ensayo.",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18061",
+                            "prop": "Producto02_UrlCertificadoConformidad",
+                            "valor": "https:\/\/www.placo.es\/productos\/placas-estandar\/placa-placor-ba",
+                            "obs": "Enlace web a la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18062",
+                            "prop": "Producto02_UrlDAP",
+                            "valor": "https:\/\/www.placo.es\/productos\/placas-estandar\/placa-placor-ba",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18063",
+                            "prop": "Producto02_UrlDdP",
+                            "valor": "https:\/\/www.placo.es\/productos\/placas-estandar\/placa-placor-ba",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18064",
+                            "prop": "Producto02_UrlProducto",
+                            "valor": "https:\/\/www.placo.es\/productos\/placas-estandar\/placa-placor-ba",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18065",
+                            "prop": "Producto03_AutodeclaracionAmbiental",
+                            "valor": "Véase la DAP",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18066",
+                            "prop": "Producto03_CertificadoConformidad",
+                            "valor": "Certificado AENOR de producto 020\/003724 y otros, véase la URL de descarga.",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18067",
+                            "prop": "Producto03_DAP",
+                            "valor": "Declaración EPD Verified núm. S-P-01689",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18068",
+                            "prop": "Producto03_DdP",
+                            "valor": "0099\/CPR\/A43\/0472",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18069",
+                            "prop": "Producto03_Descripcion",
+                            "valor": "Lana mineral ISOVER Arena APTA en formato paneles o rollos de lana mineral Arena cumpliendo la norma UNE EN 13162 Productos Aislantes térmicos para aplicaciones en la edificación con una conductividad térmica de 0,034 W \/ (m·K), clase de reacción al fuego A1 y código de designación MW-EN 13162-T3-DS(23,90)-WS-MU1-Afr5. Espesor 65 mm.",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18070",
+                            "prop": "Producto03_Ecoetiqueta",
+                            "valor": "Véase la DAP",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18071",
+                            "prop": "Producto03_Fabricante",
+                            "valor": "Saint-Gobain ISOVER",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18072",
+                            "prop": "Producto03_FaseUsoDAP",
+                            "valor": "B1 - B7",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18073",
+                            "prop": "Producto03_Modelo",
+                            "valor": "Arena APTA",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18074",
+                            "prop": "Producto03_Nombre",
+                            "valor": "Lana Mineral Arena APTA + EM@600",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18075",
+                            "prop": "Producto03_ReferenciaMarcadoCE",
+                            "valor": "UNE EN 13162",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18076",
+                            "prop": "Producto03_UrlCertificadoConformidad",
+                            "valor": "https:\/\/www.isover.es\/productos\/arena-apta",
+                            "obs": "Enlace web a la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18077",
+                            "prop": "Producto03_UrlDAP",
+                            "valor": "https:\/\/www.isover.es\/sites\/isover.es\/files\/assets\/documents\/dap_arena_apta_es.pdf",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18078",
+                            "prop": "Producto03_UrlDdP",
+                            "valor": "https:\/\/www.isover.es\/sites\/isover.es\/files\/assets\/documents\/a43-0472-20201128_arena_apta.pdf",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18079",
+                            "prop": "Producto03_UrlProducto",
+                            "valor": "https:\/\/www.isover.es\/productos\/arena-apta",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "17987",
+                    "propgroup": "Ecob_PSet_WallProperties",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "17987",
+                            "prop": "AbsorcionAcustica",
+                            "valor": "0.1",
+                            "obs": "Absorción acústica Alfa del acabado del elemento BIM.",
+                            "format": "Número",
+                            "unitats": null
+                        },
+                        {
+                            "id": "17995",
+                            "prop": "ContenidoCOV_(g\/l)",
+                            "valor": "Valor a definir con la elección del acabado del elemento",
+                            "obs": "Contenido de compuesto orgánico volátil (COV) de la pintura o barniz de un elemento  BIM situado en un ambiente interior, expresada en gramos por litro (g\/l) de acuerdo con la Directiva 2004\/42\/EC del Parlamento Europeo. Valor de ensayo aportado por el fabricante conforme el Anejo III . Si el elemento no tiene pintura ni barniz se declara \"n\/a - no aplica\".",
+                            "format": "Text",
+                            "unitats": "g\/l"
+                        },
+                        {
+                            "id": "17996",
+                            "prop": "ContenidoFormaldehido_(mg\/100g)",
+                            "valor": "No aplica",
+                            "obs": "Contenido de formaldehído del producto componente del elemento declarado por el fabricante conforme a la norma armonizada (EN), evaluación técnica europea (ATE) o reglamentación aplicable para su marcado CE (p.ejemplo UNE-EN 13986, UNE-EN 14041,etc).",
+                            "format": "Text",
+                            "unitats": "mg\/100g"
+                        },
+                        {
+                            "id": "18003",
+                            "prop": "EmisionFormaldehido",
+                            "valor": "Valor a definir con la elección del acabado del elemento",
+                            "obs": "Clase de emisión de formaldehído del producto componente del elemento declarada por el fabricante conforme a la norma armonizada (EN), evaluación técnica europea (ATE) o reglamentación aplicable para su marcado CE (p.ejemplo UNE-EN 13986, UNE-EN 14041,etc).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18004",
+                            "prop": "Espesor_(mm)",
+                            "valor": "120",
+                            "obs": "Espesor o grosor de un elemento o sistema constructivo completo.",
+                            "format": "Number\/Text",
+                            "unitats": "mm"
+                        },
+                        {
+                            "id": "18009",
+                            "prop": "GradoImpermeabilidad",
+                            "valor": "n\/a",
+                            "obs": "Sólo aplica a elementos exteriores (fachadas y medianerías).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18013",
+                            "prop": "IndiceGlobalRedAcusticaTr_(dBA)",
+                            "valor": "n\/a",
+                            "obs": "RA,tr Indice global de reducción acústica ponderado A para ruido de automóviles. Valor según proyecto calculado para el conjunto de capas que componen el elemento BIM a partir de las características de sus materiales BIM o definido en base a una solución del Catálogo del CTE.",
+                            "format": "Número",
+                            "unitats": "dBA"
+                        },
+                        {
+                            "id": "18014",
+                            "prop": "\"IndiceReflectanciaSolarSRI_(%)\n\"",
+                            "valor": "Valor a definir con la elección del acabado del elemento",
+                            "obs": "Indicador que incorpora la reflectancia solar, la emisividad térmica y la temperatura superficial de un material, según norma ASTM E1980 o norma de ensayo aplicable. Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "18015",
+                            "prop": "\"IndiceReflectanciaSolarSRI3a_(%)\n\"",
+                            "valor": "Valor a definir con la elección del acabado del elemento",
+                            "obs": "Indicador que incorpora la reflectancia solar, la emisividad térmica y la temperatura superficial de un material envejecido tres años, según norma ASTM E1980 o norma de ensayo aplicable. Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "18016",
+                            "prop": "MasaSuperficial_(kg\/m2)",
+                            "valor": "A definir por el fabricante",
+                            "obs": "Valor calculado para el conjunto de capas que componen el elemento BIM a partir de las características de sus materiales BIM.",
+                            "format": "Número",
+                            "unitats": "kg\/m2"
+                        },
+                        {
+                            "id": "18083",
+                            "prop": "ResistenciaTermica_((m2*K)\/W)",
+                            "valor": "2.25 (m²·K)\/W",
+                            "obs": "Valor calculado para el conjunto de capas que componen el elemento BIM a partir de las características de sus materiales BIM.",
+                            "format": "Número",
+                            "unitats": "(m2*K)\/W"
+                        },
+                        {
+                            "id": "18084",
+                            "prop": "RiesgoDeCondensacion",
+                            "valor": "A definir por el fabricante",
+                            "obs": "Valor calculado para el conjunto de capas que componen el elemento BIM a partir de las características de sus materiales BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18010",
+                    "propgroup": "Ifc_Export",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18010",
+                            "prop": "IfcExportAs",
+                            "valor": "IfcWall",
+                            "obs": "Clase Ifc que corresponde al objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18011",
+                            "prop": "IfcExportType",
+                            "valor": "PARTITIONING",
+                            "obs": "Tipo Ifc que corresponde al objeto BIM. Propiedad opcional hasta que se definan tipos para todas las clases IFC.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "17994",
+                    "propgroup": "Pset_WallCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "17994",
+                            "prop": "Combustible",
+                            "valor": "SP",
+                            "obs": "Indica si el elemento es combustible o no. La comprobación de las propiedades de comportamiento ante el fuego debe hacerse a través de la acreditación documental que acompañe a los productos componentes del elemento BIM.",
+                            "format": "Booleano",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18002",
+                            "prop": "ElementoExterior",
+                            "valor": "No",
+                            "obs": "Indica si el elemento está diseñado para ser utilizado en el exterior o no.",
+                            "format": "Booleano",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18005",
+                            "prop": "Estado",
+                            "valor": "SP",
+                            "obs": "Estado del elemento en la fase de proyecto definido como Nuevo, Preexistente, A Derribar, Temporal (como una estructura de soporte).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18007",
+                            "prop": "ExtenderAEstructura",
+                            "valor": "SP",
+                            "obs": "Valor según proyecto.",
+                            "format": "Booleano",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18012",
+                            "prop": "IndiceGlobalRedAcustica_(dBA)",
+                            "valor": "55",
+                            "obs": "RA indice global de reducción acústica ponderado A. Valor según proyecto calculado para el conjunto de capas que componen el elemento BIM a partir de las características de sus materiales BIM o definido en base a una solución del Catálogo del CTE.",
+                            "format": "Entero",
+                            "unitats": "dBA"
+                        },
+                        {
+                            "id": "18034",
+                            "prop": "Portante",
+                            "valor": "No",
+                            "obs": "Función portante del elemento.",
+                            "format": "Booleano",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18080",
+                            "prop": "ReaccionAlFuego",
+                            "valor": "SP",
+                            "obs": "Clasificación de reacción al fuego del elemento constructivo en base a la norma europea UNE-EN 13501-1.  Como mínimo C-s2,d0, valor exigido en la tabla 4.1 del DB SI del CTE para revestimientos de paredes en zonas ocupables. La comprobación de las propiedades de comportamiento ante el fuego debe hacerse a través de la acreditación documental que acompañe a los productos componentes del elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18081",
+                            "prop": "Referencia",
+                            "valor": "SaintGobain_Divisorias120mm55dBA_PlacoHabitoHibrido+LmIsover",
+                            "obs": "Identificador del tipo de elemento.",
+                            "format": "Etiqueta",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18082",
+                            "prop": "ResistenciaFuego",
+                            "valor": "EI60",
+                            "obs": "Clasificación de resistencia al fuego del elemento constructivo según la norma europea UNE-EN 13501-2. Valor según proyecto a especificar por el proyectista conforme a las prestaciones exigidas al elemento y la acreditación documental de los productos componentes del elemento.  Como mínimo EI 60, valor exigido en la tabla 1.2 del DB SI del CTE para paredes que delimitan sectores de incendio. La comprobación de las propiedades de comportamiento ante el fuego debe hacerse a través de la acreditación documental que acompañe a los productos componentes del elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18085",
+                            "prop": "SectorizacionFuego",
+                            "valor": "EI60",
+                            "obs": "Indica si el elemento puede asumir funciones de sectorización al fuego o no. Definido por el proyectista, en función del cumplimiento de las exigencias básicas de Seguridad Contra Incendios definidas por el CTE.",
+                            "format": "Booleano",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18087",
+                            "prop": "TransmitanciaTermica_(W\/(m2*K))",
+                            "valor": "0.4427",
+                            "obs": "Transmitancia térmica UH. Valor declarado por el fabricante para el conjunto de capas que componen el elemento BIM a partir de las características de sus materiales BIM o definido en base a una solución del Catálogo del CTE.",
+                            "format": "Número",
+                            "unitats": "W\/(m2*K)"
                         }
                     ]
                 }
@@ -358,6 +1232,537 @@
                         }
                     ]
                 }
+            ],
+            "props": [
+                {
+                    "id": "18090",
+                    "propgroup": "Airzone_Pset_Thermostat",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18090",
+                            "prop": "Acabado",
+                            "valor": "Acero y cristal",
+                            "obs": "Acabado de la cara frontal del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18091",
+                            "prop": "Anchura_(mm)",
+                            "valor": "92",
+                            "obs": "La menor de las dos dimensiones principales que tienen los elementos, en contraposición a la mayor o longitud.",
+                            "format": "Text\/Número",
+                            "unitats": "mm"
+                        },
+                        {
+                            "id": "18099",
+                            "prop": "Conexion",
+                            "valor": "Cableado",
+                            "obs": "Indica el tipo de conexión con los elementos bajo control del dispositivo (p.e. cableado o radio inalámbrica).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18107",
+                            "prop": "Espesor_(mm)",
+                            "valor": "15.85",
+                            "obs": "Espesor o grosor de un elemento o sistema constructivo completo.",
+                            "format": "Text\/Número",
+                            "unitats": "mm"
+                        },
+                        {
+                            "id": "18117",
+                            "prop": "Interfaz",
+                            "valor": "Color - Pantalla capacitiva",
+                            "obs": "Descripción de la interfaz del elemento con el usuario final.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18118",
+                            "prop": "Longitud_(mm)",
+                            "valor": "92",
+                            "obs": "Mayor dimensión lineal de un elemento.",
+                            "format": "Text\/Número",
+                            "unitats": "mm"
+                        },
+                        {
+                            "id": "18119",
+                            "prop": "Montaje",
+                            "valor": "Superficie",
+                            "obs": "Tipos de montaje del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18123",
+                            "prop": "Pantalla",
+                            "valor": "3.5\"",
+                            "obs": "Tamaño de la pantalla en la interfaz de usuario del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18124",
+                            "prop": "ParametrosControl",
+                            "valor": "\"6 idiomas disponibles (español, inglés, francés, italiano, alemán y portugués).\nControl de temperatura, modo de funcionamiento (termostato maestro) y velocidad del sistema (depende del tipo de instalación).\nLectura de temperatura ambiente y humedad relativa de zona\nControl de etapas de configuración (aire, radiante o combinado).\nFunción Eco-Adapt y Sleep.\nProgramaciones horarias de temperatura y modo.\nAcceso remoto a otras zonas del sistema.\nInformación climática y del consumo de la máquina (opcional).\"",
+                            "obs": "Indica los parámetros que controla el elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18125",
+                    "propgroup": "Ecob_Pset_5D",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18125",
+                            "prop": "Part01_BancoOrigen",
+                            "valor": "No dispone",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18126",
+                            "prop": "Part01_Codigo",
+                            "valor": "No dispone",
+                            "obs": "Código de partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18127",
+                            "prop": "Part01_Funcion",
+                            "valor": "Termostato",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18128",
+                            "prop": "Part01_MedicionUnidad",
+                            "valor": "Unidad",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18129",
+                            "prop": "Part01_Url",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18092",
+                    "propgroup": "Ecob_Pset_General",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18092",
+                            "prop": "CategoriaCobie",
+                            "valor": "21-04 30 20 90 Heating System Supplementary Components",
+                            "obs": "Categoria COBie.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18094",
+                            "prop": "ClaseBimEcob",
+                            "valor": "Termostatos",
+                            "obs": "Clase BIM eCOB del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18095",
+                            "prop": "CodigoGubimclass",
+                            "valor": "50.90.20.20",
+                            "obs": "Código Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18096",
+                            "prop": "CodigoOmniclass",
+                            "valor": "21-04 30",
+                            "obs": "Código Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18097",
+                            "prop": "CodigoUniclass2015",
+                            "valor": "EF_60_40",
+                            "obs": "Código Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18098",
+                            "prop": "CodigoUniformat2010",
+                            "valor": "D30",
+                            "obs": "Código Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18102",
+                            "prop": "Descripcion",
+                            "valor": "Termostato con interfaz gráfico a color",
+                            "obs": "Descripción técnica del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18103",
+                            "prop": "DescripcionGubimclass",
+                            "valor": "Dispositivos especiales",
+                            "obs": "Descripción Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18104",
+                            "prop": "DescripcionOmniclass",
+                            "valor": "Calefacción, Ventilación y Aire Acondicionado",
+                            "obs": "Descripción Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18105",
+                            "prop": "DescripcionUniclass2015",
+                            "valor": "Space heating and cooling",
+                            "obs": "Descripción Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18106",
+                            "prop": "DescripcionUniformat2010",
+                            "valor": "Calefacción, Ventilación y Aire Acondicionado",
+                            "obs": "Descripción Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18109",
+                            "prop": "EstandarObjeto",
+                            "valor": "ECOB_v1_2020",
+                            "obs": "Referencia al estándar de objeto BIM",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18111",
+                            "prop": "FechaEmision",
+                            "valor": "05\/03\/2021",
+                            "obs": "Fecha de creación del objeto BIM.",
+                            "format": "Fecha",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18121",
+                            "prop": "ObjetoAutor",
+                            "valor": "A3D + ITeC",
+                            "obs": "Autor del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18122",
+                            "prop": "ObjetoTitular",
+                            "valor": "Airzone, Corporacion Empresarial Altra S.L. Parque Tecnológico de Andalucía, Marie Curie, 21 · 29590 MÁLAGA (Spain)",
+                            "obs": "Titular del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18147",
+                            "prop": "TipoBimEcob",
+                            "valor": "Airzone_Thermostat_AirzoneBlueface",
+                            "obs": "Nombre del Tipo BIM Ecob.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18148",
+                            "prop": "UrlTipoBim",
+                            "valor": "https:\/\/metabase.itec.cat\/empresa\/es\/1653792\/bim\/3829",
+                            "obs": "Url del Tipo BIM Ecob.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18149",
+                            "prop": "Version",
+                            "valor": "RVT_2017",
+                            "obs": "Versión del objeto BIM.",
+                            "format": "Entero",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18130",
+                    "propgroup": "Ecob_Pset_Products",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18130",
+                            "prop": "Producto01_AutodeclaracionAmbiental",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18131",
+                            "prop": "Producto01_CertificadoConformidad",
+                            "valor": "ISO 14001 por SGS Certificado ES08\/5810",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18132",
+                            "prop": "Producto01_DAP",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18133",
+                            "prop": "Producto01_DdP",
+                            "valor": "Declaracion de conformidad de fecha 07\/01\/2020 de marca CE y reglamentos europeos.",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18134",
+                            "prop": "Producto01_Descripcion",
+                            "valor": "Interfaz gráfico a color con pantalla capacitiva y acabado en acero y cristal, para el control de zona en un sistema Airzone. Alimentado a través de la central del sistema. Disponible en blanco y negro.",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18135",
+                            "prop": "Producto01_Ecoetiqueta",
+                            "valor": "No dispone",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18136",
+                            "prop": "Producto01_Fabricante",
+                            "valor": "Airzone, Corporacion Empresarial Altra S.L. Parque Tecnológico de Andalucía, Marie Curie, 21 · 29590 MÁLAGA (Spain)",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18137",
+                            "prop": "Producto01_FaseUsoDAP",
+                            "valor": "No dispone",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18138",
+                            "prop": "Producto01_Modelo",
+                            "valor": "Modelo Blueface : Color - Pantalla capacitiva",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18139",
+                            "prop": "Producto01_Nombre",
+                            "valor": "Termostato inteligente Blueface",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18140",
+                            "prop": "Producto01_ReferenciaMarcadoCE",
+                            "valor": "Véanse todas las referencias en la DoP.",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18141",
+                            "prop": "Producto01_UrlDAP",
+                            "valor": "https:\/\/myzone.airzone.es\/productos\/gama-2016\/flexa-3\/\/interfaces-de-usuario\/termostato-cable-a-color-airzone-blueface-ce6-203.html",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18142",
+                            "prop": "Producto01_UrlDdP",
+                            "valor": "https:\/\/doc.airzone.es\/Certificates\/Product\/SDoC_AZCE6_CE_A4_MUL.pdf",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18143",
+                            "prop": "Producto01_UrlProducto",
+                            "valor": "https:\/\/myzone.airzone.es\/productos\/gama-2016\/flexa-3\/\/interfaces-de-usuario\/termostato-cable-a-color-airzone-blueface-ce6-203.html",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18115",
+                    "propgroup": "Ifc_Export",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18115",
+                            "prop": "IfcExportAs",
+                            "valor": "IfcUnitaryControlElement",
+                            "obs": "Clase Ifc que corresponde al objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18116",
+                            "prop": "IfcExportType",
+                            "valor": "THERMOSTAT",
+                            "obs": "Tipo Ifc que corresponde al objeto BIM. Propiedad opcional hasta que se definan tipos para todas las clases IFC.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18093",
+                    "propgroup": "Pset_ElectricalDeviceCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18093",
+                            "prop": "ClaseAislamiento",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Indica la clase de aislamiento eléctrico o IEC de protección del dispositivo.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18100",
+                            "prop": "ConTomaTierra",
+                            "valor": "No",
+                            "obs": "Indica si el dispositivo dispone de borne de conexión a tierra al que se conectan sus partes metálicas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18101",
+                            "prop": "CorrienteNominal_(A)",
+                            "valor": "0.145",
+                            "obs": "Corriente que absorbe el dispositivo en condiciones nominales de funcionamiento.",
+                            "format": "Text\/Número",
+                            "unitats": "A"
+                        },
+                        {
+                            "id": "18110",
+                            "prop": "FactorPotencia",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Relación entre la potencia activa y la potencia aparente.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18112",
+                            "prop": "FuncionConductor",
+                            "valor": "Cables de comunicación : 2x0,22 mm2.  Cables de alimentación: 2x0,5 mm2",
+                            "obs": "Función de los conductores a los que se conecta el dispositivo que puede ser de fase o línea, neutro i de protección.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18113",
+                            "prop": "GradoProteccionIK",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Grado de protección de la envolvente según la norma UNE-EN 50102 contra los impactos mecánicos nocivos, salvaguardando los materiales o equipos en su interior.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18114",
+                            "prop": "GradoProteccionIP",
+                            "valor": "IP20",
+                            "obs": "Grado de protección de la envolvente según la norma UNE-EN 60529 para evitar el acceso desde el exterior a partes peligrosas del dispositivo, la penetración de cuerpos sólidos extraños y la penetración de agua.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18120",
+                            "prop": "NumeroPolos_(u)",
+                            "valor": "2",
+                            "obs": "Número de polos de alimentación.",
+                            "format": "Text\/Número",
+                            "unitats": "U"
+                        },
+                        {
+                            "id": "18144",
+                            "prop": "RangoFrecuenciasNominales_(Hz)",
+                            "valor": "n\/a",
+                            "obs": "Rango de frecuencias comprendido entre un límite inferior y un límite superior para las que el dispositivo está diseñado.",
+                            "format": "Text\/Número",
+                            "unitats": "Hz"
+                        },
+                        {
+                            "id": "18146",
+                            "prop": "TensionNominal_(V)",
+                            "valor": "12",
+                            "obs": "Tensión nominal de alimentación eléctrica para la que el dispositivo está diseñado.",
+                            "format": "Text\/Número",
+                            "unitats": "V"
+                        }
+                    ]
+                },
+                {
+                    "id": "18108",
+                    "propgroup": "Pset_UnitaryControlElementTypeCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18108",
+                            "prop": "Estado",
+                            "valor": "SP",
+                            "obs": "Estado del elemento en la fase de proyecto definido como Nuevo, Preexistente, A Derribar, Temporal (como una estructura de soporte).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18145",
+                            "prop": "Referencia",
+                            "valor": "Airzone_Thermostat_AirzoneBlueface",
+                            "obs": "Identificador del tipo de elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -403,6 +1808,681 @@
                             "version": "2x3",
                             "format": "IFC",
                             "download": true
+                        }
+                    ]
+                }
+            ],
+            "props": [
+                {
+                    "id": "18190",
+                    "propgroup": "Ecob_Pset_5D",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18190",
+                            "prop": "Part01_BancoOrigen",
+                            "valor": "No dispone",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18191",
+                            "prop": "Part01_Codigo",
+                            "valor": "No dispone",
+                            "obs": "Código de partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18192",
+                            "prop": "Part01_Funcion",
+                            "valor": "Luminaria",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18193",
+                            "prop": "Part01_MedicionUnidad",
+                            "valor": "Unidad",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18194",
+                            "prop": "Part01_Url",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18195",
+                            "prop": "Part02_BancoOrigen",
+                            "valor": "No dispone",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18196",
+                            "prop": "Part02_Codigo",
+                            "valor": "No dispone",
+                            "obs": "Código de partida de obra relacionada.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18197",
+                            "prop": "Part02_Funcion",
+                            "valor": "Lámpara para LED",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18198",
+                            "prop": "Part02_MedicionUnidad",
+                            "valor": "Unidad",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18199",
+                            "prop": "Part02_Url",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a la partida BEDEC relacionada.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18188",
+                    "propgroup": "Ecob_Pset_General",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18188",
+                            "prop": "ObjetoAutor",
+                            "valor": "ITeC",
+                            "obs": "Autor del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18189",
+                            "prop": "ObjetoTitular",
+                            "valor": "LLEDÓ, c. Cid Campeador 14 28935 MÓSTOLES (Madrid) España",
+                            "obs": "Titular del objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18220",
+                            "prop": "TipoBimEcob",
+                            "valor": "Lledo_LuminariaLinealEmpotrada2800lm_Line50R",
+                            "obs": "Nombre del Tipo BIM Ecob.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18225",
+                            "prop": "UrlTipoBim",
+                            "valor": "https:\/\/metabase.itec.cat\/empresa\/es\/1640725\/bim\/3832",
+                            "obs": "Url del Tipo BIM Ecob.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18226",
+                            "prop": "Version",
+                            "valor": "RVT_2017",
+                            "obs": "Versión del objeto BIM.",
+                            "format": "Entero",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18153",
+                            "prop": "CategoriaCobie",
+                            "valor": "21-04 50 40 50 Lighting Fixtures",
+                            "obs": "Categoria COBie.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18155",
+                            "prop": "ClaseBimEcob",
+                            "valor": "Luminarias interiores",
+                            "obs": "Clase BIM eCOB del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18157",
+                            "prop": "CodigoGubimclass",
+                            "valor": "50.60.50.20",
+                            "obs": "Código Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18158",
+                            "prop": "CodigoOmniclass",
+                            "valor": "21-04 50",
+                            "obs": "Código Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18159",
+                            "prop": "CodigoUniclass2015",
+                            "valor": "EF_70_80",
+                            "obs": "Código Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18160",
+                            "prop": "CodigoUniformat2010",
+                            "valor": "D50",
+                            "obs": "Código Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18163",
+                            "prop": "Descripcion",
+                            "valor": "Sistema lineal para instalación empotrada de uso interior acabado en color blanco mate",
+                            "obs": "Descripción técnica del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18164",
+                            "prop": "DescripcionGubimclass",
+                            "valor": "Iluminación interior",
+                            "obs": "Descripción Gubimclass.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18165",
+                            "prop": "DescripcionOmniclass",
+                            "valor": "Electricidad",
+                            "obs": "Descripción Omniclass según tabla 21.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18166",
+                            "prop": "DescripcionUniclass2015",
+                            "valor": "Lighting",
+                            "obs": "Descripción Uniclass según tablas de elementos o sistemas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18167",
+                            "prop": "DescripcionUniformat2010",
+                            "valor": "Electricidad",
+                            "obs": "Descripción Uniformat 2010.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18170",
+                            "prop": "EstandarObjeto",
+                            "valor": "ECOB_v1_2020",
+                            "obs": "Referencia al estándar de objeto BIM",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18173",
+                            "prop": "FechaEmision",
+                            "valor": "05\/03\/2021",
+                            "obs": "Fecha de creación del objeto BIM.",
+                            "format": "Fecha",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18180",
+                    "propgroup": "Ecob_Pset_LightFixture",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18180",
+                            "prop": "IndiceDeslumbramientoUGR",
+                            "valor": "UGR <19",
+                            "obs": "Índice de deslumbramiento unificado UGR es el índice de deslumbramiento molesto procedente directamente de las luminarias de una instalación de iluminación interior según CIE (Comisión Internacional de Alumbrado) nº 117.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18181",
+                            "prop": "IndiceRendimientoColorRa_(%)",
+                            "valor": "80",
+                            "obs": "Índice de rendimiento del color Ra del conjunto de la lámpara más el equipo auxiliar. Efecto de un iluminante sobre el aspecto cromático de los objetos que ilumina por comparación con su aspecto bajo un iluminante de referencia. La forma en que la luz de una lámpara reproduce los colores de los objetos iluminados se denomina índice de rendimiento de color (Ra). El color que presenta un objeto depende de la distribución de la energía espectral de la luz con que está iluminado y de las características reflexivas selectivas de dicho objeto.",
+                            "format": "Text\/Número",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "18182",
+                            "prop": "LuminanciaLv_(cd\/m2)",
+                            "valor": "No aplica en esta luminaria interior por los tipos de espacios de uso previsto.",
+                            "obs": "Luminancia Lv o luminancia de velo es la luminancia uniforme equivalente resultante de la luz que incide sobre el ojo de un observador y que produce el velado de la imagen en la retina y disminuye la facultad de apreciar los contrastes, según se define en el Reglamento de eficiencia energética de instalaciones de alumbrado exterior. Se expresa en candelas por metro cuadrado.",
+                            "format": "Number\/Text",
+                            "unitats": "cd\/m2"
+                        },
+                        {
+                            "id": "18183",
+                            "prop": "Masa_(kg)",
+                            "valor": "3.7",
+                            "obs": "Cantidad de materia de un elemento expresada en kg.",
+                            "format": "Text\/Número",
+                            "unitats": "kg"
+                        },
+                        {
+                            "id": "18184",
+                            "prop": "Material",
+                            "valor": "\"Cuerpo de aluminio de extrusión anodizado\ngratado, difusor de policarbonato opal de alta\ntransmitancia con acabado efecto\nhielo\"",
+                            "obs": "Material o materiales que componen el elemento (si son varios enunciarlos uno a uno separados por comas)",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18218",
+                            "prop": "TemperaturaColorTc_(K)",
+                            "valor": "4000",
+                            "obs": "Temperatura de color o parámetro definitorio del color de la luz emitida por el conjunto de la lámpara más el equipo auxiliar.",
+                            "format": "Text\/Número",
+                            "unitats": "K"
+                        },
+                        {
+                            "id": "18221",
+                            "prop": "TipoLampara",
+                            "valor": "LED 840",
+                            "obs": "Tipo de lámpara que se utiliza como fuente lumínica.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18222",
+                            "prop": "TipoSistemaRegulacion",
+                            "valor": "Incluido, no regulable",
+                            "obs": "Tipo de sistema de control y regulación del elemento destinado a controlar de manera automática o manual su encendido y apagado o el flujo luminoso (en base a uno de los cuatro tipos fundamentales definidos en el Anejo A del DB-SE HE).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18224",
+                            "prop": "UrlCurvaFotometrica",
+                            "valor": "https:\/\/lledogrupo.com\/documents\/es\/LLEDO_2962150840000BM.pdf",
+                            "obs": "Enlace web a la curva fotométrica como representación de los valores de la intensidad calculados de una luminaria.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18227",
+                            "prop": "VidaUtilElemento_(h)",
+                            "valor": "(Ta 25ºC): L90B10 - 70.000",
+                            "obs": "Vida útil del elemento expresada en horas. Valor declarado por el fabricante para el elemento a 25°C.",
+                            "format": "Text\/Número",
+                            "unitats": "h"
+                        },
+                        {
+                            "id": "18156",
+                            "prop": "ClaseEficienciaEnergetica",
+                            "valor": "A++",
+                            "obs": "Clasificación energética del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18168",
+                            "prop": "EficaciaLuminosa_(lm\/V)",
+                            "valor": "93.3",
+                            "obs": "Eficacia luminosa o cociente entre el flujo luminoso emitido y la potencia eléctrica de la fuente expresada en lúmenes\/vatio. Valor declarado por el fabricante para el conjunto de la lámpara más el equipo auxiliar.",
+                            "format": "Text\/Número",
+                            "unitats": "lm\/W"
+                        },
+                        {
+                            "id": "18174",
+                            "prop": "FlujoLuminoso_(lm)",
+                            "valor": "2800",
+                            "obs": "Flujo luminoso o energía luminosa media por unidad de tiempo del conjunto de la lámpara más el equipo auxiliar.",
+                            "format": "Text\/Número",
+                            "unitats": "lm"
+                        }
+                    ]
+                },
+                {
+                    "id": "18201",
+                    "propgroup": "Ecob_Pset_Products",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18201",
+                            "prop": "Producto01_AutodeclaracionAmbiental",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18202",
+                            "prop": "Producto01_CertificadoConformidad",
+                            "valor": "2962150840000BM",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18203",
+                            "prop": "Producto01_DAP",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18204",
+                            "prop": "Producto01_DdP",
+                            "valor": "2962150840000BM",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18205",
+                            "prop": "Producto01_Descripcion",
+                            "valor": "Sistema lineal para instalación empotrada de uso interior acabado en color blanco mate",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18206",
+                            "prop": "Producto01_Ecoetiqueta",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18207",
+                            "prop": "Producto01_Fabricante",
+                            "valor": "LLEDÓ, c. Cid Campeador 14 28935 MÓSTOLES (Madrid) España",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18208",
+                            "prop": "Producto01_FaseUsoDAP",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase  \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18209",
+                            "prop": "Producto01_Modelo",
+                            "valor": "Line 50 R ref. 2962150840000BM",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18210",
+                            "prop": "Producto01_Nombre",
+                            "valor": "Line 50",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18211",
+                            "prop": "Producto01_ReferenciaMarcadoCE",
+                            "valor": "UNE EN 60598-1  Luminarias. Parte 1: Requisitos generales y ensayos",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18212",
+                            "prop": "Producto01_UrlCertificadoConformidad",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Enlace web a la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18213",
+                            "prop": "Producto01_UrlDAP",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18214",
+                            "prop": "Producto01_UrlDdP",
+                            "valor": "Consultar con el fabricante",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18215",
+                            "prop": "Producto01_UrlProducto",
+                            "valor": "https:\/\/lledogrupo.com\/producto\/estructuras-luminosas-ice-line-50\/",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18178",
+                    "propgroup": "Ifc_Export",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18178",
+                            "prop": "IfcExportAs",
+                            "valor": "IfcLightFixture",
+                            "obs": "Clase Ifc que corresponde al objeto BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18179",
+                            "prop": "IfcExportType",
+                            "valor": "DIRECTIONSOURCE",
+                            "obs": "Tipo Ifc que corresponde al objeto BIM. Propiedad opcional hasta que se definan tipos para todas las clases IFC.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18176",
+                    "propgroup": "Pset_ElectricalDeviceCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18176",
+                            "prop": "GradoProteccionIK",
+                            "valor": "IK 04",
+                            "obs": "Grado de protección de la envolvente según la norma UNE-EN 50102 contra los impactos mecánicos nocivos, salvaguardando los materiales o equipos en su interior.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18177",
+                            "prop": "GradoProteccionIP",
+                            "valor": "IP 20",
+                            "obs": "Grado de protección de la envolvente según la norma UNE-EN 60529 para evitar el acceso desde el exterior a partes peligrosas del dispositivo, la penetración de cuerpos sólidos extraños y la penetración de agua.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18187",
+                            "prop": "NumeroPolos_(u)",
+                            "valor": "3",
+                            "obs": "Número de polos.",
+                            "format": "Text\/Número",
+                            "unitats": "U"
+                        },
+                        {
+                            "id": "18216",
+                            "prop": "RangoFrecuenciasNominales_(Hz)",
+                            "valor": "50 - 60",
+                            "obs": "Rango de frecuencias comprendido entre un límite inferor y un límite superior para las que el dispositivo está diseñado.",
+                            "format": "Text\/Número",
+                            "unitats": "Hz"
+                        },
+                        {
+                            "id": "18219",
+                            "prop": "TensionNominal_(V)",
+                            "valor": "220-240",
+                            "obs": "Tensión nominal de alimentación eléctrica para la que el dispositivo está diseñado.",
+                            "format": "Text\/Número",
+                            "unitats": "V"
+                        },
+                        {
+                            "id": "18154",
+                            "prop": "ClaseAislamiento",
+                            "valor": "Clase I",
+                            "obs": "Indica la clase de aislamiento eléctrico o IEC de protección del dispositivo.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18161",
+                            "prop": "ConTomaTierra",
+                            "valor": "Toma a tierra incluida según normativa",
+                            "obs": "Indica si el dispositivo dispone de borne de conexión a tierra al que se conectan sus partes metálicas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18162",
+                            "prop": "CorrienteNominal_(A)",
+                            "valor": "300",
+                            "obs": "Corriente que absorbe el dispositivo en condiciones nominales de funcionamiento. Se indica el rango de valores habituales para este tipo de dispositivos, que será función del tono.",
+                            "format": "Text\/Número",
+                            "unitats": "mA"
+                        },
+                        {
+                            "id": "18172",
+                            "prop": "FactorPotencia",
+                            "valor": "0.95",
+                            "obs": "Relación entre la potencia activa y la potencia aparente.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18175",
+                            "prop": "FuncionConductor",
+                            "valor": "Fase, neutro y tierra",
+                            "obs": "Función de los conductores a los que se conecta el dispositivo que puede ser de fase o línea, neutro y de protección.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "18185",
+                    "propgroup": "Pset_LightFixtureTypeCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "18185",
+                            "prop": "Montaje",
+                            "valor": "Instalación empotrada",
+                            "obs": "Lista de los tipos de montaje disponibles para la luminaria entre los que se puede seleccionar el requerido.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18186",
+                            "prop": "NumeroDeLamparas_(u)",
+                            "valor": "1",
+                            "obs": "Número de lámparas de la luminaria.",
+                            "format": "Text\/Número",
+                            "unitats": "U"
+                        },
+                        {
+                            "id": "18200",
+                            "prop": "PotenciaTotal_(W)",
+                            "valor": "30",
+                            "obs": "Potencia eléctrica absorbida por el elemento BIM. En el caso de lámparas, potencia del conjunto de lámpara y su equipo auxiliar (luminarias y equipos eléctricos\/electrónicos asociados a la lámpara, diferentes para cada tipo destinados al encendido y control de las condiciones de funcionamiento de una lámpara).",
+                            "format": "Text\/Número",
+                            "unitats": "W"
+                        },
+                        {
+                            "id": "18217",
+                            "prop": "Referencia",
+                            "valor": "Lledo_LuminariaLinealEmpotrada2800lm_Line50R",
+                            "obs": "Identificador del tipo de elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18223",
+                            "prop": "UbicacionElemento",
+                            "valor": "Interior",
+                            "obs": "Ubicación prevista del elemento (Interior\/ Exterior).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18150",
+                            "prop": "CalorSensibleTransmitidoLocal",
+                            "valor": "SP",
+                            "obs": "Calor sensible transmitido al local por la luminaria.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18151",
+                            "prop": "CalorSensibleTransmitidoPlenum",
+                            "valor": "SP",
+                            "obs": "Calor sensible transmitido al plénum por la luminarias empotradas en falsos techos.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18152",
+                            "prop": "CalorSensibleTransmitidoRadiacion",
+                            "valor": "SP",
+                            "obs": "Calor sensible transmitido por radiación de la luminaria.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18169",
+                            "prop": "Estado",
+                            "valor": "SP",
+                            "obs": "Estado del elemento en la fase de proyecto definido como Nuevo, Preexistente, A derribar, Temporal (como una estructura de soporte).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "18171",
+                            "prop": "FactorDeMantenimiento",
+                            "valor": "0.8",
+                            "obs": "Cociente entre la iluminancia media sobre el plano de trabajo después de un cierto periodo de uso de una instalación de alumbrado y la iluminancia media obtenida bajo la misma condición para la instalación considerada como nueva. El valor más habital para las luminarias interiores es de 0,8.",
+                            "format": "Text",
+                            "unitats": null
                         }
                     ]
                 }
@@ -454,6 +2534,585 @@
                         }
                     ]
                 }
+            ],
+            "props": [
+                {
+                    "id": "19808",
+                    "propgroup": "Ecob_Pset_5D",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19808",
+                            "prop": "Part01_BancoOrigen",
+                            "valor": "Banco_ITeC",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19809",
+                            "prop": "Part01_Codigo",
+                            "valor": "P5Z22-HKN8 \/ P5Z22-HKMP \/ P5Z22-HKMZ",
+                            "obs": "Código de una partida de obra relacionada con el elemento para cada uno de los espesores de aislamiento previstos 80 \/120 \/200 mm.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19810",
+                            "prop": "Part01_Funcion",
+                            "valor": "Panel con aislante térmico de espuma rígida de poliestireno expandido extruido.",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19811",
+                            "prop": "Part01_MedicionUnidad",
+                            "valor": "m2",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19812",
+                            "prop": "Part01_Url",
+                            "valor": "https:\/\/metabase.itec.cat\/vide\/es\/items\/P5Z22-HKMP",
+                            "obs": "Enlace web a la partida BEDEC relacionada con el panel de aislamiento de 120 mm.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "19813",
+                    "propgroup": "Ecob_Pset_General",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19813",
+                            "prop": "CategoriaCobie",
+                            "valor": "21-02 30 10 Roofing",
+                            "obs": "Categoria COBie.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19814",
+                            "prop": "ClaseBimEcob",
+                            "valor": "Cubiertas inclinadas",
+                            "obs": "Clase BIM eCOB del objeto.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19815",
+                            "prop": "CodigoGubimclass",
+                            "valor": "30.20.10.10",
+                            "obs": "Código Gubimclass.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19816",
+                            "prop": "CodigoOmniclass",
+                            "valor": "21-03 10",
+                            "obs": "Código Omniclass según tabla 21.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19817",
+                            "prop": "CodigoUniclass2015",
+                            "valor": "EF_20_05",
+                            "obs": "Código Uniclass según tablas de elementos o sistemas.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19818",
+                            "prop": "CodigoUniformat2010",
+                            "valor": "C10",
+                            "obs": "Código Uniformat 2010.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19819",
+                            "prop": "Descripcion",
+                            "valor": "Cerramiento para cubiertas inclinadas con panel sandwich de tablero interior de abeto, exterior de aglomerado hidrófugo y aislamiento de poliestireno extruido.",
+                            "obs": "Descripción técnica del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19820",
+                            "prop": "DescripcionGubimclass",
+                            "valor": "Cubiertas in-situ",
+                            "obs": "Descripción Gubimclass.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19821",
+                            "prop": "DescripcionOmniclass",
+                            "valor": "Cerramientos interiores",
+                            "obs": "Descripción Omniclass según tabla 21.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19822",
+                            "prop": "DescripcionUniclass2015",
+                            "valor": "Substructure",
+                            "obs": "Descripción Uniclass según tablas de elementos o sistemas.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19823",
+                            "prop": "DescripcionUniformat2010",
+                            "valor": "Cerramientos interiores",
+                            "obs": "Descripción Uniformat 2010.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19824",
+                            "prop": "EstandarObjeto",
+                            "valor": "ECOB_v1_2021",
+                            "obs": "Referencia al estándar de objeto BIM",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19825",
+                            "prop": "FechaEmision",
+                            "valor": "20\/09\/2021",
+                            "obs": "Fecha de creación del objeto BIM.",
+                            "format": "Fecha",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19826",
+                            "prop": "ObjetoAutor",
+                            "valor": "Thermochip+ITeC",
+                            "obs": "Autor del objeto BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19827",
+                            "prop": "ObjetoTitular",
+                            "valor": "Thermochip SLU, c. A Medua s\/n ES-32330 Sobradelo de Valdeorras (Ourense)",
+                            "obs": "Titular del objeto BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19828",
+                            "prop": "TipoBimEcob",
+                            "valor": "Thermochip_CubInclinada_TAH",
+                            "obs": "Nombre del Tipo BIM Ecob.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19829",
+                            "prop": "UrlTipoBim",
+                            "valor": "https:\/\/metabase.itec.cat\/empresa\/es\/1639958\/bim\/3878",
+                            "obs": "Url del Tipo BIM Ecob.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19830",
+                            "prop": "Version",
+                            "valor": "RVT_2017",
+                            "obs": "Versión de la plataforma de modelado (ALL \/ AC \/ RVT ...) del objeto BIM. Si el objeto se ha modelado en más de una plataforma indicar por ejemplo: AC19 \/ RVT2015",
+                            "format": "Texto",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "19831",
+                    "propgroup": "Ecob_Pset_Products",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19831",
+                            "prop": "Producto01_AutodeclaracionAmbiental",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19832",
+                            "prop": "Producto01_CertificadoConformidad",
+                            "valor": "No dispone",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19833",
+                            "prop": "Producto01_CertificadoMadera",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la certificación de la madera del producto realizada por una tercera parte en base a un estándar reconocido (por ejemplo el sello FSC - Forest Stewarship Council- o el certificado PECF -Program for the Endorsement of Forest Certification-).Sólo aplica a productos de madera o sus derivados. Si no dispone de certificación forestal se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19834",
+                            "prop": "Producto01_DAP",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19835",
+                            "prop": "Producto01_DdP",
+                            "valor": "DdP Nº TAH002",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19836",
+                            "prop": "Producto01_Descripcion",
+                            "valor": "Sistema de cerramiento de cubierta ROOF PLUS TAH con panel multicapa compuesto.",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19837",
+                            "prop": "Producto01_Ecoetiqueta",
+                            "valor": "No dispone",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19838",
+                            "prop": "Producto01_Fabricante",
+                            "valor": "Thermochip SLU, c. A Medua s\/n ES-32330 Sobradelo de Valdeorras (Ourense)",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19839",
+                            "prop": "Producto01_FaseUsoDAP",
+                            "valor": "No dispone",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19840",
+                            "prop": "Producto01_Modelo",
+                            "valor": "THERMOCHIP ROOF PLUS TAH Aislamiento 80 \/ 120 \/ 200 mm",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento para cada uno de los espesores de aislamiento previstos 80 \/120 \/200 mm.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19841",
+                            "prop": "Producto01_Nombre",
+                            "valor": "THERMOCHIP ROOF PLUS",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19842",
+                            "prop": "Producto01_ReferenciaMarcadoCE",
+                            "valor": "ETE080\/0295",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19843",
+                            "prop": "Producto01_UrlCertificadoConformidad",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a una certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19844",
+                            "prop": "Producto01_UrlDAP",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19845",
+                            "prop": "Producto01_UrlDdP",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19846",
+                            "prop": "Producto01_UrlProducto",
+                            "valor": "https:\/\/www.thermochip.com\/producto\/tah-tarima-19-de-abeto\/",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "19847",
+                    "propgroup": "Ecob_PSet_RoofProperties",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19847",
+                            "prop": "AbsorcionAcustica",
+                            "valor": "0.08",
+                            "obs": "Coeficiente de absorción acústica medio, alfa m, del acabado interior de la cubierta, adimensional. Valor definido en el CEC para acabados de maderas coníferas.",
+                            "format": "Number\/Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19848",
+                            "prop": "CapaImpermeabilizacion",
+                            "valor": "SÍ",
+                            "obs": "Indica si el elemento contiene capa de impermeabilización.",
+                            "format": "Yes\/No",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19849",
+                            "prop": "ContenidoCOV_(g\/l)",
+                            "valor": "Valor no aportado",
+                            "obs": "Contenido de compuesto orgánico volátil (COV) de la pintura o barniz de un elemento BIM situado en un ambiente interior, expresada en gramos por litro (g\/l) de acuerdo con la Directiva 2004\/42\/EC del Parlamento Europeo. Valor de ensayo aportado por el fabricante conforme el Anejo III . Si el elemento no tiene pintura ni barniz se declara \"n\/a - no aplica\".",
+                            "format": "Text",
+                            "unitats": "g\/l"
+                        },
+                        {
+                            "id": "19850",
+                            "prop": "Espesor_(mm)",
+                            "valor": "118,5\/ 158,5 \/ 238,5",
+                            "obs": "Espesor o grosor de un elemento o sistema constructivo completo  para cada uno de los espesores de aislamiento previstos 80 \/120 \/200 mm.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19851",
+                            "prop": "GradoImpermeabilidad",
+                            "valor": "SP",
+                            "obs": "Indica si se alcanzan o no las condiciones del apartado 2.4.2 y 2.4.3 del DB-HS del CTE.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19852",
+                            "prop": "IndiceGlobalRedAcusticaTr_(dBA)",
+                            "valor": "Valor no aportado",
+                            "obs": "RA,tr Indice global de reducción acústica ponderado A para ruido de automóviles. Valor según proyecto que depende de la solución adoptada en el soporte resistente y los acabados de la cubierta. Puede definirse en base a una solución del Catálogo del CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "dBA"
+                        },
+                        {
+                            "id": "19853",
+                            "prop": "IndiceReflectanciaSolarSRI_(%)",
+                            "valor": "Valor no aportado",
+                            "obs": "Indicador que incorpora la reflectancia solar, la emisividad térmica y la temperatura superficial de un material, según norma ASTM E1980 o norma de ensayo aplicable. Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "19854",
+                            "prop": "IndiceReflectanciaSolarSRI3a_(%)",
+                            "valor": "Valor no aportado",
+                            "obs": "Indicador que incorpora la reflectancia solar, la emisividad térmica y la temperatura superficial de un material envejecido tres años, según norma ASTM E1980 o norma de ensayo aplicable. Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "19855",
+                            "prop": "MasaSuperficial_(kg\/m2)",
+                            "valor": "23,84 \/ 25,12 \/ 27,68",
+                            "obs": "Valor calculado por el fabricante  para cada uno de los espesores de aislamiento previstos 80 \/120 \/200 mm. Masa superficial del elemento.",
+                            "format": "Number\/Text",
+                            "unitats": "kg\/m2"
+                        },
+                        {
+                            "id": "19856",
+                            "prop": "Orientacion",
+                            "valor": "SP",
+                            "obs": "Horizontal, Norte, Sur, Este, Oeste, SurEste, SurOeste. Las cubiertas planas se indican como horizontales. La orientación de las cubiertas inclinadas se define a partir del ángulo de su normal respecto el Norte, según los criterios de orientación de fachadas del Código Técnico de la Edificación.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19857",
+                            "prop": "PendienteMinimaCubierta_(%)",
+                            "valor": "0.3",
+                            "obs": "Pendiente mínima de cubiertas planas\/inclinadas en función de los Usos y Protecciones previstos en el apartado 2.4.3 del DB-HS del CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "19858",
+                            "prop": "ReaccionAlFuego",
+                            "valor": "F",
+                            "obs": "Clasificación de reacción al fuego del elemento constructivo en base a la norma europea UNE-EN 13501-1. Valor declarado por el fabricante. La comprobación de las propiedades de comportamiento ante el fuego debe hacerse a través de la acreditación documental que acompañe a los productos componentes del elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19859",
+                            "prop": "ReaccionAlFuegoCubiertas",
+                            "valor": "Valor no aportado",
+                            "obs": "Clasificación de reacción al fuego en cubiertas según la norma europea UNE-EN 13501-5.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19860",
+                            "prop": "ReduccionRuidoImpacto_(dB)",
+                            "valor": "Valor no aportado",
+                            "obs": "Incremento Ln,w o reducción del nivel global de presión de ruido de impactos aportada por el elemento. La comprobación de las prestaciones de los productos de construcción debe hacerse a través de la acreditación documental que acompañe a los componentes del elemento BIM.",
+                            "format": "Number\/Text",
+                            "unitats": "dB"
+                        },
+                        {
+                            "id": "19861",
+                            "prop": "ResistenciaTermica_((m2*K)\/W)",
+                            "valor": "2,55 \/ 3,7 \/ 5,98",
+                            "obs": "Resistencia térmica del elemento. Valor calculado por el fabricante  para cada uno de los espesores de aislamiento previstos 80 \/120 \/200 mm.",
+                            "format": "Number\/Text",
+                            "unitats": "(m2*K)\/W"
+                        },
+                        {
+                            "id": "19862",
+                            "prop": "RiesgoDeCondensacion",
+                            "valor": "Valor no aportado",
+                            "obs": "Factor de temperatura de la superficie interior Frsi de cerramientos para comprobar la limitación de condensaciones superficiales. Valor según proyecto que depende de la solución adoptada en el soporte resistente y los acabados interiores de la cubierta.",
+                            "format": "Text\/Number",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19863",
+                            "prop": "TipoTejado",
+                            "valor": "SP",
+                            "obs": "Tipo de tejado previsto para cubiertas inclinadas según la tabla 2.10 del DB-HS del CTE (Teja curva \/ Teja mixta y plana...). No aplica a cubiertas planas.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19864",
+                            "prop": "Uso",
+                            "valor": "n\/a",
+                            "obs": "Uso previsto de cubiertas planas para las actividades que se han de desarrollar según la tabla 2.9 del DB-HS (Transitable peatones \/ Transitable vehículos\/ No transitables \/ Ajardinadas). No aplica a cubiertas inclinadas.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "19865",
+                    "propgroup": "Ecob_PSet_RoofProperties_Timber",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19865",
+                            "prop": "ContenidoFormaldehido_(mg\/100g)",
+                            "valor": "Valor no aportado",
+                            "obs": "Contenido de formaldehído del producto componente del elemento declarado por el fabricante conforme a la norma armonizada (EN), evaluación técnica europea (ATE) o reglamentación aplicable para su marcado CE (p.ejemplo UNE-EN 13986, UNE-EN 14041,etc).",
+                            "format": "Number\/Text",
+                            "unitats": "mg\/100g"
+                        }
+                    ]
+                },
+                {
+                    "id": "19866",
+                    "propgroup": "Ifc_Export",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19866",
+                            "prop": "IfcExportAs",
+                            "valor": "IfcRoof",
+                            "obs": "Clase Ifc que corresponde al objeto BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19867",
+                            "prop": "IfcExportType",
+                            "valor": "GAMBREL_ROOF",
+                            "obs": "Tipo Ifc que corresponde al objeto BIM. Propiedad opcional hasta que se definan tipos para todas las clases IFC.",
+                            "format": "Texto",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "19868",
+                    "propgroup": "Pset_RoofCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "19868",
+                            "prop": "ElementoExterior",
+                            "valor": "SP",
+                            "obs": "Indica si el elemento está diseñado para ser utilizado en el exterior o no.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19869",
+                            "prop": "Estado",
+                            "valor": "SP",
+                            "obs": "Estado del elemento en la fase de proyecto definido como Nuevo, Preexistente, A Derribar, Temporal (como una estructura de soporte).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19870",
+                            "prop": "IndiceGlobalRedAcustica_(dBA)",
+                            "valor": "28",
+                            "obs": "RA indice global de reducción acústica ponderado A. Valor definido por el fabricante para el panel compuesto.",
+                            "format": "Number\/Text",
+                            "unitats": "dBA"
+                        },
+                        {
+                            "id": "19871",
+                            "prop": "Referencia",
+                            "valor": "Thermochip_CubInclinada_TAH",
+                            "obs": "Identificador del tipo de elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19872",
+                            "prop": "ResistenciaFuego",
+                            "valor": "Valor no aportado",
+                            "obs": "Clasificación de resistencia al fuego del elemento constructivo según la norma europea UNE-EN 13501-2. Valor según proyecto a especificar por el proyectista conforme a las prestaciones exigidas al elemento y la acreditación documental de los productos componentes del elemento. La comprobación de las prestaciones de los productos de construcción se realiza mediante la acreditación documental que acompañe los componentes del elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "19873",
+                            "prop": "TransmitanciaTermica_(W\/(m2*K))",
+                            "valor": "0,39 \/ 0,27 \/ 0,17",
+                            "obs": "Transmitancia térmica UH. Valor calculado por el fabricante para el panel compuesto para cada uno de los espesores de aislamiento previstos 80 \/120 \/200 mm.",
+                            "format": "Number\/Text",
+                            "unitats": "W\/(m2*K)"
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -499,6 +3158,609 @@
                             "version": "2015",
                             "format": "Revit",
                             "download": true
+                        }
+                    ]
+                }
+            ],
+            "props": [
+                {
+                    "id": "20082",
+                    "propgroup": "Ecob_Pset_5D",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20082",
+                            "prop": "Part01_BancoOrigen",
+                            "valor": "Banco_ITeC",
+                            "obs": "Banco de precios origen de la partida de obra relacionada.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20083",
+                            "prop": "Part01_Codigo",
+                            "valor": "P83ET-HKJK \/ P83ET-HKJG \/ P83ET-HKJI",
+                            "obs": "Código de una partida de obra relacionada con el elemento para cada uno de los espesores de aislamiento previstos 80 \/ 100 \/ 160 mm.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20084",
+                            "prop": "Part01_Funcion",
+                            "valor": "Panel con aislante térmico de espuma rígida de poliestireno expandido extruido.",
+                            "obs": "Función de la partida de obra relacionada con el elemento BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20085",
+                            "prop": "Part01_MedicionUnidad",
+                            "valor": "m2",
+                            "obs": "Unidad de medición de la partida de obra.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20086",
+                            "prop": "Part01_Url",
+                            "valor": "https:\/\/metabase.itec.cat\/vide\/es\/items\/P83ET-HKJG",
+                            "obs": "Enlace web a la partida BEDEC relacionada con el panel de aislamiento de 100 mm.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "20087",
+                    "propgroup": "Ecob_Pset_General",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20087",
+                            "prop": "CategoriaCobie",
+                            "valor": "21-02 20 90 Exterior Wall Specialties",
+                            "obs": "Categoria COBie.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20088",
+                            "prop": "ClaseBimEcob",
+                            "valor": "Muros de fachada",
+                            "obs": "Clase BIM eCOB del objeto.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20089",
+                            "prop": "CodigoGubimclass",
+                            "valor": "30.10.10.30",
+                            "obs": "Código Gubimclass.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20090",
+                            "prop": "CodigoOmniclass",
+                            "valor": "21-02 20",
+                            "obs": "Código Omniclass según tabla 21.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20091",
+                            "prop": "CodigoUniclass2015",
+                            "valor": "EF_25",
+                            "obs": "Código Uniclass según tablas de elementos o sistemas.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20092",
+                            "prop": "CodigoUniformat2010",
+                            "valor": "B20",
+                            "obs": "Código Uniformat 2010.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20093",
+                            "prop": "Descripcion",
+                            "valor": "Cerramiento de fachada SATE COAT de tableros de fibroyeso y yeso laminado RF, cámara de aire y panel sandwich exterior de tableros de placa de fibrocemento y fibroyeso y aislamiento de poliestireno extruido.",
+                            "obs": "Descripción técnica del objeto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20094",
+                            "prop": "DescripcionGubimclass",
+                            "valor": "Sistemas especiales de fachadas",
+                            "obs": "Descripción Gubimclass.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20095",
+                            "prop": "DescripcionOmniclass",
+                            "valor": "Cerramientos exteriores verticales",
+                            "obs": "Descripción Omniclass según tabla 21.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20096",
+                            "prop": "DescripcionUniclass2015",
+                            "valor": "Wall and barrier elements",
+                            "obs": "Descripción Uniclass según tablas de elementos o sistemas.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20097",
+                            "prop": "DescripcionUniformat2010",
+                            "valor": "Cerramientos exteriores verticales",
+                            "obs": "Descripción Uniformat 2010.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20098",
+                            "prop": "EstandarObjeto",
+                            "valor": "ECOB_v1_2021",
+                            "obs": "Referencia al estándar de objeto BIM",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20099",
+                            "prop": "FechaEmision",
+                            "valor": "20\/09\/2021",
+                            "obs": "Fecha de creación del objeto BIM.",
+                            "format": "Fecha",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20100",
+                            "prop": "ObjetoAutor",
+                            "valor": "Thermochip+ITeC",
+                            "obs": "Autor del objeto BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20101",
+                            "prop": "ObjetoTitular",
+                            "valor": "Thermochip SLU, c. A Medua s\/n ES-32330 Sobradelo de Valdeorras (Ourense)",
+                            "obs": "Titular del objeto BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20102",
+                            "prop": "TipoBimEcob",
+                            "valor": "Thermochip_FachadaSateCoat_TFbcY-Y-RF",
+                            "obs": "Nombre del Tipo BIM Ecob.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20103",
+                            "prop": "UrlTipoBim",
+                            "valor": "https:\/\/metabase.itec.cat\/empresa\/es\/1639958\/bim\/3887",
+                            "obs": "Url del Tipo BIM Ecob.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20104",
+                            "prop": "Version",
+                            "valor": "RVT_2017",
+                            "obs": "Versión de la plataforma de modelado (ALL \/ AC \/ RVT ...) del objeto BIM. Si el objeto se ha modelado en más de una plataforma indicar por ejemplo: AC19 \/ RVT2015",
+                            "format": "Texto",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "20105",
+                    "propgroup": "Ecob_Pset_Products",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20105",
+                            "prop": "Producto01_AutodeclaracionAmbiental",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la autodeclaración ambiental informativa del producto emitida por su fabricante (p.e. Contenido de reciclado, REACH, Reciclabilidad, etc).Si no dispone de autodeclaración se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20106",
+                            "prop": "Producto01_CertificadoConformidad",
+                            "valor": "DAU20\/120",
+                            "obs": "Número de referencia de la certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20107",
+                            "prop": "Producto01_CertificadoMadera",
+                            "valor": "No dispone",
+                            "obs": "Tipo y\/o referencia de la certificación de la madera del producto realizada por una tercera parte en base a un estándar reconocido (por ejemplo el sello FSC - Forest Stewarship Council- o el certificado PECF -Program for the Endorsement of Forest Certification-).Sólo aplica a productos de madera o sus derivados. Si no dispone de certificación forestal se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20108",
+                            "prop": "Producto01_DAP",
+                            "valor": "Declaración DAPcons.100.020",
+                            "obs": "Tipo y\/o referencia de la declaración ambiental del producto emitida por una tercera parte (p.e. EPD, Declaración ambiental y sanitaria, IBU, etc). Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20109",
+                            "prop": "Producto01_DdP",
+                            "valor": "No dispone",
+                            "obs": "Número de referencia de la declaración de prestaciones para el marcado CE del producto de construcción componente del elemento.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20110",
+                            "prop": "Producto01_Descripcion",
+                            "valor": "Sistema de cerramiento de fachada SATE COAT con panel multicapa compuesto de 100 mm de aislamiento.",
+                            "obs": "Descripción genérica del producto de construcción componente del elemento.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20111",
+                            "prop": "Producto01_Ecoetiqueta",
+                            "valor": "No dispone",
+                            "obs": "Nombre y\/o referencia de la ecoetiqueta del producto emitida por una tercera parte (p.e. Blue Angel, Eurofins Gold, Marca Aenor Medio Ambiente, EU Ecolabel, etc). Si no dispone de ecoetiqueta se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlProducto\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20112",
+                            "prop": "Producto01_Fabricante",
+                            "valor": "Thermochip SLU, c. A Medua s\/n ES-32330 Sobradelo de Valdeorras (Ourense)",
+                            "obs": "Nombre y dirección del fabricante o titular responsable de poner el producto en el mercado.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20113",
+                            "prop": "Producto01_FaseUsoDAP",
+                            "valor": "A1, A2, A3 (Materias primas y fabricación)",
+                            "obs": "Fases de uso declaradas en la DAP. Si no dispone de DAP se indica \"No dispone\". Para acceder al documento véase \"ProdNN_UrlDAP\" o consulte con el fabricante.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20114",
+                            "prop": "Producto01_Modelo",
+                            "valor": "THERMOCHIP SATE-COAT Aislamiento 80 \/ 100 \/ 160 mm",
+                            "obs": "Modelo o variante de producto de construcción componente del elemento para cada uno de los espesores de aislamiento previstos 80 \/ 100 \/ 160 mm.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20115",
+                            "prop": "Producto01_Nombre",
+                            "valor": "THERMOCHIP SATE-COAT",
+                            "obs": "Nombre comercial o marca del producto de construcción componente del elemento",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20116",
+                            "prop": "Producto01_ReferenciaMarcadoCE",
+                            "valor": "No dispone",
+                            "obs": "Norma armonizada (EN), evaluación técnica europea (ETA) o reglamentación aplicable para el marcado CE del producto componente del elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20117",
+                            "prop": "Producto01_UrlCertificadoConformidad",
+                            "valor": "https:\/\/itec.cat\/certificacion\/dau\/files\/20\/120",
+                            "obs": "Enlace web a una certificación de conformidad voluntaria (marca o sello) del producto.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20118",
+                            "prop": "Producto01_UrlDAP",
+                            "valor": "https:\/\/csosteniblev4.s3-eu-west-1.amazonaws.com\/dapcons\/DAPcons-100-020-THERMOCHIP.pdf",
+                            "obs": "Enlace web a la declaración ambiental publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20119",
+                            "prop": "Producto01_UrlDdP",
+                            "valor": "No dispone",
+                            "obs": "Enlace web a la declaración de prestaciones del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20120",
+                            "prop": "Producto01_UrlProducto",
+                            "valor": "https:\/\/www.thermochip.com\/producto\/tfbcy\/",
+                            "obs": "Enlace web a la información publicada por el titular del producto de construcción componente del elemento.",
+                            "format": "Url",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "20121",
+                    "propgroup": "Ecob_PSet_WallProperties",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20121",
+                            "prop": "AbsorcionAcustica",
+                            "valor": "0.01",
+                            "obs": "Coeficiente de absorción acústica medio, alfa m, del acabado interior de la cubierta, adimensional. Valor definido en el CEC para acabados de pintura sobre yeso.",
+                            "format": "Number\/Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20122",
+                            "prop": "ContenidoCOV_(g\/l)",
+                            "valor": "Valor no aportado",
+                            "obs": "Contenido de compuesto orgánico volátil (COV) de la pintura o barniz de un elemento BIM situado en un ambiente interior, expresada en gramos por litro (g\/l) de acuerdo con la Directiva 2004\/42\/EC del Parlamento Europeo. Valor de ensayo aportado por el fabricante conforme el Anejo III . Si el elemento no tiene pintura ni barniz se declara \"n\/a - no aplica\".",
+                            "format": "Text",
+                            "unitats": "g\/l"
+                        },
+                        {
+                            "id": "20123",
+                            "prop": "ContenidoFormaldehido_(mg\/100g)",
+                            "valor": "Valor no aportado",
+                            "obs": "Contenido de formaldehído del producto componente del elemento declarado por el fabricante conforme a la norma armonizada (EN), evaluación técnica europea (ATE) o reglamentación aplicable para su marcado CE (p.ejemplo UNE-EN 13986, UNE-EN 14041,etc).",
+                            "format": "Text",
+                            "unitats": "mg\/100g"
+                        },
+                        {
+                            "id": "20124",
+                            "prop": "EmisionFormaldehido",
+                            "valor": "Valor no aportado",
+                            "obs": "Clase de emisión de formaldehído del producto componente del elemento declarada por el fabricante (E1, E2, NPD...) conforme a la norma armonizada (EN), evaluación técnica europea (ATE) o reglamentación aplicable para su marcado CE (p.ejemplo UNE-EN 13986, UNE-EN 14041,etc).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20125",
+                            "prop": "Espesor_(mm)",
+                            "valor": "232,5 \/ 252,5 \/ 312,5",
+                            "obs": "Espesor o grosor de un elemento o sistema constructivo completo para cada uno de los espesores de aislamiento previstos 80 \/ 100 \/ 160 mm.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20126",
+                            "prop": "GradoImpermeabilidad",
+                            "valor": "SP",
+                            "obs": "Sólo aplica a elementos exteriores (fachadas y medianerías).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20127",
+                            "prop": "IndiceGlobalRedAcusticaTr_(dBA)",
+                            "valor": "32.3",
+                            "obs": "RA,tr Indice global de reducción acústica ponderado A para ruido de automóviles. Valor de los paneles SATE según la configuración definida en la tabla 4.9 del DAU 20\/120.",
+                            "format": "Number\/Text",
+                            "unitats": "dBA"
+                        },
+                        {
+                            "id": "20128",
+                            "prop": "IndiceReflectanciaSolarSRI_(%)",
+                            "valor": "Valor no aportado",
+                            "obs": "Indicador que incorpora la reflectancia solar, la emisividad térmica y la temperatura superficial de un material, según norma ASTM E1980 o norma de ensayo aplicable. Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "20129",
+                            "prop": "IndiceReflectanciaSolarSRI3a_(%)",
+                            "valor": "Valor no aportado",
+                            "obs": "Indicador que incorpora la reflectancia solar, la emisividad térmica y la temperatura superficial de un material envejecido tres años, según norma ASTM E1980 o norma de ensayo aplicable. Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "%"
+                        },
+                        {
+                            "id": "20130",
+                            "prop": "MasaSuperficial_(kg\/m2)",
+                            "valor": "58,81 \/ 59,45 \/ 61,37",
+                            "obs": "Masa superficial del elemento. Valor calculado por el fabricante para cada uno de los espesores de aislamiento previstos 80 \/ 100 \/ 160 mm.",
+                            "format": "Number\/Text",
+                            "unitats": "kg\/m2"
+                        },
+                        {
+                            "id": "20131",
+                            "prop": "ResistenciaTermica_((m2*K)\/W)",
+                            "valor": "2,72 \/ 3,29 \/ 5",
+                            "obs": "Resistencia térmica del elemento. Valor calculado por el fabricante para cada uno de los espesores de aislamiento previstos 80 \/ 100 \/ 160 mm.",
+                            "format": "Number\/Text",
+                            "unitats": "(m2*K)\/W"
+                        },
+                        {
+                            "id": "20132",
+                            "prop": "RiesgoDeCondensacion",
+                            "valor": "Valor no aportado",
+                            "obs": "Factor de temperatura de la superficie interior Frsi de cerramientos según solución PXX del Catálogo CTE.",
+                            "format": "Text\/Number",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "20133",
+                    "propgroup": "Ecob_PSet_WallProperties_FacadeSystems",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20133",
+                            "prop": "Orientacion",
+                            "valor": "SP",
+                            "obs": "Norte, Sur, Este, Oeste, SurEste, SurOeste. Orientación de las fachadas según el Código Técnico de la Edificación.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20134",
+                            "prop": "PermeabilidadVaporAgua_(m)",
+                            "valor": "Valor no aportado",
+                            "obs": "Permeabilidad al vapor de agua de un sistema de revestimiento (expresada en m de espesor de aire equivalente) según se defina en la norma armonizada correspondiente o en los Documentos de Evaluación Europea (p.e. la guía de DITE -ETAG- 004 de SATE o EADs de sistemas específicos). Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "m"
+                        },
+                        {
+                            "id": "20135",
+                            "prop": "ResistenciaAlViento_(N)",
+                            "valor": "Valor no aportado",
+                            "obs": "Resistencia al viento del elemento en N, según se define en Documentos de Evaluación Europea (p.e. la guía de DITE -ETAG- 004 de SATE o EADs de sistemas específicos). Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "Pa"
+                        },
+                        {
+                            "id": "20136",
+                            "prop": "ResistenciaAlViento_(Pa)",
+                            "valor": "Valor no aportado",
+                            "obs": "Resistencia al viento del elemento en Pa, según se define en Documentos de Evaluación Europea (p.e. la guía de DITE 034 de kits de revestimiento de fachadas o EADs de sistemas específicos). Propiedad opcional no requerida por el CTE.",
+                            "format": "Number\/Text",
+                            "unitats": "Pa"
+                        },
+                        {
+                            "id": "20137",
+                            "prop": "ResistenciaImpacto",
+                            "valor": "ext900J int100J",
+                            "obs": "Resistencia a impacto del elemento según se define en Documentos de Evaluación Europea (p.e. la guía de DITE -ETAG- 004 de SATE, ETAG 034 de kits de revestimiento de fachadas o EADs de sistemas específicos). Valor de los paneles SATE según la configuración definida en la tabla 8.16 del DAU 20\/120.",
+                            "format": "Text",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "20138",
+                    "propgroup": "Ifc_Export",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20138",
+                            "prop": "IfcExportAs",
+                            "valor": "IfcWall",
+                            "obs": "Clase Ifc que corresponde al objeto BIM.",
+                            "format": "Texto",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20139",
+                            "prop": "IfcExportType",
+                            "valor": "USERDEFINED",
+                            "obs": "Tipo Ifc que corresponde al objeto BIM. Propiedad opcional hasta que se definan tipos para todas las clases IFC.",
+                            "format": "Texto",
+                            "unitats": null
+                        }
+                    ]
+                },
+                {
+                    "id": "20140",
+                    "propgroup": "Pset_WallCommon",
+                    "toggle": false,
+                    "values": [
+                        {
+                            "id": "20140",
+                            "prop": "Combustible",
+                            "valor": "Valor no aportado",
+                            "obs": "Indica si el elemento es combustible o no. Valor según proyecto a especificar por el proyectista conforme a las prestaciones exigidas al elemento y la acreditación documental de los productos componentes del elemento. En el contexto normativo español esta propiedad carece de norma de referencia y su valor puede definirse como \"n\/a\" No Aplicable. En los elementos con acabados cerámicos puede declararse \"No\" como valor intrínseco de este tipo de productos.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20141",
+                            "prop": "ElementoExterior",
+                            "valor": "SP",
+                            "obs": "Indica si el elemento está diseñado para ser utilizado en el exterior o no.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20142",
+                            "prop": "Estado",
+                            "valor": "SP",
+                            "obs": "Estado del elemento en la fase de proyecto definido como Nuevo, Preexistente, A Derribar, Temporal (como una estructura de soporte).",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20143",
+                            "prop": "ExtenderAEstructura",
+                            "valor": "SP",
+                            "obs": "Indica si el muro se extiende hasta la estructura o no.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20144",
+                            "prop": "IndiceGlobalRedAcustica_(dBA)",
+                            "valor": "35.1",
+                            "obs": "RA indice global de reducción acústica ponderado A. Valor de los paneles SATE según la configuración definida en la tabla 4.9 del DAU 20\/120.",
+                            "format": "Text",
+                            "unitats": "dBA"
+                        },
+                        {
+                            "id": "20145",
+                            "prop": "Portante",
+                            "valor": "No",
+                            "obs": "Indica si el elemento puede tener funciones portantes o no.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20146",
+                            "prop": "ReaccionAlFuego",
+                            "valor": "B, s1-d0",
+                            "obs": "Clasificación de reacción al fuego del elemento constructivo en base a la norma europea UNE-EN 13501-1. Como mínimo C-s2,d0, valor exigido en la tabla 4.1 del DB SI del CTE para revestimientos de paredes en zonas ocupables o B-s3,d2 para los materiales de fachada que ocupen más del 10% de la superficie del acabado exterior (o de las superficies interiores de las cámaras ventiladas) si los muros exceden los 18 m de altura. En los muros de fachada de altura inferior o igual a 18 m se exige B-s3,d2 en una franja inferior de 3,5 m de altura y en el arranque accesible al público desde la rasante exterior o desde una cubierta. En muros con cámaras no estancas también deben considerarse las condiciones del apartado 3 del DB SI1 relativo a espacios ocultos.  Valor de los paneles SATE según la tabla 4.1 del DAU 20\/120.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20147",
+                            "prop": "Referencia",
+                            "valor": "Thermochip_FachadaSateCoat_TFbcY-Y-RF",
+                            "obs": "Identificador del tipo de elemento.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20148",
+                            "prop": "ResistenciaFuego",
+                            "valor": "Configuración no evaluada",
+                            "obs": "Clasificación de resistencia al fuego del elemento constructivo según la norma europea UNE-EN 13501-2. Como mínimo EI 60, valor exigido en la tabla 1.2 del DB SI del CTE para paredes que delimitan sectores de incendio.  Como mínimo R 30, valor exigido en la tabla C.2 del DB SI del CTE para soportes y muros. La comprobación de las propiedades de comportamiento ante el fuego debe hacerse a través de la acreditación documental que acompañe a los productos componentes del elemento BIM.",
+                            "format": "Text",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20149",
+                            "prop": "SectorizacionFuego",
+                            "valor": "SP",
+                            "obs": "Indica si el elemento puede asumir funciones de sectorización al fuego o no.",
+                            "format": "Boolean",
+                            "unitats": null
+                        },
+                        {
+                            "id": "20150",
+                            "prop": "TransmitanciaTermica_(W\/(m2*K))",
+                            "valor": "0,37 \/ 0,3 \/ 0,2",
+                            "obs": "Transmitancia térmica UH. Valor definido por el fabricante para el panel compuesto para cada uno de los espesores de aislamiento previstos 80 \/ 100 \/ 160 mm.",
+                            "format": "Number\/Text",
+                            "unitats": "W\/(m2*K)"
                         }
                     ]
                 }
