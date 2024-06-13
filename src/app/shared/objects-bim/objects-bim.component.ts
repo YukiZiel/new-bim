@@ -11,7 +11,8 @@ import { AuthService } from '../../services/auth.service';
 })
 export class ObjectsBimComponent {
   @Input() objectBim!: ObjectBIM;
-  isFavorite = false;
+  @Input() idfavs: any;
+  //isFavorite = false;
   constructor(private router: Router, private addFavService: AddFavService, private authService: AuthService) {}
 
   navigateToDetail(id:string): void {
@@ -21,11 +22,11 @@ export class ObjectsBimComponent {
 
   toggleFavList(objectBim:ObjectBIM) {
     const userid = this.authService.getUserData().id_user; // Obtener el userid del usuario en sesión
-    const objectid = objectBim.id; // Suponiendo que `id` es el identificador único del objeto BIM
-
-    this.addFavService.addFav(userid, objectid).subscribe(
+    const objectid = objectBim.id; 
+    
+    this.addFavService.toggleFavorite(userid, objectid).subscribe(
       response => {
-        this.isFavorite = true;
+        //this.isFavorite = true;
         console.log(response); // Manejar la respuesta si es necesario
       },
       error => {
@@ -33,4 +34,15 @@ export class ObjectsBimComponent {
       }
     );
   }
+
+  // isFavorite(){
+  //   debugger;
+  //   for (let i = 0; i < this.idfavs.length; i++) {
+  //     if (this.objectBim.id === this.idfavs[i].id){
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // }
+
 }

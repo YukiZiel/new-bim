@@ -4,6 +4,8 @@ import { FilterGService } from '../../services/filterG.service';
 import { Filters } from '../../interfaces/filter';
 import { MatAccordion } from '@angular/material/expansion';
 import { Router } from '@angular/router';
+import { SessionService } from '../../services/session.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-dashboardG',
@@ -27,7 +29,10 @@ export class DashboardGComponent implements OnInit{
   selectedIfcBuildingElement = "";
   selectedElementosBimItec ="";
   bims: ObjectBIM[] = [];
-  constructor( private filterService: FilterGService ) {}
+  userData: any;
+  idfavs: any;
+
+  constructor( private filterService: FilterGService, private sessionService: SessionService,  private userService:UserService ) {}
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {
@@ -40,6 +45,19 @@ export class DashboardGComponent implements OnInit{
       this.filterIfcBuildingElements();
       this.filterElementosBimITec();
     });
+
+    if (this.sessionService.isLoggedIn()) {
+
+      this.userService.getFavoriteObjects(this.sessionService.getUserData().id_user)
+      .subscribe((favorites: any[]) => {
+
+        const objectIds = favorites.map(fav => fav.objectid); 
+        this.idfavs = favorites.map(fav => fav.objectid); 
+        console.log(objectIds);
+      });
+    } else {
+      console.log('mal');
+    }
   }
 
   onFilterChange(filterType: string, filterValue: any) {

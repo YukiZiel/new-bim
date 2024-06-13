@@ -1,10 +1,13 @@
 .row {
-    /* border: 1px solid #ccc; */
-    margin: 50px 50px;
+    margin: 30px 50px;
     padding: 10px 0;
-    display: flex;
-    width: 100%;
     color: #2e3a69;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Una columna de un tercio y otra de dos tercios */
+    gap: 20px; /* Espacio entre columnas */
+    width: calc(100% - 100px); /* Ajustar el ancho considerando los márgenes */
+    
   }  
 
 .row li {
@@ -18,13 +21,20 @@
 }
 
 .personal-info {
-  margin-right: 10%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.user-favorite ul {
+.user-favorite {
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* .user-favorite ul {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .user-favorite li {
   margin-inline: 20px;
@@ -33,19 +43,25 @@
   background-color: #abdee6;
 }
 
-.listing {
-  border-radius: 30px;
-  padding-bottom: 1px;
+.fav {
+  display: inline-block;
+  margin: 10px;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
-.listing-heading {
+.fav-card {
+  border-radius: 30px;
+  width: 200px;
+  justify-content: space-between; /* Distribuye el espacio entre los hijos */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.fav-heading {
   color: #8d8d8d;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
 }
 
-.listing-image {
+.fav-image {
   height: auto;
   width: 100%;
   object-fit: cover;
@@ -57,14 +73,8 @@ mat-card-actions {
   padding: 0px;
 }
 
-
-/* .listing mat-icon:cli {
-  color: #bdbdbd;
-} */
-
-
 mat-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+
 }

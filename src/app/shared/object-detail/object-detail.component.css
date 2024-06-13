@@ -61,12 +61,13 @@
 
 /* ------------------------------------------------------------------------------------ */
 
+.table-props h2{
+  color:#008ca1;
+}
 
-
-/* .table-props {
-  padding: 20px;
-  box-sizing: border-box;
-} */
+.table-props {
+  color:#25a9bd;
+}
 
 .header-table p {
   margin-bottom: 0px;

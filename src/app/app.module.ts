@@ -32,6 +32,7 @@ import { NewAccountComponent } from './auth/register/new-account.component';
 import { LoginService } from './services/auth/login.service'; 
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
+import { SessionService } from './services/session.service';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
   providers: [
     provideAnimationsAsync(), 
     LoginService,
-    AddFavService
+    AddFavService,
+    SessionService
   ],
   bootstrap: [AppComponent]
 })

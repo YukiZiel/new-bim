@@ -1,20 +1,15 @@
-.example-container mat-form-field + mat-form-field {
-    margin-left: 8px;
+.container h1{
+margin-block: 50px 40px;
+text-align: center;
+font-weight: 600;
+color:#25a9bd;
 }
 
-.example-container mat-form-field + mat-form-field {
-    margin-left: 8px;
+.row {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
 }
 
-.example-right-align {
-    text-align: right;
-}
-
-input.example-right-align::-webkit-outer-spin-button,
-input.example-right-align::-webkit-inner-spin-button {
-    display: none;
-}
-  
 .form {
     min-width: 150px;
     max-width: 500px;
@@ -25,10 +20,15 @@ input.example-right-align::-webkit-inner-spin-button {
     width: 100%;
 }
 
+mat-checkbox {
+    margin-bottom: 10px;
+}
+
 .error-message {
     margin-bottom: 20px;
     color: red;
 }
+
 .success-message {
     margin-bottom: 20px;
     padding-block: 20px;
