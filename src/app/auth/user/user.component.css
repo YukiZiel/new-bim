@@ -32,3 +32,39 @@
   border-radius: 20px;
   background-color: #abdee6;
 }
+
+.listing {
+  border-radius: 30px;
+  padding-bottom: 1px;
+}
+
+.listing-heading {
+  color: #8d8d8d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.listing-image {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 0px;
+  margin-bottom: 10px;
+}
+
+mat-card-actions {
+  padding: 0px;
+}
+
+
+/* .listing mat-icon:cli {
+  color: #bdbdbd;
+} */
+
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

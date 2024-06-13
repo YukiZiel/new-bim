@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { UserService } from '../../services/user.service';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   upForm!: FormGroup;
   errorMessage: string | undefined;
 
-  constructor( private formBuilder: FormBuilder, private http: HttpClient, private router: Router, private authService: AuthService ) {}
+  constructor( private formBuilder: FormBuilder, private http: HttpClient, private router: Router, private authService: AuthService , private userService:UserService ) {}
 
   ngOnInit() {
     this.upForm = this.formBuilder.group({
@@ -35,9 +36,9 @@ export class LoginComponent implements OnInit {
           if (response.success === false) { 
             this.errorMessage = 'Correo electrónico o contraseña incorrecta';
           } else {
-            console.log(response); 
             // this.userService.setUserData(response); // Guardar los datos del usuario
             this.authService.login(response);  // Guardar los datos del usuario en el AuthService
+            // this.userService.saveFav(response); 
             this.router.navigate(['/perfil']); // Redirigir al componente de perfil
           }
         },

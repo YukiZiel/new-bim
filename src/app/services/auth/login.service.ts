@@ -13,7 +13,7 @@ export class LoginService {
   public currentUser: Observable<any>;
   
   constructor(private http:HttpClient) {
-    const storedUser = localStorage.getItem('currentUser');
+    const storedUser = sessionStorage.getItem('currentUser');
     this.currentUserSubject = new BehaviorSubject<any>(storedUser ? JSON.parse(storedUser) : null);
     this.currentUser = this.currentUserSubject.asObservable();
   }
@@ -27,7 +27,7 @@ export class LoginService {
       .pipe(map(user => {
         // if (user && user.token) {
         if (user && !user.error) {
-          localStorage.setItem('currentUser', JSON.stringify(user));
+          sessionStorage.setItem('currentUser', JSON.stringify(user));
           this.currentUserSubject.next(user);
         }
         return user;
@@ -36,7 +36,7 @@ export class LoginService {
   }
 
   logout() {
-    localStorage.removeItem('currentUser');
+    sessionStorage.removeItem('currentUser');
     this.currentUserSubject.next(null);
   }
 

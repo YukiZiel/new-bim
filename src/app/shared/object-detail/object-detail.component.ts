@@ -50,7 +50,7 @@ export class ObjectDetailComponent implements OnInit {
             const id = data['id']; 
             if (fromRoute.includes('fabricantes')) { //Verificar el parámetro con from
               this.filterFService.getDetail(id).subscribe(response => {
-                this.detail = response;
+                this.detail = response;   //obtengo los detalles del objeto BIM basándome en el id
             });
             } else if ( fromRoute.includes('inicio')) {
               this.filterGService.getDetail(id).subscribe(response => {

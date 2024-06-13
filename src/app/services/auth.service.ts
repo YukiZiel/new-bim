@@ -13,21 +13,21 @@ export class AuthService {
 
   // Guarda los datos del usuario en el localStorage
   login(userData: any): void {
-    localStorage.setItem(this.userKey, JSON.stringify(userData));
+    sessionStorage.setItem(this.userKey, JSON.stringify(userData));
   }
 
   // Elimina los datos del usuario del localStorage
   logout(): void {
-    localStorage.removeItem(this.userKey);
+    sessionStorage.removeItem(this.userKey);
   }
 
   // Obtiene los datos del usuario del localStorage
   getUserData(): any {
-    const userData = localStorage.getItem(this.userKey);
+    const userData = sessionStorage.getItem(this.userKey);
     if (userData) {
       const userDataParsed = JSON.parse(userData);
       // Excluir la contraseña del objeto userDataParsed
-      delete userDataParsed.userpassword;
+      // delete userDataParsed.userpassword;
       return userDataParsed;
     }
     
@@ -36,7 +36,7 @@ export class AuthService {
 
   // Verifica si hay un usuario autenticado
   isAuthenticated(): boolean {
-    return localStorage.getItem(this.userKey) !== null;
+    return sessionStorage.getItem(this.userKey) !== null;
   }
 }
 
