@@ -27,7 +27,7 @@ export class ObjectsBimComponent {
     this.addFavService.toggleFavorite(userid, objectid).subscribe(
       response => {
         //this.isFavorite = true;
-        console.log(response); // Manejar la respuesta si es necesario
+        console.log(response); 
       },
       error => {
         console.error('Error al agregar favorito:', error);
