@@ -40,22 +40,7 @@ export class ObjectDetailComponent implements OnInit {
   }
 
   constructor( private route:ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService, private authService: AuthService ) {
-    // this.route.params.subscribe(data => {
 
-
-    //   this.filterFService.getDetail( data['id']).subscribe(response => {
-    //     this.detail = response;
-
-    //   });
- 
-
-    //   this.filterGService.getDetail( data['id']).subscribe(response => {
-    //       this.detail = response;
-    //   });
- 
-
-      
-    // });
   }
       
       ngOnInit(): void {

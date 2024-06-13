@@ -9,8 +9,7 @@ import { Observable } from 'rxjs';
 export class AddFavService {
 
   private baseUrl = 'http://localhost/new-bim/php/favorites.php';
-  private favList: ObjectBIM[] = [];
-  private favListItems = 'favListItems';
+
   constructor(private http: HttpClient) {
     // const favListItems = localStorage.getItem(this.favListItems);
     // if (favListItems) {
@@ -33,11 +32,15 @@ export class AddFavService {
     return this.http.post<any>(url, body);
   }
 
-  removeFromFavList(objectBim: ObjectBIM): void {
-    const index = this.favList.findIndex(favorite => favorite.id === objectBim.id);
-    if (index !== -1) {
-      this.favList.splice(index, 1);
-      localStorage.setItem(this.favListItems, JSON.stringify(this.favList));
-    }
+  removeFromFavList(userid: string, objectid: string): Observable<any> {
+    const url = `${this.baseUrl}`;
+    const body = { userid: userid, objectid: objectid };
+    return this.http.request<any>('delete', url, { body });
+  }
+
+  checkFavorite(userid: string, objectid: string): Observable<any> {
+    const url = `${this.baseUrl}`;
+    const body = { userid: userid, objectid: objectid };
+    return this.http.post<any>(url, body);
   }
 }

@@ -11,7 +11,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class ObjectsBimComponent {
   @Input() objectBim!: ObjectBIM;
-  
+  isFavorite = false;
   constructor(private router: Router, private addFavService: AddFavService, private authService: AuthService) {}
 
   navigateToDetail(id:string): void {
@@ -25,6 +25,7 @@ export class ObjectsBimComponent {
 
     this.addFavService.addFav(userid, objectid).subscribe(
       response => {
+        this.isFavorite = true;
         console.log(response); // Manejar la respuesta si es necesario
       },
       error => {

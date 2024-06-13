@@ -1,7 +1,4 @@
 <div class="row">
-    <!-- <div *ngIf="userData">
-      <h2>{{ userData.username }}</h2>
-    </div> -->
     <div class="personal-info" *ngIf="userData">
       <h2>Datos personales:</h2>
       <ul>
@@ -13,14 +10,28 @@
     </div>  
     <div class="user-favorite">
       <h2>Favoritos:</h2>
-      <ul>
+      <ul *ngFor="let object of favoriteObjects">
+      <li>{{object.id}}</li></ul>
+      <!-- <div *ngFor="let object of favoriteObjects">
+        <mat-card class="listing">
+          <mat-card-content (click)="navigateToDetail(object.id)">
+            <img mat-card-image
+                class="listing-image"
+                [src]="'https://bedec.itec.cat/img/' + object.idemp + '/' + object.image"
+                alt="{{ object.description }}"
+            />
+                <p class="listing-heading">{{ object.description }}</p>
+            </mat-card-content>
+        </mat-card>
+      </div> -->
+      <!-- <ul>
         <li>Nombre Objeto BIM con enlace</li>
         <li>Nombre Objeto BIM con enlace</li>
         <li>Nombre Objeto BIM con enlace</li>
         <li>Nombre Objeto BIM con enlace</li>
         <li>Nombre Objeto BIM con enlace</li>
         <li>Nombre Objeto BIM con enlace</li>
-      </ul>
+      </ul> -->
       <!-- <mat-card class="listing">
         <mat-card-actions>
             <button mat-icon-button matTooltip="Añadir a favorito">
