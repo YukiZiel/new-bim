@@ -18,9 +18,9 @@ export class AddFavService {
     // }
    }
 
-  inFavList(objectBim: ObjectBIM) : boolean {
-    return this.favList.some(favorite => favorite.id === objectBim.id);
-  }
+//   inFavList(objectBim: ObjectBIM) : boolean {
+//     // return this.favList.some(favorite => favorite.id === objectBim.id);
+// }
 
   // addFav(objectBim: ObjectBIM): void {
   //   this.favList.push(objectBim);

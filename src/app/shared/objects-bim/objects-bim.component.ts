@@ -11,7 +11,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class ObjectsBimComponent {
   @Input() objectBim!: ObjectBIM;
-  // @Output() bimClicked = new EventEmitter<string>();
+  
   constructor(private router: Router, private addFavService: AddFavService, private authService: AuthService) {}
 
   navigateToDetail(id:string): void {
@@ -23,30 +23,13 @@ export class ObjectsBimComponent {
     const userid = this.authService.getUserData().id_user; // Obtener el userid del usuario en sesión
     const objectid = objectBim.id; // Suponiendo que `id` es el identificador único del objeto BIM
 
-    if (this.inFavList(objectBim)) {
-      this.addFavService.removeFromFavList(objectBim);
-    } else {
-      this.addFavService.addFav(userid, objectid).subscribe(
-        response => {
-          console.log(response); // Manejar la respuesta si es necesario
-        },
-        error => {
-          console.error('Error al agregar favorito:', error);
-        }
-      );
-    }
-    // if (this.inFavList(objectBim)) {
-    //   this.addFavService.removeFromFavList(objectBim);
-    // } else {
-    //   this.addFavService.addFav(objectBim);
-    // }
+    this.addFavService.addFav(userid, objectid).subscribe(
+      response => {
+        console.log(response); // Manejar la respuesta si es necesario
+      },
+      error => {
+        console.error('Error al agregar favorito:', error);
+      }
+    );
   }
-
-  inFavList(objectBim: ObjectBIM) : boolean {
-    return this.addFavService.inFavList(objectBim);
-  }
-
-  // onClick() {
-  //   this.bimClicked.emit(this.objectBim.id);
-  // }
 }
