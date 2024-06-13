@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Filters } from '../interfaces/filter';
-import { ObjectBIM } from '../interfaces/object-bim';
+import { ObjectBIM, Props } from '../interfaces/object-bim';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -55,5 +55,9 @@ export class FilterFService {
 
   getDetail(id: string): Observable<ObjectBIM | undefined> {
     return this.getBims().pipe(map(response => response.bimsF.find(bim => bim.id === id)))
+  }
+
+  getProperties(): Observable<{property:Props[]}> {
+    return this.http.get<{property:Props[]}>(this.jsonUrl);
   }
 }

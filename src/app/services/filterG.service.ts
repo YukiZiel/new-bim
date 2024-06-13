@@ -17,7 +17,7 @@ export class FilterGService {
   private subsistemas = '../assets/generics/subsistemaG.json';
   private ifcBuildingElements = '../assets/generics/ifcBuildingElementG.json';
   private elementosBimItec = '../assets/generics/elementosBimItecG.json';
-  // bims: ObjectBIM[] = [];
+
   constructor(private http:HttpClient) { }
 
   getBims(): Observable<{bims:ObjectBIM[]}> {

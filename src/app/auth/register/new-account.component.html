@@ -32,12 +32,12 @@
         @if (password.hasError('required')) {
           <mat-error>La contraseña es <strong>requerido</strong></mat-error>
         } 
-        <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <button mat-icon-button matSuffix type="button" (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
       </mat-form-field>
       <!-- <span *ngIf="!registerForm.valid && registerForm.touched" class="help-ms">Por favor introduzca datos válidos</span> -->
-      <mat-checkbox class="full-width" required><a href="https://itec.es/itec/privacidad/">Acepto la política de privacidad</a></mat-checkbox>
+      <mat-checkbox class="full-width" formControlName="privacyPolicy" required><a href="https://itec.es/itec/privacidad/">Acepto la política de privacidad</a></mat-checkbox>
 
       <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
       <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>

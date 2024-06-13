@@ -24,7 +24,14 @@ export class AuthService {
   // Obtiene los datos del usuario del localStorage
   getUserData(): any {
     const userData = localStorage.getItem(this.userKey);
-    return userData ? JSON.parse(userData) : null;
+    if (userData) {
+      const userDataParsed = JSON.parse(userData);
+      // Excluir la contraseña del objeto userDataParsed
+      delete userDataParsed.userpassword;
+      return userDataParsed;
+    }
+    
+    return null;
   }
 
   // Verifica si hay un usuario autenticado

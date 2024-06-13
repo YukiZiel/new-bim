@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { ObjectBIM } from '../../interfaces/object-bim';
+import { ObjectBIM, Props } from '../../interfaces/object-bim';
 import { FilterFService } from '../../services/filterF.service';
 import { Filters } from '../../interfaces/filter';
 import { MatAccordion } from '@angular/material/expansion';
@@ -28,6 +28,7 @@ export class DashboardFComponent implements OnInit{
   selectedIfcBuildingElement = "";
   selectedElementosBimItec ="";
   bimsF: ObjectBIM[] = [];
+  properties: Props[] = [];
   constructor( private filterService: FilterFService ) {}
 
   ngOnInit() {
@@ -63,17 +64,11 @@ export class DashboardFComponent implements OnInit{
   public filterEmpresas() {
     this.filterService.getEmpresas().subscribe(data => {
       this.empresas = data.empresas;
-      // this.empresas = data.empresas.filter(empresa =>
-      //   this.bimsF.some(bim =>
-      //     bim.empresa.includes(empresa.idemp)
-      //   )
-      // );
     });
   }
 
   public filterSistemas() {
     this.filterService.getSistemas().subscribe(data => {
-      // this.sistemasF = data.sistemasF;
       this.sistemasF = data.sistemasF.filter(sistema =>
         this.bimsF.some(bim =>
           bim.sistema.includes(sistema.label)
@@ -84,7 +79,6 @@ export class DashboardFComponent implements OnInit{
 
   public filterSubsistemas() {
     this.filterService.getSubsistemas().subscribe(data => {
-      // this.subsistemasF = data.subsistemasF;
       this.subsistemasF = data.subsistemasF.filter(subsistema =>
         this.bimsF.some(bim =>
           bim.subsistema.includes(subsistema.label)
@@ -107,8 +101,19 @@ export class DashboardFComponent implements OnInit{
   public filterElementosBimITec() {
     this.filterService.getElementosBimITeCF().subscribe(data => {
       this.elementosBimItecF = data.elementosBimItecF;
+      // this.elementosBimItecF = data.elementosBimItecF.filter(elementosBimItecF =>
+      //   this.bimsF.some(bim =>
+      //     bim.classeBimITeC.includes(elementosBimItecF.label)
+      //   )
+      // );
     });
   } 
+
+  public filterProperties() {
+    this.filterService.getProperties().subscribe(data => {
+      this.properties = data.property;
+    });
+  }
 
   public sortbimsDesc(): void {
     this.bimsF = this.bimsF.sort((a, b) => b.description.localeCompare(a.description));

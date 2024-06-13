@@ -1,33 +1,64 @@
-<div class="container">       
-    <h1 class="detail-title">{{ detail.description }}</h1>
-    <img [src]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + detail.image" alt="{{ detail.description }}" width="350">
+<div class="container" > 
+  <div class="header-detail">
     <button mat-icon-button matTooltip="Añadir a favorito">
         <mat-icon>favorite</mat-icon>
     </button>
-        <div class="detail-downloads">
-            <p>Descargas</p>
-            <ul *ngFor="let download of detail.downloads">
-                <li>{{download.format}}
-                    <ul>     
-                        <li *ngFor="let formatItem of download.formatdown" class="download-archive">
-                          <a *ngIf="isAuthenticated()" [href]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + formatItem.fitxer"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>
-                          <a *ngIf="!isAuthenticated()" href="javascript:void(0)" (click)="showErrorMessage()"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>  
-                          <!-- Esto asegura que no se realice ninguna acción al hacer clic en el enlace y en su lugar se llame a la función showErrorMessage(), que muestra un mensaje de error utilizando alert() -->
-                          {{formatItem.format}}
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+    <h1 class="detail-title">{{ detail.description }}</h1>
+  </div>
+  <div class="container-grid" >      
+    <div class="info-detail"> 
+      <img [src]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + detail.image" alt="{{ detail.description }}" width="350">
+          <div class="detail-downloads">
+              <p>Descargas</p>
+              <p *ngIf="errorMessage" class="error-login"> {{errorMessage}} </p>
+              <ul *ngFor="let download of detail.downloads">
+                  <li>{{download.format}}
+                      <ul>     
+                          <li *ngFor="let formatItem of download.formatdown" class="download-archive">
+                            <a *ngIf="isAuthenticated()" [href]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + formatItem.fitxer"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>
+                            <a *ngIf="!isAuthenticated()" href="javascript:void(0)" (click)="showErrorMessage()"><img src="../../../assets/images/doc.png" alt="icono download" width="50"></a>  
+                            <!-- Esto asegura que no se realice ninguna acción al hacer clic en el enlace y en su lugar se llame a la función showErrorMessage(), que muestra un mensaje de error utilizando alert() -->
+                            {{formatItem.format}}
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <button mat-raised-button color="primary" class="button" [routerLink]="['/inicio']" type="button">Volver</button>
+    </div>
+
+
+    <div class="table-props">
+      <h2>Propiedades y valores</h2>
+      <div class="list-props" *ngFor="let prop of detail.props">
+        <div class="header-table">
+          <button mat-icon-button color="primary" class="props-header" (click)="toggleGroup(prop.propgroup)">
+            <mat-icon>{{ isGroupExpanded(prop.propgroup) ? 'expand_less' : 'expand_more' }}</mat-icon> <!-- Cambia el ícono según el estado de expansión del grupo -->
+          </button>
+          <p>{{ prop.propgroup }}</p>
         </div>
-        <button mat-raised-button color="primary" class="button" [routerLink]="['/inicio']" type="button">Volver</button>
-
-        <!-- <table mat-table>
-          <ng-container *ngFor="let property of prop.values">
-            <td mat-cell >{{property.prop}}</td>
-            <td mat-cell >{{property.valor}}</td>
-            <td mat-cell >{{property.obs}}</td>
-          </ng-container>
-        </table> -->
+        <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup) && isAuthenticated()">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let value of prop.values">
+                <td>{{ value.prop }}</td>
+                <td>{{ value.valor }}</td>
+                <td>{{ value.obs }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div *ngIf="isGroupExpanded(prop.propgroup) && !isAuthenticated()">
+          <p class="error-login">Inicia sesión para ver la información</p>
+        </div>
+      </div>
+    </div>
   </div> 
-
-
+</div>

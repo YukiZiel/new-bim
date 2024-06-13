@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: '', redirectTo:'/inicio', pathMatch:'full'},
   { path: 'inicio', component: DashboardGComponent},
   { path: 'fabricantes', component: DashboardFComponent},
-  { path: 'bim/:id', component: ObjectDetailComponent},
+  { path: 'bim/:id', component: ObjectDetailComponent}, // cambiar bim por obtener /inicio o /fabricantes
   { path: 'iniciar-sesion', component: LoginComponent },
   { path: 'registrarse', component: NewAccountComponent },
   { path: 'perfil', component: UserComponent, canActivate: [AuthGuard] }

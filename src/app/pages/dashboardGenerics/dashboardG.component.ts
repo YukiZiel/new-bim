@@ -27,13 +27,11 @@ export class DashboardGComponent implements OnInit{
   selectedIfcBuildingElement = "";
   selectedElementosBimItec ="";
   bims: ObjectBIM[] = [];
-  // filteredBims: ObjectBIM[] = [];
   constructor( private filterService: FilterGService ) {}
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {
       this.bims = data.bims;
-      // this.filteredBims = this.bims.slice();
       this.sortbimsAsc();
       this.filterEcobs();
       this.filterFormatos();
@@ -44,19 +42,12 @@ export class DashboardGComponent implements OnInit{
     });
   }
 
-  // applyFilters() {
-  //   this.filteredBims = this.bims
-  //     .filter(bim => this.selectedEcob ? bim.ecob === this.selectedEcob : true) 
-  // }
-
   onFilterChange(filterType: string, filterValue: any) {
     this.filterChange.emit({ type: filterType, value: filterValue });
-    // this.applyFilters();
   }
 
   public filterEcobs() {
     this.filterService.getEcobs().subscribe(data => {
-      // this.ecobs = data.ecobs;
       this.ecobs = data.ecobs.filter(ecob =>
         this.bims.some(bim =>
           bim.ecob.includes(ecob.label)
@@ -73,10 +64,9 @@ export class DashboardGComponent implements OnInit{
 
   public filterSistemas() {
     this.filterService.getSistemas().subscribe(data => {
-      // this.sistemasG = data.sistemasG;
       this.sistemasG = data.sistemasG.filter(sistema =>
         this.bims.some(bim =>
-          bim.sistema.toLowerCase().includes(sistema.label.toLowerCase())
+          bim.sistema.includes(sistema.label)
         )
       );
     });
@@ -84,7 +74,6 @@ export class DashboardGComponent implements OnInit{
 
   public filterSubsistemas() {
     this.filterService.getSubsistemas().subscribe(data => {
-      // this.subsistemasG = data.subsistemasG;
       this.subsistemasG = data.subsistemasG.filter(subsistema =>
         this.bims.some(bim =>
           bim.subsistema.includes(subsistema.label)
@@ -95,7 +84,6 @@ export class DashboardGComponent implements OnInit{
 
   public filterIfcBuildingElements() {
     this.filterService.getIfcBuildingElements().subscribe(data => {
-      // this.ifcBuildingElementsG = data.ifcBuildingElementsG;
       this.ifcBuildingElementsG = data.ifcBuildingElementsG.filter(ifcBuildingElement =>
         this.bims.some(bim =>
           bim.IfcBuildingElement.includes(ifcBuildingElement.label)
@@ -106,7 +94,6 @@ export class DashboardGComponent implements OnInit{
 
   public filterElementosBimITec() {
     this.filterService.getElementosBimITeCG().subscribe(data => {
-      // this.elementosBimItecG = data.elementosBimItecG;
       this.elementosBimItecG = data.elementosBimItecG.filter(elementosBimItec =>
         this.bims.some(bim =>
           bim.classeBimITeC.includes(elementosBimItec.label)
@@ -114,10 +101,6 @@ export class DashboardGComponent implements OnInit{
       );
     });
   } 
-
-  // onBimClicked(id: string) {
-  //   this.router.navigate(['/bim', id]);
-  // }
 
   public sortbimsDesc(): void {
     this.bims = this.bims.sort((a, b) => b.description.localeCompare(a.description));

@@ -21,9 +21,6 @@ export class NewAccountComponent implements OnInit{
   successMessage: string | undefined;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
-    // merge(this.email.statusChanges, this.email.valueChanges)
-    // .pipe(takeUntilDestroyed())
-    // .subscribe(() => this.ErrorMessage());
   }
   
   ngOnInit() {
@@ -32,7 +29,8 @@ export class NewAccountComponent implements OnInit{
       lastname: ['', Validators.required],
       company: [''],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      privacyPolicy: [false, Validators.requiredTrue]
     });
   }
   
@@ -59,17 +57,6 @@ export class NewAccountComponent implements OnInit{
   }
 
 
-  // errorMessage = '';
-  
-  // ErrorMessage() {
-  //   if (this.email.hasError('required')) {
-  //     this.errorMessage = 'Introduce un correo electrónico';
-  //   } else if (this.email.hasError('email')) {
-  //     this.errorMessage = 'Introduce un correo electrónico válido';
-  //   } else {
-  //     this.errorMessage = '';
-  //   }
-  // }
   
   hide = true;
   clickEvent(event: MouseEvent) {

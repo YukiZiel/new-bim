@@ -1,9 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, ElementRef, OnInit, ViewChild, viewChild } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
-import { LoginService } from '../../services/auth/login.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserService } from '../../services/user.service';
 import { AuthService } from '../../services/auth.service';
 
 
@@ -12,13 +10,14 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
+
 export class LoginComponent implements OnInit {
   passwordFormControl = new FormControl('', Validators.required);
   emailFormControl = new FormControl('',  [Validators.required, Validators.email]);
   upForm!: FormGroup;
   errorMessage: string | undefined;
 
-  constructor( private formBuilder: FormBuilder, private http: HttpClient, private router: Router, private userService: UserService,private authService: AuthService ) {}
+  constructor( private formBuilder: FormBuilder, private http: HttpClient, private router: Router, private authService: AuthService ) {}
 
   ngOnInit() {
     this.upForm = this.formBuilder.group({
