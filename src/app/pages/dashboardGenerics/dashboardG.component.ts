@@ -14,14 +14,14 @@ export class DashboardGComponent implements OnInit{
   @ViewChild( MatAccordion ) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
   ecobs:  Filters[] = [];
-  formatos: Filters[] = [];
+  // formatos: Filters[] = [];
   sistemasG: Filters[] = [];
   subsistemasG: Filters[] = [];
   ifcBuildingElementsG: Filters[] = [];
   elementosBimItecG: Filters[] = [];
   searchTerm = "";
   selectedEcob = "";
-  selectedFormato = "";
+  // selectedFormato = "";
   selectedSistema = "";
   selectedSubsistema = "";
   selectedIfcBuildingElement = "";
@@ -37,7 +37,7 @@ export class DashboardGComponent implements OnInit{
       this.bims = data.bims;
       this.sortbimsAsc();
       this.filterEcobs();
-      this.filterFormatos();
+      // this.filterFormatos();
       this.filterSistemas();
       this.filterSubsistemas();
       this.filterIfcBuildingElements();
@@ -72,11 +72,11 @@ export class DashboardGComponent implements OnInit{
     });
   }
 
-  public filterFormatos() {
-    this.filterService.getFormatos().subscribe(data => {
-      this.formatos = data.formatos;
-    });
-  }
+  // public filterFormatos() {
+  //   this.filterService.getFormatos().subscribe(data => {
+  //     this.formatos = data.formatos;
+  //   });
+  // }
 
   public filterSistemas() {
     this.filterService.getSistemas().subscribe(data => {

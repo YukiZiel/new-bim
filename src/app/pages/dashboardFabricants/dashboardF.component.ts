@@ -13,7 +13,7 @@ export class DashboardFComponent implements OnInit{
   @ViewChild( MatAccordion ) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
   ecobs:  Filters[] = [];
-  formatos: Filters[] = [];
+  // formatos: Filters[] = [];
   empresas: Filters[] = [];
   sistemasF: Filters[] = [];
   subsistemasF: Filters[] = [];
@@ -21,7 +21,7 @@ export class DashboardFComponent implements OnInit{
   elementosBimItecF: Filters[] = [];
   searchTerm = "";
   selectedEcob = "";
-  selectedFormato = "";
+  // selectedFormato = "";
   selectedEmpresa = "";
   selectedSistema = "";
   selectedSubsistema = "";
@@ -36,7 +36,7 @@ export class DashboardFComponent implements OnInit{
       this.bimsF = data.bimsF;
       this.sortbimsAsc();
       this.filterEcobs();
-      this.filterFormatos();
+      // this.filterFormatos();
       this.filterEmpresas();
       this.filterSistemas();
       this.filterSubsistemas();
@@ -55,11 +55,11 @@ export class DashboardFComponent implements OnInit{
     });
   }
 
-  public filterFormatos() {
-    this.filterService.getFormatos().subscribe(data => {
-      this.formatos = data.formatos;
-    });
-  }
+  // public filterFormatos() {
+  //   this.filterService.getFormatos().subscribe(data => {
+  //     this.formatos = data.formatos;
+  //   });
+  // }
 
   public filterEmpresas() {
     this.filterService.getEmpresas().subscribe(data => {

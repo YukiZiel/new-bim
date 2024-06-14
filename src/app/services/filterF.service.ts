@@ -12,7 +12,7 @@ export class FilterFService {
 
   private jsonUrl = '../assets/bimsFabricants.json';
   private ecobs = '../assets/ecobs.json';
-  private formatos = '../assets/formatos.json';
+  // private formatos = '../assets/formatos.json';
   private empresas = '../assets/fabricants/empresas.json';
   private sistemas = '../assets/fabricants/sistemaF.json';
   private subsistemas = '../assets/fabricants/subsistemasF.json';
@@ -33,9 +33,9 @@ export class FilterFService {
     return this.http.get<{empresas:Filters[]}>(this.empresas);
   }
 
-  getFormatos(): Observable<{formatos:Filters[]}> {
-    return this.http.get<{formatos:Filters[]}>(this.formatos);
-  }
+  // getFormatos(): Observable<{formatos:Filters[]}> {
+  //   return this.http.get<{formatos:Filters[]}>(this.formatos);
+  // }
 
   getSistemas(): Observable<{sistemasF:Filters[]}> {
     return this.http.get<{sistemasF:Filters[]}>(this.sistemas);
