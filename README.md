@@ -1,27 +1,58 @@
-# NewBim
+## DESPLIEGUE DEL ANGULAR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+## Versión del angular
 
-## Development server
+Este proyecto fue generado con  [Angular CLI](https://github.com/angular/angular-cli) versión 17.3.6.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Tener Node.js instalado. Si no lo tienes puedes descargarlo desde `nodejs.org`.
 
-## Build
+Tener `Angular CLI` instalado. Si no lo tienes ejecuta `npm install -g @angular/cli`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta `npm install` para instalar todas las dependencias necesarias definidas en `package.json`.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Servidor de desarrollo
 
-## Running end-to-end tests
+Ejecuta `ng serve` para iniciar un servidor de desarrollo. Navega a `http://localhost:4200/`. 
+La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Compilar la aplicación Angular para producción
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecuta `ng build` para compilar la aplicación Angular para producción. Este comando generará una carpeta `dist/` en el directorio raíz del proyecto.
+
+
+
+## DESPLIEGUE DEL PHP
+
+## Requisitos
+
+Asegúrate de tener PHP instalado en tu servidor. Puedes descargar la última versión de PHP desde `php.net`.
+Asegúrate de tener un servidor web configurado para ejecutar PHP, como `Xampp`. Si no lo tienes instalado puedes descargarlo en `apachefriends.org`.
+
+## Iniciar XAMPP y Arrancar Servicios
+
+Abre `XAMPP` desde el menú de inicio (en Windows) o desde la carpeta de aplicaciones (en macOS).
+Inicia los servicios de `Apache` y `MySQL` haciendo clic en los botones "Start" (o "Iniciar") junto a ellos.
+
+## Directorio de Documentos Raíz
+
+Coloca la carpeta `php` dentro del directorio de documentos raíz de `XAMPP`, que típicamente es `htdocs`. Este es el directorio donde `Apache` servirá los archivos web.
+Ejemplo de rutas: 
+    -En Windows: C:\xampp\htdocs\php
+    -En macOS: /Applications/XAMPP/htdocs/php
+
+## Acceder a tu Aplicación
+
+Abre el navegador web y navega a `http://localhost/php` para acceder a la aplicación PHP alojada en `XAMPP`.
+Cambia las rutas `https://new-bim.000webhostapp.com/php/register.php` que hay dentro de la aplicación `Angular` por las tuyas.
+
+Siguiendo estos pasos, deberías poder configurar y ejecutar tu aplicación PHP localmente utilizando XAMPP.
+
+
+## DESPLEGAR LA APLICACIÓN
+
+Una vez que tengas configurado el php y cambiado las rutas, ejecuta `ng serve` para desplegar la aplicación en local.
