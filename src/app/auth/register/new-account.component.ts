@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angula
 import { merge } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-account',
@@ -20,7 +21,7 @@ export class NewAccountComponent implements OnInit{
   errorMessage: string | undefined;
   successMessage: string | undefined;
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) {
   }
   
   ngOnInit() {
@@ -37,11 +38,11 @@ export class NewAccountComponent implements OnInit{
   onSubmit() {
     if (this.registerForm.valid) {
       // Hacer la solicitud HTTP al servidor PHP para el registro
-      this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
-      // this.http.post<any>('https://new-bim.000webhostapp.com/php/register.php', this.registerForm.value).subscribe(
+      // this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
+      this.http.post<any>('https://new-bim.000webhostapp.com/php/register.php', this.registerForm.value).subscribe(
         response => {
           if (response && response.success) {
-            console.log(response); // Maneja la respuesta del servidor aquí
+            this.router.navigate(['/iniciar-sesion']); // Redirigir al componente de login
             this.successMessage = 'Se ha creado el usuario correctamente!';
           } else {
             this.errorMessage = 'No se ha podido crear el usuario';

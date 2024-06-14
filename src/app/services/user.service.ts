@@ -8,7 +8,8 @@ import { ObjectBIM } from '../interfaces/object-bim';
 })
 export class UserService {
 
-  private baseUrl = 'http://localhost/new-bim/php/favorites.php';
+  // private baseUrl = 'http://localhost/new-bim/php/favorites.php';
+  private baseUrl = 'https://new-bim.000webhostapp.com/php/favorites.php';
 
   // private userKey = 'currentUser';
   

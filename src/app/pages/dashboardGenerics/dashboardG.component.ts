@@ -46,18 +46,18 @@ export class DashboardGComponent implements OnInit{
       this.filterElementosBimITec();
     });
 
-    if (this.sessionService.isLoggedIn()) {
+    // if (this.sessionService.isLoggedIn()) {
 
-      this.userService.getFavoriteObjects(this.sessionService.getUserData().id_user)
-      .subscribe((favorites: any[]) => {
+    //   this.userService.getFavoriteObjects(this.sessionService.getUserData().id_user)
+    //   .subscribe((favorites: any[]) => {
 
-        const objectIds = favorites.map(fav => fav.objectid); 
-        this.idfavs = favorites.map(fav => fav.objectid); 
-        console.log(objectIds);
-      });
-    } else {
-      console.log('mal');
-    }
+    //     const objectIds = favorites.map(fav => fav.objectid); 
+    //     this.idfavs = favorites.map(fav => fav.objectid); 
+    //     console.log(objectIds);
+    //   });
+    // } else {
+    //   console.log('No hay inicio de sesión');
+    // }
   }
 
   onFilterChange(filterType: string, filterValue: any) {

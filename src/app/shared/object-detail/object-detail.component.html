@@ -24,41 +24,41 @@
                   </li>
               </ul>
           </div>
-          <button mat-raised-button color="primary" class="button" [routerLink]="['/inicio']" type="button">Volver</button>
-    </div>
-
-
-    <div class="table-props">
-      <h2>Propiedades y valores</h2>
-      <div class="list-props" *ngFor="let prop of detail.props">
-        <div class="header-table">
-          <button mat-icon-button color="primary" class="props-header" (click)="toggleGroup(prop.propgroup)">
-            <mat-icon>{{ isGroupExpanded(prop.propgroup) ? 'expand_less' : 'expand_more' }}</mat-icon> <!-- Cambia el ícono según el estado de expansión del grupo -->
-          </button>
-          <p>{{ prop.propgroup }}</p>
         </div>
-        <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup) && isAuthenticated()">
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let value of prop.values">
-                <td>{{ value.prop }}</td>
-                <td>{{ value.valor }}</td>
-                <td>{{ value.obs }}</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+        
+        
+        <div class="table-props">
+          <h2>Propiedades y valores</h2>
+          <div class="list-props" *ngFor="let prop of detail.props">
+            <div class="header-table">
+              <button mat-icon-button color="primary" class="props-header" (click)="toggleGroup(prop.propgroup)">
+                <mat-icon>{{ isGroupExpanded(prop.propgroup) ? 'expand_less' : 'expand_more' }}</mat-icon> <!-- Cambia el ícono según el estado de expansión del grupo -->
+              </button>
+              <p>{{ prop.propgroup }}</p>
+            </div>
+            <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup) && isAuthenticated()">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let value of prop.values">
+                    <td>{{ value.prop }}</td>
+                    <td>{{ value.valor }}</td>
+                    <td>{{ value.obs }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
         <div *ngIf="isGroupExpanded(prop.propgroup) && !isAuthenticated()">
           <p class="error-login">Inicia sesión para ver la información</p>
         </div>
       </div>
     </div>
   </div> 
+  <button mat-raised-button color="primary" class="button" (click)="goBack()" type="button">Volver</button>
 </div>
