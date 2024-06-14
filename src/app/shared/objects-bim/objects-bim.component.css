@@ -30,3 +30,7 @@ mat-card {
 .fav-icon {
     color: #abdee6; /* Color azul por defecto */
 }
+
+.fav-icon:disabled {
+    color: #d3d3d3; /* Color gris para el estado deshabilitado */
+}
