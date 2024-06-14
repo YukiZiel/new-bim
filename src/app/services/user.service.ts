@@ -26,13 +26,5 @@ export class UserService {
   toggleFavorite(userid: string, objectid: string): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}`, { userid, objectid });
   }
-  // constructor() { }
-  
-  // setUserData(data: any) {
-  //   this.userDataSubject.next(data);
-  // }
 
-  // getUserData(): Observable<any> {
-  //   return this.userDataSubject.asObservable();
-  // }
 }

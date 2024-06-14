@@ -29,7 +29,6 @@ import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component'
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
 import { NewAccountComponent } from './auth/register/new-account.component';
-import { LoginService } from './services/auth/login.service'; 
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
 import { SessionService } from './services/session.service';
@@ -70,7 +69,6 @@ import { SessionService } from './services/session.service';
   ],
   providers: [
     provideAnimationsAsync(), 
-    LoginService,
     AddFavService,
     SessionService
   ],

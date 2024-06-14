@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ObjectBIM } from '../../interfaces/object-bim';
 import { AddFavService } from '../../services/add-fav.service';
 import { Router } from '@angular/router';
@@ -9,11 +9,18 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './objects-bim.component.html',
   styleUrl: './objects-bim.component.css'
 })
-export class ObjectsBimComponent {
+export class ObjectsBimComponent implements OnInit{
   @Input() objectBim!: ObjectBIM;
   @Input() idfavs: any;
-  //isFavorite = false;
+  isDisabled = false;
+  userData: any;
+
   constructor(private router: Router, private addFavService: AddFavService, private authService: AuthService) {}
+
+  ngOnInit(): void {
+    this.userData = this.authService.getUserData();
+    this.isDisabled = this.userData === null;
+  }
 
   navigateToDetail(id:string): void {
     const currentRoute = this.router.url; // Obtener la ruta actual
@@ -21,7 +28,8 @@ export class ObjectsBimComponent {
   }
 
   toggleFavList(objectBim:ObjectBIM) {
-    const userid = this.authService.getUserData().id_user; // Obtener el userid del usuario en sesión
+    const userid = this.userData?.id_user; // Obtener el userid del usuario en sesión
+    console.log(userid);
     const objectid = objectBim.id; 
     
     this.addFavService.toggleFavorite(userid, objectid).subscribe(

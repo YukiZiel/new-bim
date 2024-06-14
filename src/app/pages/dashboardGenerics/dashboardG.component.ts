@@ -3,9 +3,7 @@ import { ObjectBIM } from '../../interfaces/object-bim';
 import { FilterGService } from '../../services/filterG.service';
 import { Filters } from '../../interfaces/filter';
 import { MatAccordion } from '@angular/material/expansion';
-import { Router } from '@angular/router';
 import { SessionService } from '../../services/session.service';
-import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-dashboardG',
@@ -32,7 +30,7 @@ export class DashboardGComponent implements OnInit{
   userData: any;
   idfavs: any;
 
-  constructor( private filterService: FilterGService, private sessionService: SessionService,  private userService:UserService ) {}
+  constructor( private filterService: FilterGService, private sessionService: SessionService ) {}
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {

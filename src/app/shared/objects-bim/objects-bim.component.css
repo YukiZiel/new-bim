@@ -36,10 +36,6 @@ mat-card {
 .active {
     color: red;
 } */
-.favorite-icon {
-    color: blue; /* Color azul por defecto */
-  }
-  
-  .favorite-icon-active {
-    color: red; /* Color rojo cuando está en favoritos */
-  }
+.fav-icon {
+    color: #abdee6; /* Color azul por defecto */
+}

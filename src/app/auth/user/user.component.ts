@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, Input, OnInit} from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { ObjectBIM } from '../../interfaces/object-bim';
 import { AuthService } from '../../services/auth.service';
