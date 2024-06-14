@@ -10,10 +10,10 @@ import { AuthGuard } from './auth/auth.guard';
 
 
 const routes: Routes = [
-  { path: '', redirectTo:'/inicio', pathMatch:'full'},
-  { path: 'inicio', component: DashboardGComponent},
+  { path: '', redirectTo:'/genericos', pathMatch:'full'},
+  { path: 'genericos', component: DashboardGComponent},
   { path: 'fabricantes', component: DashboardFComponent},
-  { path: 'bim/:id', component: ObjectDetailComponent}, // cambiar bim por obtener /inicio o /fabricantes
+  { path: 'bim/:id', component: ObjectDetailComponent}, // cambiar bim por obtener /genericos o /fabricantes
   { path: 'iniciar-sesion', component: LoginComponent },
   { path: 'registrarse', component: NewAccountComponent },
   { path: 'perfil', component: UserComponent, canActivate: [AuthGuard] }

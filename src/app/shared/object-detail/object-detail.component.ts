@@ -47,7 +47,7 @@ export class ObjectDetailComponent implements OnInit {
           this.filterFService.getDetail(id).subscribe(response => {
             this.detail = response;   //obtengo los detalles del objeto BIM basándome en el id
           });
-        } else if (fromRoute.includes('inicio')) {
+        } else if (fromRoute.includes('genericos')) {
           this.filterGService.getDetail(id).subscribe(response => {
             this.detail = response;
           });
