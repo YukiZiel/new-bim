@@ -28,7 +28,8 @@ export class DashboardFComponent implements OnInit{
   selectedIfcBuildingElement = "";
   selectedElementosBimItec ="";
   bimsF: ObjectBIM[] = [];
-  properties: Props[] = [];
+  // properties: Props[] = [];
+  
   constructor( private filterService: FilterFService ) {}
 
   ngOnInit() {
@@ -109,15 +110,11 @@ export class DashboardFComponent implements OnInit{
     });
   } 
 
-  public filterProperties() {
-    this.filterService.getProperties().subscribe(data => {
-      this.properties = data.property;
-    });
-  }
-
-  public sortbimsDesc(): void {
-    this.bimsF = this.bimsF.sort((a, b) => b.description.localeCompare(a.description));
-  }
+  // public filterProperties() {
+  //   this.filterService.getProperties().subscribe(data => {
+  //     this.properties = data.property;
+  //   });
+  // }
 
   public sortbimsAsc() {
     this.bimsF = this.bimsF.sort((a, b) => a.description.localeCompare(b.description));

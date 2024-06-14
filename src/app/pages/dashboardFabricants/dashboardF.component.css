@@ -8,6 +8,8 @@
     
   .sidenav {
     max-width: 330px;
+    background-color: #fafafa;
+    border: 0px;
   }
   
   .mat-list-item {
@@ -87,7 +89,6 @@
   #search {
     float: inline-end;
     border: 0px white;
-    margin-right: 30px;
   }
   
   #search mat-icon {
@@ -105,4 +106,10 @@
   
   ::ng-deep #search .mat-mdc-form-field-bottom-align::before, ::ng-deep #filterSis .mat-mdc-form-field-bottom-align::before {
     display: none;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
   }

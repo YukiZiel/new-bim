@@ -1,19 +1,10 @@
 <mat-drawer-container class="container">
     <mat-drawer-content class="content">
-      <button mat-icon-button (click)="drawer.toggle()">
+      <button mat-icon-button (click)="drawer.toggle()" class="sticky">
         <mat-icon>menu</mat-icon>
       </button>
-      <mat-button-toggle-group #group="matButtonToggleGroup" value="Asc" id="order">
-        <mat-button-toggle (click)="sortbimsAsc()" value="Asc" aria-label="Object BIM order asc" >
-          <mat-icon>arrow_upward</mat-icon>
-        </mat-button-toggle>
-        <mat-button-toggle (click)="sortbimsDesc()" value="Desc" aria-label="Object BIM order desc">
-          <mat-icon>arrow_downward</mat-icon>
-        </mat-button-toggle>
-      </mat-button-toggle-group>
-      <div class="selected-value">Orden: {{group.value}}</div>
   
-      <mat-form-field id="search">
+      <mat-form-field id="search" class="sticky">
         <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Buscar" />
         <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>

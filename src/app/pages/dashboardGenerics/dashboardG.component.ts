@@ -27,8 +27,6 @@ export class DashboardGComponent implements OnInit{
   selectedIfcBuildingElement = "";
   selectedElementosBimItec ="";
   bims: ObjectBIM[] = [];
-  userData: any;
-  idfavs: any;
 
   constructor( private filterService: FilterGService, private sessionService: SessionService ) {}
 
@@ -44,18 +42,6 @@ export class DashboardGComponent implements OnInit{
       this.filterElementosBimITec();
     });
 
-    // if (this.sessionService.isLoggedIn()) {
-
-    //   this.userService.getFavoriteObjects(this.sessionService.getUserData().id_user)
-    //   .subscribe((favorites: any[]) => {
-
-    //     const objectIds = favorites.map(fav => fav.objectid); 
-    //     this.idfavs = favorites.map(fav => fav.objectid); 
-    //     console.log(objectIds);
-    //   });
-    // } else {
-    //   console.log('No hay inicio de sesión');
-    // }
   }
 
   onFilterChange(filterType: string, filterValue: any) {
@@ -117,10 +103,6 @@ export class DashboardGComponent implements OnInit{
       );
     });
   } 
-
-  public sortbimsDesc(): void {
-    this.bims = this.bims.sort((a, b) => b.description.localeCompare(a.description));
-  }
 
   public sortbimsAsc() {
     this.bims = this.bims.sort((a, b) => a.description.localeCompare(b.description));

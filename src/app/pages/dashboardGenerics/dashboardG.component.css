@@ -9,6 +9,8 @@
   
 .sidenav {
   max-width: 330px;
+  background-color: #fafafa;
+  border: 0px;
 }
 
 .mat-list-item {
@@ -129,4 +131,10 @@
 
 ::ng-deep #search .mat-mdc-form-field-bottom-align::before, ::ng-deep #filterSis .mat-mdc-form-field-bottom-align::before {
   display: none;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 }
