@@ -21,21 +21,12 @@ mat-card-actions {
     padding: 0px;
 }
 
-
-/* .listing mat-icon:cli {
-    color: #bdbdbd;
-} */
-
-
 mat-card {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-/* 
-.active {
-    color: red;
-} */
+
 .fav-icon {
     color: #abdee6; /* Color azul por defecto */
 }

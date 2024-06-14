@@ -29,7 +29,6 @@ export class ObjectsBimComponent implements OnInit{
 
   toggleFavList(objectBim:ObjectBIM) {
     const userid = this.userData?.id_user; // Obtener el userid del usuario en sesión
-    console.log(userid);
     const objectid = objectBim.id; 
     
     this.addFavService.toggleFavorite(userid, objectid).subscribe(

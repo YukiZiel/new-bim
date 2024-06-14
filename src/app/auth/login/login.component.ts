@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit {
           if (response.success === false) { 
             this.errorMessage = 'Correo electrónico o contraseña incorrecta';
           } else {
+
             this.authService.login(response);  // Guardar los datos del usuario en el AuthService
             // this.userService.saveFav(response); 
             this.router.navigate(['/perfil']); // Redirigir al componente de perfil
