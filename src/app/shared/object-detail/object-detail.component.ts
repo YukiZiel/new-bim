@@ -34,7 +34,7 @@ export class ObjectDetailComponent implements OnInit {
     return !!this.expandedGroups[propgroup];
   }
 
-  constructor(private route: ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService, private authService: AuthService, private location: Location,  private addFavService: AddFavService) {
+  constructor(private route: ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService, private authService: AuthService, private location: Location, private addFavService: AddFavService) {
 
   }
 
@@ -60,14 +60,13 @@ export class ObjectDetailComponent implements OnInit {
     this.isDisabled = this.userData === null;
   }
 
-  toggleFavList(objectBim:ObjectBIM) {
+  toggleFavList(objectBim: ObjectBIM) {
     const userid = this.userData?.id_user; // Obtener el userid del usuario en sesión
-    const objectid = objectBim.id; 
-    
+    const objectid = objectBim.id;
+
     this.addFavService.toggleFavorite(userid, objectid).subscribe(
       response => {
-        //this.isFavorite = true;
-        console.log(response); 
+        console.log(response);
       },
       error => {
         console.error('Error al agregar favorito:', error);
@@ -89,4 +88,3 @@ export class ObjectDetailComponent implements OnInit {
   }
 
 }
-

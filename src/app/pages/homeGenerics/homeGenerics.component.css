@@ -1,12 +1,11 @@
 .container {
   height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.02); */
 }
 
 .content {
   padding-bottom: 50px;
 }
-  
+
 .sidenav {
   max-width: 330px;
   background-color: #fafafa;
@@ -17,10 +16,6 @@
   font-size: 12px;
 }
 
-/* .mat-mdc-list-item {
-  font-size: 12px !important;
-} */
-
 .mat-mdc-list-option {
   padding-left: 0px;
 }
@@ -30,9 +25,9 @@
   background-color: #aadee6;
   border-radius: 0px;
 }
+
 .mat-mdc-icon-button:hover {
   color: white;
-  /* background-color: #87d0db; */
   background-color: #2e3a69;
   border-radius: 0px;
 }
@@ -45,10 +40,6 @@
   padding-left: 10px;
 }
 
-/* .mdc-list-item__primary-text {
-  font-size: 12px !important;
-} */
-  
 .results {
   display: grid;
   column-gap: 20px;
@@ -57,20 +48,6 @@
   margin: 30px 50px 30px 50px;
   justify-content: space-around;
 }
-
-/* @media (min-width: 500px) and (max-width: 768px) {
-  .results {
-      grid-template-columns: repeat(2, 1fr);
-  }
-  input[type="text"] {
-      width: 70%;
-  }   
-}
-@media (max-width: 499px) {
-  .results {
-      grid-template-columns: 1fr;
-  }    
-} */
 
 .mat-button-toggle-group-appearance-standard {
   border: solid 1px #25a9bd;
@@ -81,12 +58,13 @@
   display: none;
 }
 
-.mat-button-toggle-appearance-standard.mat-button-toggle-checked, .mat-button-toggle-appearance-standard.mat-button-toggle-checked:hover  {
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked,
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked:hover {
   background-color: #25a9bd;
   color: white;
 }
 
-.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard + .mat-button-toggle-appearance-standard {
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard {
   border-left: 0px;
 }
 
@@ -120,7 +98,8 @@
   color: #25a9bd;
 }
 
-::ng-deep #search .mat-mdc-text-field-wrapper, ::ng-deep #search .mat-mdc-form-field-flex {
+::ng-deep #search .mat-mdc-text-field-wrapper,
+::ng-deep #search .mat-mdc-form-field-flex {
   height: 40px;
   background-color: white;
 }
@@ -129,7 +108,8 @@
   padding-top: 10px;
 }
 
-::ng-deep #search .mat-mdc-form-field-bottom-align::before, ::ng-deep #filterSis .mat-mdc-form-field-bottom-align::before {
+::ng-deep #search .mat-mdc-form-field-bottom-align::before,
+::ng-deep #filterSis .mat-mdc-form-field-bottom-align::before {
   display: none;
 }
 

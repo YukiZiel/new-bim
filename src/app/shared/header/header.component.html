@@ -1,39 +1,42 @@
 <header class="menu">
 
-  <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon"/></a>
+  <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon" /></a>
 
-  <button mat-button routerLink="/genericos">
-    <span>Genéricos eCOB&reg;</span>
-  </button>
-
-  <button mat-button routerLink="/fabricantes">
-    <span>Fabricantes</span>
-  </button>
-
-  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User icon with a menu"  class="user-icon">
-    <!-- <img alt="Perfil" src="assets/images/usuario.png" class="user-icon"/> -->
-    <mat-icon class="user-login">account_circle</mat-icon>
-  </button>
-  
-  <mat-menu #menu="matMenu" class="icon-menu">
-    <button mat-menu-item *ngIf="!isAuthenticated()" routerLink="/iniciar-sesion">
-      <mat-icon class="icon-login">login</mat-icon>
-      <span>Iniciar sesión</span>
+  <div class="button-group">
+    <button mat-button routerLink="/genericos">
+      <span>Genéricos eCOB&reg;</span>
     </button>
 
-    <button mat-menu-item *ngIf="!isAuthenticated()" routerLink="/registrarse">
-      <mat-icon class="icon-login">edit</mat-icon>
-      <span>Registrarse</span>
+    <button mat-button routerLink="/fabricantes">
+      <span>Fabricantes</span>
+    </button>
+  </div>
+
+  <div class="user-menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User icon with a menu" class="user-icon">
+      <mat-icon class="user-login">account_circle</mat-icon>
     </button>
 
-    <button mat-menu-item *ngIf="isAuthenticated()" routerLink="/perfil">
-      <mat-icon class="icon-login">person</mat-icon>
-      <span>Perfil</span>
-    </button>
+    <mat-menu #menu="matMenu" class="icon-menu">
+      <button mat-menu-item *ngIf="!isAuthenticated()" routerLink="/iniciar-sesion">
+        <mat-icon class="icon-login">login</mat-icon>
+        <span>Iniciar sesión</span>
+      </button>
 
-    <button mat-menu-item *ngIf="isAuthenticated()" (click)="logout()" routerLink="/registrarse">
-      <mat-icon class="icon-login">logout</mat-icon>
-      <span>Cerrar sesión</span>
-    </button>
-  </mat-menu>
+      <button mat-menu-item *ngIf="!isAuthenticated()" routerLink="/registrarse">
+        <mat-icon class="icon-login">edit</mat-icon>
+        <span>Registrarse</span>
+      </button>
+
+      <button mat-menu-item *ngIf="isAuthenticated()" routerLink="/perfil">
+        <mat-icon class="icon-login">person</mat-icon>
+        <span>Perfil</span>
+      </button>
+
+      <button mat-menu-item *ngIf="isAuthenticated()" (click)="logout()" routerLink="/registrarse">
+        <mat-icon class="icon-login">logout</mat-icon>
+        <span>Cerrar sesión</span>
+      </button>
+    </mat-menu>
+  </div>
 </header>

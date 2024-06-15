@@ -11,7 +11,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
-import { MatInput, MatInputModule } from '@angular/material/input';
+import { MatInput } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgArrayPipesModule } from 'ngx-pipes';
@@ -22,8 +22,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './auth/login/login.component';
-import { DashboardGComponent } from './pages/dashboardGenerics/dashboardG.component';
-import { DashboardFComponent } from './pages/dashboardFabricants/dashboardF.component';
+import { HomeGenericsComponent } from './pages/homeGenerics/homeGenerics.component';
+import { HomeFabricantsComponent } from './pages/homeFabricants/homeFabricants.component';
 import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
@@ -37,11 +37,11 @@ import { SessionService } from './services/session.service';
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    DashboardGComponent,
+    HomeGenericsComponent,
     ObjectsBimComponent,
     UserComponent,
     NewAccountComponent,
-    DashboardFComponent,
+    HomeFabricantsComponent,
     ObjectDetailComponent
   ],
   imports: [

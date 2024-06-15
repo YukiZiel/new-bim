@@ -6,36 +6,33 @@ import { MatAccordion } from '@angular/material/expansion';
 import { SessionService } from '../../services/session.service';
 
 @Component({
-  selector: 'app-dashboardG',
-  templateUrl: './dashboardG.component.html',
-  styleUrl: './dashboardG.component.css'
+  selector: 'app-homeGenerics',
+  templateUrl: './homeGenerics.component.html',
+  styleUrl: './homeGenerics.component.css'
 })
-export class DashboardGComponent implements OnInit{
-  @ViewChild( MatAccordion ) accordion!: MatAccordion;
+export class HomeGenericsComponent implements OnInit {
+  @ViewChild(MatAccordion) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
-  ecobs:  Filters[] = [];
-  // formatos: Filters[] = [];
+  ecobs: Filters[] = [];
   sistemasG: Filters[] = [];
   subsistemasG: Filters[] = [];
   ifcBuildingElementsG: Filters[] = [];
   elementosBimItecG: Filters[] = [];
   searchTerm = "";
   selectedEcob = "";
-  // selectedFormato = "";
   selectedSistema = "";
   selectedSubsistema = "";
   selectedIfcBuildingElement = "";
-  selectedElementosBimItec ="";
+  selectedElementosBimItec = "";
   bims: ObjectBIM[] = [];
 
-  constructor( private filterService: FilterGService, private sessionService: SessionService ) {}
+  constructor(private filterService: FilterGService, private sessionService: SessionService) { }
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {
       this.bims = data.bims;
       this.sortbimsAsc();
       this.filterEcobs();
-      // this.filterFormatos();
       this.filterSistemas();
       this.filterSubsistemas();
       this.filterIfcBuildingElements();
@@ -57,12 +54,6 @@ export class DashboardGComponent implements OnInit{
       );
     });
   }
-
-  // public filterFormatos() {
-  //   this.filterService.getFormatos().subscribe(data => {
-  //     this.formatos = data.formatos;
-  //   });
-  // }
 
   public filterSistemas() {
     this.filterService.getSistemas().subscribe(data => {
@@ -102,7 +93,7 @@ export class DashboardGComponent implements OnInit{
         )
       );
     });
-  } 
+  }
 
   public sortbimsAsc() {
     this.bims = this.bims.sort((a, b) => a.description.localeCompare(b.description));

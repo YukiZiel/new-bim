@@ -1,28 +1,42 @@
+.menu {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  padding: 10px;
+  /* Ajusta el padding según sea necesario */
+}
+
+
+.button-group {
+  display: flex;
+  gap: 5vw;
+  /* Espacio entre los botones */
+  margin-left: 5vw;
+}
+
+.user-menu {
+  display: flex;
+  position: absolute;
+  right: 3vw;
+}
+
 header {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: space-between; /* Espacia los elementos uniformemente */
+  align-items: center;
+  /* Centra verticalmente los elementos */
   padding: 10px 50px;
   background: linear-gradient(to right, #abdee6, #25a9bd);
-
-  /* display: grid; */
-  /* column-gap: 50px; */
-/* 
-  grid-template-columns: repeat(auto-fill, minmax(500px, 500px)); */
 }
 
-/* @media (min-width: 500px) and (max-width: 768px) {
-  header {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 10px;
+
+@media (max-width: 550px) {
+  .button-group {
+    display: block;
+    gap: 3vw;
+    margin-left: 3vw;
+    margin-right: 10vw;
   }
 }
-@media (max-width: 499px) {
-  header {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }    
-} */
 
 .menu button {
   color: #2e3a69;
@@ -36,7 +50,6 @@ header {
 
 .search-container input[type="text"] {
   padding: 5px;
-  margin-right: 10px;
 }
 
 .search-icon {
@@ -45,8 +58,9 @@ header {
 }
 
 .itec-icon {
-    width: auto;
-    height: 50px;
+  width: auto;
+  height: 50px;
+  margin-left: 3vw;
 }
 
 .user-icon {
@@ -58,5 +72,5 @@ header {
 }
 
 .mat-icon.notranslate.icon-login.material-icons.mat-ligature-font.mat-icon-no-color {
-  color: #25a9bd; 
+  color: #25a9bd;
 }
