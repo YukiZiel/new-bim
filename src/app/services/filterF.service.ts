@@ -33,10 +33,6 @@ export class FilterFService {
     return this.http.get<{empresas:Filters[]}>(this.empresas);
   }
 
-  // getFormatos(): Observable<{formatos:Filters[]}> {
-  //   return this.http.get<{formatos:Filters[]}>(this.formatos);
-  // }
-
   getSistemas(): Observable<{sistemasF:Filters[]}> {
     return this.http.get<{sistemasF:Filters[]}>(this.sistemas);
   }

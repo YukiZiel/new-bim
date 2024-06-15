@@ -3,7 +3,6 @@ import { ObjectBIM } from '../../interfaces/object-bim';
 import { FilterGService } from '../../services/filterG.service';
 import { Filters } from '../../interfaces/filter';
 import { MatAccordion } from '@angular/material/expansion';
-import { SessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-homeGenerics',
@@ -26,7 +25,7 @@ export class HomeGenericsComponent implements OnInit {
   selectedElementosBimItec = "";
   bims: ObjectBIM[] = [];
 
-  constructor(private filterService: FilterGService, private sessionService: SessionService) { }
+  constructor(private filterService: FilterGService) { }
 
   ngOnInit() {
     this.filterService.getBims().subscribe(data => {

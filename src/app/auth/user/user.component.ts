@@ -30,7 +30,6 @@ export class UserComponent implements OnInit {
     this.userService.getFavoriteObjects(this.userData.id_user)
       .subscribe((favorites: any[]) => {
         const objectIds = favorites.map(fav => fav.objectid); // Extraer los objectid
-        // console.log(objectIds);
 
         // Usar forkJoin para manejar múltiples llamadas asincrónicas
         forkJoin(objectIds.map(id => this.filterGService.getDetail(id)))

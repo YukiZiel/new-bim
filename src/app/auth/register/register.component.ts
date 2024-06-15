@@ -1,16 +1,14 @@
-import { Component, OnInit, EventEmitter, Output, ViewChild } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
-import { merge } from 'rxjs';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-new-account',
-  templateUrl: './new-account.component.html',
-  styleUrl: './new-account.component.css',
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css',
 })
-export class NewAccountComponent implements OnInit{
+export class RegisterComponent implements OnInit{
 
   username = new FormControl('', [Validators.required]);
   lastname = new FormControl('', [Validators.required]);

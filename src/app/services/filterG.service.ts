@@ -27,10 +27,6 @@ export class FilterGService {
   getEcobs(): Observable<{ecobs:Filters[]}> {
     return this.http.get<{ecobs:Filters[]}>(this.ecobs);
   }
-  
-  // getFormatos(): Observable<{formatos:Filters[]}> {
-  //   return this.http.get<{formatos:Filters[]}>(this.formatos);
-  // }
 
   getSistemas(): Observable<{sistemasG:Filters[]}> {
     return this.http.get<{sistemasG:Filters[]}>(this.sistemas);

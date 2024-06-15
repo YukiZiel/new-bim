@@ -27,7 +27,7 @@ export class AuthService {
     if (userData) {
       const userDataParsed = JSON.parse(userData);
       // Excluir la contraseña del objeto userDataParsed
-      // delete userDataParsed.userpassword;
+      delete userDataParsed.userpassword;
       return userDataParsed;
     }
     

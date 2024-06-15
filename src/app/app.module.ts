@@ -27,10 +27,9 @@ import { HomeFabricantsComponent } from './pages/homeFabricants/homeFabricants.c
 import { ObjectsBimComponent } from './shared/objects-bim/objects-bim.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './auth/user/user.component';
-import { NewAccountComponent } from './auth/register/new-account.component';
+import { RegisterComponent } from './auth/register/register.component';
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
-import { SessionService } from './services/session.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,7 @@ import { SessionService } from './services/session.service';
     HomeGenericsComponent,
     ObjectsBimComponent,
     UserComponent,
-    NewAccountComponent,
+    RegisterComponent,
     HomeFabricantsComponent,
     ObjectDetailComponent
   ],
@@ -68,8 +67,7 @@ import { SessionService } from './services/session.service';
   ],
   providers: [
     provideAnimationsAsync(), 
-    AddFavService,
-    SessionService
+    AddFavService
   ],
   bootstrap: [AppComponent]
 })
