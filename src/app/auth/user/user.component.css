@@ -1,23 +1,23 @@
 .row {
     margin: 30px 50px;
     padding: 10px 0;
-    color: #2e3a69;
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
     display: grid;
     grid-template-columns: 1fr 3fr; /* Una columna de un tercio y otra de dos tercios */
     gap: 20px; 
     width: calc(100% - 100px); /* Ajustar el ancho considerando los márgenes */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    color: #2e3a69;
     
   }  
 
 .row li {
   margin-block: 20px;
+  min-width: 300px;
   padding: 10px 20px;
   font-size: 16px;
   list-style: none;
   background-color: #ddf2f5;
   border-radius: 10px;
-  min-width: 300px;
 }
 
 .personal-info {
@@ -31,42 +31,37 @@
   height: 100%;
 }
 
-/* .user-favorite ul {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .user-favorite li {
   margin-inline: 20px;
   padding: 30px 30px;
-  border-radius: 20px;
   background-color: #abdee6;
+  border-radius: 20px;
 }
 
 .fav {
-  display: inline-block;
   margin: 10px;
+  display: inline-block;
   box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
 .fav-card {
-  border-radius: 30px;
-  width: 200px;
   justify-content: space-between; /* Distribuye el espacio entre los hijos */
+  width: 200px;
   box-sizing: border-box; 
+  border-radius: 30px;
 }
 
 .fav-heading {
-  color: #8d8d8d;
   font-size: 14px;
+  color: #8d8d8d;
 }
 
 .fav-image {
-  height: auto;
+  margin-bottom: 10px;
   width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 0px 0px;
-  margin-bottom: 10px;
 }
 
 mat-card-actions {

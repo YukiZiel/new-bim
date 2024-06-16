@@ -19,7 +19,7 @@ export class FilterGService {
   private elementosBimItec = '../assets/generics/elementosBimItecG.json';
 
   constructor(private http:HttpClient) { }
-
+ //Métodos para realizar solicitudes get al archivo JSON y obtener los datos específicos
   getBims(): Observable<{bims:ObjectBIM[]}> {
     return this.http.get<{bims:ObjectBIM[]}>(this.jsonUrl);
   }

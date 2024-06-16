@@ -12,7 +12,6 @@ export class FilterFService {
 
   private jsonUrl = '../assets/bimsFabricants.json';
   private ecobs = '../assets/ecobs.json';
-  // private formatos = '../assets/formatos.json';
   private empresas = '../assets/fabricants/empresas.json';
   private sistemas = '../assets/fabricants/sistemaF.json';
   private subsistemas = '../assets/fabricants/subsistemasF.json';
@@ -20,7 +19,7 @@ export class FilterFService {
   private elementosBimItec = '../assets/fabricants/elementosBimItecF.json';
   
   constructor(private http:HttpClient) { }
-
+ //Métodos para realizar solicitudes get al archivo JSON y obtener los datos específicos
   getBims(): Observable<{bimsF:ObjectBIM[]}> {
     return this.http.get<{bimsF:ObjectBIM[]}>(this.jsonUrl);
   }

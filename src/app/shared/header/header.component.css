@@ -1,40 +1,40 @@
 .menu {
+  padding: 10px;
   display: flex;
   align-items: center;
-  padding: 10px;
 }
 
 .button-group {
+  margin-left: 5vw;
   display: flex;
   gap: 5vw; /* Espacio entre los botones */
-  margin-left: 5vw;
 }
 
 .user-menu {
-  display: flex;
   position: absolute;
   right: 3vw;
+  display: flex;
 }
 
 header {
+  padding: 10px 50px;
   display: flex;
   align-items: center;
-  padding: 10px 50px;
   background: linear-gradient(to right, #abdee6, #25a9bd);
 }
 
 @media (max-width: 550px) {
   .button-group {
-    display: block;
-    gap: 3vw;
     margin-left: 3vw;
     margin-right: 10vw;
+    display: block;
+    gap: 3vw;
   }
 }
 
 .menu button {
-  color: #2e3a69;
   font-size: 18px;
+  color: #2e3a69;
 }
 
 .search-container {
@@ -52,19 +52,19 @@ header {
 }
 
 .itec-icon {
+  margin-left: 3vw;
   width: auto;
   height: 50px;
-  margin-left: 3vw;
 }
 
 .user-icon {
   transform: scale(2);
 }
-
+/* Color del icono de usuario */
 .mat-icon.notranslate.user-login.material-icons.mat-ligature-font.mat-icon-no-color {
   color: white;
 }
-
+/* Color de los iconos del menú del usuario */
 .mat-icon.notranslate.icon-login.material-icons.mat-ligature-font.mat-icon-no-color {
   color: #25a9bd;
 }

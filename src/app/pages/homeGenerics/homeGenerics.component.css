@@ -8,8 +8,8 @@
 
 .sidenav {
   max-width: 330px;
-  background-color: #fafafa;
   border: 0px;
+  background-color: #fafafa;
 }
 
 .mat-list-item {
@@ -41,12 +41,12 @@
 }
 
 .results {
+  margin: 30px 50px 30px 50px;
   display: grid;
+  justify-content: space-around;
   column-gap: 20px;
   row-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(260px, 260px));
-  margin: 30px 50px 30px 50px;
-  justify-content: space-around;
 }
 
 ::ng-deep .mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked {
@@ -60,9 +60,9 @@
 }
 
 #search {
+  margin-right: 30px;
   float: inline-end;
   border: 0px white;
-  margin-right: 30px;
 }
 
 #search mat-icon {

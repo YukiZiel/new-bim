@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: '', redirectTo:'/genericos', pathMatch:'full'},
   { path: 'genericos', component: HomeGenericsComponent},
   { path: 'fabricantes', component: HomeFabricantsComponent},
-  { path: 'bim/:id', component: ObjectDetailComponent}, // cambiar bim por obtener /genericos o /fabricantes
+  { path: 'bim/:id', component: ObjectDetailComponent},
   { path: 'iniciar-sesion', component: LoginComponent },
   { path: 'registrarse', component: RegisterComponent },
   { path: 'perfil', component: UserComponent, canActivate: [AuthGuard] }
