@@ -36,11 +36,11 @@ export class RegisterComponent implements OnInit{
   onSubmit() {
     if (this.registerForm.valid) {
       // Hacer la solicitud HTTP al servidor PHP para el registro
-      // this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
+      // Para trabajar en local se tiene que cambiar la ruta, en mi caso es http://localhost/new-bim/php/register.php'
       this.http.post<any>('https://new-bim.000webhostapp.com/php/register.php', this.registerForm.value).subscribe(
         response => {
           if (response && response.success) {
-            this.router.navigate(['/iniciar-sesion']); // Redirigir al componente de login
+            this.router.navigate(['/iniciar-sesion']); 
             this.successMessage = 'Se ha creado el usuario correctamente!';
           } else {
             this.errorMessage = 'No se ha podido crear el usuario';
@@ -57,7 +57,8 @@ export class RegisterComponent implements OnInit{
 
 
   
-  hide = true;
+  hide = true; 
+  // Es para visualizar u ocultar el campo de la contraseña
   clickEvent(event: MouseEvent) {
     this.hide = !this.hide;
     event.stopPropagation();

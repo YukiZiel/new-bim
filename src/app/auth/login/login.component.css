@@ -7,7 +7,7 @@
 
 .row {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
 }
 
 .form {

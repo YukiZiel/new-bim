@@ -13,10 +13,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgArrayPipesModule } from 'ngx-pipes';
-import { MatSelectModule } from '@angular/material/select';
-import { MatTableModule } from '@angular/material/table';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -58,12 +56,9 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
     MatFormFieldModule,
     HttpClientModule,
     MatMenuModule,
-    MatButtonToggleModule,
     MatInput,
     NgArrayPipesModule,
-    FormsModule,
-    MatSelectModule,
-    MatTableModule 
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync(), 

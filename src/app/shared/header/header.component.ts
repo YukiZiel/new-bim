@@ -12,10 +12,11 @@ export class HeaderComponent implements OnInit{
 
   ngOnInit() {
   }
-
+  // Comprueba si el usuario ha iniciado sesión
   isAuthenticated(): boolean {
     return this.authService.isAuthenticated();
   }
+  // Método para cerrar sesión
   logout(): void {
     this.authService.logout();
     console.log('Se ha cerrado la sesión');

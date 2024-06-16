@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FilterGService } from '../../services/filterG.service';
 import { ActivatedRoute } from '@angular/router';
 import { FilterFService } from '../../services/filterF.service';
@@ -18,18 +18,15 @@ import { AddFavService } from '../../services/add-fav.service';
 export class ObjectDetailComponent implements OnInit {
 
   detail: any = {};
-
   errorMessage: any;
-
-  expandedGroups: { [key: string]: boolean } = {};
-
+  expandedGroups: { [key: string]: boolean } = {}; // Mantiene el estado de expansión de las propiedades
   isDisabled = false;
   userData: any;
-
+  // Alterna el estado de expansión de las propiedades
   toggleGroup(propgroup: string): void {
     this.expandedGroups[propgroup] = !this.expandedGroups[propgroup];
   }
-
+  // Verifica si las propiedades está desplegado o no
   isGroupExpanded(propgroup: string): boolean {
     return !!this.expandedGroups[propgroup];
   }
@@ -39,31 +36,31 @@ export class ObjectDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(params => { //obtener el parámetro de consulta que se pasó durante la navegación
+    this.route.queryParams.subscribe(params => { // Obtiene el parámetro de consulta que se pasó durante la navegación
       const fromRoute = params['from'];
       this.route.params.subscribe(data => {
         const id = data['id'];
-        if (fromRoute.includes('fabricantes')) { //Verificar el parámetro con from
+        if (fromRoute.includes('fabricantes')) { // Verifica el parámetro con from
           this.filterFService.getDetail(id).subscribe(response => {
-            this.detail = response;   //obtengo los detalles del objeto BIM basándome en el id
+            this.detail = response;   // Obtengo los detalles del objeto BIM de Fabricantes basándome en el id
           });
         } else if (fromRoute.includes('genericos')) {
           this.filterGService.getDetail(id).subscribe(response => {
-            this.detail = response;
+            this.detail = response;   // Obtengo los detalles del objeto BIM de Ganéricos basándome en el id
           });
         }
       });
 
     });
-
+    // Comprueba si hay datos de usuario, es decir si hay sesión iniciada, si no la hay entonces los iconos de favoritos estarán desactivados
     this.userData = this.authService.getUserData();
     this.isDisabled = this.userData === null;
   }
-
+  // Método para añadir o eliminar los objetos BIM de favoritos
   toggleFavList(objectBim: ObjectBIM) {
     const userid = this.userData?.id_user; // Obtener el userid del usuario en sesión
-    const objectid = objectBim.id;
-
+    const objectid = objectBim.id; // Obtiene el id del objeto BIM clicado
+    // Hace la comprobación en la base de datos, si exite la fila entonces la borra, si no, la añade
     this.addFavService.toggleFavorite(userid, objectid).subscribe(
       response => {
         console.log(response);
@@ -73,7 +70,7 @@ export class ObjectDetailComponent implements OnInit {
       }
     );
   }
-
+  // Comprueba si el usuario ha iniciado sesión
   isAuthenticated(): boolean {
     return this.authService.isAuthenticated();
   }
@@ -86,5 +83,4 @@ export class ObjectDetailComponent implements OnInit {
   goBack(): void {
     this.location.back(); //utiliza el método back() del servicio Location para navegar a la página anterior en el historial del navegador
   }
-
 }

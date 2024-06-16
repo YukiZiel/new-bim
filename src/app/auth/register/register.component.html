@@ -37,12 +37,11 @@
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
       </mat-form-field>
-      <!-- <span *ngIf="!registerForm.valid && registerForm.touched" class="help-ms">Por favor introduzca datos válidos</span> -->
       <mat-checkbox class="full-width" formControlName="privacyPolicy" required><a href="https://itec.es/itec/privacidad/">Acepto la política de privacidad</a></mat-checkbox>
 
       <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
       <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
-      <button mat-raised-button type="submit" [disabled]="!registerForm.valid">
+      <button mat-raised-button type="submit" color="primary" [disabled]="!registerForm.valid">
         Crear cuenta
       </button>
       </form>

@@ -1,16 +1,12 @@
 .menu {
   display: flex;
   align-items: center;
-  /* Centra verticalmente los elementos */
   padding: 10px;
-  /* Ajusta el padding según sea necesario */
 }
-
 
 .button-group {
   display: flex;
-  gap: 5vw;
-  /* Espacio entre los botones */
+  gap: 5vw; /* Espacio entre los botones */
   margin-left: 5vw;
 }
 
@@ -23,11 +19,9 @@
 header {
   display: flex;
   align-items: center;
-  /* Centra verticalmente los elementos */
   padding: 10px 50px;
   background: linear-gradient(to right, #abdee6, #25a9bd);
 }
-
 
 @media (max-width: 550px) {
   .button-group {

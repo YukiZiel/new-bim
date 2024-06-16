@@ -16,14 +16,14 @@ export class UserComponent implements OnInit {
   @Input() objectBim!: ObjectBIM;
 
   userData: any;
-  favoriteObjects: any[] = []; // Array para almacenar los objectid favoritos
+  favoriteObjects: any[] = [];
 
 
   constructor(private authService: AuthService, private userService: UserService, private addFavService: AddFavService, private filterGService: FilterGService, private filterFService: FilterFService) { }
 
 
   ngOnInit(): void {
-
+    //Obtiene los datos del usuario actualmente autenticado y se almacena en la variable 'userData'
     this.userData = this.authService.getUserData();
 
     // Llamar al servicio para obtener los favoritos del usuario
@@ -31,13 +31,16 @@ export class UserComponent implements OnInit {
       .subscribe((favorites: any[]) => {
         const objectIds = favorites.map(fav => fav.objectid); // Extraer los objectid
 
-        // Usar forkJoin para manejar múltiples llamadas asincrónicas
+        // Usar forkJoin para manejar múltiples llamadas asíncronas
+        // Llama al método getDetail del servicio filterGService para cada objectid, obteniendo los detalles de los objetos BIM Ganéricos
         forkJoin(objectIds.map(id => this.filterGService.getDetail(id)))
           .subscribe(responseG => {
 
-            forkJoin(objectIds.map(id => this.filterFService.getDetail(id)))
+            forkJoin(objectIds.map(id => this.filterFService.getDetail(id))) // Obtiene los detalles de los objetos BIM Fabricantes
               .subscribe(responseF => {
-
+                // Los resultados de ambas llamadas (responseG y responseF) se filtran para eliminar elementos undefined.
+                // Una vez filtrados se combinan en un solo array (allBim).
+                // El array combinado se asigna a la variable favoriteObjects, que almacena todos los objetos BIM favoritos del usuario.
                 var allBim: any = responseG.filter(item => item !== undefined);
                 allBim.push(...responseF.filter(item => item !== undefined));
                 this.favoriteObjects = allBim;
@@ -46,7 +49,8 @@ export class UserComponent implements OnInit {
       });
   }
 
-  toggleFavList(objectId: string): void { //llama al servicio AddFavService para eliminar un objeto de favoritos y actualiza la lista de favoritos en el frontend.
+  //llama al servicio AddFavService para eliminar un objeto de favoritos y actualiza la lista de favoritos en el frontend.
+  toggleFavList(objectId: string): void { 
     this.addFavService.toggleFavorite(this.userData.id_user, objectId).subscribe(response => {
       if (response.success) {
         this.favoriteObjects = this.favoriteObjects.filter(obj => obj.id !== objectId);

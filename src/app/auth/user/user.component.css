@@ -53,7 +53,7 @@
   border-radius: 30px;
   width: 200px;
   justify-content: space-between; /* Distribuye el espacio entre los hijos */
-  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  box-sizing: border-box; 
 }
 
 .fav-heading {

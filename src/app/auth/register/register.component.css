@@ -7,7 +7,7 @@ color:#25a9bd;
 
 .row {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
 }
 
 .form {
