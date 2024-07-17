@@ -13,12 +13,14 @@ export class HomeGenericsComponent implements OnInit {
   @ViewChild(MatAccordion) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
   ecobs: Filters[] = [];
+  formatos: Filters[] = [];
   sistemasG: Filters[] = [];
   subsistemasG: Filters[] = [];
   ifcBuildingElementsG: Filters[] = [];
   elementosBimItecG: Filters[] = [];
   searchTerm = "";
   selectedEcob = "";
+  selectedFormato = "";
   selectedSistema = "";
   selectedSubsistema = "";
   selectedIfcBuildingElement = "";
@@ -32,6 +34,7 @@ export class HomeGenericsComponent implements OnInit {
       this.bims = data.bims;
       this.sortbimsAsc();
       this.filterEcobs();
+      this.filterFormatos();
       this.filterSistemas();
       this.filterSubsistemas();
       this.filterIfcBuildingElements();
@@ -52,6 +55,19 @@ export class HomeGenericsComponent implements OnInit {
         )
       );
     });
+  }
+
+  public filterFormatos() {
+    this.filterService.getFormatos().subscribe(data => {
+      this.formatos = data.formatos.filter(formato =>
+        this.bims.some(bim =>
+          bim.downloads.some(download =>
+            download.formatdown.some(formatdown =>
+              formatdown.format.includes(formato.label)
+            ))
+        )
+      )
+    })
   }
 
   public filterSistemas() {

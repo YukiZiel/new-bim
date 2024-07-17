@@ -42,7 +42,7 @@ export class UserComponent implements OnInit {
                 // Una vez filtrados se combinan en un solo array (allBim).
                 // El array combinado se asigna a la variable favoriteObjects, que almacena todos los objetos BIM favoritos del usuario.
                 var allBim: any = responseG.filter(item => item !== undefined);
-                allBim.push(...responseF.filter(item => item !== undefined));
+                allBim.push(...responseF.filter(item => item !== undefined)); // ... es un operador de propagación que permite expandir un array en otro array.
                 this.favoriteObjects = allBim;
               });
           });

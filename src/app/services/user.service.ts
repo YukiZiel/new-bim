@@ -15,6 +15,7 @@ export class UserService {
   getFavoriteObjects(userid: string): Observable<ObjectBIM[]> {
     return this.http.get<ObjectBIM[]>(`${this.baseUrl}?userid=${userid}`);
   }
+  
   // Este método agrega o elimina un objeto BIM de la lista de favoritos de un usuario
   toggleFavorite(userid: string, objectid: string): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}`, { userid, objectid });

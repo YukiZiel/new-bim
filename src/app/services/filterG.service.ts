@@ -12,7 +12,7 @@ export class FilterGService {
 
   private jsonUrl = '../assets/bimsGenerics.json';
   private ecobs = '../assets/ecobs.json';
-  // private formatos = '../assets/formatos.json';
+  private formatos = '../assets/formatos.json';
   private sistemas = '../assets/generics/sistemaG.json';
   private subsistemas = '../assets/generics/subsistemaG.json';
   private ifcBuildingElements = '../assets/generics/ifcBuildingElementG.json';
@@ -26,6 +26,10 @@ export class FilterGService {
 
   getEcobs(): Observable<{ecobs:Filters[]}> {
     return this.http.get<{ecobs:Filters[]}>(this.ecobs);
+  }
+
+  getFormatos(): Observable<{formatos:Filters[]}> {
+    return this.http.get<{formatos:Filters[]}>(this.formatos);
   }
 
   getSistemas(): Observable<{sistemasG:Filters[]}> {
