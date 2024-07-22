@@ -1,9 +1,10 @@
 .listing {
+    max-width: 200px;
     border-radius: 30px;
 }
 
 .listing-heading {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 20px;
     color: #8d8d8d;

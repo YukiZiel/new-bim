@@ -8,7 +8,8 @@ import { ObjectBIM } from '../interfaces/object-bim';
 })
 export class UserService {
 
-  private baseUrl = 'https://new-bim.000webhostapp.com/php/favorites.php';
+  // private baseUrl = 'https://new-bim.000webhostapp.com/php/favorites.php';
+  private baseUrl = 'http://localhost/new-bim/php/register.php';
   
   constructor( private http: HttpClient ) { }
   // Este método obtiene la lista de objetos favoritos de un usuario específico

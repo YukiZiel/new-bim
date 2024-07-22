@@ -35,9 +35,9 @@ export class RegisterComponent implements OnInit{
   
   onSubmit() {
     if (this.registerForm.valid) {
-      // Hacer la solicitud HTTP al servidor PHP para el registro
-      // Para trabajar en local se tiene que cambiar la ruta, en mi caso es http://localhost/new-bim/php/register.php'
-      this.http.post<any>('https://new-bim.000webhostapp.com/php/register.php', this.registerForm.value).subscribe(
+      // Hacer la solicitud HTTP al servidor PHP para el registro https://new-bim.000webhostapp.com/php/register.php
+      // Para trabajar en local se tiene que cambiar la ruta, en mi caso es http://localhost/new-bim/php/register.php
+      this.http.post<any>('http://localhost/new-bim/php/register.php', this.registerForm.value).subscribe(
         response => {
           if (response && response.success) {
             this.router.navigate(['/iniciar-sesion']); 

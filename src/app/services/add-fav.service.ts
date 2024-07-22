@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class AddFavService {
 
-  private baseUrl = 'https://new-bim.000webhostapp.com/php/favorites.php';
-
+  // private baseUrl = 'https://new-bim.000webhostapp.com/php/favorites.php';
+  private baseUrl = 'http://localhost/new-bim/php/register.php';
   constructor(private http: HttpClient) {
   }
 

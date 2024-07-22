@@ -44,9 +44,9 @@
   margin: 30px 50px 30px 50px;
   display: grid;
   justify-content: space-around;
-  column-gap: 20px;
+  /* column-gap: 10px; */
   row-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 260px));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
 }
 
 ::ng-deep .mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked {

@@ -27,6 +27,20 @@
           </mat-list-option>
         </mat-selection-list>
       </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Formato
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+          <mat-selection-list [(ngModel)]="selectedFormato">
+            <mat-list-option *ngFor="let formato of formatos" [value]="formato.label" color="primary">
+              {{ formato.label }}
+            </mat-list-option>
+          </mat-selection-list>
+      </mat-expansion-panel>
+      
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>

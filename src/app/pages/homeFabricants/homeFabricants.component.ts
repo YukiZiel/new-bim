@@ -13,6 +13,7 @@ export class HomeFabricantsComponent implements OnInit {
   @ViewChild(MatAccordion) accordion!: MatAccordion;
   @Output() filterChange = new EventEmitter<any>();
   ecobs: Filters[] = [];
+  formatos: Filters[] = [];
   empresas: Filters[] = [];
   sistemasF: Filters[] = [];
   subsistemasF: Filters[] = [];
@@ -20,6 +21,7 @@ export class HomeFabricantsComponent implements OnInit {
   elementosBimItecF: Filters[] = [];
   searchTerm = "";
   selectedEcob = "";
+  selectedFormato = "";
   selectedEmpresa = "";
   selectedSistema = "";
   selectedSubsistema = "";
@@ -34,6 +36,7 @@ export class HomeFabricantsComponent implements OnInit {
       this.bimsF = data.bimsF;
       this.sortbimsAsc();
       this.filterEcobs();
+      this.filterFormatos();
       this.filterEmpresas();
       this.filterSistemas();
       this.filterSubsistemas();
@@ -51,6 +54,20 @@ export class HomeFabricantsComponent implements OnInit {
       this.ecobs = data.ecobs;
     });
   }
+
+  public filterFormatos() {
+    this.filterService.getFormatos().subscribe(data => {
+      this.formatos = data.formatos.filter(formato =>
+        this.bimsF.some(bim =>
+          bim.downloads.some(download =>
+            download.formatdown.some(formatdown =>
+              formatdown.format.includes(formato.label)
+            ))
+        )
+      );
+    });
+  }
+
 
   public filterEmpresas() {
     this.filterService.getEmpresas().subscribe(data => {

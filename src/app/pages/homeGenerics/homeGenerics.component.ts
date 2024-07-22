@@ -66,8 +66,8 @@ export class HomeGenericsComponent implements OnInit {
               formatdown.format.includes(formato.label)
             ))
         )
-      )
-    })
+      );
+    });
   }
 
   public filterSistemas() {

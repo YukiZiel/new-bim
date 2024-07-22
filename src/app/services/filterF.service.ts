@@ -12,6 +12,7 @@ export class FilterFService {
 
   private jsonUrl = '../assets/bimsFabricants.json';
   private ecobs = '../assets/ecobs.json';
+  private formatos = '../assets/formatos.json';
   private empresas = '../assets/fabricants/empresas.json';
   private sistemas = '../assets/fabricants/sistemaF.json';
   private subsistemas = '../assets/fabricants/subsistemasF.json';
@@ -26,6 +27,10 @@ export class FilterFService {
 
   getEcobs(): Observable<{ecobs:Filters[]}> {
     return this.http.get<{ecobs:Filters[]}>(this.ecobs);
+  }
+
+  getFormatos(): Observable<{formatos:Filters[]}> {
+    return this.http.get<{formatos:Filters[]}>(this.formatos);
   }
   
   getEmpresas(): Observable<{empresas:Filters[]}> {
