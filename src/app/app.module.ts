@@ -14,7 +14,7 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { NgArrayPipesModule } from 'ngx-pipes';
-
+import { AgGridModule } from 'ag-grid-angular';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -28,6 +28,9 @@ import { UserComponent } from './auth/user/user.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
+import { DataGridComponent } from './pages/data-grid/data-grid.component';
+import { ClassComponent } from './pages/class/class.component';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
     UserComponent,
     RegisterComponent,
     HomeFabricantsComponent,
-    ObjectDetailComponent
+    ObjectDetailComponent,
+    DataGridComponent,
+    ClassComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +63,8 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
     MatMenuModule,
     MatInput,
     NgArrayPipesModule,
-    FormsModule
+    FormsModule,
+    AgGridModule
   ],
   providers: [
     provideAnimationsAsync(), 

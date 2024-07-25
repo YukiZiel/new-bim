@@ -1,0 +1,16 @@
+<mat-drawer-container class="container">
+    <mat-drawer-content class="content">
+        <section class="results">
+            <app-object-bim *ngFor="let bim of rowData"  [objectBim]="bim"/>
+        </section>
+    </mat-drawer-content>
+</mat-drawer-container>
+<div class="content-grid" [style.height.px]="size">
+    <div class="moving" (mousedown)="onResizeStart($event)"></div>
+    <ag-grid-angular
+        class="ag-theme-quartz"
+        [rowData]="rowData"
+        [columnDefs]="colDefs"
+        [defaultColDef]="defaultColDef"
+    />
+</div>

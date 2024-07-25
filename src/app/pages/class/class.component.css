@@ -1,0 +1,130 @@
+/* stylelint-disable */
+.property {
+    margin-right: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2px;
+}
+
+
+.propertyTitle {
+    background-color: #d3d3d3;
+    width: 100%;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.value {
+    margin-left: 10px;
+    text-align: right;
+}
+
+.components {
+    margin-left: 20px;
+}
+
+.loading {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 50%;
+    margin-top: 23%;
+}
+
+.spinner-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.circle-box {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(68, 68, 68, 0.1) 33%, rgb(0, 0, 0) 100%);
+    animation: spin .5s linear 0s infinite;
+}
+
+.circle-core {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.resizable2 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+
+  .resizable2 .content {
+    width: 100%;
+  }
+
+  .resizer2 {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 4px;
+    cursor: ns-resize;
+    background: #d9d9d9;
+    transition: height .25s;
+  }
+
+  .resizer2:hover,
+  .resizer2:active {
+    height: 7px;
+    background: #5cb78c;
+  }
+
+  .miniText{
+    font-size: 11px;
+  }
+
+/* stylelint-enable */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 50px;
+  transition: .5s;
+}
+
+/* 4px scroll thumb. 10px margin from right margin */
+::-webkit-scrollbar-track {
+  border: solid 4px transparent;
+  box-shadow: inset 0 0 14px 14px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: solid 4px transparent;
+  border-radius: 14px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 14px 14px #78787a !important;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 14px 14px #a7a7aa;
+}
+

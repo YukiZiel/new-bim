@@ -7200,33 +7200,43 @@
             "patrocinatUrl": "",
             "dataEmissio": "31/07/2021",
             "ecob": "Sí",
-            "download": [
+            "downloads": [
                 {
-                    "fitxer": "ITeC_TomaSenalTVUniversal_Policarbonato.rfa",
-                    "ext": "RFA",
-                    "url": "",
-                    "size": "1.02 MB",
-                    "download": true,
-                    "format": "Revit",
-                    "versio": "2015"
+                    "format": "Nativos",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_TomaSenalTVUniversal_Policarbonato.rfa",
+                            "ext": "RFA",
+                            "url": "",
+                            "size": "1.02 MB",
+                            "download": true,
+                            "format": "Revit",
+                            "versio": "2015"
+                        },
+                        {
+                            "fitxer": "ITeC_TomaSenalR_TV_SAT_Universal_Policarbonato.pln",
+                            "ext": "PLN",
+                            "url": "",
+                            "size": "4.35 MB",
+                            "download": true,
+                            "format": "ArchiCAD",
+                            "versio": "2015"
+                        }
+                    ]
                 },
-                {
-                    "fitxer": "ITeC_TomaSenalTVUniversal_Policarbonato.ifc",
-                    "ext": "IFC",
-                    "url": "",
-                    "size": "126.16 kB",
-                    "download": true,
-                    "format": "IFC",
-                    "versio": "2x3"
-                },
-                {
-                    "fitxer": "ITeC_TomaSenalR_TV_SAT_Universal_Policarbonato.pln",
-                    "ext": "PLN",
-                    "url": "",
-                    "size": "4.35 MB",
-                    "download": true,
-                    "format": "ArchiCAD",
-                    "versio": "2015"
+                {   
+                    "format": "OPENBIM",
+                    "formatdown": [
+                        {
+                            "fitxer": "ITeC_TomaSenalTVUniversal_Policarbonato.ifc",
+                            "ext": "IFC",
+                            "url": "",
+                            "size": "126.16 kB",
+                            "download": true,
+                            "format": "IFC",
+                            "versio": "2x3"
+                        }
+                    ]
                 }
             ],
             "props": [
