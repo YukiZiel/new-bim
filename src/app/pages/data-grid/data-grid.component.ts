@@ -3,6 +3,7 @@ import { ColDef, IDateFilterParams } from 'ag-grid-community'; // Column Definit
 import { ObjectBIM } from '../../interfaces/object-bim';
 import { HttpClient } from '@angular/common/http';
 import { FilterGService } from '../../services/filterG.service';
+import { ResizableComponent } from '../../shared/resizable/resizable.component';
 // import '@ag-grid-community/styles/ag-grid.css';
 // import '@ag-grid-community/styles/ag-theme-quartz.css';
 @Component({
@@ -36,10 +37,10 @@ export class DataGridComponent implements OnInit {
     sortable: true,
   };
 
-  resizing = false;
-  size = 300;
-  @Input() maxHeight = 600;
-  constructor(private filterService: FilterGService, private el: ElementRef) {}
+  // resizing = false;
+  // size = 300;
+  // @Input() maxHeight = 600;
+  constructor(private filterService: FilterGService) {}
 
   ngOnInit(): void {
     this.filterService.getBims().subscribe(data => {
@@ -61,19 +62,19 @@ export class DataGridComponent implements OnInit {
     return '';
   }
 
-  @HostListener('document:mousemove', ['$event'])
-  onMouseMove(event: MouseEvent) {
-    if (this.resizing) {
-        const newHeight = event.clientY - this.el.nativeElement.getBoundingClientRect().top;
-        this.size = Math.max(5, Math.min(newHeight, this.maxHeight));
-        document.body.style.cursor = 'ns-resize';
-    }
-  }
+  // @HostListener('document:mousemove', ['$event'])
+  // onMouseMove(event: MouseEvent) {
+  //   if (this.resizing) {
+  //       const newHeight = event.clientY - this.el.nativeElement.getBoundingClientRect().top;
+  //       this.size = Math.max(5, Math.min(newHeight, this.maxHeight));
+  //       document.body.style.cursor = 'ns-resize';
+  //   }
+  // }
   
-  onResizeStart(event: MouseEvent) {
-    event.preventDefault();
-    this.resizing = true;
-  }
+  // onResizeStart(event: MouseEvent) {
+  //   event.preventDefault();
+  //   this.resizing = true;
+  // }
 
 }
 

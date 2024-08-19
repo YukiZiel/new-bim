@@ -1,48 +1,56 @@
+.all {
+  /* display: flex; */
+  overflow: hidden !important;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
 .results {
-    margin: 30px 50px 30px 50px;
-    display: grid;
-    justify-content: space-around;
-    /* column-gap: 10px; */
-    row-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+  margin: 30px 50px;
+  display: grid;
+  justify-content: space-around;
+  /* column-gap: 10px; */
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
 }
 
 .container {
-    height: 60vh;
+  height: 60vh;
 }
 
 .content-grid {
-    width: 100%; 
-    height: 32vh;
+  display: flex;
+  flex-grow: 1;
+  width: 100%; 
+  /* height: 30vh; */
+  z-index: 1;
+}
+
+.height {
+  height: 100vh;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 ag-grid-angular {
-    width: 100%; 
-    height: 100%;
+  width: 100%; 
+  height: 100%;
+
 }
 
-/* .moving {
-    cursor: move;
-    height: 10px;
-    background-color: #D9F4F9;
-}  */
-
-.moving {
-    position: relative;
-    z-index: 1;
-    cursor: move;
-    height: 10px;
-    background-color: #D9F4F9;
-  }
-  
-.moving.vertical {
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-}
-
-.moving:hover,
-.moving:active {
-  height: 10px;
-  background: #25a9bd;
+.mat-drawer-container.container {
+  height: 100vh;
+  z-index: 0;
 }

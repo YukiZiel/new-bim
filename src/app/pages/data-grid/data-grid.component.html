@@ -1,16 +1,24 @@
-<mat-drawer-container class="container">
-    <mat-drawer-content class="content">
-        <section class="results">
-            <app-object-bim *ngFor="let bim of rowData"  [objectBim]="bim"/>
-        </section>
-    </mat-drawer-content>
-</mat-drawer-container>
-<div class="content-grid" [style.height.px]="size">
-    <div class="moving" (mousedown)="onResizeStart($event)"></div>
-    <ag-grid-angular
-        class="ag-theme-quartz"
-        [rowData]="rowData"
-        [columnDefs]="colDefs"
-        [defaultColDef]="defaultColDef"
-    />
+<div class="all flex-col flex-grow">
+    <div class="flex height flex-col flex-grow">
+        <resizable direction="vertical">
+            <div class="flex-col flex-grow">
+                <mat-drawer-container class="container">
+                    <mat-drawer-content class="content">
+                        <section class="results">
+                            <app-object-bim *ngFor="let bim of rowData"  [objectBim]="bim"/>
+                        </section>
+                    </mat-drawer-content>
+                </mat-drawer-container>
+            </div>
+        </resizable>
+        <div class="content-grid">
+            <ag-grid-angular
+            class="ag-theme-quartz"
+            id="maria"
+            [rowData]="rowData"
+            [columnDefs]="colDefs"
+            [defaultColDef]="defaultColDef"
+            />
+        </div>
+    </div>
 </div>

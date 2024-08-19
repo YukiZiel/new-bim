@@ -1,0 +1,12 @@
+<div
+  class="resizable flex flex-grow"
+  [style.width.px]="isHorizontal ? size : null"
+  [style.height.px]="!isHorizontal ? size : null"
+>
+  <div
+    class="resizer"
+    [ngClass]="{ horizontal: isHorizontal, vertical: !isHorizontal }"
+    (mousedown)="onResizeStart($event)"
+  ></div>
+  <ng-content></ng-content>
+</div>

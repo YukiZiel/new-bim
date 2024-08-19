@@ -15,6 +15,7 @@ import { MatInput } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { NgArrayPipesModule } from 'ngx-pipes';
 import { AgGridModule } from 'ag-grid-angular';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -30,6 +31,7 @@ import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
 import { DataGridComponent } from './pages/data-grid/data-grid.component';
 import { ClassComponent } from './pages/class/class.component';
+import { ResizableComponent } from "./shared/resizable/resizable.component";
 
 
 @NgModule({
@@ -44,7 +46,8 @@ import { ClassComponent } from './pages/class/class.component';
     HomeFabricantsComponent,
     ObjectDetailComponent,
     DataGridComponent,
-    ClassComponent
+    ClassComponent,    
+    ResizableComponent
   ],
   imports: [
     BrowserModule,
@@ -64,8 +67,9 @@ import { ClassComponent } from './pages/class/class.component';
     MatInput,
     NgArrayPipesModule,
     FormsModule,
-    AgGridModule
-  ],
+    AgGridModule,
+    CommonModule
+],
   providers: [
     provideAnimationsAsync(), 
     AddFavService

@@ -1,0 +1,48 @@
+.resizable {
+  position: relative;
+  background-color: #f0f0f0;
+  //Maria Para que se vea la última fila
+  padding-bottom: 5px;
+}
+
+.resizable .content {
+  width: 100%;
+  height: 100%;
+}
+
+.resizer {
+  position: absolute;
+  z-index: 1;
+  transition: width .25s, height .25s;
+
+  &.horizontal {
+    right: 0;
+    width: 7px;
+    height: 100%;
+    cursor: ew-resize;
+    background: #abdee6;
+  }
+
+  &.vertical {
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    cursor: ns-resize;
+    background: #abdee6;
+  }
+
+  &:hover,
+  &:active {
+    background: #25a9bd;
+  }
+
+  &.horizontal:hover,
+  &.horizontal:active {
+    width: 10px;
+  }
+
+  &.vertical:hover,
+  &.vertical:active {
+    height: 10px;
+  }
+}
