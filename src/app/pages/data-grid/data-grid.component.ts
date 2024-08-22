@@ -4,6 +4,7 @@ import { ObjectBIM } from '../../interfaces/object-bim';
 import { HttpClient } from '@angular/common/http';
 import { FilterGService } from '../../services/filterG.service';
 import { ResizableComponent } from '../../shared/resizable/resizable.component';
+import { ImgCellComponent } from '../img-cell/img-cell.component';
 // import '@ag-grid-community/styles/ag-grid.css';
 // import '@ag-grid-community/styles/ag-theme-quartz.css';
 @Component({
@@ -17,7 +18,16 @@ export class DataGridComponent implements OnInit {
   rowData: ObjectBIM[] = [];
 
   colDefs: ColDef<ObjectBIM>[] = [
-    { field: 'description', headerName: 'Nombre', flex: 2, filter: true },
+    { 
+      field: 'description', 
+      headerName: 'Nombre', 
+      cellRendererParams: {
+        innerRenderer: ImgCellComponent,
+      },
+      minWidth: 300,
+      flex: 2, 
+      filter: true 
+    },
     { field: 'id', flex: 1, filter: true },
     { field: 'dataEmissio', headerName: 'Fecha de emisión', flex: 1, comparator: dateComparator,},
     { field: 'patrocinatTxt', headerName: 'Patrocinado por', flex: 1, filter: 'agSetColumnFilter'},
@@ -62,6 +72,16 @@ export class DataGridComponent implements OnInit {
     return '';
   }
 
+  onResizeSuperior(newHeight: number) {
+    const superiorElement = document.querySelector('.componente-superior') as HTMLElement;
+    const inferiorElement = document.querySelector('.componente-inferior') as HTMLElement;
+
+    if (superiorElement && inferiorElement) {
+      superiorElement.style.height = `${newHeight}px`;
+      inferiorElement.style.height = `${window.innerHeight - newHeight}px`;
+    }
+  }
+  
   // @HostListener('document:mousemove', ['$event'])
   // onMouseMove(event: MouseEvent) {
   //   if (this.resizing) {

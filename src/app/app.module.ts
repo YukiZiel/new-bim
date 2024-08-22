@@ -32,6 +32,7 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
 import { DataGridComponent } from './pages/data-grid/data-grid.component';
 import { ClassComponent } from './pages/class/class.component';
 import { ResizableComponent } from "./shared/resizable/resizable.component";
+import { ImgCellComponent } from './pages/img-cell/img-cell.component';
 
 
 @NgModule({
@@ -47,7 +48,7 @@ import { ResizableComponent } from "./shared/resizable/resizable.component";
     ObjectDetailComponent,
     DataGridComponent,
     ClassComponent,    
-    ResizableComponent
+    ResizableComponent, ImgCellComponent
   ],
   imports: [
     BrowserModule,

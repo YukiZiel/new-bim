@@ -1,6 +1,6 @@
 <div class="all flex-col flex-grow">
     <div class="flex height flex-col flex-grow">
-        <resizable direction="vertical">
+        <resizable direction="vertical" (resizeSuperior)="onResizeSuperior($event)">
             <div class="flex-col flex-grow">
                 <mat-drawer-container class="container">
                     <mat-drawer-content class="content">

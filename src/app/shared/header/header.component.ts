@@ -23,4 +23,14 @@ export class HeaderComponent implements OnInit{
 
   }
 
+  menuItems = [
+    { label: 'Categoría 1', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 2', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 3', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 4', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 5', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 6', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 7', icon: 'assets/images/Frame 2.png' },
+    { label: 'Categoría 8', icon: 'assets/images/Frame 2.png' }
+  ]
 }

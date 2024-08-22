@@ -1,5 +1,5 @@
 
-import { Component, Input, HostListener, ElementRef, OnInit } from '@angular/core';
+import { Component, Input, HostListener, ElementRef, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'resizable',
@@ -10,6 +10,8 @@ export class ResizableComponent implements OnInit {
   @Input() maxWidth = 800;
   @Input() maxHeight = 800;
   @Input() direction: 'horizontal' | 'vertical' = 'horizontal';
+  @Output() resizeSuperior = new EventEmitter<number>(); // Emite la nueva altura al componente padre
+
   resizing = false;
   size = 500;
   isHorizontal = true;
@@ -41,8 +43,8 @@ export class ResizableComponent implements OnInit {
         this.size = Math.max(5, Math.min(newHeight, this.maxHeight));
         document.body.style.cursor = 'ns-resize';
       }
-      const nuevaAlturaSuperior = event.clientY;
-      this.onResizeSuperior(nuevaAlturaSuperior);
+      // const nuevaAlturaSuperior = event.clientY;
+      // this.onResizeSuperior(nuevaAlturaSuperior);
     }
   }
 
@@ -51,11 +53,15 @@ export class ResizableComponent implements OnInit {
     this.resizing = true;
   }
 
-  onResizeSuperior(newHeight: number) {
-    const superiorElement = document.querySelector('.componente-superior') as HTMLElement;
-    const inferiorElement = document.querySelector('.componente-inferior') as HTMLElement;
+  // onResizeSuperior(newHeight: number) {
+  //   const superiorElement = document.querySelector('.componente-superior') as HTMLElement;
+  //   const inferiorElement = document.querySelector('.componente-inferior') as HTMLElement;
 
-    superiorElement.style.height = `${newHeight}px`;
-    inferiorElement.style.height = `${window.innerHeight - newHeight}px`;
-  }
+  //   if (superiorElement && inferiorElement) {
+  //     superiorElement.style.height = `${newHeight}px`;
+  //     inferiorElement.style.height = `${window.innerHeight - newHeight}px`;
+  //   } else {
+  //     console.error('Uno o más elementos no se encontraron en el DOM.');
+  //   }
+  // }
 }

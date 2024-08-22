@@ -68,3 +68,35 @@ header {
 .mat-icon.notranslate.icon-login.material-icons.mat-ligature-font.mat-icon-no-color {
   color: #25a9bd;
 }
+
+#mat-menu-panel-0 {
+  max-width: 100% !important;
+  left: 0;
+  position: fixed;
+  margin-top: 20px;
+  padding-left: 70px;
+}
+
+.custom-menu {
+  padding: 10px;
+  width: 100%;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.menu-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px;
+}

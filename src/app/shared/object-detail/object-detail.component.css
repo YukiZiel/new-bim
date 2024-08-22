@@ -77,7 +77,7 @@ table {
 
 td {
   padding: 8px;
-  /* width: 33.33%; */
+  width: 33.33%;
   text-align: left;
 }
 
@@ -98,4 +98,8 @@ tbody td:last-child {
 
 .fav-icon {
   color: #abdee6;
+}
+
+tr:nth-child(even) {
+  background-color: #F4FCFE;
 }

@@ -7,9 +7,22 @@
       <span>Genéricos eCOB&reg;</span>
     </button>
 
-    <button mat-button routerLink="/fabricantes">
+    <!-- <button mat-button routerLink="/fabricantes">
+      <span>Fabricantes</span>
+    </button> -->
+
+    <button mat-button [matMenuTriggerFor]="afterMenu">
       <span>Fabricantes</span>
     </button>
+    <mat-menu #afterMenu="matMenu" class="custom-menu">
+      <h3>CATEGORÍAS</h3>
+      <div class="menu-container">
+        <div class="menu-item" *ngFor="let item of menuItems">
+          <img [src]="item.icon" alt="{{item.label}}" class="menu-icon">
+          <span>{{item.label}}</span>
+        </div>
+      </div>
+    </mat-menu>
 
     <button mat-button routerLink="/data-grid">
       <span>Data-grid</span>

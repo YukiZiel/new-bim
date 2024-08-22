@@ -7,9 +7,9 @@
 }
 
 .results {
-  margin: 30px 50px;
+  margin: 30px 40px;
   display: grid;
-  justify-content: space-around;
+  justify-content: space-between;
   /* column-gap: 10px; */
   row-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
@@ -53,4 +53,16 @@ ag-grid-angular {
 .mat-drawer-container.container {
   height: 100vh;
   z-index: 0;
+}
+
+::ng-deep .ag-header-container {
+  background-color: #D9F4F9;
+}
+
+::ng-deep .ag-root-wrapper.ag-layout-normal {
+  margin-inline: 40px;
+}
+
+::ng-deep .ag-theme-quartz {
+  --ag-border-color: transparent;
 }
