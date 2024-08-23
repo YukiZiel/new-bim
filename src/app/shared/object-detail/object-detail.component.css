@@ -77,12 +77,13 @@ table {
 
 td {
   padding: 8px;
-  width: 33.33%;
+  /* width: 33.33%; */
   text-align: left;
 }
 
 tbody td:first-child {
   text-align: right;
+  width: 30%;
 }
 
 tbody td:nth-child(2) {
