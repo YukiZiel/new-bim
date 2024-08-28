@@ -15,8 +15,8 @@
       <p>Descargas</p>
       <p *ngIf="errorMessage" class="error-login"> {{errorMessage}} </p>
       <ul *ngFor="let download of detail.downloads">
-        <li>{{download.format}}
-          <ul>
+        <!-- <li>{{download.format}}
+          <ul> -->
             <li *ngFor="let formatItem of download.formatdown" class="download-archive">
               <a *ngIf="isAuthenticated()"
                 [href]="'https://bedec.itec.cat/img/' + detail.idemp + '/' + formatItem.fitxer"><img
@@ -26,9 +26,12 @@
               <!-- Esto asegura que no se realice ninguna acción al hacer clic en el enlace y en su lugar se llame a la función showErrorMessage(), que muestra un mensaje de error utilizando alert() -->
               {{formatItem.format}}
             </li>
-          </ul>
-        </li>
+          <!-- </ul>
+        </li> -->
       </ul>
+    </div>
+    <div class="info-detail detail-related">
+      <p>Objetos BIM relacionados</p>
     </div>
   </div>
 

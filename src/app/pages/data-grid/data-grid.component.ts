@@ -21,25 +21,57 @@ export class DataGridComponent implements OnInit {
     { 
       field: 'description', 
       headerName: 'Nombre', 
+      cellRenderer: ImgCellComponent,
       cellRendererParams: {
         innerRenderer: ImgCellComponent,
       },
+      cellStyle: { 
+        'white-space': 'normal', 
+        'word-wrap': 'break-word', 
+        'line-height': '1.5' 
+      },
       minWidth: 300,
       flex: 2, 
+      filter: true,
+      resizable: false
+    },
+    { 
+      field: 'id', 
+      flex: 1, 
       filter: true 
     },
-    { field: 'id', flex: 1, filter: true },
-    { field: 'dataEmissio', headerName: 'Fecha de emisión', flex: 1, comparator: dateComparator,},
-    { field: 'patrocinatTxt', headerName: 'Patrocinado por', flex: 1, filter: 'agSetColumnFilter'},
-    { field: 'ecob', headerName: 'eCOB®', flex: 1, sortable: false },
+    { 
+      field: 'dataEmissio', 
+      headerName: 'Fecha de emisión', 
+      flex: 1, comparator: dateComparator,
+    },
+    { 
+      field: 'patrocinatTxt', 
+      headerName: 'Patrocinado por', 
+      cellStyle: { 
+        'white-space': 'normal', 
+        'word-wrap': 'break-word', 
+        'line-height': '1.5' 
+      },
+      flex: 1, 
+      filter: 'agSetColumnFilter'
+    },
+    { 
+      field: 'ecob', 
+      headerName: 'eCOB®', 
+      flex: 1, 
+      sortable: false 
+    },
     { 
       field: 'downloads', 
       headerName: 'Descargas', 
       flex: 1,
-      cellRenderer: (params: any) => this.downloadCellRenderer(params), sortable: false
+      cellRenderer: (params: any) => this.downloadCellRenderer(params), 
+      sortable: false
     }
   ];
 
+  rowHeight = 80;
   
   defaultColDef: ColDef = {
     flex: 1,
@@ -54,7 +86,6 @@ export class DataGridComponent implements OnInit {
 
   ngOnInit(): void {
     this.filterService.getBims().subscribe(data => {
-      // console.log('BIM Data:', data); 
       this.rowData = data.bims;
     });
   }

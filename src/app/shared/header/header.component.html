@@ -4,7 +4,7 @@
 
   <div class="button-group">
     <button mat-button routerLink="/genericos">
-      <span>Genéricos eCOB&reg;</span>
+      <span>Genéricos ITeC</span>
     </button>
 
     <!-- <button mat-button routerLink="/fabricantes">
@@ -17,7 +17,7 @@
     <mat-menu #afterMenu="matMenu" class="custom-menu">
       <h3>CATEGORÍAS</h3>
       <div class="menu-container">
-        <div class="menu-item" *ngFor="let item of menuItems">
+        <div class="menu-item" *ngFor="let item of menuItems" routerLink="/fabricantes">
           <img [src]="item.icon" alt="{{item.label}}" class="menu-icon">
           <span>{{item.label}}</span>
         </div>

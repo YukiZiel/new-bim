@@ -24,13 +24,12 @@ export class HeaderComponent implements OnInit{
   }
 
   menuItems = [
-    { label: 'Categoría 1', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 2', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 3', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 4', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 5', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 6', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 7', icon: 'assets/images/Frame 2.png' },
-    { label: 'Categoría 8', icon: 'assets/images/Frame 2.png' }
+    { label: 'Adecuación  del terreno y sustentación del edificio', icon: 'assets/images/Frame 2.png' },
+    { label: 'Sistema  estructural', icon: 'assets/images/Frame 2.png' },
+    { label: 'Sistemas  de envolvente y de acabados exteriores', icon: 'assets/images/Frame 2.png' },
+    { label: 'Sistemas  de compartimentación y de acabados interiores', icon: 'assets/images/Frame 2.png' },
+    { label: 'Equipamientos   y mobiliario', icon: 'assets/images/Frame 2.png' },
+    { label: 'Urbanización  de los espacios exteriores', icon: 'assets/images/Frame 2.png' },
+    { label: 'Construcciones  e instalaciones temporales', icon: 'assets/images/Frame 2.png' },
   ]
 }

@@ -59,10 +59,15 @@ ag-grid-angular {
   background-color: #D9F4F9;
 }
 
-::ng-deep .ag-root-wrapper.ag-layout-normal {
+/* ::ng-deep .ag-root-wrapper.ag-layout-normal {
   margin-inline: 40px;
 }
 
 ::ng-deep .ag-theme-quartz {
   --ag-border-color: transparent;
+} */
+
+::ng-deep .ag-theme-quartz .ag-cell {
+  display: flex;
+  align-items: center;
 }

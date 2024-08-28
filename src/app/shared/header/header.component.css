@@ -78,18 +78,6 @@ h3 {
   color: #25a9bd;
 }
 
-#mat-menu-panel-0 {
-  max-width: 100% !important;
-  left: 0;
-  position: fixed;
-  margin-top: 20px;
-  padding-left: 70px;
-}
-
-::ng-deep #mat-menu-panel-0 {
-  width: 100%;
-}
-
 .custom-menu {
   padding: 10px;
 }
@@ -103,6 +91,7 @@ h3 {
 
 .menu-item {
   text-align: center;
+  color: #2e3a69;
   cursor: pointer;
 }
 
@@ -113,14 +102,17 @@ h3 {
   margin: 0 auto 5px;
 }
 
-::ng-deep .mat-mdc-menu-panel {
-  max-width: 100% !important;
+::ng-deep #mat-menu-panel-0 {
+  width: 100%;
+  max-width: 100%;
   padding-inline: 50px;
-  background-color: #EAFFC8 !important;
+  background-color: #EAFFC8;
+  left: 0;
+  position: fixed;
 }
 
-::ng-deep .cdk-overlay-pane {
-  left: 0px !important;
-  margin-top: 20px !important;
-  width: 100% !important;
+::ng-deep #cdk-overlay-0 {
+  left: 0px;
+  margin-top: 20px;
+  width: 100%;
 }
