@@ -1,37 +1,20 @@
-import { Component, ElementRef, HostListener, Input, OnInit } from '@angular/core';
-import { ClientSideRowModelModule, ColDef, IDateFilterParams, ModuleRegistry } from 'ag-grid-community'; // Column Definition Type Interface
+import { Component, OnInit } from '@angular/core';
 import { ObjectBIM } from '../../interfaces/object-bim';
-import { HttpClient } from '@angular/common/http';
-import { FilterGService } from '../../services/filterG.service';
-import { ResizableComponent } from '../../shared/resizable/resizable.component';
+import { ColDef, ModuleRegistry } from 'ag-grid-community';
 import { ImgCellComponent } from '../img-cell/img-cell.component';
-import { AdvancedFilterModule, FiltersToolPanelModule, SetFilterModule, StatusBarModule, MenuModule, RowGroupingModule, ExcelExportModule, ColumnsToolPanelModule, GridChartsModule, RangeSelectionModule, RichSelectModule, SparklinesModule } from 'ag-grid-enterprise';
+import { FilterGService } from '../../services/filterG.service';
+import { MenuModule } from 'ag-grid-enterprise';
 
 ModuleRegistry.registerModules([
-  // ClientSideRowModelModule,
-  // AdvancedFilterModule,
-  // ColumnsToolPanelModule,
-  // ExcelExportModule,
-  // FiltersToolPanelModule,
-  // GridChartsModule,
-  MenuModule,
-  // RangeSelectionModule,
-  // RowGroupingModule,
-  // SetFilterModule,
-  // RichSelectModule,
-  // StatusBarModule,
-  // SparklinesModule,
+  MenuModule
 ]);
 
-// import '@ag-grid-community/styles/ag-grid.css';
-// import '@ag-grid-community/styles/ag-theme-quartz.css';
 @Component({
-  selector: 'app-data-grid',
-  templateUrl: './data-grid.component.html',
-  styleUrl: './data-grid.component.css'
+  selector: 'app-grid',
+  templateUrl: './grid.component.html',
+  styleUrl: './grid.component.css'
 })
-
-export class DataGridComponent implements OnInit {
+export class GridComponent implements OnInit{
 
   rowData: ObjectBIM[] = [];
   enableRangeSelection: boolean = true;
@@ -141,20 +124,6 @@ export class DataGridComponent implements OnInit {
       inferiorElement.style.height = `${window.innerHeight - newHeight}px`;
     }
   }
-  
-  // @HostListener('document:mousemove', ['$event'])
-  // onMouseMove(event: MouseEvent) {
-  //   if (this.resizing) {
-  //       const newHeight = event.clientY - this.el.nativeElement.getBoundingClientRect().top;
-  //       this.size = Math.max(5, Math.min(newHeight, this.maxHeight));
-  //       document.body.style.cursor = 'ns-resize';
-  //   }
-  // }
-  
-  // onResizeStart(event: MouseEvent) {
-  //   event.preventDefault();
-  //   this.resizing = true;
-  // }
 
 }
 
@@ -189,5 +158,5 @@ function _monthToNum(date:any) {
   var result = yearNumber * 10000 + monthNumber * 100 + dayNumber;
   // 29/08/2004 => 20040829
   return result;
-}
 
+}

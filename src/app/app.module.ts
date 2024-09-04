@@ -33,7 +33,7 @@ import { DataGridComponent } from './pages/data-grid/data-grid.component';
 import { ClassComponent } from './pages/class/class.component';
 import { ResizableComponent } from "./shared/resizable/resizable.component";
 import { ImgCellComponent } from './pages/img-cell/img-cell.component';
-
+import { GridComponent } from './pages/grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +48,8 @@ import { ImgCellComponent } from './pages/img-cell/img-cell.component';
     ObjectDetailComponent,
     DataGridComponent,
     ClassComponent,    
-    ResizableComponent, ImgCellComponent
+    ResizableComponent, 
+    ImgCellComponent, GridComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +70,8 @@ import { ImgCellComponent } from './pages/img-cell/img-cell.component';
     NgArrayPipesModule,
     FormsModule,
     AgGridModule,
-    CommonModule
+    CommonModule,
+
 ],
   providers: [
     provideAnimationsAsync(), 

@@ -12,6 +12,11 @@
   background-color: #fafafa;
 }
 
+/* Para que no quede oculto el último filtro. Problema con scroll */
+/* .accordion-last, .mat-accordion > .mat-expansion-panel-spacing:last-child, .mat-accordion > :last-child:not(.mat-expansion-panel) .mat-expansion-panel-spacing {
+  margin-bottom: 25%; 
+} */
+
 .mat-list-item {
   font-size: 12px;
 }

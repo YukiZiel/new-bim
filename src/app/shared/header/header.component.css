@@ -1,7 +1,12 @@
 .menu {
-  padding: 10px;
+  padding: 10px 50px;
+
+  top: 0px;
   display: flex;
+  position: sticky;
   align-items: center;
+  background: linear-gradient(to right, #abdee6, #25a9bd);
+  z-index: 100;
 }
 
 .button-group {
@@ -16,12 +21,12 @@
   display: flex;
 }
 
-header {
+/* header {
   padding: 10px 50px;
   display: flex;
   align-items: center;
   background: linear-gradient(to right, #abdee6, #25a9bd);
-}
+} */
 
 @media (max-width: 550px) {
   .button-group {
@@ -108,11 +113,12 @@ h3 {
   padding-inline: 50px;
   background-color: #EAFFC8;
   left: 0;
+  margin-top: 20px;
   position: fixed;
 }
 
-::ng-deep #cdk-overlay-0 {
+/* ::ng-deep #cdk-overlay-0 {
   left: 0px;
   margin-top: 20px;
   width: 100%;
-}
+} */
