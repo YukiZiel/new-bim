@@ -29,17 +29,17 @@ export class ObjectsBimComponent implements OnInit {
   }
 
   // Método para añadir o eliminar los objetos BIM de favoritos
-  toggleFavList(objectBim: ObjectBIM) {
-    const userid = this.userData?.id_user; // Obtener el userid del usuario en sesión
-    const objectid = objectBim.id; // Obtiene el id del objeto BIM clicado
-    // Hace la comprobación en la base de datos, si exite la fila entonces la borra, si no, la añade
-    this.addFavService.toggleFavorite(userid, objectid).subscribe(
-      response => {
-        console.log(response);
-      },
-      error => {
-        console.error('Error al agregar favorito:', error);
-      }
-    );
-  }
+  // toggleFavList(objectBim: ObjectBIM) {
+  //   const userid = this.userData?.id_user; // Obtener el userid del usuario en sesión
+  //   const objectid = objectBim.id; // Obtiene el id del objeto BIM clicado
+  //   // Hace la comprobación en la base de datos, si exite la fila entonces la borra, si no, la añade
+  //   this.addFavService.toggleFavorite(userid, objectid).subscribe(
+  //     response => {
+  //       console.log(response);
+  //     },
+  //     error => {
+  //       console.error('Error al agregar favorito:', error);
+  //     }
+  //   );
+  // }
 }

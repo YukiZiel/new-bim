@@ -89,7 +89,8 @@ h3 {
 
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 40px;
   grid-row-gap: 30px;
   padding: 10px;
 }
@@ -98,6 +99,10 @@ h3 {
   text-align: center;
   color: #2e3a69;
   cursor: pointer;
+}
+
+.menu-item span {
+  font-size: 16px;
 }
 
 .menu-icon {

@@ -25,11 +25,13 @@ export class HeaderComponent implements OnInit{
 
   menuItems = [
     { label: 'Adecuación  del terreno y sustentación del edificio', icon: 'assets/images/Frame 2.png' },
-    { label: 'Sistema  estructural', icon: 'assets/images/Frame 3.png' },
+    { label: 'Sistema  estructural', icon: 'assets/images/Frame 2.png' },
     { label: 'Sistemas  de envolvente y de acabados exteriores', icon: 'assets/images/Frame 2.png' },
-    { label: 'Sistemas  de compartimentación y de acabados interiores', icon: 'assets/images/Frame 3.png' },
+    { label: 'Sistemas  de compartimentación y de acabados interiores', icon: 'assets/images/Frame 2.png' },
+    { label: 'Sistemas  de acondicionamiento, instalaciones y servicios', icon: 'assets/images/Frame 2.png' },
     { label: 'Equipamientos   y mobiliario', icon: 'assets/images/Frame 3.png' },
-    { label: 'Urbanización  de los espacios exteriores', icon: 'assets/images/Frame 2.png' },
+    { label: 'Urbanización  de los espacios exteriores', icon: 'assets/images/Frame 3.png' },
     { label: 'Construcciones  e instalaciones temporales', icon: 'assets/images/Frame 3.png' },
+    { label: 'Todas las categorías', icon: 'assets/images/Frame 3.png' },
   ]
 }

@@ -1,10 +1,10 @@
 <mat-card class="listing">
-    <mat-card-actions>
+    <!-- <mat-card-actions>
         <button mat-icon-button matTooltip="Añadir a favorito" (click)="toggleFavList(objectBim)"
             [disabled]="isDisabled" class="fav-icon">
             <mat-icon>favorite</mat-icon>
         </button>
-    </mat-card-actions>
+    </mat-card-actions> -->
     <mat-card-content (click)="navigateToDetail(objectBim.id)">
         <img mat-card-image class="listing-image"
             [src]="'https://bedec.itec.cat/img/' + objectBim.idemp + '/' + objectBim.image"
