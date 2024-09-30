@@ -16,6 +16,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { NgArrayPipesModule } from 'ngx-pipes';
 import { AgGridModule } from 'ag-grid-angular';
 import { CommonModule } from '@angular/common';
+import { MatToolbarModule } from '@angular/material/toolbar'; 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -71,6 +72,7 @@ import { GridComponent } from './pages/grid/grid.component';
     FormsModule,
     AgGridModule,
     CommonModule,
+    MatToolbarModule
 
 ],
   providers: [

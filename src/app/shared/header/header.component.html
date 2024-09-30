@@ -1,7 +1,26 @@
+<mat-toolbar role="heading" id="toolbarEntitats">
+  <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon" /></a>
+  <span class="espaiador-h"></span>
+  <!-- <span (click)="changeLang()" class="ml-5 cursor-pointer lang"><i class="material-icons mr-[2px]">language</i>{{ globalConstants.lang.value.toUpperCase() }}</span>
+   -->
+
+
+   <div class="header-icon">
+    <button mat-button>
+      <mat-icon inline=true>mail_outline</mat-icon>
+      Contactar
+    </button>
+    <button mat-button>
+      <mat-icon>language</mat-icon>
+      ES
+    </button>
+   </div>
+</mat-toolbar>
+ 
 <header class="menu">
 
-  <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon" /></a>
-
+  <!-- <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon" /></a> -->
+  <h1 id="title-header">BEDEC - BIM</h1>
   <div class="button-group">
     <button mat-button routerLink="/genericos">
       <span>Genéricos eCOB&#174;</span>

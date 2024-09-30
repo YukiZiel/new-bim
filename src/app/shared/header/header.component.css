@@ -1,6 +1,5 @@
 .menu {
   padding: 10px 50px;
-
   top: 0px;
   display: flex;
   position: sticky;
@@ -13,6 +12,13 @@
   margin-left: 5vw;
   display: flex;
   gap: 5vw; /* Espacio entre los botones */
+}
+
+#title-header {
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
 }
 
 .user-menu {
@@ -57,9 +63,11 @@
 }
 
 .itec-icon {
-  margin-left: 3vw;
+  /* margin-left: 3vw; */
+  top: 5px;
   width: auto;
-  height: 50px;
+  height: 30px;
+  position: fixed;
 }
 
 .user-icon {
@@ -127,3 +135,43 @@ h3 {
   margin-top: 20px;
   width: 100%;
 } */
+
+
+
+
+
+
+/* stylelint-disable */
+::ng-deep #toolbarEntitats.mat-toolbar {
+  padding-inline: 50px;
+  background-color: #2e3a69;
+  color: #ffffff;
+  height: 40px;
+}
+
+.header-icon {
+  right: 3vw;
+  position: fixed;
+  display: flex;
+  gap: 30px;
+}
+
+.header-icon .mat-icon {
+  align-items: center;
+  display: flex;
+}
+
+.mat-toolbar .mat-mdc-button-base.mat-mdc-button-base.mat-unthemed{
+  color:white;
+}
+/* .lang-button {
+  right: 3vw;
+  position: absolute;
+  display: flex;
+}
+
+.header-inline {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+} */
+ 
