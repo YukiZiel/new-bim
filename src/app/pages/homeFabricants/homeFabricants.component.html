@@ -14,6 +14,16 @@
     </section>
   </mat-drawer-content>
   <mat-drawer #drawer mode="side" class="sidenav">
+    <div class="sticky closeAll">
+      <button mat-button (click)="accordion.closeAll()">
+        <!-- <mat-icon>expand_less</mat-icon> -->
+        Cerrar todo
+      </button>
+      <button mat-button (click)="accordion.openAll()">
+        <!-- <mat-icon>expand_more</mat-icon> -->
+        Abrir todo
+      </button>
+    </div>
     <mat-accordion multi>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -48,7 +58,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-selection-list [(ngModel)]="selectedEmpresa">
-          <mat-list-option *ngFor="let empresa of empresas" [value]="empresa.idemp" color="primary">
+          <mat-list-option *ngFor="let empresa of empresas" [value]="empresa.idemp" [matTooltip]="empresa.label" matTooltipClass="toolfilter" color="primary">
             {{ empresa.label }}
           </mat-list-option>
         </mat-selection-list>
@@ -60,7 +70,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-selection-list [(ngModel)]="selectedSistema">
-          <mat-list-option *ngFor="let sistemaF of sistemasF" [value]="sistemaF.label" color="primary">
+          <mat-list-option *ngFor="let sistemaF of sistemasF" [value]="sistemaF.label" [matTooltip]="sistemaF.label" matTooltipClass="toolfilter" color="primary">
             {{ sistemaF.label }}
           </mat-list-option>
         </mat-selection-list>
@@ -72,7 +82,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-selection-list [(ngModel)]="selectedSubsistema">
-          <mat-list-option *ngFor="let subsistemaF of subsistemasF" [value]="subsistemaF.label" color="primary">
+          <mat-list-option *ngFor="let subsistemaF of subsistemasF" [value]="subsistemaF.label" [matTooltip]="subsistemaF.label" matTooltipClass="toolfilter" color="primary">
             {{ subsistemaF.label }}
           </mat-list-option>
         </mat-selection-list>
@@ -84,7 +94,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-selection-list [(ngModel)]="selectedIfcBuildingElement">
-          <mat-list-option *ngFor="let ifcBuildingElementF of ifcBuildingElementsF" [value]="ifcBuildingElementF.label"
+          <mat-list-option *ngFor="let ifcBuildingElementF of ifcBuildingElementsF" [value]="ifcBuildingElementF.label" [matTooltip]="ifcBuildingElementF.label" matTooltipClass="toolfilter"
             color="primary">
             {{ ifcBuildingElementF.label }}
           </mat-list-option>
@@ -97,7 +107,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-selection-list [(ngModel)]="selectedElementosBimItec">
-          <mat-list-option *ngFor="let elementoBimItecF of elementosBimItecF" [value]="elementoBimItecF.label"
+          <mat-list-option *ngFor="let elementoBimItecF of elementosBimItecF" [value]="elementoBimItecF.label" [matTooltip]="elementoBimItecF.label" matTooltipClass="toolfilter"
             color="primary">
             {{ elementoBimItecF.label }}
           </mat-list-option>

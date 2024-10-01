@@ -31,7 +31,6 @@ import { RegisterComponent } from './auth/register/register.component';
 import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
 import { DataGridComponent } from './pages/data-grid/data-grid.component';
-import { ClassComponent } from './pages/class/class.component';
 import { ResizableComponent } from "./shared/resizable/resizable.component";
 import { ImgCellComponent } from './pages/img-cell/img-cell.component';
 import { GridComponent } from './pages/grid/grid.component';
@@ -47,8 +46,7 @@ import { GridComponent } from './pages/grid/grid.component';
     RegisterComponent,
     HomeFabricantsComponent,
     ObjectDetailComponent,
-    DataGridComponent,
-    ClassComponent,    
+    DataGridComponent, 
     ResizableComponent, 
     ImgCellComponent, GridComponent
   ],

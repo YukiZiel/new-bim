@@ -46,6 +46,10 @@
   padding-left: 10px;
 }
 
+::ng-deep .toolfilter {
+  --mdc-plain-tooltip-container-color:#46B6C7;
+}
+
 .results {
   margin: 30px 50px 30px 50px;
   display: grid;
@@ -94,3 +98,18 @@
   top: 0px;
   z-index: 100;
 }
+
+.closeAll{
+  color: white;
+  background-color: #46B6C7;
+}
+
+.closeAll button {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+::ng-deep .mat-mdc-button:not(:disabled) {
+  color: white;
+}
+

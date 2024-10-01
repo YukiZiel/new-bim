@@ -15,8 +15,15 @@
     </section>
   </mat-drawer-content>
   <mat-drawer #drawer mode="side" class="sidenav">
-    <div>
-      <button mat-button (click)="accordion.closeAll()">Cerrar todo</button>
+    <div class="sticky closeAll">
+      <button mat-button (click)="accordion.closeAll()">
+        <!-- <mat-icon>expand_less</mat-icon> -->
+        Cerrar todo
+      </button>
+      <button mat-button (click)="accordion.openAll()">
+        <!-- <mat-icon>expand_more</mat-icon> -->
+        Abrir todo
+      </button>
     </div>
     <mat-accordion multi>
       <mat-expansion-panel>
@@ -52,7 +59,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
           <mat-selection-list [(ngModel)]="selectedSistema">
-            <mat-list-option *ngFor="let sistemaG of sistemasG" [value]="sistemaG.label" color="primary">
+            <mat-list-option *ngFor="let sistemaG of sistemasG" [value]="sistemaG.label" [matTooltip]="sistemaG.label" matTooltipClass="toolfilter" color="primary">
               {{ sistemaG.label }}
             </mat-list-option>
           </mat-selection-list>
@@ -65,7 +72,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
           <mat-selection-list [(ngModel)]="selectedSubsistema">
-            <mat-list-option *ngFor="let subsistemaG of subsistemasG" [value]="subsistemaG.label" color="primary">
+            <mat-list-option *ngFor="let subsistemaG of subsistemasG" [value]="subsistemaG.label" [matTooltip]="subsistemaG.label" matTooltipClass="toolfilter" color="primary">
             <!-- <mat-list-option *ngFor="let subsistemaG of subsistemasG" [value]="subsistemaG.label" [disabled]="subsistemaG.disabled" color="primary"> -->
               {{ subsistemaG.label }}
             </mat-list-option>
@@ -78,7 +85,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
           <mat-selection-list [(ngModel)]="selectedIfcBuildingElement">
-            <mat-list-option *ngFor="let ifcBuildingElementG of ifcBuildingElementsG" [value]="ifcBuildingElementG.label" color="primary">
+            <mat-list-option *ngFor="let ifcBuildingElementG of ifcBuildingElementsG" [value]="ifcBuildingElementG.label" [matTooltip]="ifcBuildingElementG.label" matTooltipClass="toolfilter" color="primary">
               {{ ifcBuildingElementG.label }}
             </mat-list-option>
           </mat-selection-list>
