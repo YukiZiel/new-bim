@@ -5,6 +5,14 @@
             <mat-icon>favorite</mat-icon>
         </button>
     </mat-card-actions> -->
+    <mat-card-actions>
+        <a href="https://ecobject.com/" [hidden]="isHidden">
+            <img class="logo-ecob"
+            src="../../../assets/images/logo-ecob.png"
+            alt="eCOB"
+            >
+        </a>
+    </mat-card-actions>
     <mat-card-content (click)="navigateToDetail(objectBim.id)">
         <img mat-card-image class="listing-image"
             [src]="'https://bedec.itec.cat/img/' + objectBim.idemp + '/' + objectBim.image"

@@ -35,3 +35,8 @@ mat-card {
 .fav-icon:disabled {
     color: #d3d3d3;
 }
+
+.logo-ecob {
+    width: 40px;
+    margin-top: 10px;
+}

@@ -11,15 +11,18 @@ import { AuthService } from '../../services/auth.service';
 })
 export class ObjectsBimComponent implements OnInit {
   @Input() objectBim!: ObjectBIM;
-  isDisabled = false;
+  // isDisabled = false;
   userData: any;
-
+  isHidden = false;
   constructor(private router: Router, private addFavService: AddFavService, private authService: AuthService) { }
 
   ngOnInit(): void {
     // Comprueba si hay datos de usuario, es decir si hay sesión iniciada, si no la hay entonces los iconos de favoritos estarán desactivados
     this.userData = this.authService.getUserData();
-    this.isDisabled = this.userData === null;
+    // this.isDisabled = this.userData === null;
+    if (this.router.url.includes('fabricantes')) {
+      this.isHidden = true;
+    }
   }
 
   // Al clicar te redirige a la página en detalle del objeto BIM clicado
