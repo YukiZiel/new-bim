@@ -64,9 +64,9 @@ export class GridGComponent implements OnInit{
         'line-height': '1.5' 
       },
       flex: 1, 
-      filter: 'agSetColumnFilter',
       enableRowGroup: true,
       enableValue: true,
+      filter: true
     },
     { 
       field: 'ecob', 

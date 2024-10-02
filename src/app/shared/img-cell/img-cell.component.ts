@@ -31,19 +31,19 @@ export class ImgCellComponent implements OnInit, ICellRendererAngularComp{
   }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(params => { // Obtiene el parámetro de consulta que se pasó durante la navegación
-      const fromRoute = params['from'];
-      this.route.params.subscribe(data => {
-        if (fromRoute.includes('fabricantes')) { // Verifica el parámetro con from
-          this.filterFService.getBims().subscribe(data => {
-            this.bims = data.bimsF;   // Obtengo los detalles del objeto BIM de Fabricantes basándome en el id
-          });
-        } else if (fromRoute.includes('genericos')) {
-          this.filterGService.getBims().subscribe(data => {
-            this.bims = data.bims;
-          });
-        }
-      });
-    })
+    // this.route.queryParams.subscribe(params => { // Obtiene el parámetro de consulta que se pasó durante la navegación
+    //   const fromRoute = params['from'];
+    //   this.route.params.subscribe(data => {
+    //     if (fromRoute.includes('fabricantes')) { // Verifica el parámetro con from
+    //       this.filterFService.getBims().subscribe(data => {
+    //         this.bims = data.bimsF;   // Obtengo los detalles del objeto BIM de Fabricantes basándome en el id
+    //       });
+    //     } else if (fromRoute.includes('genericos')) {
+    //       this.filterGService.getBims().subscribe(data => {
+    //         this.bims = data.bims;
+    //       });
+    //     }
+    //   });
+    // })
   }
 }

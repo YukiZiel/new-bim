@@ -46,23 +46,22 @@ export class GridFComponent implements OnInit{
       filter: true 
     },
     { 
-      field: 'empresa', 
-      // headerName: '', 
+      field: 'empresa',
       cellStyle: { 
         'white-space': 'normal', 
         'word-wrap': 'break-word', 
         'line-height': '1.5' 
       },
       flex: 1, 
-      filter: 'agSetColumnFilter',
       enableRowGroup: true,
       enableValue: true,
+      filter: true
     },
     { 
       field: 'ecob', 
       headerName: 'eCOB®', 
       flex: 1, 
-      sortable: false 
+      filter: true 
     },
     { 
       field: 'downloads', 

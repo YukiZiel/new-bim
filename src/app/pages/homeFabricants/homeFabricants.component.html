@@ -9,7 +9,7 @@
     </mat-form-field>
     <section class="results">
       <app-object-bim
-        *ngFor="let bim of bimsF | filterBy: ['description']: this.searchTerm | filterBy: ['ecob']: this.selectedEcob | filterBy: ['idemp']: this.selectedEmpresa | filterBy: ['sistema']: this.selectedSistema | filterBy: ['subsistema']: this.selectedSubsistema | filterBy: ['IfcBuildingElement']: this.selectedIfcBuildingElement | filterBy: ['classeBimITeC']: this.selectedElementosBimItec"
+        *ngFor="let bim of bimsF | filterBy: ['description']: this.searchTerm | filterBy: ['ecob']: this.selectedEcob |filterBy: ['idemp']: this.selectedEmpresa | filterBy: ['sistema']: this.selectedSistema | filterBy: ['subsistema']: this.selectedSubsistema | filterBy: ['IfcBuildingElement']: this.selectedIfcBuildingElement | filterBy: ['classeBimITeC']: this.selectedElementosBimItec"
         [objectBim]="bim" />
     </section>
   </mat-drawer-content>
