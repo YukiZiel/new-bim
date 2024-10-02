@@ -8,7 +8,8 @@ import { ObjectDetailComponent } from './shared/object-detail/object-detail.comp
 import { UserComponent } from './auth/user/user.component';
 import { AuthGuard } from './auth/auth.guard';
 import { DataGridComponent } from './pages/data-grid/data-grid.component';
-import { GridComponent } from './pages/grid/grid.component';
+import { GridGComponent } from './pages/grid-g/grid-g.component';
+import { GridFComponent } from './pages/grid-f/grid-f.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'registrarse', component: RegisterComponent },
   { path: 'perfil', component: UserComponent, canActivate: [AuthGuard] },
   { path: 'data-grid', component: DataGridComponent },
-  { path: 'grid', component:GridComponent }
+  { path: 'grid-generics', component:GridGComponent },
+  { path: 'grid-fabricants', component:GridFComponent }
 ];
 
 @NgModule({

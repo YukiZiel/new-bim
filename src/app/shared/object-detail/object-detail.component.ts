@@ -31,6 +31,10 @@ export class ObjectDetailComponent implements OnInit {
     return !!this.expandedGroups[propgroup];
   }
 
+  isLink(value: string): boolean {
+    return value.startsWith('http');
+  }
+
   constructor(private route: ActivatedRoute, private filterGService: FilterGService, private filterFService: FilterFService, private authService: AuthService, private location: Location, private addFavService: AddFavService) {
 
   }

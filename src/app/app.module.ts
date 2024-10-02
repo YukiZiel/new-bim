@@ -32,8 +32,9 @@ import { AddFavService } from './services/add-fav.service';
 import { ObjectDetailComponent } from './shared/object-detail/object-detail.component';
 import { DataGridComponent } from './pages/data-grid/data-grid.component';
 import { ResizableComponent } from "./shared/resizable/resizable.component";
-import { ImgCellComponent } from './pages/img-cell/img-cell.component';
-import { GridComponent } from './pages/grid/grid.component';
+import { ImgCellComponent } from './shared/img-cell/img-cell.component';
+import { GridGComponent } from './pages/grid-g/grid-g.component';
+import { GridFComponent } from './pages/grid-f/grid-f.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,9 @@ import { GridComponent } from './pages/grid/grid.component';
     ObjectDetailComponent,
     DataGridComponent, 
     ResizableComponent, 
-    ImgCellComponent, GridComponent
+    ImgCellComponent, 
+    GridGComponent, 
+    GridFComponent
   ],
   imports: [
     BrowserModule,

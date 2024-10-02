@@ -1,21 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ObjectBIM } from '../../interfaces/object-bim';
 import { ColDef, ModuleRegistry } from 'ag-grid-community';
-import { ImgCellComponent } from '../img-cell/img-cell.component';
+import { ImgCellComponent } from '../../shared/img-cell/img-cell.component';
 import { FilterGService } from '../../services/filterG.service';
 import { MenuModule } from 'ag-grid-enterprise';
-
-ModuleRegistry.registerModules([
-  MenuModule
-]);
+import { FilterFService } from '../../services/filterF.service';
 
 @Component({
-  selector: 'app-grid',
-  templateUrl: './grid.component.html',
-  styleUrl: './grid.component.css'
+  selector: 'app-grid-f',
+  templateUrl: './grid-f.component.html',
+  styleUrl: './grid-f.component.css'
 })
-export class GridComponent implements OnInit{
-
+export class GridFComponent implements OnInit{
   rowData: ObjectBIM[] = [];
   enableRangeSelection: boolean = true;
   rowSelection: 'multiple' | 'single' | undefined = 'multiple';
@@ -49,15 +45,9 @@ export class GridComponent implements OnInit{
       enableValue: true,
       filter: true 
     },
-    // { 
-    //   field: 'dataEmissio', 
-    //   headerName: 'Fecha de emisión', 
-    //   flex: 1, 
-    //   comparator: dateComparator,
-    // },
     { 
-      field: 'patrocinatTxt', 
-      headerName: 'Patrocinado por', 
+      field: 'empresa', 
+      // headerName: '', 
       cellStyle: { 
         'white-space': 'normal', 
         'word-wrap': 'break-word', 
@@ -94,11 +84,11 @@ export class GridComponent implements OnInit{
   // resizing = false;
   // size = 300;
   // @Input() maxHeight = 600;
-  constructor(private filterService: FilterGService) {}
+  constructor(private filterService: FilterFService) {}
 
   ngOnInit(): void {
     this.filterService.getBims().subscribe(data => {
-      this.rowData = data.bims;
+      this.rowData = data.bimsF;
     });
   }
 

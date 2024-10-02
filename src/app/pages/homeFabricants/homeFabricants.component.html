@@ -14,7 +14,7 @@
     </section>
   </mat-drawer-content>
   <mat-drawer #drawer mode="side" class="sidenav">
-    <div class="sticky closeAll">
+    <div class="sticky buttonAll">
       <button mat-button (click)="accordion.closeAll()">
         <!-- <mat-icon>expand_less</mat-icon> -->
         Cerrar todo
@@ -22,6 +22,10 @@
       <button mat-button (click)="accordion.openAll()">
         <!-- <mat-icon>expand_more</mat-icon> -->
         Abrir todo
+      </button>
+      <button mat-button routerLink="/grid-fabricants" matTooltip="Grid completo" matTooltipClass="toolfilter" class="icon-grid">
+        <mat-icon>view_list</mat-icon>
+        <!-- <span>Grid completo</span> -->
       </button>
     </div>
     <mat-accordion multi>

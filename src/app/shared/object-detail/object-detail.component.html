@@ -45,6 +45,8 @@
         </button>
         <p>{{ prop.propgroup }}</p>
       </div>
+
+      <!-- ACTIVAR PARA AUTENTIFICACIÓN -->
       <!-- <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup) && isAuthenticated()"> -->
         <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup)">
         <table>
@@ -58,15 +60,23 @@
           <tbody>
             <tr *ngFor="let value of prop.values">
               <td>{{ value.prop }}</td>
-              <td>{{ value.valor }}</td>
+              <!-- Verificar si es un enlace o no el campo de valor-->
+              <td *ngIf="isLink(value.valor); else regularValue"> 
+                <a [href]="value.valor" target="_blank" class="link-bedec">
+                  <mat-icon>open_in_new</mat-icon>
+                </a>
+              </td>
+              <ng-template #regularValue>
+                <td>{{ value.valor }}</td>
+              </ng-template>
               <td>{{ value.obs }}</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div *ngIf="isGroupExpanded(prop.propgroup) && !isAuthenticated()">
+      <!-- <div *ngIf="isGroupExpanded(prop.propgroup) && !isAuthenticated()">
         <p class="error-login">Inicia sesión para ver la información</p>
-      </div>
+      </div> -->
     </div>
     <span *ngIf="!(detail.props && detail.props.length > 0)">No hay propiedades disponibles.</span>
   </div>

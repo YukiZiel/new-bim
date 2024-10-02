@@ -110,3 +110,12 @@ tbody td:last-child {
 tr:nth-child(even) {
   background-color: #F4FCFE;
 }
+
+.link-bedec mat-icon {
+  display: block;
+  color:#25a9bd;
+}
+
+.link-bedec mat-icon:hover {
+  color: #2e3a69;
+}
