@@ -34,7 +34,7 @@
 
 .detail-downloads p:first-child, .detail-related p {
   font-size: 18px;
-  margin-block: 80px 30px;
+  margin-block: 50px 30px;
 }
 
 .detail-downloads ul {
@@ -118,4 +118,22 @@ tr:nth-child(even) {
 
 .link-bedec mat-icon:hover {
   color: #2e3a69;
+}
+
+.back-button {
+  margin-top: 30px;
+}
+
+::ng-deep .mat-mdc-tab-group {
+  /* Tengo que pintar el background */
+  --mdc-tab-indicator-active-indicator-color: #D9F4F9;
+  --mat-tab-header-active-label-text-color: #007283;
+  --mat-tab-header-active-ripple-color: white;   /* Background del hover del activo atenuado*/
+
+  --mat-tab-header-inactive-ripple-color: #D9F4F9; 
+  --mat-tab-header-inactive-label-text-color: #007283;
+  --mat-tab-header-inactive-hover-label-text-color:#25a9bd;  /* Hover del título no seleccionado */
+
+  --mat-tab-header-active-hover-label-text-color: #25a9bd;  /* Hover del título seleccionado, posición actual */
+  --mat-tab-header-active-hover-indicator-color: #D9F4F9;
 }

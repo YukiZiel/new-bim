@@ -17,6 +17,7 @@ import { NgArrayPipesModule } from 'ngx-pipes';
 import { AgGridModule } from 'ag-grid-angular';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatTabsModule } from '@angular/material/tabs'; 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -73,7 +74,8 @@ import { GridFComponent } from './pages/grid-f/grid-f.component';
     FormsModule,
     AgGridModule,
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTabsModule
 
 ],
   providers: [
