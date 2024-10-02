@@ -32,6 +32,6 @@ export class HeaderComponent implements OnInit{
     { label: 'Equipamientos   y mobiliario', icon: 'assets/images/Frame 3.png' },
     { label: 'Urbanización  de los espacios exteriores', icon: 'assets/images/Frame 3.png' },
     { label: 'Construcciones  e instalaciones temporales', icon: 'assets/images/Frame 3.png' },
-    { label: 'Todas las categorías', icon: 'assets/images/Frame 3.png' },
+    // { label: 'Todas las categorías', icon: 'assets/images/Frame 3.png' },
   ]
 }

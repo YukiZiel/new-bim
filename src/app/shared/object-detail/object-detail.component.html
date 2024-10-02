@@ -45,7 +45,8 @@
         </button>
         <p>{{ prop.propgroup }}</p>
       </div>
-      <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup) && isAuthenticated()">
+      <!-- <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup) && isAuthenticated()"> -->
+        <div class="table-container" *ngIf="isGroupExpanded(prop.propgroup)">
         <table>
           <thead>
             <tr>

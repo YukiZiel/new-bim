@@ -49,12 +49,12 @@ export class GridComponent implements OnInit{
       enableValue: true,
       filter: true 
     },
-    { 
-      field: 'dataEmissio', 
-      headerName: 'Fecha de emisión', 
-      flex: 1, 
-      comparator: dateComparator,
-    },
+    // { 
+    //   field: 'dataEmissio', 
+    //   headerName: 'Fecha de emisión', 
+    //   flex: 1, 
+    //   comparator: dateComparator,
+    // },
     { 
       field: 'patrocinatTxt', 
       headerName: 'Patrocinado por', 

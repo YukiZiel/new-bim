@@ -129,4 +129,6 @@
 
 .icon-grid mat-icon {
   transform: scale(2);
+  margin-top: -1px;
+  margin-right: 0px;
 }
