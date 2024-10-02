@@ -32,8 +32,9 @@
   font-weight: 500;
 }
 
-.detail-downloads p, .detail-related p {
+.detail-downloads p:first-child, .detail-related p {
   font-size: 18px;
+  margin-block: 80px 30px;
 }
 
 .detail-downloads ul {

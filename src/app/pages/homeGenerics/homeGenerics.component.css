@@ -99,12 +99,14 @@
   z-index: 100;
 }
 
-.closeAll{
+.buttonAll{
   color: white;
   background-color: #46B6C7;
+  height: 48px;
 }
 
-.closeAll button {
+.buttonAll button {
+  height: 48px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -113,3 +115,18 @@
   color: white;
 }
 
+.grid-complete {
+  margin-top: 30px;
+  margin-inline: auto;
+  display: block;
+  background-color:#46B6C7;
+}
+
+.icon-grid {
+  right: 0px;
+  position: absolute;
+}
+
+.icon-grid mat-icon {
+  transform: scale(2);
+}
