@@ -105,8 +105,14 @@ h3 {
 
 .menu-item {
   text-align: center;
+  font-weight: 500;
   color: #2e3a69;
   cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #D9F4F9;
+  border-radius: 30px;
 }
 
 .menu-item span {

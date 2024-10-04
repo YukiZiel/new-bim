@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ObjectBIM } from '../../interfaces/object-bim';
 import { ColDef, ModuleRegistry } from 'ag-grid-community';
 import { ImgCellComponent } from '../../shared/img-cell/img-cell.component';
 import { FilterGService } from '../../services/filterG.service';
 import { MenuModule } from 'ag-grid-enterprise';
+import { Router } from '@angular/router';
 
 ModuleRegistry.registerModules([
   MenuModule
@@ -15,7 +16,7 @@ ModuleRegistry.registerModules([
   styleUrl: './grid-g.component.css'
 })
 export class GridGComponent implements OnInit{
-
+  @Input() objectBim!: ObjectBIM;
   rowData: ObjectBIM[] = [];
   enableRangeSelection: boolean = true;
   rowSelection: 'multiple' | 'single' | undefined = 'multiple';
@@ -94,12 +95,21 @@ export class GridGComponent implements OnInit{
   // resizing = false;
   // size = 300;
   // @Input() maxHeight = 600;
-  constructor(private filterService: FilterGService) {}
+  constructor(private filterService: FilterGService, private router: Router) {}
 
   ngOnInit(): void {
     this.filterService.getBims().subscribe(data => {
       this.rowData = data.bims;
     });
+  }
+
+   // Evento que redirige a la página de detalle del objeto BIM
+  onCellClicked(event: any): void {
+    if (event.colDef.field === 'description' || event.colDef.field === 'img') {
+      const objectId = event.data.id; // Obtener el ID del objeto BIM
+      const currentRoute = 'genericos'; // Obtener la ruta actual
+      this.router.navigate(['/bim', objectId], { queryParams: { from: currentRoute } }); // Redirigir a la página de detalle
+    }
   }
 
   downloadCellRenderer(params: any): string {
@@ -115,48 +125,36 @@ export class GridGComponent implements OnInit{
     return '';
   }
 
-  onResizeSuperior(newHeight: number) {
-    const superiorElement = document.querySelector('.componente-superior') as HTMLElement;
-    const inferiorElement = document.querySelector('.componente-inferior') as HTMLElement;
-
-    if (superiorElement && inferiorElement) {
-      superiorElement.style.height = `${newHeight}px`;
-      inferiorElement.style.height = `${window.innerHeight - newHeight}px`;
-    }
-  }
-
 }
 
 // DATE COMPARATOR FOR SORTING
-function dateComparator(date1:any, date2:any) {
-  var date1Number = _monthToNum(date1);
-  var date2Number = _monthToNum(date2);
+// function dateComparator(date1:any, date2:any) {
+//   var date1Number = _monthToNum(date1);
+//   var date2Number = _monthToNum(date2);
 
-  if (date1Number === null && date2Number === null) {
-    return 0;
-  }
-  if (date1Number === null) {
-    return -1;
-  }
-  if (date2Number === null) {
-    return 1;
-  }
-
-  return date1Number - date2Number;
-}
+//   if (date1Number === null && date2Number === null) {
+//     return 0;
+//   }
+//   if (date1Number === null) {
+//     return -1;
+//   }
+//   if (date2Number === null) {
+//     return 1;
+//   }
+//   return date1Number - date2Number;
+// }
 
 // HELPER FOR DATE COMPARISON
-function _monthToNum(date:any) {
-  if (date === undefined || date === null || date.length !== 10) {
-    return null;
-  }
+// function _monthToNum(date:any) {
+//   if (date === undefined || date === null || date.length !== 10) {
+//     return null;
+//   }
 
-  var yearNumber = date.substring(6, 10);
-  var monthNumber = date.substring(3, 5);
-  var dayNumber = date.substring(0, 2);
+//   var yearNumber = date.substring(6, 10);
+//   var monthNumber = date.substring(3, 5);
+//   var dayNumber = date.substring(0, 2);
 
-  var result = yearNumber * 10000 + monthNumber * 100 + dayNumber;
-  // 29/08/2004 => 20040829
-  return result;
-
-}
+//   var result = yearNumber * 10000 + monthNumber * 100 + dayNumber;
+//   // 29/08/2004 => 20040829
+//   return result;
+// }

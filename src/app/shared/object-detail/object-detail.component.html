@@ -34,7 +34,7 @@
       <p>Objetos BIM relacionados</p>
     </div>
   </div>
-  <mat-tab-group animationDuration="0ms">
+  <mat-tab-group animationDuration="0ms" id="table-group">
     <mat-tab label="Propiedades y valores"> 
       <div class="table-props">
         <div class="list-props" *ngFor="let prop of detail.props">
@@ -81,8 +81,12 @@
         <span *ngIf="!(detail.props && detail.props.length > 0)">No hay propiedades disponibles.</span>
       </div>
     </mat-tab>
-    <mat-tab label="Instrucciones"> Content 2 </mat-tab>
-    <mat-tab label="Otros"> Content 3 </mat-tab>
+    <mat-tab label="Instrucciones"> 
+      <div class="table-props">Content 2</div>
+    </mat-tab>
+    <mat-tab label="Otros">
+      <div class="table-props">Content 3</div>
+    </mat-tab>
   </mat-tab-group>
   <button mat-raised-button color="primary" class="back-button" (click)="goBack()" type="button">Volver</button>
 </div>

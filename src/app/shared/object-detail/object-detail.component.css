@@ -124,9 +124,18 @@ tr:nth-child(even) {
   margin-top: 30px;
 }
 
+::ng-deep #table-group .mat-mdc-tab {
+  padding-inline: 0px;
+}
+
+::ng-deep #table-group .mdc-tab--active {
+  background-color: #D9F4F9;
+  border-radius: 15px;
+}
+
 ::ng-deep .mat-mdc-tab-group {
   /* Tengo que pintar el background */
-  --mdc-tab-indicator-active-indicator-color: #D9F4F9;
+  --mdc-tab-indicator-active-indicator-color: transparent;
   --mat-tab-header-active-label-text-color: #007283;
   --mat-tab-header-active-ripple-color: white;   /* Background del hover del activo atenuado*/
 
@@ -134,6 +143,16 @@ tr:nth-child(even) {
   --mat-tab-header-inactive-label-text-color: #007283;
   --mat-tab-header-inactive-hover-label-text-color:#25a9bd;  /* Hover del título no seleccionado */
 
-  --mat-tab-header-active-hover-label-text-color: #25a9bd;  /* Hover del título seleccionado, posición actual */
-  --mat-tab-header-active-hover-indicator-color: #D9F4F9;
+  --mat-tab-header-active-hover-label-text-color: #007283;  /* Hover del título seleccionado, posición actual */
+  --mat-tab-header-active-hover-indicator-color: transparent;
+
+  --mat-tab-header-active-focus-label-text-color: #007283;
+  --mat-tab-header-active-focus-indicator-color: transparent;
+}
+
+::ng-deep .mat-mdc-tab-header {
+  --mat-tab-header-label-text-size: 16px; 
+  background-color: white;
+  border: solid 3px #D9F4F9;
+  border-radius: 20px;
 }
