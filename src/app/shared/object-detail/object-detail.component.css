@@ -124,6 +124,14 @@ tr:nth-child(even) {
   margin-top: 30px;
 }
 
+::ng-deep .mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color:#25a9bd;
+}
+
+::ng-deep .mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before {
+  opacity: 0.4;
+}
+
 ::ng-deep #table-group .mat-mdc-tab {
   padding-inline: 0px;
 }
@@ -156,3 +164,4 @@ tr:nth-child(even) {
   border: solid 3px #D9F4F9;
   border-radius: 20px;
 }
+
