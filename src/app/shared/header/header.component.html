@@ -22,21 +22,30 @@
   <!-- <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon" /></a> -->
   <h1 id="title-header">BEDEC - BIM</h1>
   <div class="button-group">
-    <button mat-button routerLink="/genericos">
+    <button mat-button [matMenuTriggerFor]="menuG">
       <span>Genéricos eCOB&#174;</span>
     </button>
+    <mat-menu #menuG="matMenu" class="custom-menu">
+      <h3>CATEGORÍAS</h3>
+      <div class="menu-container">
+        <div class="menu-item" *ngFor="let item of menuItemsG" routerLink="/genericos">
+          <img [src]="item.icon" alt="{{item.label}}" class="menu-icon">
+          <span>{{item.label}}</span>
+        </div>
+      </div>
+    </mat-menu>
 
     <!-- <button mat-button routerLink="/fabricantes">
       <span>Fabricantes</span>
     </button> -->
 
-    <button mat-button [matMenuTriggerFor]="afterMenu">
+    <button mat-button [matMenuTriggerFor]="menuF">
       <span>Fabricantes</span>
     </button>
-    <mat-menu #afterMenu="matMenu" class="custom-menu">
+    <mat-menu #menuF="matMenu" class="custom-menu">
       <h3>CATEGORÍAS</h3>
       <div class="menu-container">
-        <div class="menu-item" *ngFor="let item of menuItems" routerLink="/fabricantes">
+        <div class="menu-item" *ngFor="let item of menuItemsF" routerLink="/fabricantes">
           <img [src]="item.icon" alt="{{item.label}}" class="menu-icon">
           <span>{{item.label}}</span>
         </div>

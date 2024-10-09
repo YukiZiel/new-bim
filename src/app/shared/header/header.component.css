@@ -97,7 +97,7 @@ h3 {
 
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 30px;
   padding: 10px;
@@ -127,7 +127,7 @@ h3 {
   margin: 0 auto 5px;
 }
 
-::ng-deep #mat-menu-panel-0 {
+::ng-deep #mat-menu-panel-0, ::ng-deep #mat-menu-panel-1 {
   width: 100%;
   max-width: 100%;
   padding-inline: 50px;
