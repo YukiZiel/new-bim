@@ -57,7 +57,7 @@
       <div class="menu-inside">
         <div class="column first-column">
           <ul>
-            <li *ngFor="let level1 of levels1" (mouseenter)="onHoverLevel1(level1)">
+            <li *ngFor="let level1 of levels1" (mouseenter)="onHoverLevel1(level1)" [ngClass]="{'active-level1': activeLevel1 === level1 && activeLevel2}">
               <a [href]="level1.url">{{ level1.name }}</a>
             </li>
           </ul>
@@ -65,7 +65,7 @@
         
         <div class="column second-column" *ngIf="activeLevel1">
           <ul>
-            <li *ngFor="let level2 of activeLevel1.sublevels" (mouseenter)="onHoverLevel2(level2)">
+            <li *ngFor="let level2 of activeLevel1.sublevels" (mouseenter)="onHoverLevel2(level2)" [ngClass]="{'active-level2': activeLevel2 === level2 && activeLevel2}">
               <a [routerLink]="[level2.url]">{{ level2.name }}</a>
             </li>
           </ul>

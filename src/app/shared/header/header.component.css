@@ -243,3 +243,14 @@ li {
   font-size: 16px;
   font-weight: 400;
 }
+
+.active-level2 a {
+  color: #25a9bd;
+  font-weight: 500;
+  font-size: 17px;
+}
+.active-level1 {
+  background-color: #F4FCFE;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #F4FCFE;
+}
