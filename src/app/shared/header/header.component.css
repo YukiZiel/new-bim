@@ -43,6 +43,12 @@
   }
 }
 
+.app-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 30px
+}
+
 .menu button {
   font-size: 18px;
   color: #2e3a69;
@@ -103,6 +109,10 @@ h3 {
   padding: 10px;
 }
 
+.menuF .mat-mdc-menu-item {
+  width: 35%;
+}
+
 .menu-item {
   text-align: center;
   font-weight: 500;
@@ -128,13 +138,14 @@ h3 {
 }
 
 ::ng-deep #mat-menu-panel-0, ::ng-deep #mat-menu-panel-1 {
+  margin-top: 10px;
+  left: 0;
+  position: fixed;
   width: 100%;
   max-width: 100%;
   padding-inline: 50px;
+  padding-bottom: 10px;
   background-color: #EAFFC8;
-  left: 0;
-  margin-top: 10px;
-  position: fixed;
 }
 
 /* ::ng-deep #cdk-overlay-0 {
@@ -142,9 +153,6 @@ h3 {
   margin-top: 20px;
   width: 100%;
 } */
-
-
-
 
 
 
@@ -164,8 +172,8 @@ h3 {
 }
 
 .header-icon .mat-icon {
-  align-items: center;
   display: flex;
+  align-items: center;
 }
 
 .mat-toolbar .mat-mdc-button-base.mat-mdc-button-base.mat-unthemed{
@@ -182,3 +190,56 @@ h3 {
   grid-template-columns: repeat(2,1fr);
 } */
  
+.menu-inside {
+  display: flex;
+}
+
+.menu-inside a {
+  text-decoration: none;
+  color: #2e3a69;
+}
+
+.menu-inside a:hover {
+  color: #25a9bd;
+}
+
+.column {
+  width: 33%;
+  padding-inline: 8px;
+}
+
+/* .first-column {
+  background-color: #f0f0f0;
+} */
+
+.second-column {
+  margin-block: 10px;
+  background-color: #D9F4F9;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #D9F4F9;
+}
+
+.third-column {
+  width: 25%;
+  margin-block: 10px;
+  margin-left: 10px;
+  background-color: #A9DEE6;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #A9DEE6;
+} 
+
+.second-column li, .third-column li {
+  padding: 5px;
+}
+
+ul {
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}

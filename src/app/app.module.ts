@@ -36,6 +36,7 @@ import { ResizableComponent } from "./shared/resizable/resizable.component";
 import { ImgCellComponent } from './shared/img-cell/img-cell.component';
 import { GridGComponent } from './pages/grid-g/grid-g.component';
 import { GridFComponent } from './pages/grid-f/grid-f.component';
+import { PresentationComponent } from './pages/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,7 @@ import { GridFComponent } from './pages/grid-f/grid-f.component';
     ResizableComponent, 
     ImgCellComponent, 
     GridGComponent, 
-    GridFComponent
+    GridFComponent, PresentationComponent
   ],
   imports: [
     BrowserModule,

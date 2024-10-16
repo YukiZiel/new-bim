@@ -38,9 +38,9 @@
   border-radius: 0px;
 }
 
-.example-action-buttons {
+/* .example-action-buttons {
   padding-bottom: 10px;
-}
+} */
 
 .sub-option {
   padding-left: 10px;
@@ -63,11 +63,11 @@
   display: none;
 }
 
-.selected-value {
+/* .selected-value {
   position: absolute;
   right: 10px;
   color: #2e3a69;
-}
+} */
 
 #search {
   float: inline-end;

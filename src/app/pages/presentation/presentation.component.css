@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+}
+
+.content {
+    padding-bottom: 50px;
+}
+
+.results {
+    margin: 30px 50px 30px 50px;
+    display: grid;
+    justify-content: space-around;
+    /* column-gap: 10px; */
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}

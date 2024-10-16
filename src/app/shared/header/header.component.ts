@@ -40,4 +40,91 @@ export class HeaderComponent implements OnInit{
     { label: 'Sistemas de compartimentación y de acabados interiores', icon: 'assets/images/Frame 2.png' },
     { label: 'Sistemas de acondicionamiento, instalaciones y servicios', icon: 'assets/images/Frame 2.png' },
   ]
+
+
+  levels1 = [
+    {
+      name: 'Sistema estructural',
+      url: 'https://example.com/filtro1', // URL del nivel 1
+      sublevels: [
+        {
+          name: 'Estructura',
+          url: '/grid-fabricants', // URL del nivel 2
+          sublevels: [
+            { name: 'Estructura horizontal', url: '/grid-fabricants' } // URL del nivel 3
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Sistemas de envolvente y de acabados exteriores',
+      url: '/grid-fabricants',
+      sublevels: [
+        {
+          name: 'Envolvente vertical',
+          url: '/grid-fabricants',
+          sublevels: [
+            { name: 'Fachadas' }
+          ]
+        },
+        {
+          name: 'Envolvente horizontal superior',
+          url: '/grid-fabricants',
+          sublevels: [
+            { name: 'Cubiertas' }
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Sistemas de compartimentación y de acabados interiores',
+      url: '/grid-fabricants',
+      sublevels: [
+        {
+          name: 'Compartimentación y acabados interiores verticales',
+          url: '/grid-fabricants',
+          sublevels: [
+            { name: 'Compartimentación interior vertical' }
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Sistemas de acondicionamiento, instalaciones y servicios',
+      url: '/grid-fabricants',
+      sublevels: [
+        {
+          name: 'Instalaciones térmicas y de ventilación',
+          url: '/grid-fabricants',
+          sublevels: [
+            { name: 'Terminales y difusores' },
+            { name: 'Dispositivos de maniobra y control' }
+          ]
+        },
+        {
+          name: 'Instalaciones eléctricas',
+          url: '/grid-fabricants',
+          sublevels: [
+            { name: 'Iluminación' }
+          ]
+        }
+      ]
+    }
+  ];
+  
+    // Variables para mantener el estado activo
+    activeLevel1: any = null;
+    activeLevel2: any = null;
+  
+    // Función para cuando se hace hover en el primer nivel
+    onHoverLevel1(level1: any) {
+      this.activeLevel1 = level1;
+      this.activeLevel2 = null;  // Reinicia el nivel 2 cuando cambies de nivel 1
+    }
+  
+    // Función para cuando se hace hover en el segundo nivel
+    onHoverLevel2(level2: any) {
+      this.activeLevel2 = level2;
+    }
+
 }

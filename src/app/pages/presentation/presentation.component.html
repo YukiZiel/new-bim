@@ -1,0 +1,7 @@
+<mat-drawer-container class="container">
+    <mat-drawer-content class="content">
+        <section class="results">
+            <app-object-bim *ngFor="let bim of bims"  [objectBim]="bim"/>
+        </section>
+    </mat-drawer-content>
+</mat-drawer-container>

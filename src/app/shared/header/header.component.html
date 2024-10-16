@@ -22,34 +22,105 @@
   <!-- <a href="https://itec.es/"><img alt="Logo de ITeC" src="assets/images/ITeC.png" class="itec-icon" /></a> -->
   <h1 id="title-header">BEDEC - BIM</h1>
   <div class="button-group">
+    
+    <button mat-button routerLink="/presentacion">
+      <span>Presentación</span>
+    </button>
+
     <button mat-button [matMenuTriggerFor]="menuG">
       <span>Genéricos eCOB&#174;</span>
     </button>
     <mat-menu #menuG="matMenu" class="custom-menu">
       <h3>CATEGORÍAS</h3>
       <div class="menu-container">
-        <div class="menu-item" *ngFor="let item of menuItemsG" routerLink="/genericos">
+        <!-- <div class="menu-item" *ngFor="let item of menuItemsG" routerLink="/genericos"> -->
+        <div class="menu-item" *ngFor="let item of menuItemsG" routerLink="/grid-generics">
           <img [src]="item.icon" alt="{{item.label}}" class="menu-icon">
           <span>{{item.label}}</span>
         </div>
       </div>
     </mat-menu>
 
-    <!-- <button mat-button routerLink="/fabricantes">
-      <span>Fabricantes</span>
-    </button> -->
-
     <button mat-button [matMenuTriggerFor]="menuF">
       <span>Fabricantes</span>
     </button>
-    <mat-menu #menuF="matMenu" class="custom-menu">
+    <mat-menu #menuF="matMenu" class="custom-menu menuF">
       <h3>CATEGORÍAS</h3>
-      <div class="menu-container">
-        <div class="menu-item" *ngFor="let item of menuItemsF" routerLink="/fabricantes">
+      <!-- <div class="menu-container"> -->
+        <!-- <div class="menu-item" *ngFor="let item of menuItemsF" routerLink="/fabricantes"> -->
+        <!-- <div class="menu-item" *ngFor="let item of menuItemsF" routerLink="/grid-fabricants">
           <img [src]="item.icon" alt="{{item.label}}" class="menu-icon">
           <span>{{item.label}}</span>
         </div>
+      </div> -->
+
+      <div class="menu-inside">
+        <div class="column first-column">
+          <ul>
+            <li *ngFor="let level1 of levels1" (mouseenter)="onHoverLevel1(level1)">
+              <a [href]="level1.url">{{ level1.name }}</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="column second-column" *ngIf="activeLevel1">
+          <ul>
+            <li *ngFor="let level2 of activeLevel1.sublevels" (mouseenter)="onHoverLevel2(level2)">
+              <a [routerLink]="[level2.url]">{{ level2.name }}</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="column third-column" *ngIf="activeLevel2">
+          <ul>
+            <li *ngFor="let level3 of activeLevel2.sublevels">
+              <a [routerLink]="[level3.url]">{{ level3.name }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- <button mat-menu-item [matMenuTriggerFor]="s_estructural">Sistema estructural</button>
+      <button mat-menu-item [matMenuTriggerFor]="s_envolvente">Sistemas de envolvente y de acabados exteriores</button>
+      <button mat-menu-item [matMenuTriggerFor]="s_compartimentacion">Sistemas de compartimentación y de acabados interiores</button>
+      <button mat-menu-item [matMenuTriggerFor]="s_acondicionamiento">Sistemas de acondicionamiento, instalaciones y servicios</button> -->
+    </mat-menu>
+    <mat-menu #s_estructural="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="estructura">Estructura</button>
+    </mat-menu>
+    <mat-menu #estructura="matMenu">
+      <button mat-menu-item>Estructura horizontal</button>
+    </mat-menu>
+
+
+    <mat-menu #s_envolvente="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="envolvente_v">Envolvente vertical</button>
+      <button mat-menu-item [matMenuTriggerFor]="envolvente_h">Envolvente horizontal superior</button>
+    </mat-menu>
+    <mat-menu #envolvente_v="matMenu">
+      <button mat-menu-item>Fachadas</button>
+    </mat-menu>
+    <mat-menu #envolvente_h="matMenu">
+      <button mat-menu-item>Cubiertas</button>
+    </mat-menu>
+
+    <mat-menu #s_compartimentacion="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="acabados_v">Compartimentación y acabados interiores verticales</button>
+    </mat-menu>
+    <mat-menu #acabados_v="matMenu">
+      <button mat-menu-item>Compartimentación interior vertical</button>
+    </mat-menu>
+
+    <mat-menu #s_acondicionamiento="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="i_termicas">Instalaciones térmicas y de ventilación</button>
+      <button mat-menu-item [matMenuTriggerFor]="i_electricas">Instalaciones eléctricas</button>
+    </mat-menu>
+    <mat-menu #i_termicas="matMenu">
+      <button mat-menu-item>Terminales y difusores</button>
+      <button mat-menu-item>Dispositivos de maniobra y control</button>
+    </mat-menu>
+    <mat-menu #i_electricas="matMenu">
+      <button mat-menu-item>Iluminación</button>
     </mat-menu>
 
     <!-- <button mat-button routerLink="/data-grid">
@@ -62,6 +133,11 @@
   </div>
 
   <div class="user-menu">
+
+    <a href="" class="app-icon">
+      <img src="../../../assets/images/app-icon.png" alt="app icon" width="35">
+    </a>
+
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User icon with a menu" class="user-icon">
       <mat-icon class="user-login">account_circle</mat-icon>
     </button>

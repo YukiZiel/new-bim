@@ -10,6 +10,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { DataGridComponent } from './pages/data-grid/data-grid.component';
 import { GridGComponent } from './pages/grid-g/grid-g.component';
 import { GridFComponent } from './pages/grid-f/grid-f.component';
+import { PresentationComponent } from './pages/presentation/presentation.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'perfil', component: UserComponent, canActivate: [AuthGuard] },
   { path: 'data-grid', component: DataGridComponent },
   { path: 'grid-generics', component:GridGComponent },
-  { path: 'grid-fabricants', component:GridFComponent }
+  { path: 'grid-fabricants', component:GridFComponent },
+  { path: 'presentacion', component:PresentationComponent }
 ];
 
 @NgModule({
