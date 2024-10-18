@@ -199,21 +199,19 @@ h3 {
   color: #2e3a69;
 }
 
-.menu-inside a:hover {
-  color: #25a9bd;
-}
-
 .column {
   width: 33%;
   padding-inline: 8px;
 }
 
-/* .first-column {
-  background-color: #f0f0f0;
-} */
+.first-column li:hover, .active-level1 {
+  background-color: #F4FCFE;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #F4FCFE;
+}
 
 .second-column {
-  margin-block: 10px;
+  margin-top: 10px;
   background-color: #D9F4F9;
   border-radius: 30px;
   box-shadow: 0px 0px 10px #D9F4F9;
@@ -221,12 +219,16 @@ h3 {
 
 .third-column {
   width: 25%;
-  margin-block: 10px;
+  margin-top: 10px;
   margin-left: 10px;
   background-color: #A9DEE6;
   border-radius: 30px;
   box-shadow: 0px 0px 10px #A9DEE6;
 } 
+
+.third-column a:hover {
+  color: #25a9bd;
+}
 
 .second-column li, .third-column li {
   padding: 5px;
@@ -248,9 +250,4 @@ li {
   color: #25a9bd;
   font-weight: 500;
   font-size: 17px;
-}
-.active-level1 {
-  background-color: #F4FCFE;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px #F4FCFE;
 }
